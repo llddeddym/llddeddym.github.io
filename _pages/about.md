@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "关于我"
+title: "关于我 About Me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -9,3 +9,7 @@ redirect_from:
 ---
 
 我是[南开大学陈省身数学研究所](http://www.cim.nankai.edu.cn/)的一名博士研究生.
+
+## 教育背景
+
+2018-2022 学士 南开大学 数学科学学院
