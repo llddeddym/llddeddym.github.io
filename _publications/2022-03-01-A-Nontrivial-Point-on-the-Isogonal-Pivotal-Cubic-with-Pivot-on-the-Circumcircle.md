@@ -1,10 +1,10 @@
 ---
 title: "A Nontrivial Point on the Isogonal Pivotal Cubic with Pivot on the Circumcircle"
 collection: publications
-permalink: /publication/2022-03-A-Nontrivial-Point-on-the-Isogonal-Pivotal-Cubic-with-Pivot-on-the-Circumcircle
+permalink: /publication/2022-03-01-A-Nontrivial-Point-on-the-Isogonal-Pivotal-Cubic-with-Pivot-on-the-Circumcircle
 excerpt: 'A Nontrivial Point on the Isogonal Pivotal Cubic with Pivot on the Circumcircle'
-date: 2022-03
-venue: 'Journal 1'
+date: 2022-03-01
+venue: 'International Journal of Geometry'
 paperurl: 'https://ijgeometry.com/wp-content/uploads/2022/03/6.-60-66.pdf'
 ---
 This article was written in collaboration with Junchen Du.
