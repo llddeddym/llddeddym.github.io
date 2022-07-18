@@ -1,11 +1,9 @@
 ---
 title: '一个三点共线问题'
 date: 2020-09-20
-permalink: /posts/2020/12/2020-12-29-Miquel/
+permalink: /posts/2020/12/2020-09-20-Jueyun-Cao/
 tags:
-  - Miquel point
-  - Kiepert hyperbola
-  - anti-Steiner point
+  - radical axis
 ---
 
 头两天有群友问了我一个曹老爷讲义上的问题，题目如下：
