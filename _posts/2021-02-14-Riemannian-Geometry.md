@@ -746,7 +746,7 @@ $$\begin{aligned}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace
 
 **定理5.5.3**: 若$(M^n.g)$是黎曼流形, 其上$f$满足$\Delta f\geqslant0$, 则$f$没有极大值, 除非它为常数. 
 
-**定义5.5.4**: $\gamma:\mathbb{R}\to M$称为一条**直线**, 如果对任意$r,s\in\mathbb{R}$, $d(\gamma(t),\gamma(s))=|t-s|$. 
+**定义5.5.4**: $\gamma:\mathbb{R}\to M$称为一条**直线**, 如果对任意$r,s\in\mathbb{R}$, $d(\gamma(t),\gamma(s))=\lvert t-s\rvert$. 
 
 **定义5.5.5**: 设$\gamma:[0,+\infty)\to M$是一条射线, 则关于$\gamma$的**Busemann函数**$b_ \gamma:M\to\mathbb{R}$定义为$b_ \gamma(x):=\lim\limits_ {t\to+\infty}(d(x,\gamma(t))-t)$. 
 
@@ -782,7 +782,7 @@ Busemann函数定义中的极限的存在性利用三角不等式以及距离函
 
 **定理5.6.2**: 设$(M^n,g)$是一个完备黎曼流形, 且截面曲率处处非负, 则$\pi_1(M)$至多被$\sqrt{2n\pi}2^{n-2}=:c(n)$个元素生成. 
 
-*Proof.* 设$\pi:\tilde M\to M$是泛覆盖映射, 并设$\tilde p\in\tilde M$是$p\in M$的一个提升, 则如**定理5.5.2**中所说, $\pi_1(M)\cong\pi_1(M,p)$可以等距作用到$\tilde M$上, 此时对任意$\gamma\in G$, 记$|\gamma|:=d(\tilde p,\gamma\tilde p)$, 选定$\gamma_1\in G$使得$|\gamma_1|=\min\lbrace |\gamma\\|\gamma\neq e,\gamma\in G\rbrace$, 如果$\langle\gamma_1\rangle\neq G$, 就继续选择$G\setminus\langle\gamma_1\rangle$中最短的, 如此下去选得一列$\langle\gamma_1,\cdots,\gamma_i,\cdots\rangle$, 对任意$i<j$, $|\gamma_i|\leqslant|\gamma_j|$, 下面断言$l_ {ij}:=d(\gamma_i\tilde p,\gamma_j\tilde p)\geqslant|\gamma_j|$, 否则$|\gamma_i^{-1}\gamma_j|=l_ {ij}<|\gamma_j|$, 这就矛盾. 下面由Toponogov三角形比较定理的角版本, $\alpha_ {ij}\geqslant\tilde\alpha_ {ij}\geqslant\dfrac{\pi}{3}$.而$U_pM$中至多有$c(n)$个向量两两夹角超过$\dfrac{\pi}{3}$, 这就完成了证明. $\quad\Box$
+*Proof.* 设$\pi:\tilde M\to M$是泛覆盖映射, 并设$\tilde p\in\tilde M$是$p\in M$的一个提升, 则如**定理5.5.2**中所说, $\pi_1(M)\cong\pi_1(M,p)$可以等距作用到$\tilde M$上, 此时对任意$\gamma\in G$, 记$\lvert\gamma\rvert:=d(\tilde p,\gamma\tilde p)$, 选定$\gamma_1\in G$使得$\lvert\gamma_1\rvert=\min\lbrace \lvert\gamma\rvert\mid\gamma\neq e,\gamma\in G\rbrace$, 如果$\langle\gamma_1\rangle\neq G$, 就继续选择$G\setminus\langle\gamma_1\rangle$中最短的, 如此下去选得一列$\langle\gamma_1,\cdots,\gamma_i,\cdots\rangle$, 对任意$i<j$, $\lvert\gamma_i\rvert\leqslant\lvert\gamma_j\rvert$, 下面断言$l_ {ij}:=d(\gamma_i\tilde p,\gamma_j\tilde p)\geqslant\lvert\gamma_j\rvert$, 否则$\lvert\gamma_i^{-1}\gamma_j\rvert=l_ {ij}<\lvert\gamma_j\rvert$, 这就矛盾. 下面由Toponogov三角形比较定理的角版本, $\alpha_ {ij}\geqslant\tilde\alpha_ {ij}\geqslant\dfrac{\pi}{3}$.而$U_pM$中至多有$c(n)$个向量两两夹角超过$\dfrac{\pi}{3}$, 这就完成了证明. $\quad\Box$
 
 **注5.6.1**: 满足$S^{n-1}$上两两距离不小于$\dfrac{\pi}{3}$的点的最大个数被称作“亲吻数”, 亲吻数的具体数值目前在$n=2,3,8,24$时求出了准确值, 但在Gromov定理中我们有上面的估计一般就够用了. 
 
@@ -792,7 +792,7 @@ Busemann函数定义中的极限的存在性利用三角不等式以及距离函
 
 我们先来介绍一些有关Gromov-Hausdorff度量的基本知识, 本节的所有定理都不予证明, 感兴趣的读者可以阅读GTM171, Peter Peterson的《Riemannian Geometry》. 
 
-**定义6.1.1**: 给定度量空间$(X,d)$, 对其任意两子集$Y_1,Y_2$, 两者间的**Hausdorff距离**为$d^H_X(Y_1,Y_2):=\inf\lbrace \varepsilon|Y_2\subset B(Y_1,\varepsilon),Y_1\subset B(Y_2,\varepsilon)\rbrace$. 
+**定义6.1.1**: 给定度量空间$(X,d)$, 对其任意两子集$Y_1,Y_2$, 两者间的**Hausdorff距离**为$d^H_X(Y_1,Y_2):=\inf\lbrace \varepsilon\mid Y_2\subset B(Y_1,\varepsilon),Y_1\subset B(Y_2,\varepsilon)\rbrace$. 
 
 **定义6.1.2**: 两度量空间$(X_1,d_1)$, $(X_2,d_2)$间的**Gromov-Hausdorff距离**为$d^{GH}((X,d_1),(X,d_2))$是$d_Z^H(i_1(X_1),i_2(X_2))$的下确界, 其中$i_1:X_1\to Z$和$i_2:X_2\to Z$取遍所有等距嵌入. 
 
@@ -810,7 +810,7 @@ Busemann函数定义中的极限的存在性利用三角不等式以及距离函
 
 **注6.1.2**: 这里暗含了等价类间的$d^{GH}$不依赖于代表元的选取. 
 
-**定义6.1.5**: 对任意$X,Y\in\mathcal{MET}$, 映射$\varphi:X\to Y$（不要求如连续性之类的任何性质）称作一个**$\varepsilon-$Hausdorff逼近**, 如果$B(\varphi(X),\varepsilon)=Y$且对任意$x_1,x_2\in X$, $|d(x_1,x_2)-d(\varphi(x_1),\varphi(x_2))|\leqslant\varepsilon$. 
+**定义6.1.5**: 对任意$X,Y\in\mathcal{MET}$, 映射$\varphi:X\to Y$（不要求如连续性之类的任何性质）称作一个**$\varepsilon-$Hausdorff逼近**, 如果$B(\varphi(X),\varepsilon)=Y$且对任意$x_1,x_2\in X$, $\lvert d(x_1,x_2)-d(\varphi(x_1),\varphi(x_2))\rvert\leqslant\varepsilon$. 
 
 **定理6.1.3**: 对任意$X,Y\in\mathcal{MET}$, 有(1)$d^{GH}(X,Y)\leqslant\varepsilon$可以推出二者之间存在一个$3\varepsilon-$Hausdorff逼近; (2)二者之间存在一个$\varepsilon-$Hausdorff逼近可以推出$d^{GH}(X,Y)\leqslant 3\varepsilon$. 
 
@@ -818,11 +818,11 @@ Busemann函数定义中的极限的存在性利用三角不等式以及距离函
 
 本节我们叙述并证明Gromov的预紧性定理. 
 
-**定义6.2.1**: $\mathcal{MET}(D,N(\cdot))$是所有满足$\mbox{Diam}(X)\leqslant D$, 且对$\forall\varepsilon\in(0,1)$, 存在$X$的有限子集$Z$使得$\#Z\leqslant N(\varepsilon)$且$B(Z,\varepsilon)=X$的$(X,d)\in\mathcal{MET}$组成的集合, 其中$N:(0,1)\to\mathbb{N}$是被称作**填充函数**. 
+**定义6.2.1**: $\mathcal{MET}(D,N(\cdot))$是所有满足$\mbox{Diam}(X)\leqslant D$, 且对$\forall\varepsilon\in(0,1)$, 存在$X$的有限子集$Z$使得$\\\#Z\leqslant N(\varepsilon)$且$B(Z,\varepsilon)=X$的$(X,d)\in\mathcal{MET}$组成的集合, 其中$N:(0,1)\to\mathbb{N}$是被称作**填充函数**. 
 
 **引理6.2.1**: $(\mathcal{MET}(D,N(\cdot)),d^{GH})$是紧度量空间. 
 
-*Proof.* 置$\mathcal{FIN}(D,N)=\lbrace X\in\mathcal{MET}|\#X<N,\mbox{Diam}X\leqslant D\rbrace$, 显然这是一个紧集. 对任意$X\in\mathcal{MET}(D,N(\cdot))$和任意$\varepsilon$, 存在$Z\subset X$使得$\#Z\leqslant N(\varepsilon)$, $d^{GH}(X,Z)<3\varepsilon$, 也即$Z\in\mathcal{FIN}(D,N(\varepsilon))$, 于是欲证空间全有界且闭, 故为紧集. 
+*Proof.* 置$\mathcal{FIN}(D,N)=\lbrace X\in\mathcal{MET}\mid\\\#X<N,\mbox{Diam}X\leqslant D\rbrace$, 显然这是一个紧集. 对任意$X\in\mathcal{MET}(D,N(\cdot))$和任意$\varepsilon$, 存在$Z\subset X$使得$\\\#Z\leqslant N(\varepsilon)$, $d^{GH}(X,Z)<3\varepsilon$, 也即$Z\in\mathcal{FIN}(D,N(\varepsilon))$, 于是欲证空间全有界且闭, 故为紧集. 
 
 **定义6.2.2**: 记所有直径小于等于$D$且Ricci曲率不小于$(n-1)k$的$n$维黎曼流形组成的集合为$\mathcal{Ric}^D_ {\cdot,\cdot,(n-1)k}(n)$. 
 
@@ -875,6 +875,7 @@ $$\begin{aligned}
 &\nabla_ {[Z,X]}Y=\nabla_X[Y,Z]+\nabla_Y[Z,X]+\nabla_Z[X,Y]-\nabla_ {[X,Y]}Z-\nabla_ {[Y,Z]}X\\
 &-\nabla_ {[Z,X]}Y=[X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0(\mbox{Jacobi恒等式}).
 \end{aligned}$$
+
 第二Bianchi恒等式: 
 $$\begin{aligned}
 &(\nabla_XR)(Y,Z)U+(\nabla_YR)(Z,X)U+(\nabla_ZR)(X,Y)U\\
@@ -897,22 +898,22 @@ $$\dfrac{d^2}{dt^2}\left(\dfrac{\det\mathbb{A}(t,\Theta)}{\mbox{sn} _k^{n-2}(t)}
 
 *Proof.* 简记$\mathbb{A}(t,\Theta)$为$\mathbb{A}(t)$, 设$\mbox{II}(t):=\mathbb{A}'(t)\mathbb{A}^{-1}(t)$, 则有$\dfrac{\mbox{d}}{\mbox{d}t}\det\mathbb{A}(t)=\mbox{tr}\mbox{II}(t)\det\mathbb{A}(t)$和Ricatti恒等式$\mbox{II}'(t)+\mbox{II}^2(t)+R(t)=0$. 
 而后者结合截面曲率不大于$k$可以推出$\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)\geqslant-\mbox{tr}\mbox{II}^2(t)-(n-1)k$, 由Rauch比较定理有$\mbox{II}(t)$的所有特征值大于等于$\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}$. 下面有
-$\begin{aligned}
+$$\begin{aligned}
 &\dfrac{\mbox{d}^2}{\mbox{d}t^2}\left(\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}\right)\\
 =&\dfrac{\mbox{d}}{\mbox{d}t}\left(\dfrac{\mbox{tr}\mbox{II}(t)\det\mathbb{A}(t)\mbox{sn} _k^{n-2}(t)-(n-2)\det\mathbb{A}(t)\mbox{sn} _k^{n-3}(t)\mbox{cn} _k(t)}{\mbox{sn} _k^{2(n-2)}(t)}\right)\\
 =&\dfrac{\mbox{d}}{\mbox{d}t}\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}-(n-2)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\right).
-\end{aligned}$
+\end{aligned}$$
 继续计算,有
-$\begin{aligned}
+$$\begin{aligned}
 &\dfrac{\mbox{d}}{\mbox{d}t}\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}-(n-2)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\right)=\left(\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)\right)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}+\\
 &\mbox{tr}\mbox{II}(t)\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}-(n-2)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\right)-(n-2)\mbox{cn} _k'(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\\&-(n-2)\mbox{cn} _k(t)\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}-(n-1)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n}(t)}\right)\\
 &=\left(\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)+\left(\mbox{tr}\mbox{II}(t)\right)^2\right)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}-2(n-2)\mbox{tr}\mbox{II}(t)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\\
 &-(n-2)\mbox{cn} _k'(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}+(n-1)(n-2)\left(\mbox{cn} _k(t)\right)^2\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n}(t)}.
-\end{aligned}$
+\end{aligned}$$
 下面将$\mbox{cn} _k'+k\mbox{sn} _k=0$和$\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)\geqslant-\mbox{tr}\mbox{II}^2(t)-(n-1)k$代入其中, 可得
-$\begin{aligned}
+$$\begin{aligned}
 &\dfrac{\mbox{sn} _k^{n-2}(t)}{\det\mathbb{A}(t)}\cdot\dfrac{\mbox{d}^2}{\mbox{d}t^2}\left(\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}\right)+k\\
 \geqslant&\left(\mbox{tr}\mbox{II}(t)\right)^2-\mbox{tr}\mbox{II}^2(t)-2(n-2)\mbox{tr}\mbox{II}(t)\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}+(n-1)(n-2)\left(\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}\right)^2.
-\end{aligned}$
+\end{aligned}$$
 下设$\mbox{II}(t)$的所有特征值为$\lambda_i(t)(i=1,\cdots,n-1)$, 则由$\lambda_i\geqslant\dfrac{\mbox{cn} _k}{\mbox{sn} _k}$可得$(\lambda_i-\dfrac{\mbox{cn} _k}{\mbox{sn} _k})(\lambda_j-\dfrac{\mbox{cn} _k}{\mbox{sn} _k})\geqslant0$, 将此式对所有的$i\neq j$求和, 即得上述式子$\geqslant0$,这就推出原不等式成立.$\quad\Box$
 
