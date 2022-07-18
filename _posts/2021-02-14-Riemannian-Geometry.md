@@ -676,13 +676,13 @@ $$\begin{aligned}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace
 
 **推论5.3.2**: 对$0<r<R$和Ricci曲率均大于等于$(n-1)k$的完备黎曼流形$(M^n,g)$中的一点$p$, $\dfrac{\mbox{vol}(B(p,R))}{\mbox{vol}(B(p,r))}\leqslant\dfrac{\mbox{vol}(B^n_k(R))}{\mbox{vol}(B_k^n(r))}$, $\mbox{vol}(B(p,R))\leqslant\mbox{vol}(B^n_k(R))$, 等号成立当且仅当$B(p,R)$和$B^n_k(R)$等距. 
 
-*Proof.* 前面的叙述是显然的, 我们仅考虑等号成立的条件, 为了Gromov定理的取等, $\mbox{II}(t)=\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}I$, 于是$\mbox{Hess}r=\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}g_ {round}(\cdot,\cdot)$, 其中$g_ {round}$是$S^n_k$上的标准度量, 故二者等距. $\quad\Box$
+*Proof.* 前面的叙述是显然的, 我们仅考虑等号成立的条件, 为了Gromov定理的取等, $\mbox{II}(t)=\dfrac{\mbox{cn} _ k(t)}{\mbox{sn} _ k(t)}I$, 于是$\mbox{Hess}r=\dfrac{\mbox{cn} _ k(t)}{\mbox{sn} _ k(t)}g _ {round}(\cdot,\cdot)$, 其中$g_ {round}$是$S^n_k$上的标准度量, 故二者等距. $\quad\Box$
 
 这两个推论就是经典的Gromov和Bishop的的比较定理, 我们据此来看看Myers定理取等时会发生什么, 这就是下面的“Cheng最大直径定理”: 
 
 **定理5.3.7**: 设$(M^n,g)$是完备黎曼流形且$Ric\geqslant(n-1)$, 如果$\mbox{Diam}(M,g)=\pi$, 则$M$与$S^n$等距. 
 
-*Proof.* 设$p,q\in M$满足$d(p,q)=\pi$, 则$\mbox{vol}(M)=\mbox{vol}(B(p,\pi))=\mbox{vol}(B(q,\pi))$, 由Bishop-Gromov体积比较定理, $\dfrac{\mbox{vol}(B(p,\frac{\pi}{2}))}{\mbox{vol}(B^n_1(\frac{\pi}{2}))}\geqslant\dfrac{\mbox{vol}(M)}{\mbox{vol}(S^n)}$, 于是$\mbox{vol}(B(p,\frac{\pi}{2}))\geqslant\dfrac{1}{2}\mbox{vol}(M)$, 同理$\mbox{vol}(B(q,\frac{\pi}{2}))\geqslant\dfrac{1}{2}\mbox{vol}(M)$, 于是由$B(p,\frac{\pi}{2})\cap B(q,\frac{\pi}{2})=\empty$知上述不等号全部取等, 这说明$M$与$S^n$等距. $\quad\Box$
+*Proof.* 设$p,q\in M$满足$d(p,q)=\pi$, 则$\mbox{vol}(M)=\mbox{vol}(B(p,\pi))=\mbox{vol}(B(q,\pi))$, 由Bishop-Gromov体积比较定理, $\dfrac{\mbox{vol}(B(p,\frac{\pi}{2}))}{\mbox{vol}(B^n_1(\frac{\pi}{2}))}\geqslant\dfrac{\mbox{vol}(M)}{\mbox{vol}(S^n)}$, 于是$\mbox{vol}(B(p,\frac{\pi}{2}))\geqslant\dfrac{1}{2}\mbox{vol}(M)$, 同理$\mbox{vol}(B(q,\frac{\pi}{2}))\geqslant\dfrac{1}{2}\mbox{vol}(M)$, 于是由$B(p,\frac{\pi}{2})\cap B(q,\frac{\pi}{2})=\emptyset$知上述不等号全部取等, 这说明$M$与$S^n$等距. $\quad\Box$
 
 **注5.3.2**: 与上面定理类似的结果一般被称为“刚性定理”. 对于其“稳定性”就没有这么好的结果, 事实上, 存在一个$M^4$不同胚于$S^4$, 其上有一族度量$g_k$满足$\mbox{Diam}(M,g_k)\geqslant\pi-\dfrac{1}{k}$. 
 
@@ -718,7 +718,7 @@ $$\begin{aligned}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace
 
 对于Ricci曲率处处非负的开流形, 其上的球面体积增长被线性控制, 这是Bishop-Gromov体积比较定理的另外一个应用, 也就是Calabi和Yau的一个结果, 我们先做一些准备工作: 
 
-**定义5.5.2**: 称单位速度测地线$\gamma:[0,+\infty)\to M$为$M$上的射线, 如果对任意$t,s>0$, $d(\gamma(t),\gamma(s))=|t-s|$. 
+**定义5.5.2**: 称单位速度测地线$\gamma:[0,+\infty)\to M$为$M$上的射线, 如果对任意$t,s>0$, $d(\gamma(t),\gamma(s))=\lvert t-s\rvert$. 
 
 **命题5.5.1**: 设$(M^n,g)$是开流形, 对任意$p\in M$, 总存在$\gamma(0)=p$的一个射线$\gamma$. 
 
@@ -726,11 +726,11 @@ $$\begin{aligned}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace
 
 **定理5.5.1**: 设$(M^n,g)$是开流形, 且任意单位切向量的Ricci曲率均非负, 则对任意$p\in M$, 存在$c=c(p)>0$, 使得$\mbox{vol}(B(p,r))\geqslant c\cdot r$. 
 
-*Proof.* 对任意$p\in M$, 取$\gamma(0)=p$的一个射线$\gamma$, 下记$p_k:=\gamma(k)$, 则由Bishop-Gromov体积比较定理, $\mbox{vol}(B(p_k,k-1))\geqslant\dfrac{(k-1)^n}{(k+1)^n-(k-1)^n}\cdot\mbox{vol}(A_ {k-1,k+1}^M(p_k))\geqslant c\cdot k\mbox{vol}(A_ {k-1,k+1}^M(p_k))\geqslant c\cdot k\mbox{vol}(B(p,1))$, 对$B(p,2k)$而言就有$\mbox{vol}(B(p,2k))\geqslant c'\cdot k$. $\quad\Box$
+*Proof.* 对任意$p\in M$, 取$\gamma(0)=p$的一个射线$\gamma$, 下记$p_k:=\gamma(k)$, 则由Bishop-Gromov体积比较定理, $\mbox{vol}(B(p_k,k-1))\geqslant\dfrac{(k-1)^n}{(k+1)^n-(k-1)^n}\cdot\mbox{vol}(A_ {k-1,k+1}^M(p_k))\geqslant c\cdot k\mbox{vol}(A_ {k-1,k+1}^M(p_k))\geqslant c\cdot k\mbox{vol}(B(p,1)),$ 对$B(p,2k)$而言就有$\mbox{vol}(B(p,2k))\geqslant c'\cdot k$. $\quad\Box$
 
 下面我们看看在拓扑上Ricci曲率非负会造成什么样的影响, 先给一个定义. 
 
-**定义5.5.3**: 称有限生成群$G$以阶$s$**多项式增长**, 如果其存在一个生成元集合$\lbrace g_1,\cdots,g_k\rbrace$使得存在$s\in\mathbb{R}^+$, 对任意足够大的$r$有$\#U(r)\leqslant r^s$, 其中$U(r):=\lbrace g\in G|g可以被写为g_1,\cdots,g_k的长不超过r的字\rbrace$. 
+**定义5.5.3**: 称有限生成群$G$以阶$s$**多项式增长**, 如果其存在一个生成元集合$\lbrace g_1,\cdots,g_k\rbrace$使得存在$s\in\mathbb{R}^+$, 对任意足够大的$r$有$ \# U(r)\leqslant r^s$, 其中$U(r):=\lbrace g\in G\mid g可以被写为g_1,\cdots,g_k的长不超过r的字\rbrace$. 
 
 下面这个定理属于Milnor. 
 
