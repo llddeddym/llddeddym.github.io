@@ -300,7 +300,7 @@ $$\begin{aligned}&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)\\ =&\dfrac{
 
 $$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}\right\rangle}{\|\frac{\partial\alpha}{\partial t}\|}\Bigg\vert_ {(t,0)}\mbox{d}t\\=&\int_a^b\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}/\|\frac{\partial\alpha}{\partial t}\|\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t\\=&\int_a^b\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\|c'(t)\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t,\end{aligned}$$
 
- 由联络保度量的性质知上式为$\displaystyle\int_a^b\frac{\partial}{\partial t}\left\langle\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\|c'(t)\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t-\displaystyle\int_a^b\langle\frac{\partial\alpha}{\partial s},\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{\|c'(t)\|}\rangle\bigg\vert_ {(t,0)}\mbox{d}t$, 在被减项上对每段$[t_ {i-1},t_i]$运用微积分基本定理即明所欲证. $\quad\Box$
+ 由联络保度量的性质知上式为$\displaystyle\int_a^b\frac{\partial}{\partial t}\left\langle\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\|c'(t)\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t-\displaystyle\int_a^b\left\langle\frac{\partial\alpha}{\partial s},\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{\|c'(t)\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t$, 在被减项上对每段$[t_ {i-1},t_i]$运用微积分基本定理即明所欲证. $\quad\Box$
 
 上述公式的左端可被理解为$\dfrac{\partial L}{\partial w}\bigg\vert_c$, 据此可以定义如下概念: 
 
@@ -310,7 +310,7 @@ $$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t
 
 **命题3.3.3**: 如果$c$是临界曲线, 则$c$是测地线, 反之亦然. 
 
-*Proof.* 逆命题是显然的, 我们只需证明正向. 对临界曲线$c$, 存在$a=t_0<t_1<t_2<\cdots<t_N=b$使得$c|_ {(t_ {i-1},t_i)}$光滑, 再令$W(t)=f(t)\cdot\nabla_ {\frac{\partial}{\partial t}}c'(t)$, 其中$f(t_i)=0$, $\|c'(t)\|=l$为常数, 由第一变分公式, $\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)=-\displaystyle\int_a^b\langle W(t),\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{l}\rangle\mbox{d}t=-\dfrac{1}{l}\displaystyle\int_a^b\langle W(t),\nabla_ {\frac{\partial}{\partial t}}c'(t)\rangle\mbox{d}t=0$, 所以对任意$t\in(t_i,t_ {i+1})$, $\nabla_ {\frac{\partial}{\partial t}}c'(t)\equiv0$, 也是说每一段均为测地线. 下证$c$必须光滑, 取$W(t)$为$W(a)=W(b)=0$, $W(t_i)=c'(t_i-0)-c'(t_i+0)$, 此时再由第一变分公式可得结论成立（为什么？）.故$c$是连续可导的, 由测地线为常微分方程的解, 存在唯一性可推出$c$是光滑的. $\quad\Box$
+*Proof.* 逆命题是显然的, 我们只需证明正向. 对临界曲线$c$, 存在$a=t_0<t_1<t_2<\cdots<t_N=b$使得$c\vert_ {(t_ {i-1},t_i)}$光滑, 再令$W(t)=f(t)\cdot\nabla_ {\frac{\partial}{\partial t}}c'(t)$, 其中$f(t_i)=0$, $\|c'(t)\|=l$为常数, 由第一变分公式, $\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)=-\displaystyle\int_a^b\left\langle W(t),\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{l}\right\rangle\mbox{d}t=-\dfrac{1}{l}\displaystyle\int_a^b\left\langle W(t),\nabla_ {\frac{\partial}{\partial t}}c'(t)\right\rangle\mbox{d}t=0$, 所以对任意$t\in(t_i,t_ {i+1})$, $\nabla_ {\frac{\partial}{\partial t}}c'(t)\equiv0$, 也是说每一段均为测地线. 下证$c$必须光滑, 取$W(t)$为$W(a)=W(b)=0$, $W(t_i)=c'(t_i-0)-c'(t_i+0)$, 此时再由第一变分公式可得结论成立（为什么？）.故$c$是连续可导的, 由测地线为常微分方程的解, 存在唯一性可推出$c$是光滑的. $\quad\Box$
 
 **推论3.3.1**: 设$\exp_p:B(O_p,\varepsilon)\to M$是微分同胚, 则对任意$q\in\mbox{im}\exp_p$, 存在唯一的拥有弧长参数的最短测地线$\gamma$从$p$到$q$, 即$\gamma(t)=\exp_p(t(\log_pq))$, $\log_pq\in U_pM$是从$p$到$q$的最短测地线的切向量. 特别地, $\exp_p(B(O_p,\varepsilon))=B(p,\varepsilon)$. 
 
