@@ -1,7 +1,7 @@
 ---
 title: '从几何变换的角度证明Schiffler点的一个基本性质'
 date: 2020-03-06
-permalink: /posts/2021/01/2020-03-06-Schiffler/
+permalink: /posts/2020/03/2020-03-06-Schiffler/
 tags:
   - Ceva point
   - cross point

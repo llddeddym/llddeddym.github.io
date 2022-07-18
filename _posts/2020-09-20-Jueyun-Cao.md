@@ -1,7 +1,7 @@
 ---
 title: '一个三点共线问题'
 date: 2020-09-20
-permalink: /posts/2020/12/2020-09-20-Jueyun-Cao/
+permalink: /posts/2020/09/2020-09-20-Jueyun-Cao/
 tags:
   - radical axis
 ---

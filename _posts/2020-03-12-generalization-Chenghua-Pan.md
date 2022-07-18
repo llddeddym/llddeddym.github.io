@@ -1,7 +1,7 @@
 ---
 title: '从特例定一般--对潘成华老师一题的推广'
 date: 2020-03-12
-permalink: /posts/2021/01/2020-03-12-generalization-Chenghua-Pan/
+permalink: /posts/2020/03/2020-03-12-generalization-Chenghua-Pan/
 tags:
   - Ceva point
   - cross-ratio
@@ -29,7 +29,7 @@ tags:
 
 <img src="https://llddeddym.github.io/images/2020-03-12(2).png"/>
 
-**引理1的证明**：由$AH_A\bot P_bP_c$，可以得到$\angle H_cAH_A=\angle PAC$，又$AH_A=\\P_bP_c\cot\angle BCA=AP\cos\angle BCA=AP\cdot\frac{H_bH_c}{BC}$，故$AH_AH_bH_c\sim APBC$. $\quad\Box$
+**引理1的证明**：由$AH_A\perp P_bP_c$，可以得到$\angle H_cAH_A=\angle PAC$，又$AH_A=P_bP_c\cot\angle BCA=AP\cos\angle BCA=AP\cdot\frac{H_bH_c}{BC}$，故$AH_AH_bH_c\sim APBC$. $\quad\Box$
 
 据此可以看出这二者是一个东西，这让我很兴奋，没想到你小子浓眉。。。总之这让我想起来了还有这么一道题存在，于是我决定再去试一试看看能不能搞出什么新东西来，而这时，我已经写完了 [从几何变换的角度证明Schiffler点的一个基本性质](https://llddeddym.github.io/posts/2021/01/2020-03-06-Schiffler/) 这个东西，证明了Stammler双曲线在 ![[公式]](https://www.zhihu.com/equation?tex=cevamul%28O%2C%5Ccdot%29) 下的像是Euler线，其中 ![[公式]](https://www.zhihu.com/equation?tex=O) 是外心，于是很自然的就去想看看 ![[公式]](https://www.zhihu.com/equation?tex=cevamul%28O%2CX%29) 在Euler线上的什么位置，它与透视中心又是什么关系，没想到这一看还真做出了一些东西。。。
 

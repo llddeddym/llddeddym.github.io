@@ -1,7 +1,7 @@
 ---
 title: '黎曼几何学习笔记'
 date: 2021-02-14
-permalink: /posts/2020/12/2021-02-14-Riemannian-Geometry/
+permalink: /posts/2021/02/2021-02-14-Riemannian-Geometry/
 tags:
   - Riemannian Geometry
 ---
