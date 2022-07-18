@@ -212,13 +212,13 @@ tags:
 
 **定义3.1.3**: 对任意$p\in M$, **指数映照**$\exp_p:B(O_p,\delta)(:=\lbrace v\in T_pM\mid\|v\|<\delta\rbrace)\to M$定义为$u\mapsto\gamma_u(1)$. 
 
-容易看到$\exp_p(t\xi)=\gamma_\xi(t),\lvert t\rvert\leqslant1,\xi\in B(O_p,\delta)$和$\exp_p(O_p)=p$. 切空间作为欧氏空间当然也有流形结构, 于是可以考虑$\exp_p$的切映射有如何性质, 最方便研究的自然是$(\exp)_ * \mid_ {O_p}:T_ {O_p}(T_pM)\to T_pM$. 但欧氏空间的切空间和本身自然别无二致, 于是我们可以将此映射视为$T_pM$的一个自映射. 依定义, $(\exp)_* \mid_ {O_p}(u)=\dfrac{\mbox{d}}{\mbox{d}t}\exp_p(tu)=\gamma_u'(0)=u$, 这说明$(\exp)_* \mid_ {O_p}$不是别的, 正是$\mbox{id}_ {T_pM}$.因此通过反函数定理, 我们知道存在$\varepsilon<\delta$, 使得$\exp_p\mid_ {B(O_p,\varepsilon)}$是微分同胚, 其像是$M$上的一个开集$B$, 于是乎可以有: 
+容易看到$\exp_p(t\xi)=\gamma_\xi(t),\lvert t\rvert\leqslant1,\xi\in B(O_p,\delta)$和$\exp_p(O_p)=p$. 切空间作为欧氏空间当然也有流形结构, 于是可以考虑$\exp_p$的切映射有如何性质, 最方便研究的自然是$(\exp)_ * \mid_ {O_p}:T_ {O_p}(T_pM)\to T_pM$. 但欧氏空间的切空间和本身自然别无二致, 于是我们可以将此映射视为$T_pM$的一个自映射. 依定义, $(\exp)_ * \mid_ {O_p}(u)=\dfrac{\mbox{d}}{\mbox{d}t}\exp_p(tu)=\gamma_u'(0)=u$, 这说明$(\exp)_ * \mid_ {O_p}$不是别的, 正是$\mbox{id}_ {T_pM}$.因此通过反函数定理, 我们知道存在$\varepsilon<\delta$, 使得$\exp_p\mid_ {B(O_p,\varepsilon)}$是微分同胚, 其像是$M$上的一个开集$B$, 于是乎可以有: 
 
 **定义3.1.4**: $\log_p:B\to B(O_p,\varepsilon)$为$\exp_p$在局部上的逆映射. 需要注意到$(B,\log_p)$是一个坐标卡, $T_pM$作为欧氏空间有标准正交基$\lbrace e_i\rbrace_{i=1}^n$, 其上坐标函数$\lbrace x^i\rbrace_{i=1}^n$为$\log_p(q)=x^i(q)e_i$, $(B,\log_p,x^i)$就称为一个**标准坐标**. 
 
 **注3.1.1**: 这里的$\exp$和$\log$仅仅是记号而无算数含义, 但在某些特殊情形（如Lie群和Lie代数之间的映射）下其确实可写成真正的指数映照. 
 
-沿着上面的思路, 我们不禁要问$(\exp)_* \mid_ {u}$在$\|u\|\neq0$时又是什么样子呢？这将在后面给出答案. 
+沿着上面的思路, 我们不禁要问$(\exp)_ * \mid_ {u}$在$\|u\|\neq0$时又是什么样子呢？这将在后面给出答案. 
 
 ### 3.2 变分与Jacobi场
 
@@ -234,15 +234,15 @@ tags:
 
 **注3.2.1**: 通过度量, 可以定义$(0,4)-$张量$R$如下: $R(X,Y,Z,W)=\langle R(X,Y)Z,W\rangle$, 其也被称为曲率张量, 由于**定理3.2.1**中第三第四两个等式, 它有时也被记为$R(X\wedge Y,Z\wedge W)$, 在后面我们会让这个记号拥有具体意义. 在局部坐标下, $R(\partial_i,\partial_j)\partial_k=R_{ijk}^l\partial_l$, $R(\partial_i,\partial_j,\partial_k,\partial_l)=R_{ijkl}$, 显然两个系数之间有$R_{ijkl}=R_{ijk}^mg_{ml}$. 
 
-这下可以考虑$(\exp)_* \mid_ {u}:T_u(T_pM)\to T_ {\gamma_u(1)}M$为何物了, 当然其来源仍可以视为$T_pM$.固定$\xi\in T_u(T_pM)$, $[s\mapsto u+s\xi]$为$\xi$代表的等价类中的一个曲线. 定义$\alpha:[0,1]\times(-\varepsilon,\varepsilon)\to M$为$[(t,s)\mapsto \exp_p t(u+s\xi)]$, 记$c_s(\cdot):=\alpha(\cdot,s)$, 可见$c_s'(0)=u+s\xi$. 另一方面$Y(t):=\left[t\mapsto\dfrac{\partial\alpha}{\partial s}\bigg\vert_ {(t,0)}\right]$是$\gamma_u$上的一个向量场, 其中$\dfrac{\partial\alpha}{\partial s}\bigg\vert_ {(t,0)}:=\alpha_* \left(\dfrac{\partial}{\partial s}\right)\bigg\vert_ {(t,0)}$. 根据定义有$Y(1)=(\exp)_* \mid_ {u}(\xi)$, 事实上$Y(t)=(\exp)_* \mid_ {tu}(t\xi)=t(\exp)_* \mid_ {tu}(\xi)$. 更一般地, 我们可以考虑所谓“变分”: 
+这下可以考虑$(\exp)_ * \mid_ {u}:T_u(T_pM)\to T_ {\gamma_u(1)}M$为何物了, 当然其来源仍可以视为$T_pM$.固定$\xi\in T_u(T_pM)$, $[s\mapsto u+s\xi]$为$\xi$代表的等价类中的一个曲线. 定义$\alpha:[0,1]\times(-\varepsilon,\varepsilon)\to M$为$[(t,s)\mapsto \exp_p t(u+s\xi)]$, 记$c_s(\cdot):=\alpha(\cdot,s)$, 可见$c_s'(0)=u+s\xi$. 另一方面$Y(t):=\left[t\mapsto\dfrac{\partial\alpha}{\partial s}\bigg\vert_ {(t,0)}\right]$是$\gamma_u$上的一个向量场, 其中$\dfrac{\partial\alpha}{\partial s}\bigg\vert_ {(t,0)}:=\alpha_ * \left(\dfrac{\partial}{\partial s}\right)\bigg\vert_ {(t,0)}$. 根据定义有$Y(1)=(\exp)_ * \mid_ {u}(\xi)$, 事实上$Y(t)=(\exp)_ * \mid_ {tu}(t\xi)=t(\exp)_ * \mid_ {tu}(\xi)$. 更一般地, 我们可以考虑所谓“变分”: 
 
 **定义3.2.2**: 对任意光滑映射$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\to M$, 对任意$s\in(-\varepsilon,\varepsilon)$, 称$c_s(\cdot):=\alpha(\cdot,s)$为$c_0$关于$\alpha$的**变分**. 
 
 $\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right):=\left(\alpha_* \left(\dfrac{\partial}{\partial t}\right),\alpha_* \left(\dfrac{\partial}{\partial s}\right)\right)$为$\mbox{im}\alpha$上的两个切向量场, 由于两者被$\alpha_* $作用前Lie括号为$0$, 故作用后也有$\left[\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right]=0$, 因此$R\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right)=\nabla_ {\frac{\partial\alpha}{\partial t}}\nabla_\frac{\partial\alpha}{\partial s}-\nabla_ {\frac{\partial\alpha}{\partial s}}\nabla_\frac{\partial\alpha}{\partial t}$. 
 
-对于刚才的情形而言, $c_s(t)=\exp_p(t(u+s\xi))$为测地线, $\nabla_{\frac{\partial\alpha}{\partial t}}\dfrac{\partial\alpha}{\partial t}=\nabla_{c_s'(t)}c_s'(t)=0$, $Y'(t)=\nabla_{\frac{\partial\alpha}{\partial t}}(Y(t))=\nabla_\frac{\partial\alpha}{\partial t}\dfrac{\partial\alpha}{\partial s}\bigg|_{(t,0)}=\nabla_\frac{\partial\alpha}{\partial s}\dfrac{\partial\alpha}{\partial t}\bigg|_{(t,0)}$, $Y''(t)=\nabla_{\frac{\partial\alpha}{\partial t}}(Y'(t))=\nabla_{\frac{\partial\alpha}{\partial t}}\left(\nabla_\frac{\partial\alpha}{\partial s}\dfrac{\partial\alpha}{\partial t}\bigg|_{(t,0)}\right)=\nabla_{\frac{\partial\alpha}{\partial s}}\nabla_\frac{\partial\alpha}{\partial t}\dfrac{\partial\alpha}{\partial t}\bigg|_{(t,0)}+R\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right)\dfrac{\partial\alpha}{\partial t}\bigg|_{(t,0)}=-R\left(\dfrac{\partial\alpha}{\partial s},\dfrac{\partial\alpha}{\partial t}\right)\dfrac{\partial\alpha}{\partial t}\bigg|_{(t,0)}=-R(Y(t),\gamma_u'(t))\gamma_u'(t)$. 故$Y(t)$满足$Y''(t)+R(Y(t),\gamma_u'(t))\gamma_u'(t)=0,Y(0)=0,Y'(0)=\xi$. 
+对于刚才的情形而言, $c_s(t)=\exp_p(t(u+s\xi))$为测地线, $\nabla_{\frac{\partial\alpha}{\partial t}}\dfrac{\partial\alpha}{\partial t}=\nabla_{c_s'(t)}c_s'(t)=0$, $Y'(t)=\nabla_{\frac{\partial\alpha}{\partial t}}(Y(t))=\nabla_\frac{\partial\alpha}{\partial t}\dfrac{\partial\alpha}{\partial s}\bigg\vert_{(t,0)}=\nabla_\frac{\partial\alpha}{\partial s}\dfrac{\partial\alpha}{\partial t}\bigg\vert_{(t,0)}$, $$Y''(t)=\nabla_{\frac{\partial\alpha}{\partial t}}(Y'(t))=\nabla_{\frac{\partial\alpha}{\partial t}}\left(\nabla_\frac{\partial\alpha}{\partial s}\dfrac{\partial\alpha}{\partial t}\bigg\vert_{(t,0)}\right)=\nabla_{\frac{\partial\alpha}{\partial s}}\nabla_\frac{\partial\alpha}{\partial t}\dfrac{\partial\alpha}{\partial t}\bigg\vert_{(t,0)}+R\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right)\dfrac{\partial\alpha}{\partial t}\bigg\vert_{(t,0)}=-R\left(\dfrac{\partial\alpha}{\partial s},\dfrac{\partial\alpha}{\partial t}\right)\dfrac{\partial\alpha}{\partial t}\bigg\vert_{(t,0)}=-R(Y(t),\gamma_u'(t))\gamma_u'(t).$$ 故$Y(t)$满足$Y''(t)+R(Y(t),\gamma_u'(t))\gamma_u'(t)=0,Y(0)=0,Y'(0)=\xi$. 
 
-**定义3.2.3**: 若沿测地线$\gamma_u$的切向量场$Y(t)$满足$Y''(t)+R(Y(t),\gamma_u'(t))\gamma_u'(t)=0$, 则称它为一个**Jacobi场**. 所有沿$\gamma_u$的Jacobi场记为$Jac(\gamma_u)$. 
+**定义3.2.3**: 若沿测地线$\gamma_u$的切向量场$Y(t)$满足$Y^"(t)+R(Y(t),\gamma_u'(t))\gamma_u'(t)=0$, 则称它为一个**Jacobi场**. 所有沿$\gamma_u$的Jacobi场记为$Jac(\gamma_u)$. 
 
 **注3.2.1**: $Jac(\gamma_u)$实际上是一向量空间, $\dim Jac(\gamma_u)=2\dim M$. 其上还有由$\omega(J_1,J_2)=\langle J_1',J_2\rangle-\langle J_1,J_2'\rangle$导出的辛结构. 在此我们更关注所谓“**正规Jacobi场**”$Jac^\perp(\gamma_u)$, 要求$Y(t)\perp \gamma_u'(t)$, 因为对$Y(t)//\gamma_u'(t)$, $Y''(t)=0$, $Y(t)=(a+bt)\gamma_u'(t)$. 
 
