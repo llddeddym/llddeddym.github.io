@@ -294,7 +294,7 @@ $\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\rig
 
 *Proof.* 
 
-$$\begin{aligned}&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)\\ =&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}\int_a^b\left\langle\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial t}\right\rangle^{\frac{1}{2}}\mbox{d}t\\ =&\int_a^b\dfrac{1}{2}\cdot\dfrac{\frac{\partial}{\partial s}\left\langle\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\|\frac{\partial\alpha}{\partial t}\\vert_ {(t,0)}}\mbox{d}t\\ =&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial s}}\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\|\frac{\partial\alpha}{\partial t}\\vert_ {(t,0)}}\mbox{d}t.\end{aligned}$$
+$$\begin{aligned}&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)\\ =&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}\int_a^b\left\langle\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial t}\right\rangle^{\frac{1}{2}}\mbox{d}t\\ =&\int_a^b\dfrac{1}{2}\cdot\dfrac{\frac{\partial}{\partial s}\left\langle\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\|\frac{\partial\alpha}{\partial t}\|_ {(t,0)}}\mbox{d}t\\ =&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial s}}\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\|\frac{\partial\alpha}{\partial t}\|_ {(t,0)}}\mbox{d}t.\end{aligned}$$
 
 回忆$\left[\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right]=0$, 又有上式为
 
@@ -322,9 +322,9 @@ $$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t
 
 测地线在局部随Jacobi场变化的快慢是值得注意的, 我们来对一测地线$\gamma_u(t)$计算其上满足$Y(0)=0,Y'(0)=\xi$的Jacobi场的长度平方$\|Y(t)\|^2$的Taylor展开式. 
 
-设$f(t)=\langle Y(t),Y(t)\rangle$, 显然$f(0)=0$.$f' (0)=2\langle Y(t),Y'(t)\rangle\vert_ {t=0}=0$.$f''(0)=2\langle Y'(t),Y'(t)\rangle\vert_ {t=0}+2\langle Y(t),Y''(t)\rangle\vert_ {t=0}=2$.而$Y'' (0)=-R(Y(0),\gamma_u'(0))\gamma_u'(0)=0$, 故$f'''(0)=6\langle Y'(t),Y''(t)\rangle\vert_ {t=0}+2\langle Y(t),Y'''(t)\rangle\vert_ {t=0}=0$.又
+设$f(t)=\langle Y(t),Y(t)\rangle$, 显然$f(0)=0$.$f' (0)=2\langle Y(t),Y'(t)\rangle\vert_ {t=0}=0$. $f'' (0)=2\langle Y'(t),Y'(t)\rangle\vert_ {t=0}+2\langle Y(t),Y''(t)\rangle\vert_ {t=0}=2$. 而$Y'' (0)=-R(Y(0),\gamma_u'(0))\gamma_u'(0)=0$, 故$f''' (0)=6\langle Y'(t),Y'' (t)\rangle\vert_ {t=0}+2\langle Y(t),Y''' (t)\rangle\vert_ {t=0}=0$.又
 
-$$\begin{aligned}Y'''(0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t=0}=-\nabla_ {\frac{\partial}{\partial t}}(R(Y(t),\gamma_u'(t))\gamma_u'(t))\vert_ {t=0}\\=&\left((-\nabla_ {\frac{\partial}{\partial t}}R)(Y(t),\gamma_u'(t))\gamma_u'(t)-R(\nabla_ {\frac{\partial}{\partial t}}Y(t),\gamma_u'(t))\gamma_u'(t)\right)\bigg\vert_ {t=0}\\=&-R(Y'(t),\gamma_u'(t))\gamma_u'(t)\vert_ {t=0}=-R(\xi,u)u\end{aligned},$$ 
+$$\begin{aligned}Y''' (0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t=0}=-\nabla_ {\frac{\partial}{\partial t}}(R(Y(t),\gamma_u'(t))\gamma_u'(t))\vert_ {t=0}\\=&\left((-\nabla_ {\frac{\partial}{\partial t}}R)(Y(t),\gamma_u'(t))\gamma_u'(t)-R(\nabla_ {\frac{\partial}{\partial t}}Y(t),\gamma_u'(t))\gamma_u'(t)\right)\bigg\vert_ {t=0}\\=&-R(Y'(t),\gamma_u'(t))\gamma_u'(t)\vert_ {t=0}=-R(\xi,u)u\end{aligned},$$ 
 
 于是$f^{(4)}(0)=8\langle Y'(t),Y''' (t)\rangle\vert_ {t=0}=-8\langle R(\xi,u)u,\xi\rangle=-8R(\xi,u,u,\xi)$. 
 
