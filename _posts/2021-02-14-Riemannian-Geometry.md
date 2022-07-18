@@ -1,4 +1,10 @@
-# 黎曼几何学习笔记(By llddeddym)
+---
+title: '黎曼几何学习笔记'
+date: 2021-02-14
+permalink: /posts/2020/12/2021-02-14-Riemannian-Geometry/
+tags:
+  - Riemannian Geometry
+---
 
 ## 0 前言
 
@@ -8,19 +14,19 @@
 
 总体而言, 面对利用十节课时间几乎涵盖了一学期课的内容的高强度网课, 我在整理过程中难免有疏漏或错误, 并且省去了诸多细节性内容, 希望读者见谅. 当然有充足时间的读者也不妨直接前往BICMR的[官网](https://resource.pku.edu.cn/index.php?r=course/detail&id=401)去看当时的录屏视频.
 
-[pdf版本](llddeddym.github.io/files/2021-02-14-Riemannian-Geometry.pdf)
+[pdf版本](https://llddeddym.github.io/files/2021-02-14-Riemannian-Geometry.pdf)
 
 ## 1 预备知识
 
 首先我们默认大家掌握基本的点集拓扑知识, 并且知道基本群, 覆叠映射以及泛覆盖空间的定义. 另外整个笔记在涉及求和时都使用Einstein求和约定. 
 
-**定义1.1**: 一个**$n$维拓扑流形**谓指一个第二可数的Hausdorff拓扑空间$M$及其上一族坐标卡（局部坐标）$\{(U_\alpha,\varphi_\alpha)\}_{\alpha\in\Lambda}$, 其中$\{U_\alpha\}_{\alpha\in\Lambda}$是$M$的一个开覆盖, $\{\varphi_\alpha:U_\alpha\to\mathbb{R}^n\}_{\alpha\in\Lambda}$为一族同胚映射, 一般也用$M$或$M^n$来表示这个拓扑流形而省略其坐标卡, 拓扑流形$M$的维数也可以被记为$\dim M$; 如果对所有满足$U_\alpha\cap U_\beta\neq\empty$的$\alpha,\beta\in\Lambda$, 有任何**转移函数**$\varphi_\beta\circ\varphi_\alpha^{-1}:\varphi_\alpha(U_\alpha\cap U_\beta)\to\varphi_\beta(U_\alpha\cap U_\beta)$是$C^k$的, 则称$M$为**$C^k$流形**, 特别地$k=\infty$时, 也称$M$为**光滑流形**; 当$C^k$（或光滑）流形$M$上的坐标卡$\{(U_\alpha,\varphi_\alpha)\}_{\alpha\in\Lambda}$极大时, 称这族坐标卡为$M$上的$C^k$（或光滑）结构; 称光滑流形是**可定向**的, 如果存在其上一族坐标卡, 两两之间的转移函数的Jacobi行列式都是正的.  
+**定义1.1**: 一个**$n$维拓扑流形**谓指一个第二可数的Hausdorff拓扑空间$M$及其上一族坐标卡（局部坐标）$\{(U_\alpha,\varphi_\alpha)\}_{\alpha\in\Lambda}$, 其中$\{U_\alpha\}_{\alpha\in\Lambda}$是$M$的一个开覆盖, $\{\varphi_{\alpha} :U_\alpha\to\mathbb{R}^n\}_{\alpha\in\Lambda}$为一族同胚映射, 一般也用$M$或$M^n$来表示这个拓扑流形而省略其坐标卡, 拓扑流形$M$的维数也可以被记为$\dim M$; 如果对所有满足$U_\alpha\cap U_\beta\neq\empty$的$\alpha,\beta\in\Lambda$, 有任何**转移函数**$\varphi_\beta\circ\varphi_\alpha^{-1}:\varphi_\alpha(U_\alpha\cap U_\beta)\to\varphi_\beta(U_\alpha\cap U_\beta)$是$C^k$的, 则称$M$为**$C^k$流形**, 特别地$k=\infty$时, 也称$M$为**光滑流形**; 当$C^k$（或光滑）流形$M$上的坐标卡$\{(U_\alpha,\varphi_\alpha)\}_{\alpha\in\Lambda}$极大时, 称这族坐标卡为$M$上的$C^k$（或光滑）结构; 称光滑流形是**可定向**的, 如果存在其上一族坐标卡, 两两之间的转移函数的Jacobi行列式都是正的.  
 
 **注1.1**: 存在没有光滑结构的拓扑流形, 也存在有多种光滑结构的拓扑流形. 并且拓扑流形的泛覆盖空间总是存在的, 其也是一个流形. 
 
 以后若无特别说明, 流形均指光滑流形.  
 
-**定义1.2**: 对流形$M^n$, 函数$f:M\to\mathbb{R}$称为**光滑函数**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $f\circ\varphi_\alpha^{-1}:\mathbb{R^n}\to\mathbb{R}$光滑$M$上所有光滑函数组成的集合记为$C^\infty(M)$; 对流形$M^n,N^d$, 映射$f:M\to N$称为**光滑映射**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $N$上任何一个坐标卡$(V_\beta,\psi_\beta)$, $\psi_\beta\circ f\circ\varphi_\alpha^{-1}:\mathbb{R}^n\to\mathbb{R}^d$光滑, $M$到$N$的所有光滑映射组成的集合记为$C^\infty(M,N)$. $M$上一个光滑函数$f$的**支集**为$\mbox{supp}f=\overline{\{p\in M|f(p)\neq0\}}$. 
+**定义1.2**: 对流形$M^n$, 函数$f:M\to\mathbb{R}$称为**光滑函数**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $f\circ\varphi_\alpha^{-1}:\mathbb{R^n}\to\mathbb{R}$光滑$M$上所有光滑函数组成的集合记为$C^\infty(M)$; 对流形$M^n,N^d$, 映射$f:M\to N$称为**光滑映射**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $N$上任何一个坐标卡$(V_\beta,\psi_\beta)$, $\psi_\beta\circ f\circ\varphi_\alpha^{-1}:\mathbb{R}^n\to\mathbb{R}^d$光滑, $M$到$N$的所有光滑映射组成的集合记为$C^\infty(M,N)$. $M$上一个光滑函数$f$的**支集**为$\mbox{supp}f=\overline{\{p\in M\mid f(p)\neq0\}}$. 
 
 **定义1.3**: 对流形$M$及其上一点$p$, 在所有定义在$p$的某个开邻域上的光滑函数所组成的集合中定义如下等价关系: $f:U\to\mathbb{R}$等价于$g:V\to\mathbb{R}$当且仅当存在$p$的开邻域$W\subset U\cap V$使得$f\mid_W=g\mid_W$, 称每一个等价类为$p$处的一个**函数芽**, $p$处所有函数芽组成的集合记为$\mathcal{E}(p)$. 
 
@@ -50,9 +56,9 @@
 
 **定义1.12**: 对流形$M^n$, 称$\Lambda^r(T^*M)$为$M$上的微分$r-$形式丛, $\Gamma(\Lambda^r(T^*M))$中的元素称为微分$r-$形式; 称$\Lambda(T^*M)$为$M$上的微分形式丛, $\Gamma(\Lambda(T^*M))$中的元素称为微分形式. 
 
-**注1.6**: 显然$\Gamma(\Lambda(T^*M))=\sum\limits_{r=0}^n\Gamma(\Lambda^r(T^*M))$. 
+**注1.6**: 显然$\Gamma(\Lambda(T^* M))=\sum\limits_{r=0}^n\Gamma(\Lambda^r(T^* M))$. 
 
-**定义1.13**: 流形$M$上的**单位分解**是其上一族非负光滑函数$\{\varphi_\alpha\}_{\alpha\in\Lambda}$, 使得其支集族是局部有限的, 并且$\displaystyle\sum_{\alpha\in\Lambda}\varphi_\alpha\equiv1$. 若对开覆盖$\{U_\beta\}$, 一个单位分解$\{\varphi_\alpha\}_{\alpha\in\Lambda}$满足对任意$\alpha\in\Lambda$, 都存在$\beta$使得$\varphi_\alpha$的支集包含于$U_\beta$, 就称这个单位分解是**从属于**这个开覆盖的. 
+**定义1.13**: 流形$M$上的**单位分解**是其上一族非负光滑函数$\{ \varphi_\alpha \}_{\alpha\in\Lambda}$, 使得其支集族是局部有限的, 并且$\displaystyle\sum_{\alpha\in\Lambda}\varphi_\alpha\equiv1$. 若对开覆盖$\{U_\beta\}$, 一个单位分解$\{\varphi_\alpha\}_{\alpha\in\Lambda}$满足对任意$\alpha\in\Lambda$, 都存在$\beta$使得$\varphi_\alpha$的支集包含于$U_\beta$, 就称这个单位分解是**从属于**这个开覆盖的. 
 
 **注1.7**: 一个著名结果是, 对一个微分流形$M$和其上任何一个开覆盖, 都存在一个从属于它的可数单位分解, 并且其中每个函数都有紧支集. 
 
@@ -64,7 +70,7 @@
 
 **注2.1.1**: 后面我们会看到$g$是一个$(0,2)-$张量, 一般对$u,v\in T_pM$也记$\langle u,v\rangle=g(u,v)=g_p(u,v)$.对任意$p\in U$,$[g_{ij}](p)$为正定对称矩阵, 也可记为$\mbox{d}s^2=g_{ij}\mbox{d}x^i\mbox{d}x^j$. 
 
-**定义2.1.2**: 对$u\in T_pM$, 称$|u|=||u||=\sqrt{\langle u,u\rangle}$为它的**模长**. 
+**定义2.1.2**: 对$u\in T_pM$, 称$\lvert u\rvert=\|u\|=\sqrt{\langle u,u\rangle}$为它的**模长**. 
 
 **例2.1.1**: 欧氏空间$\mathbb{R}^n$, 其上的坐标卡为$\{(\mathbb{R}^n,\mbox{id})\}$, 黎曼度量为$\mbox{d}s^2=\delta_{ij}\mbox{d}x^i\mbox{d}x^j$. 
 
@@ -74,7 +80,7 @@
 
 **注2.1.2**: 对于恒正的光滑函数$f$和度量$\mbox{d}s^2$, 可以定义新的度量$\mbox{d}\tilde{s}^2=f\mbox{d}s^2$. 
 
-**定义2.1.3**: 对浸入$\Phi:M\to N$和$N$上的黎曼度量$g_N$, 可定义$M$上的**拉回**度量$\Phi^*(g_N)$如下: $\Phi^*(g_N)(u,v):=(g_N)(\Phi_*(u),\Phi_*(v))$.若$M$上原本的黎曼度量$g_M$与$\Phi^*(g_N)$一致, 就称$\Phi$是**等距浸入**. 特别地, 当$\Phi$是覆叠映射时也称为**黎曼覆叠**. 
+**定义2.1.3**: 对浸入$\Phi:M\to N$和$N$上的黎曼度量$g_N$, 可定义$M$上的**拉回**度量$\Phi^* (g_N)$如下: $\Phi^* (g_N)(u,v):=(g_N)(\Phi_* (u),\Phi_* (v))$.若$M$上原本的黎曼度量$g_M$与$\Phi^* (g_N)$一致, 就称$\Phi$是**等距浸入**. 特别地, 当$\Phi$是覆叠映射时也称为**黎曼覆叠**. 
 
 **定义2.1.4**: 对黎曼流形$(M_1,g_1), (M_2,g_2)$, 可以在$M_1\times M_2$上定义**乘积黎曼度量**$g_1\oplus g_2$（或$g_1\times g_2$）为$(g_1\oplus g_2)((u_1,u_2),(v_1,v_2))=g_1(u_1,v_1)+g_2(u_2,v_2)$. 若给出了恒正的$f\in C^\infty(M_1)$, 对$(u_1,u_2),(v_1,v_2)\in T_{(p_1,p_2)}{(M_1\times M_2)}$可定义$(M_1\times M_2,g_1\oplus_f g_2)$如下: $(g_1\oplus_f g_2)((u_1,u_2),(v_1,v_2))=g_1(u_1,v_1)+f^2(p_1)g_2(u_2,v_2)$, 这个黎曼流形也可记为$M_1\times_f M_2$. 
 
@@ -82,7 +88,7 @@
 
 **例2.1.3**: 平坦圆柱$S^1\times\mathbb{R}$, $e^{t}$的图像的旋转面$\mathbb{R}\times_{\exp}S^1$. 
 
-**定义2.1.5**: 对淹没$\pi:M^n\to N^m$, $V_p:=\ker(\pi_*\mid_p)$称为$\pi$在$p$处的**垂直空间**. 设$M,N$上的黎曼度量分别为$g_M,g_N$, 则可以定义$V_p$在$g_M$下的正交补$H_p$, 称作$\pi$在$p$处的**水平空间**. 称$\pi$为**黎曼淹没**, 如果$\pi_*\mid_p:H_p\to T_{\pi(p)}N$是等距的. 
+**定义2.1.5**: 对淹没$\pi:M^n\to N^m$, $V_p:=\ker(\pi_* \mid_p)$称为$\pi$在$p$处的**垂直空间**. 设$M,N$上的黎曼度量分别为$g_M,g_N$, 则可以定义$V_p$在$g_M$下的正交补$H_p$, 称作$\pi$在$p$处的**水平空间**. 称$\pi$为**黎曼淹没**, 如果$\pi_* \mid_p:H_p\to T_{\pi(p)}N$是等距的. 
 
 **注2.1.3**: $n>m$时, 一般无法通过淹没定义拉回度量. 
 
@@ -90,11 +96,11 @@
 
 有了黎曼度量后, 就可以在流形上定义度量结构了, 首先定义曲线的长度.
 
-**定义2.2.1**: 光滑映射$\gamma:[a,b]\to M$称作$M$上的**光滑曲线**, 其**切向量**为$\gamma'(t):=\gamma_*\left(\dfrac{\mbox{d}}{\mbox{d}t}\right)$, **长度**$L(\gamma):=\displaystyle\int_a^b||\gamma'(t)||\mbox{d}t$, **弧长**$s(t):=\displaystyle\int_a^t||\gamma'(u)||\mbox{d}u$. 
+**定义2.2.1**: 光滑映射$\gamma:[a,b]\to M$称作$M$上的**光滑曲线**, 其**切向量**为$\gamma'(t):=\gamma_* \left(\dfrac{\mbox{d}}{\mbox{d}t}\right)$, **长度**$L(\gamma):=\displaystyle\int_a^b\|\gamma'(t)\|\mbox{d}t$, **弧长**$s(t):=\displaystyle\int_a^t\|\gamma'(u)\|\mbox{d}u$. 
 
 **注2.2.1**: 一般总假设$\gamma'(t)\neq0$, 此时$s$严格单调递增, 就可以找到其反函数$t=t(s)$, 于是可得到新的曲线$\overline\gamma:[0,s(b)]\to M,s\mapsto\gamma(t(s))$. 这个曲线总拥有单位切向量, 称作曲线的**弧长参数化**. 
 
-**定义2.2.2**: **分段光滑曲线**定义为$\mathcal{C}([0,1]):=\{c:[0,1]\to M\mid c\mbox{分段光滑}\}$. 
+**定义2.2.2**: **分段光滑曲线**定义为$\mathcal{C}([0,1]):=\{ c:[0,1]\to M\mid c\mbox{分段光滑} \}$. 
 
 显然$L$是$\mathcal{C}$上的泛函.下面定义任意两点间的距离. 
 
