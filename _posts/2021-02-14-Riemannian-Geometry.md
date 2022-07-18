@@ -104,7 +104,7 @@ tags:
 
 显然$L$是$\mathcal{C}$上的泛函.下面定义任意两点间的距离. 
 
-**定义2.2.3**: 对道路连通流形$M$上任意两点$p,q\in M$, 记所有以$p$为起点, $q$为终点的分段光滑曲线`$\mathcal{C}_{p,q}=\lbrace c\in\mathcal{C}([0,1])\mid c(0)=p,c(1)=q\rbrace$`, 定义$p,q$之间的**距离**为$ d(p,q):=\inf\lbrace L(\gamma)\mid\gamma\in\mathcal{C}_{p,q}\rbrace $. 
+**定义2.2.3**: 对道路连通流形$M$上任意两点$p,q\in M$, 记所有以$p$为起点, $q$为终点的分段光滑曲线$\mathcal{C}_ {p,q}=\lbrace c\in\mathcal{C}([0,1])\mid c(0)=p,c(1)=q\rbrace$, 定义$p,q$之间的**距离**为$ d(p,q):=\inf\lbrace L(\gamma)\mid\gamma\in\mathcal{C}_ {p,q}\rbrace $. 
 
 **注2.2.2**: 由道路连通性可说明这样的定义是合理的, 即$d<+\infty$. 
 
