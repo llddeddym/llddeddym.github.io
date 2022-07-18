@@ -70,7 +70,7 @@ tags:
 
 **注2.1.1**: 后面我们会看到$g$是一个$(0,2)-$张量, 一般对$u,v\in T_pM$也记$\langle u,v\rangle=g(u,v)=g_p(u,v)$.对任意$p\in U$,$[g_ {ij}] (p)$为正定对称矩阵, 也可记为$\mbox{d}s^2=g_ {ij}\mbox{d}x^i\mbox{d}x^j$. 
 
-**定义2.1.2**: 对$u\in T_pM$, 称$\lvert u\rvert=\|u\|=\sqrt{\langle u,u\rangle}$为它的**模长**. 
+**定义2.1.2**: 对$u\in T_pM$, 称$\lvert u\rvert=\\|u\\|=\sqrt{\langle u,u\rangle}$为它的**模长**. 
 
 **例2.1.1**: 欧氏空间$\mathbb{R}^n$, 其上的坐标卡为$\lbrace (\mathbb{R}^n,\mbox{id})\rbrace$, 黎曼度量为$\mbox{d}s^2=\delta_ {ij}\mbox{d}x^i\mbox{d}x^j$. 
 
@@ -96,7 +96,7 @@ tags:
 
 有了黎曼度量后, 就可以在流形上定义度量结构了, 首先定义曲线的长度.
 
-**定义2.2.1**: 光滑映射$\gamma:[a,b]\to M$称作$M$上的**光滑曲线**, 其**切向量**为$\gamma'(t):=\gamma_* \left(\dfrac{\mbox{d}}{\mbox{d}t}\right)$, **长度**$L(\gamma):=\displaystyle\int_a^b\|\gamma'(t)\|\mbox{d}t$, **弧长**$s(t):=\displaystyle\int_a^t\|\gamma'(u)\|\mbox{d}u$. 
+**定义2.2.1**: 光滑映射$\gamma:[a,b]\to M$称作$M$上的**光滑曲线**, 其**切向量**为$\gamma'(t):=\gamma_* \left(\dfrac{\mbox{d}}{\mbox{d}t}\right)$, **长度**$L(\gamma):=\displaystyle\int_a^b\\|\gamma'(t)\\|\mbox{d}t$, **弧长**$s(t):=\displaystyle\int_a^t\\|\gamma'(u)\\|\mbox{d}u$. 
 
 **注2.2.1**: 一般总假设$\gamma'(t)\neq0$, 此时$s$严格单调递增, 就可以找到其反函数$t=t(s)$, 于是可得到新的曲线$\overline\gamma:[0,s(b)]\to M,s\mapsto\gamma(t(s))$. 这个曲线总拥有单位切向量, 称作曲线的**弧长参数化**. 
 
@@ -196,19 +196,19 @@ tags:
 
  在坐标卡$(U,\varphi)$下, 令$x^k(t)=x^k(\gamma(t))$, 则$\gamma$是测地线等价于对任意$k$, $\dfrac{\mbox{d}^2x^k}{\mbox{d}t^2}+\Gamma_ {ij}^k\dfrac{\mbox{d}x^i}{\mbox{d}t}\dfrac{\mbox{d}x^j}{\mbox{d}t}=0$. 这是一个二阶非线性常微分方程组, 它对任意$p\in M$和$v\in T_pM$都存在唯一解, 使得$\gamma'(0)=v$, 这样的解记为$\gamma_v$. 
 
-**定理3.1.1**: 对任一测地线$\gamma$, $\|\gamma'(t)\|$恒定. 
+**定理3.1.1**: 对任一测地线$\gamma$, $\\|\gamma'(t)\\|$恒定. 
 
 *Proof.* $\dfrac{\mbox{d}}{\mbox{d}t}\langle\gamma'(t),\gamma'(t)\rangle=2\langle\nabla_ {\gamma'(t)}{\gamma'(t)},\gamma'(t)\rangle=0$. $\quad\Box$
 
 我们下面对初始切向量进行一些限制. 
 
-**定义3.1.2**: 对流形$M$, 其上点$p$处的**单位切向量**组成的集合$U_pM:=\lbrace v\in T_pM\mid \|v\|=1\rbrace$.**单位切丛**$UM:=\bigcup\limits_ {p\in M}U_pM$. 
+**定义3.1.2**: 对流形$M$, 其上点$p$处的**单位切向量**组成的集合$U_pM:=\lbrace v\in T_pM\mid \\|v\\|=1\rbrace$.**单位切丛**$UM:=\bigcup\limits_ {p\in M}U_pM$. 
 
-易见$U_pM$与单位球面$S^{n-1}$是同胚的, 也具有紧性, 于是存在与$\xi$无关的$\delta=\delta(p)$, 使得$\gamma_\xi(t)$对任意$\xi\in U_pM,t\in(-\delta,\delta)$均存在. 换言之, 对任意$u\in T_pM,\|u\|<\delta, \gamma_u(1)$存在. 
+易见$U_pM$与单位球面$S^{n-1}$是同胚的, 也具有紧性, 于是存在与$\xi$无关的$\delta=\delta(p)$, 使得$\gamma_\xi(t)$对任意$\xi\in U_pM,t\in(-\delta,\delta)$均存在. 换言之, 对任意$u\in T_pM,\\|u\\|<\delta, \gamma_u(1)$存在. 
 
 基于此可以定义所谓“指数映照”的概念. 
 
-**定义3.1.3**: 对任意$p\in M$, **指数映照**$\exp_p:B(O_p,\delta)(:=\lbrace v\in T_pM\mid\|v\|<\delta\rbrace)\to M$定义为$u\mapsto\gamma_u(1)$. 
+**定义3.1.3**: 对任意$p\in M$, **指数映照**$\exp_p:B(O_p,\delta)(:=\lbrace v\in T_pM\mid\\|v\\|<\delta\rbrace)\to M$定义为$u\mapsto\gamma_u(1)$. 
 
 容易看到$\exp_p(t\xi)=\gamma_\xi(t),\lvert t\rvert\leqslant1,\xi\in B(O_p,\delta)$和$\exp_p(O_p)=p$. 切空间作为欧氏空间当然也有流形结构, 于是可以考虑$\exp_p$的切映射有如何性质, 最方便研究的自然是$(\exp)_ * \mid_ {O_p}:T_ {O_p}(T_pM)\to T_pM$. 但欧氏空间的切空间和本身自然别无二致, 于是我们可以将此映射视为$T_pM$的一个自映射. 依定义, $(\exp)_ * \mid_ {O_p}(u)=\dfrac{\mbox{d}}{\mbox{d}t}\exp_p(tu)=\gamma_u'(0)=u$, 这说明$(\exp)_ * \mid_ {O_p}$不是别的, 正是$\mbox{id}_ {T_pM}$.因此通过反函数定理, 我们知道存在$\varepsilon<\delta$, 使得$\exp_p\mid_ {B(O_p,\varepsilon)}$是微分同胚, 其像是$M$上的一个开集$B$, 于是乎可以有: 
 
@@ -216,7 +216,7 @@ tags:
 
 **注3.1.1**: 这里的$\exp$和$\log$仅仅是记号而无算数含义, 但在某些特殊情形（如Lie群和Lie代数之间的映射）下其确实可写成真正的指数映照. 
 
-沿着上面的思路, 我们不禁要问$(\exp)_ * \mid_ {u}$在$\|u\|\neq0$时又是什么样子呢？这将在后面给出答案. 
+沿着上面的思路, 我们不禁要问$(\exp)_ * \mid_ {u}$在$\\|u\\|\neq0$时又是什么样子呢？这将在后面给出答案. 
 
 ### 3.2 变分与Jacobi场
 
@@ -268,7 +268,7 @@ $\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\rig
 
 **命题3.3.1**: 设$\exp_p$定义在$O_p$的某个开邻域$U$中, 设$u\in U$, $c:[0,1]\to T_pM$为$[t\mapsto tu]$, 对任意$\varphi:[0,1]\to U$, 若$\varphi(0)=O_p,\varphi(1)=u$, 则对测地线$\gamma_u(t)=\exp_p(c(t))$和$\tilde\gamma(t)=\exp_p(\varphi(t))$, 有$L(\tilde\gamma)\geqslant L(\gamma_u)$. 若$\exp_p$的切映射满秩（也即无共轭点存在时）, 则上式的等号无法成立. 
 
-*Proof.* 置$r(t):=\\\|\varphi(t)\\\|(r>0)$, 设$\varphi(t)=r(t)e(t)$. 因为$e(t)\in U_pM$, 故对$\langle e(t),e(t)\rangle=1$求导知$e(t)\perp e'(t)$. 于是$\varphi'(t)=r'(t)e(t)+r(t)e'(t)$, 由Gauss引理, $\|(\exp_p)_ * \vert _ {\varphi(t)}e(t)\|=1$, 且$\langle(\exp_p)_ * \vert_ {\varphi(t)}e(t),(\exp_p)_ * \vert_ {\varphi(t)}e'(t)\rangle=0$, 于是$\|\tilde\gamma'(t)\|=\|(\exp_p)_ * \vert_ {\varphi(t)}\varphi'(t)\|\geqslant\|(\exp_p)_ * \vert_ {\varphi(t)}r'(t)e(t)\|=\lvert r'(t)\rvert=\dfrac{\mbox{d}}{\mbox{d}t}\|\varphi(t)\|$, $L(\tilde\gamma)\geqslant\displaystyle\int_0^1\dfrac{\mbox{d}}{\mbox{d}t}\|\varphi(t)\|\mbox{dt}=\|\varphi(1)\|-\|\varphi(0)\|=\|u\|=L(\gamma_u)$. 当无共轭点存在时, $r>0$和$e'(t)\notin\ker(\exp_p)_ *$保证了不等号是严格的. $\quad\Box$
+*Proof.* 置$r(t):=\\|\varphi(t)\\|(r>0)$, 设$\varphi(t)=r(t)e(t)$. 因为$e(t)\in U_pM$, 故对$\langle e(t),e(t)\rangle=1$求导知$e(t)\perp e'(t)$. 于是$\varphi'(t)=r'(t)e(t)+r(t)e'(t)$, 由Gauss引理, $\\|(\exp_p)_ * \vert _ {\varphi(t)}e(t)\\|=1$, 且$\langle(\exp_p)_ * \vert_ {\varphi(t)}e(t),(\exp_p)_ * \vert_ {\varphi(t)}e'(t)\rangle=0$, 于是$\\|\tilde\gamma'(t)\\|=\\|(\exp_p)_ * \vert_ {\varphi(t)}\varphi'(t)\\|\geqslant\\|(\exp_p)_ * \vert_ {\varphi(t)}r'(t)e(t)\\|=\lvert r'(t)\rvert=\dfrac{\mbox{d}}{\mbox{d}t}\\|\varphi(t)\\|$, $L(\tilde\gamma)\geqslant\displaystyle\int_0^1\dfrac{\mbox{d}}{\mbox{d}t}\\|\varphi(t)\\|\mbox{dt}=\\|\varphi(1)\\|-\\|\varphi(0)\\|=\\|u\\|=L(\gamma_u)$. 当无共轭点存在时, $r>0$和$e'(t)\notin\ker(\exp_p)_ *$保证了不等号是严格的. $\quad\Box$
 
 **例3.3.1**: $S^2$上北极点$N$的切平面中的圆$B(O_N,\pi)$的每一条半径并上一段圆弧在指数映照下都是$N$到南极点$S$的某条测地线的像. 
 
@@ -290,17 +290,17 @@ $\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\rig
 
 接下来是“第一变分公式”: 
 
-**命题3.3.2**: 设$c,\alpha,W,c_s$如上定义, 则$$\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)=-\displaystyle\int_a^b\left\langle W(t),\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{\|c'(t)\|}\right\rangle\mbox{d}t+\sum_ {i=1}^{n-1}\left\langle W(t_i),\dfrac{c'(t_i-0)}{\|c'(t_i-0)\|}-\dfrac{c'(t_i+0)}{\|c'(t_i+0)\|}\right\rangle.$$
+**命题3.3.2**: 设$c,\alpha,W,c_s$如上定义, 则$$\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)=-\displaystyle\int_a^b\left\langle W(t),\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{\\|c'(t)\\|}\right\rangle\mbox{d}t+\sum_ {i=1}^{n-1}\left\langle W(t_i),\dfrac{c'(t_i-0)}{\\|c'(t_i-0)\\|}-\dfrac{c'(t_i+0)}{\\|c'(t_i+0)\\|}\right\rangle.$$
 
 *Proof.* 
 
-$$\begin{aligned}&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)\\ =&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}\int_a^b\left\langle\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial t}\right\rangle^{\frac{1}{2}}\mbox{d}t\\ =&\int_a^b\dfrac{1}{2}\cdot\dfrac{\frac{\partial}{\partial s}\left\langle\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\|\frac{\partial\alpha}{\partial t}\|_ {(t,0)}}\mbox{d}t\\ =&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial s}}\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\|\frac{\partial\alpha}{\partial t}\|_ {(t,0)}}\mbox{d}t.\end{aligned}$$
+$$\begin{aligned}&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)\\ =&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}\int_a^b\left\langle\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial t}\right\rangle^{\frac{1}{2}}\mbox{d}t\\ =&\int_a^b\dfrac{1}{2}\cdot\dfrac{\frac{\partial}{\partial s}\left\langle\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\\|\frac{\partial\alpha}{\partial t}\\|_ {(t,0)}}\mbox{d}t\\ =&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial s}}\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\\|\frac{\partial\alpha}{\partial t}\\|_ {(t,0)}}\mbox{d}t.\end{aligned}$$
 
 回忆$\left[\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right]=0$, 又有上式为
 
-$$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}\right\rangle}{\|\frac{\partial\alpha}{\partial t}\|}\Bigg\vert_ {(t,0)}\mbox{d}t\\=&\int_a^b\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}/\|\frac{\partial\alpha}{\partial t}\|\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t\\=&\int_a^b\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\|c'(t)\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t,\end{aligned}$$
+$$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}\right\rangle}{\\|\frac{\partial\alpha}{\partial t}\\|}\Bigg\vert_ {(t,0)}\mbox{d}t\\=&\int_a^b\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}/\\|\frac{\partial\alpha}{\partial t}\\|\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t\\=&\int_a^b\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\\|c'(t)\\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t,\end{aligned}$$
 
- 由联络保度量的性质知上式为$\displaystyle\int_a^b\frac{\partial}{\partial t}\left\langle\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\|c'(t)\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t-\displaystyle\int_a^b\left\langle\frac{\partial\alpha}{\partial s},\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{\|c'(t)\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t$, 在被减项上对每段$[t_ {i-1},t_i]$运用微积分基本定理即明所欲证. $\quad\Box$
+ 由联络保度量的性质知上式为$\displaystyle\int_a^b\frac{\partial}{\partial t}\left\langle\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\\|c'(t)\\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t-\displaystyle\int_a^b\left\langle\frac{\partial\alpha}{\partial s},\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{\\|c'(t)\\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t$, 在被减项上对每段$[t_ {i-1},t_i]$运用微积分基本定理即明所欲证. $\quad\Box$
 
 上述公式的左端可被理解为$\dfrac{\partial L}{\partial w}\bigg\vert_c$, 据此可以定义如下概念: 
 
@@ -310,7 +310,7 @@ $$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t
 
 **命题3.3.3**: 如果$c$是临界曲线, 则$c$是测地线, 反之亦然. 
 
-*Proof.* 逆命题是显然的, 我们只需证明正向. 对临界曲线$c$, 存在$a=t_0<t_1<t_2<\cdots<t_N=b$使得$c\vert_ {(t_ {i-1},t_i)}$光滑, 再令$W(t)=f(t)\cdot\nabla_ {\frac{\partial}{\partial t}}c'(t)$, 其中$f(t_i)=0$, $\|c'(t)\|=l$为常数, 由第一变分公式, $\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)=-\displaystyle\int_a^b\left\langle W(t),\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{l}\right\rangle\mbox{d}t=-\dfrac{1}{l}\displaystyle\int_a^b\left\langle W(t),\nabla_ {\frac{\partial}{\partial t}}c'(t)\right\rangle\mbox{d}t=0$, 所以对任意$t\in(t_i,t_ {i+1})$, $\nabla_ {\frac{\partial}{\partial t}}c'(t)\equiv0$, 也是说每一段均为测地线. 下证$c$必须光滑, 取$W(t)$为$W(a)=W(b)=0$, $W(t_i)=c'(t_i-0)-c'(t_i+0)$, 此时再由第一变分公式可得结论成立（为什么？）.故$c$是连续可导的, 由测地线为常微分方程的解, 存在唯一性可推出$c$是光滑的. $\quad\Box$
+*Proof.* 逆命题是显然的, 我们只需证明正向. 对临界曲线$c$, 存在$a=t_0<t_1<t_2<\cdots<t_N=b$使得$c\vert_ {(t_ {i-1},t_i)}$光滑, 再令$W(t)=f(t)\cdot\nabla_ {\frac{\partial}{\partial t}}c'(t)$, 其中$f(t_i)=0$, $\\|c'(t)\\|=l$为常数, 由第一变分公式, $\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)=-\displaystyle\int_a^b\left\langle W(t),\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{l}\right\rangle\mbox{d}t=-\dfrac{1}{l}\displaystyle\int_a^b\left\langle W(t),\nabla_ {\frac{\partial}{\partial t}}c'(t)\right\rangle\mbox{d}t=0$, 所以对任意$t\in(t_i,t_ {i+1})$, $\nabla_ {\frac{\partial}{\partial t}}c'(t)\equiv0$, 也是说每一段均为测地线. 下证$c$必须光滑, 取$W(t)$为$W(a)=W(b)=0$, $W(t_i)=c'(t_i-0)-c'(t_i+0)$, 此时再由第一变分公式可得结论成立（为什么？）.故$c$是连续可导的, 由测地线为常微分方程的解, 存在唯一性可推出$c$是光滑的. $\quad\Box$
 
 **推论3.3.1**: 设$\exp_p:B(O_p,\varepsilon)\to M$是微分同胚, 则对任意$q\in\mbox{im}\exp_p$, 存在唯一的拥有弧长参数的最短测地线$\gamma$从$p$到$q$, 即$\gamma(t)=\exp_p(t(\log_pq))$, $\log_pq\in U_pM$是从$p$到$q$的最短测地线的切向量. 特别地, $\exp_p(B(O_p,\varepsilon))=B(p,\varepsilon)$. 
 
@@ -320,7 +320,7 @@ $$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t
 
 ### 3.4 截面曲率一瞥
 
-测地线在局部随Jacobi场变化的快慢是值得注意的, 我们来对一测地线$\gamma_u(t)$计算其上满足$Y(0)=0,Y'(0)=\xi$的Jacobi场的长度平方$\|Y(t)\|^2$的Taylor展开式. 
+测地线在局部随Jacobi场变化的快慢是值得注意的, 我们来对一测地线$\gamma_u(t)$计算其上满足$Y(0)=0,Y'(0)=\xi$的Jacobi场的长度平方$\\|Y(t)\\|^2$的Taylor展开式. 
 
 设$f(t)=\langle Y(t),Y(t)\rangle$, 显然$f(0)=0$.$f' (0)=2\langle Y(t),Y'(t)\rangle\vert_ {t=0}=0$. $f'' (0)=2\langle Y'(t),Y'(t)\rangle\vert_ {t=0}+2\langle Y(t),Y''(t)\rangle\vert_ {t=0}=2$. 而$Y'' (0)=-R(Y(0),\gamma_u'(0))\gamma_u'(0)=0$, 故$f''' (0)=6\langle Y'(t),Y'' (t)\rangle\vert_ {t=0}+2\langle Y(t),Y''' (t)\rangle\vert_ {t=0}=0$.又
 
@@ -330,7 +330,7 @@ $$\begin{aligned}Y''' (0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t
 
 故我们有: 
 
-**命题3.4.1**: $\left\| Y(t) \right\|^2=t^2-\dfrac{1}{3}R(\xi,u,u.\xi)t^4+O(t^5)$. 
+**命题3.4.1**: $\left\\| Y(t) \right\\|^2=t^2-\dfrac{1}{3}R(\xi,u,u.\xi)t^4+O(t^5)$. 
 
 可以看到其曲率项$R(\xi,u,u,\xi)$影响了测地线局部散开的快慢, 这个量随看着奇怪, 但其出现却是十分自然, 在后面我们会看到这一项不是别的, 正是所谓“截面曲率”, 它是二维情况中Gauss曲率的推广. 
 
@@ -338,7 +338,7 @@ $$\begin{aligned}Y''' (0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t
 
 ### 4.1 几种曲率
 
-**定义4.1.1**: 对任意$p\in M$,$u,v\in T_pM$, $u,v$不平行, 定义$k(u,v):=R(u,v,v,u)$, $\sec(u,v):=\dfrac{k(u,v)}{\|u\wedge v\|^2}=\dfrac{k(u,v)}{\|u\|^2\|v\|^2-\langle u,v\rangle^2}$. 其中$\sec(u,v)$称为$\sigma:=\mbox{span}(u,v)$的**截面曲率**, 也记作$\sec(\sigma)$. 
+**定义4.1.1**: 对任意$p\in M$,$u,v\in T_pM$, $u,v$不平行, 定义$k(u,v):=R(u,v,v,u)$, $\sec(u,v):=\dfrac{k(u,v)}{\\|u\wedge v\\|^2}=\dfrac{k(u,v)}{\\|u\\|^2\\|v\\|^2-\langle u,v\rangle^2}$. 其中$\sec(u,v)$称为$\sigma:=\mbox{span}(u,v)$的**截面曲率**, 也记作$\sec(\sigma)$. 
 
 **注4.1.1**: 此定义中暗含了给定$\sigma$后, 截面曲率无关于$u,v$的选取, 这个事情需要小作验证. 于是乎若记$G_2(p)$为$T_pM$的所有二维子空间, $\sec$将会是Grassman丛$G_2M:=\bigcup\limits_ {p\in M}G_2(p)$上的光滑函数. 
 
@@ -384,7 +384,7 @@ $$\begin{aligned}Y''' (0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t
 
 下面我们介绍“Gauss公式”. 
 
-**定理4.2.1**: 令$R,\bar R$分别是$M,\bar M$的曲率张量, $\sec,\overline\sec$分别是二者的截面曲率, 则对$p\in M$, $u,v,w\in T_pM$, 有: (1)$R(u,v)w=(\bar R(u,v)w)^T-S_ {\mbox{II}(u,w)}v+S_ {\mbox{II}(v,w)}u$; (2)$R(u,v,w,x)=\bar R(u,v,w,x)+\langle\mbox{II}(u,x),\mbox{II}(v,w)\rangle-\langle\mbox{II}(u,w),\mbox{II}(v,x)\rangle$; (3)$\sec(u,v)=\overline\sec(u,v)+\dfrac{\langle\mbox{II}(u,u),\mbox{II}(v,v)\rangle-\|\mbox{II}(u,v)\|^2}{\|u\|^2\|v\|^2-\langle u,v\rangle^2}$. 
+**定理4.2.1**: 令$R,\bar R$分别是$M,\bar M$的曲率张量, $\sec,\overline\sec$分别是二者的截面曲率, 则对$p\in M$, $u,v,w\in T_pM$, 有: (1)$R(u,v)w=(\bar R(u,v)w)^T-S_ {\mbox{II}(u,w)}v+S_ {\mbox{II}(v,w)}u$; (2)$R(u,v,w,x)=\bar R(u,v,w,x)+\langle\mbox{II}(u,x),\mbox{II}(v,w)\rangle-\langle\mbox{II}(u,w),\mbox{II}(v,x)\rangle$; (3)$\sec(u,v)=\overline\sec(u,v)+\dfrac{\langle\mbox{II}(u,u),\mbox{II}(v,v)\rangle-\\|\mbox{II}(u,v)\\|^2}{\\|u\\|^2\\|v\\|^2-\langle u,v\rangle^2}$. 
 
 *Proof.* 我们只证明(1), (2)(3)就都是简单的计算了. 因为这些符号的定义都不依赖于延拓的选取, 故以下计算中的联络的分量都默认已经选好延拓, 延拓后的向量场仍用原本的字母表示. 
 
@@ -414,7 +414,7 @@ $p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V}_pS^n(r)$, 对�
 
 另一个重要的例子是双曲空间$\mathbb{H}^n:=\lbrace (x^i)_ {i=1}^n|x^n>0\rbrace(n\geqslant2)$, 其上度量为$\varphi^2g_0$, 其中$\varphi=\dfrac{1}{x^n}$, $g_0$是正常的欧氏度量. 
 
-事实上这是所谓“共形变换”的一个特例, 对原本的黎曼流形$(M,g)$, 将其度量变更为$(M,\varphi^2g)$时, 记$f:=\ln\varphi$, 则新的联络$\nabla_X^\varphi Y=\nabla_XY+X(f)Y+Y(f)X-\langle X,Y\rangle\cdot\mbox{grad}f$.若对两$(0,2)-$张量$h,k$, 定义$(h\odot k)(x,y,z,w):=h(x,z)k(y,w)+h(y,w)k(x,z)-h(x,w)k(y,z)-h(y,z)k(x,w)$, 则新的曲率张量$R^\varphi=\exp(2f)(R+(\mbox{Hess}f-\mbox{d}f\otimes\mbox{d}f+\dfrac{1}{2}\|\mbox{grad}f\|^2g)\odot g)$.这部分公式留待自证. 
+事实上这是所谓“共形变换”的一个特例, 对原本的黎曼流形$(M,g)$, 将其度量变更为$(M,\varphi^2g)$时, 记$f:=\ln\varphi$, 则新的联络$\nabla_X^\varphi Y=\nabla_XY+X(f)Y+Y(f)X-\langle X,Y\rangle\cdot\mbox{grad}f$.若对两$(0,2)-$张量$h,k$, 定义$(h\odot k)(x,y,z,w):=h(x,z)k(y,w)+h(y,w)k(x,z)-h(x,w)k(y,z)-h(y,z)k(x,w)$, 则新的曲率张量$R^\varphi=\exp(2f)(R+(\mbox{Hess}f-\mbox{d}f\otimes\mbox{d}f+\dfrac{1}{2}\\|\mbox{grad}f\\|^2g)\odot g)$.这部分公式留待自证. 
 
 将上述内容应用到$\mathbb{H}^n$上, 可得$f=-\ln x^n$, $R^\varphi(x,y,z,w)=-\langle x,w\rangle\langle y,z\rangle+\langle x,z\rangle\langle y,w\rangle$, 这推出$\mathbb{H}^n$具有常截面曲率$-1$.下面考虑测地线, 记$\gamma(t)=(\sigma(t),y(t))$, 其中$\sigma(t)\in \mathbb{R}^{n-1},y(t)\in\mathbb{R}^+$, 则$\sigma''(t)-2\dfrac{y'}{y}\sigma'=0,y''-2\dfrac{y'}{y}+y=0$, 它的解是与$\mathbb{R}^{n-1}$正交的圆弧; 类似地, 其上Jacobi场为$Y(t)=a\cosh E_1(t)+b\sinh tE_ {2}(t)$. 
 
@@ -442,7 +442,7 @@ $p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V}_pS^n(r)$, 对�
 
 我们现在定义黎曼流形上的“距离函数”: 
 
-**定义4.5.1**: 对黎曼流形$(M^n,g)$和其一个开集$U\subset M$, 一个函数$r:U\to\mathbb{R}$是一个**距离函数**, 如果在$U$上$\|\mbox{grad}r\|=1$.
+**定义4.5.1**: 对黎曼流形$(M^n,g)$和其一个开集$U\subset M$, 一个函数$r:U\to\mathbb{R}$是一个**距离函数**, 如果在$U$上$\\|\mbox{grad}r\\|=1$.
 
 **注4.5.1**: 有时把$\mbox{grad}r$记为$\partial_r$. 
 
@@ -452,7 +452,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **定理4.5.1**: $U$是$M$中的开集, $r$是$U$上的一个距离函数, 则$\nabla_ {\partial_r}S+S^2+R(-,\partial_r)\partial_r=0$. 
 
-*Proof.* 对任意$X\in\Gamma(TM\vert_U)$,$(\nabla_ {\partial r}S)(X)=\nabla_ {\partial_r}(S(X))-S(\nabla_ {\partial_r}X)=\nabla_ {\partial_r}(\nabla_x\partial_r)-\nabla_ {\nabla_ {\partial_r}X}\partial_r$.$S^2(X)=S(S(X))=\nabla_ {\nabla_x\partial_r}\partial_r$. 二者相加得$\nabla_ {\partial_r}(\nabla_x\partial_r)-\nabla_ {[\partial_r,X]}\partial_r$. 但$\langle\nabla_ {\partial_r}\partial_r,X\rangle=\mbox{Hess}r(\partial_r,X)=\mbox{Hess}r(X,\partial_r)=\langle \nabla_X\partial_r,\partial_r\rangle=\dfrac{1}{2}X\|\partial_r\|^2=0$. 于是$\nabla_ {\partial_r}\partial_r\equiv0$ , 故结论成立. $\quad\Box$
+*Proof.* 对任意$X\in\Gamma(TM\vert_U)$,$(\nabla_ {\partial r}S)(X)=\nabla_ {\partial_r}(S(X))-S(\nabla_ {\partial_r}X)=\nabla_ {\partial_r}(\nabla_x\partial_r)-\nabla_ {\nabla_ {\partial_r}X}\partial_r$.$S^2(X)=S(S(X))=\nabla_ {\nabla_x\partial_r}\partial_r$. 二者相加得$\nabla_ {\partial_r}(\nabla_x\partial_r)-\nabla_ {[\partial_r,X]}\partial_r$. 但$\langle\nabla_ {\partial_r}\partial_r,X\rangle=\mbox{Hess}r(\partial_r,X)=\mbox{Hess}r(X,\partial_r)=\langle \nabla_X\partial_r,\partial_r\rangle=\dfrac{1}{2}X\\|\partial_r\\|^2=0$. 于是$\nabla_ {\partial_r}\partial_r\equiv0$ , 故结论成立. $\quad\Box$
 
 证明过程中我们还得到了一个副产品: 
 
@@ -468,7 +468,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 我们现在利用距离函数再计算一次球面$S^{n}(r)$的曲率. 
 
-**例4.5.1**: 取$\mathbb{R}^n$中距离函数$r(x)=\|x\|$, 则$S^{n-1}(r_0)=r^{-1}(r_0)$, 于是在极坐标下$g_0=\mbox{d}r^2+r^2(\mbox{d}S^{n-1})^2=\sum\limits_ {i=1}^n(\mbox{d}x^i)^2$, $\mbox{d}r=\sum\limits_ {i=1}^n\dfrac{1}{r}x^i\mbox{d}x^i$, $\partial_r=\dfrac{1}{r}x^i\partial_i$. 则$2\mbox{Hess}r\vert_ {r=r_0}=L_ {\partial_r}(g_0)=\partial_r(r^2)(\mbox{d}S^{n-1})^2\vert_ {r=r_0}=2r_0(\mbox{d}S^{n-1})^2=\dfrac{2}{r_0}g_ {r_0}$. 由Gauss公式即知截面曲率为$\dfrac{1}{r_0^2}$.
+**例4.5.1**: 取$\mathbb{R}^n$中距离函数$r(x)=\\|x\\|$, 则$S^{n-1}(r_0)=r^{-1}(r_0)$, 于是在极坐标下$g_0=\mbox{d}r^2+r^2(\mbox{d}S^{n-1})^2=\sum\limits_ {i=1}^n(\mbox{d}x^i)^2$, $\mbox{d}r=\sum\limits_ {i=1}^n\dfrac{1}{r}x^i\mbox{d}x^i$, $\partial_r=\dfrac{1}{r}x^i\partial_i$. 则$2\mbox{Hess}r\vert_ {r=r_0}=L_ {\partial_r}(g_0)=\partial_r(r^2)(\mbox{d}S^{n-1})^2\vert_ {r=r_0}=2r_0(\mbox{d}S^{n-1})^2=\dfrac{2}{r_0}g_ {r_0}$. 由Gauss公式即知截面曲率为$\dfrac{1}{r_0^2}$.
 
 **例4.5.2**: 对一般的$I\times_\varphi S^{n-1}$（也就是所谓的旋转对称流形）, $g=\mbox{d}r^2+\varphi^2(r)(\mbox{d}S^{n-1})^2$. 当$X,Y,Z,V,W$均在某一个球面的切空间中时$g_ {r_0}(R^{r_0}(X,Y)V,W)=\dfrac{1}{\varphi^2}g_ {r_0}(X\wedge Y,V\wedge W)$.$\mbox{II}=\mbox{Hess}r\vert_ {r=r_0}=\dfrac{\varphi'}{\varphi}g_ {r_0}$, 这推出$g(R(X,Y)Y,X)=\dfrac{1-\varphi'^2}{\varphi^2}g_ {r_0}(X\wedge Y,X\wedge Y)$.而对法方向, 由Codazzi公式, $g(R(X,Y)Z,\partial_r)=-(\nabla_X\mbox{II})(Y,Z)+(\nabla_Y\mbox{II})(X,Z)=0$, 这是因为$\mbox{II}=\mbox{Hess}r$只与$r$的值有关. 由Ricatti恒等式可得$R(X,\partial_r)\partial_r=-\dfrac{\varphi''}{\varphi}X$. 于是$\sec(X,\partial_r)=-\dfrac{\varphi''}{\varphi}$, $Ric(X)=(n-2)\dfrac{1-\varphi'^2}{\varphi^2}-\dfrac{\varphi''}{\varphi}$, $Ric(\partial_r)=-(n-1)\dfrac{\varphi''}{\varphi}\partial_r$, $\mbox{Scal}=-2(n-1)\dfrac{\varphi''}{\varphi}+(n-1)(n-2)\dfrac{1-\varphi'^2}{\varphi^2}$. 可见, 要求$I\times S^{n-1}$有平坦的Ricci曲率只能是$\varphi=r$.取$\varphi(t)=\mbox{sn}_k(t)$时, 其有常截面曲率$k$. 
 
@@ -552,17 +552,17 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 证明略过.据此有“Rauch比较定理”: 
 
-**定理5.2.1**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$J(0)=0$, $\|J'(0)\|=1$, 若$\sec(M)\leqslant k$, 则$\|J(t)\|\geqslant \mbox{sn}_k(t)$. 
+**定理5.2.1**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$J(0)=0$, $\\|J'(0)\\|=1$, 若$\sec(M)\leqslant k$, 则$\\|J(t)\\|\geqslant \mbox{sn}_k(t)$. 
 
-*Proof.* 令$f(t)=\|J(t)\|$, 经计算可得$f''(t)\geqslant -kf(t)$.由**引理5.2.1**, 取$\bar k(t)=k$, $\bar f(t)=\mbox{sn}_k(t)$, 则$\dfrac{\mbox{sn}_k(t)}{f(t)}$单调递减, 而$\displaystyle\lim_ {t\to0^+}\dfrac{f(t)}{\mbox{sn}_k(t)}=\lim_ {t\to0^+}\dfrac{f(t)}{t}=\lim_ {t\to0^+}\langle\dfrac{J(t)-J(0)}{t},\dfrac{J(t)-J(0)}{t}\rangle^{\frac{1}{2}}=\|J'(0)\|=1$.于是结论成立. $\quad\Box$
+*Proof.* 令$f(t)=\\|J(t)\\|$, 经计算可得$f''(t)\geqslant -kf(t)$.由**引理5.2.1**, 取$\bar k(t)=k$, $\bar f(t)=\mbox{sn}_k(t)$, 则$\dfrac{\mbox{sn}_k(t)}{f(t)}$单调递减, 而$\displaystyle\lim_ {t\to0^+}\dfrac{f(t)}{\mbox{sn}_k(t)}=\lim_ {t\to0^+}\dfrac{f(t)}{t}=\lim_ {t\to0^+}\langle\dfrac{J(t)-J(0)}{t},\dfrac{J(t)-J(0)}{t}\rangle^{\frac{1}{2}}=\\|J'(0)\\|=1$.于是结论成立. $\quad\Box$
 
 “Berger比较定理”与之类似, 不过稍微修改了初值条件. 
 
-**定理5.2.2**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$\|J(0)\|=1$, $J'(0)=0$, 若$\sec(M)\leqslant k$, 则$\|J(t)\|\geqslant \mbox{cn}_k(t)$. 
+**定理5.2.2**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$\\|J(0)\\|=1$, $J'(0)=0$, 若$\sec(M)\leqslant k$, 则$\\|J(t)\\|\geqslant \mbox{cn}_k(t)$. 
 
 证明也是利用**引理5.2.1**, 不再赘述. 
 
-**注5.2.1**: 事实上二者存在一个统一的推广形式, 也称作Rauch比较定理, 是说“设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 若$R(t)\leqslant kI$, 则$\|J(t)\|\geqslant \|J'(0)\|\mbox{sn}_k(t)+\|J(0)\|\mbox{cn}_k(t)$. ”并且其实这个完备性的全局条件也可以被减弱到仅在完备的区间内讨论, 证明过程是完全类似的, 只是对$\|J(t)\|''$的估计稍微细化一点, 具体细节可参见Isaac Chavel的《Eigenvalues in Riemannian Geometry》. 
+**注5.2.1**: 事实上二者存在一个统一的推广形式, 也称作Rauch比较定理, 是说“设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 若$R(t)\leqslant kI$, 则$\\|J(t)\\|\geqslant \\|J'(0)\\|\mbox{sn}_k(t)+\\|J(0)\\|\mbox{cn}_k(t)$. ”并且其实这个完备性的全局条件也可以被减弱到仅在完备的区间内讨论, 证明过程是完全类似的, 只是对$\\|J(t)\\|''$的估计稍微细化一点, 具体细节可参见Isaac Chavel的《Eigenvalues in Riemannian Geometry》. 
 
 上面的**定理5.2.1**中的不等号反向时同样有类似结论, 也被称为Rauch比较定理, 但在证明之前我们需要一个引理: 
 
@@ -570,9 +570,9 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 *Proof.* 取$\bar\lambda(t)$是$\overline{\mbox{II}}(t)$的最大特征值, 其为Lipschitz函数, 于是几乎处处可导, 设它在$t=t_0$处可导, 设$E$为它的一个模长为1的特征向量, 设$f(t)=\langle E,\overline{\mbox{II}}(t)E\rangle$, 则$f(t_0)=\bar\lambda(t_0)$, $f(t)\leqslant\bar\lambda(t)$, 于是$f'(t_0)=\bar\lambda'(t_0)$, 故$\bar\lambda'(t_0)+\bar\lambda^2(t_0)=\langle E,(\overline{\mbox{II}}'(t_0)+\overline{\mbox{II}}^2(t_0))E\rangle\leqslant-k$.此时利用**引理5.2.1**即可, 对于不可导的点利用连续性逼近即可. $\quad\Box$
 
-**定理5.2.3**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$J(0)=0$, $\|J'(0)\|=1$, 若$\sec(M)\geqslant k$, 则$\|J(t)\|\leqslant \mbox{sn}_k(t)$. 
+**定理5.2.3**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$J(0)=0$, $\\|J'(0)\\|=1$, 若$\sec(M)\geqslant k$, 则$\\|J(t)\\|\leqslant \mbox{sn}_k(t)$. 
 
-*Proof.* $(\ln\|J\|)'=\dfrac{\|J\|'}{\|J\|}=\dfrac{\langle J,J'\rangle}{\|J\|^2}=\langle\dfrac{J}{\|J\|},\dfrac{J'}{\|J\|}\rangle=\langle\dfrac{J}{\|J\|},\mbox{II}(t)(\dfrac{J}{\|J\|})\rangle$.由**推论5.2.1**即知结论成立. $\quad\Box$
+*Proof.* $(\ln\\|J\\|)'=\dfrac{\\|J\\|'}{\\|J\\|}=\dfrac{\langle J,J'\rangle}{\\|J\\|^2}=\langle\dfrac{J}{\\|J\\|},\dfrac{J'}{\\|J\\|}\rangle=\langle\dfrac{J}{\\|J\\|},\mbox{II}(t)(\dfrac{J}{\\|J\\|})\rangle$.由**推论5.2.1**即知结论成立. $\quad\Box$
 
 我们下面试图将上面对局部的Jacobi场的研究升格到对全局拓扑性质的研究, 先介绍一个定理. 
 
@@ -582,7 +582,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **定理5.2.5**: 若$(M^n,g)$完备且$\sec(M)\leqslant0$, 则$M$的泛覆盖空间微分同胚于$\mathbb{R}^n$. 
 
-*Proof.* 由Rauch比较定理, 若某一Jacobi场$J(t)$满足$J(0)=0$, 则$\|J(t)\|\geqslant\|J'(0)\|t$, 即$t>0$时$J(t)\neq0$, 于是$M$上无共轭点, 故指数映射$\exp_p$均非奇异, 由Gauss引理, $(T_pM,(\exp_p)^*g)$在$O_p$处完备, 于是由Hopf-Rinow定理它处处完备, 由**定理5.2.4**即知结论成立. $\quad\Box$
+*Proof.* 由Rauch比较定理, 若某一Jacobi场$J(t)$满足$J(0)=0$, 则$\\|J(t)\\|\geqslant\\|J'(0)\\|t$, 即$t>0$时$J(t)\neq0$, 于是$M$上无共轭点, 故指数映射$\exp_p$均非奇异, 由Gauss引理, $(T_pM,(\exp_p)^*g)$在$O_p$处完备, 于是由Hopf-Rinow定理它处处完备, 由**定理5.2.4**即知结论成立. $\quad\Box$
 
 **例5.2.1**: $S^n(n>1)$上没有截面曲率处处非正的黎曼度量. 
 
@@ -610,7 +610,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 为了更精细的估计, 我们还需要一些准备工作, 回忆第一变分公式说明了临界曲线都是测地线, 但这样的曲线是“局部最大”还是“局部最小”的呢？为此, 下面要介绍所谓“第二变分公式”. 
 
-考虑单位速度$\gamma:[a,b]\to M$, 光滑映射$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\times(-\varepsilon,\varepsilon)\to M$, 记$T:=\dfrac{\partial\alpha}{\partial t}$, $U:=\dfrac{\partial\alpha}{\partial u}$, $V:=\dfrac{\partial\alpha}{\partial v}$并假设$\langle T,U\rangle\vert_ {(0,0)}=\langle T,V\rangle\vert_ {(0,0)}$, $\|T\\vert_ {(0,0)}=1$, $\nabla_TT\vert_ {(0,0)}=0$. 定义泛函$L(u,v):=\displaystyle\int_a^b\|T(t)\\vert_ {(u,v)}\mbox{d}t$.则$\dfrac{\partial L}{\partial u}=\displaystyle\int_a^b\dfrac{\langle\nabla_UT,T\rangle}{\|T\|}\mbox{d}t=\int_a^b\dfrac{\langle\nabla_TU,T\rangle}{\|T\|}\mbox{d}t$, $\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}=\dfrac{\partial}{\partial v}\left(\int_a^b\dfrac{\langle\nabla_TU,T\rangle}{\|T\|}\mbox{d}t\right)\\=&\int_a^b\left(\dfrac{\langle\nabla_V\nabla_TU,T\rangle+\langle\nabla_TU,\nabla_VT\rangle}{\|T\|}-\langle\nabla_TU,T\rangle\cdot\dfrac{\langle\nabla_VT,T\rangle}{\|T\|^3}\right)\mbox{d}t\end{aligned}$.
+考虑单位速度$\gamma:[a,b]\to M$, 光滑映射$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\times(-\varepsilon,\varepsilon)\to M$, 记$T:=\dfrac{\partial\alpha}{\partial t}$, $U:=\dfrac{\partial\alpha}{\partial u}$, $V:=\dfrac{\partial\alpha}{\partial v}$并假设$\langle T,U\rangle\vert_ {(0,0)}=\langle T,V\rangle\vert_ {(0,0)}$, $\\|T\\vert_ {(0,0)}=1$, $\nabla_TT\vert_ {(0,0)}=0$. 定义泛函$L(u,v):=\displaystyle\int_a^b\\|T(t)\\vert_ {(u,v)}\mbox{d}t$.则$\dfrac{\partial L}{\partial u}=\displaystyle\int_a^b\dfrac{\langle\nabla_UT,T\rangle}{\\|T\\|}\mbox{d}t=\int_a^b\dfrac{\langle\nabla_TU,T\rangle}{\\|T\\|}\mbox{d}t$, $\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}=\dfrac{\partial}{\partial v}\left(\int_a^b\dfrac{\langle\nabla_TU,T\rangle}{\\|T\\|}\mbox{d}t\right)\\=&\int_a^b\left(\dfrac{\langle\nabla_V\nabla_TU,T\rangle+\langle\nabla_TU,\nabla_VT\rangle}{\\|T\\|}-\langle\nabla_TU,T\rangle\cdot\dfrac{\langle\nabla_VT,T\rangle}{\\|T\\|^3}\right)\mbox{d}t\end{aligned}$.
 
 于是$\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}\bigg\vert_ {(0,0)}\\=&\int_a^b\left(R(V,T,U,T)+\langle\nabla_T\nabla_VU,T\rangle+\langle\nabla_TU,\nabla_TV\rangle-T\langle U,T\rangle\cdot T\langle V,T\rangle\right)\mbox{d}t\\=&\int_a^b\left(\langle\nabla_T\nabla_VU,T\rangle+\langle\nabla_TU,\nabla_TV\rangle-R(V,T,T,U)\right)\mbox{d}t\\=&\int_a^bT\langle\nabla_VU,T\rangle\mbox{d}t+\int_a^b\langle\nabla_TU,\nabla_TV\rangle-R(U,T,T,V)\mbox{d}t\\=&I_a^b(U,V)+\langle\nabla_VU,T\rangle\vert_a^b\end{aligned}$. 
 
@@ -624,7 +624,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **定理5.3.4**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[a,b]\to M$是单位速度测地线, 设$t_0\in(a,b)$满足$\gamma(t_0)$与$\gamma(a)$沿$\gamma$共轭, 则$d(\gamma(a),\gamma(b))<L(\gamma)$. 
 
-*Proof.* 设$J$是沿$\gamma\vert_ {[a,t_0]}$的非零正规Jacobi场, 满足$J(a)=J(t_0)=0$. 定义$Y(t)$是沿$\gamma$的对$J(t)$的零延拓, 光滑映射$\varphi:[a,b]\to M$满足$\varphi(a)=\varphi(b)=0$, $\varphi(t_0)=1$, $E(t)$是沿$\gamma$的平行向量场, 并且$E(t_0)=-\nabla_ {\gamma'}J\vert_ {t_0}$. 对$\lambda\in(0,\varepsilon)$, 置$W(t):=Y(t)+\lambda\varphi(t)E(t)$, 取变分为$\alpha(t,u,v)=\alpha(t,s,s)=\alpha(t,s):=\exp_ {\gamma(t)}sW(t)$. 则此时第二变分公式中最后一项为$0$, 此时$\dfrac{\partial^2L}{\partial S^2}\bigg\vert_ {(0,0)}=I_a^b(W,W)=I_a^b(Y,Y)+2\lambda I_a^b(Y,\varphi E)+O(\lambda^2)=0+2\lambda I_a^{t_0}(I,\varphi E)+O(\lambda^2)=2\lambda\langle\nabla_TJ,\varphi E\rangle\vert_a^{t_0}+O(\lambda^2)=-2\lambda\|\nabla_TJ\\vert_ {t_0}^2+O(\lambda^2)$, 这说明对足够小的$\lambda$, 上式严格小于$0$, 于是$\gamma$非极小测地线, 对足够小的$s$, $\alpha(\cdot,s)$比之更短. 
+*Proof.* 设$J$是沿$\gamma\vert_ {[a,t_0]}$的非零正规Jacobi场, 满足$J(a)=J(t_0)=0$. 定义$Y(t)$是沿$\gamma$的对$J(t)$的零延拓, 光滑映射$\varphi:[a,b]\to M$满足$\varphi(a)=\varphi(b)=0$, $\varphi(t_0)=1$, $E(t)$是沿$\gamma$的平行向量场, 并且$E(t_0)=-\nabla_ {\gamma'}J\vert_ {t_0}$. 对$\lambda\in(0,\varepsilon)$, 置$W(t):=Y(t)+\lambda\varphi(t)E(t)$, 取变分为$\alpha(t,u,v)=\alpha(t,s,s)=\alpha(t,s):=\exp_ {\gamma(t)}sW(t)$. 则此时第二变分公式中最后一项为$0$, 此时$\dfrac{\partial^2L}{\partial S^2}\bigg\vert_ {(0,0)}=I_a^b(W,W)=I_a^b(Y,Y)+2\lambda I_a^b(Y,\varphi E)+O(\lambda^2)=0+2\lambda I_a^{t_0}(I,\varphi E)+O(\lambda^2)=2\lambda\langle\nabla_TJ,\varphi E\rangle\vert_a^{t_0}+O(\lambda^2)=-2\lambda\\|\nabla_TJ\\vert_ {t_0}^2+O(\lambda^2)$, 这说明对足够小的$\lambda$, 上式严格小于$0$, 于是$\gamma$非极小测地线, 对足够小的$s$, $\alpha(\cdot,s)$比之更短. 
 
 基于此我们可以对直径进行估计, 有“Myers定理”: 
 
@@ -768,7 +768,7 @@ Busemann函数定义中的极限的存在性利用三角不等式以及距离函
 
 **定理5.6.2**: 设$(M^n,g)$是一个完备黎曼流形, 且截面曲率处处非负, 则$\pi_1(M)$至多被$\sqrt{2n\pi}2^{n-2}=:c(n)$个元素生成. 
 
-*Proof.* 设$\pi:\tilde M\to M$是泛覆盖映射, 并设$\tilde p\in\tilde M$是$p\in M$的一个提升, 则如**定理5.5.2**中所说, $\pi_1(M)\cong\pi_1(M,p)$可以等距作用到$\tilde M$上, 此时对任意$\gamma\in G$, 记$|\gamma|:=d(\tilde p,\gamma\tilde p)$, 选定$\gamma_1\in G$使得$|\gamma_1|=\min\lbrace |\gamma\|\gamma\neq e,\gamma\in G\rbrace$, 如果$\langle\gamma_1\rangle\neq G$, 就继续选择$G\setminus\langle\gamma_1\rangle$中最短的, 如此下去选得一列$\langle\gamma_1,\cdots,\gamma_i,\cdots\rangle$, 对任意$i<j$, $|\gamma_i|\leqslant|\gamma_j|$, 下面断言$l_ {ij}:=d(\gamma_i\tilde p,\gamma_j\tilde p)\geqslant|\gamma_j|$, 否则$|\gamma_i^{-1}\gamma_j|=l_ {ij}<|\gamma_j|$, 这就矛盾. 下面由Toponogov三角形比较定理的角版本, $\alpha_ {ij}\geqslant\tilde\alpha_ {ij}\geqslant\dfrac{\pi}{3}$.而$U_pM$中至多有$c(n)$个向量两两夹角超过$\dfrac{\pi}{3}$, 这就完成了证明. $\quad\Box$
+*Proof.* 设$\pi:\tilde M\to M$是泛覆盖映射, 并设$\tilde p\in\tilde M$是$p\in M$的一个提升, 则如**定理5.5.2**中所说, $\pi_1(M)\cong\pi_1(M,p)$可以等距作用到$\tilde M$上, 此时对任意$\gamma\in G$, 记$|\gamma|:=d(\tilde p,\gamma\tilde p)$, 选定$\gamma_1\in G$使得$|\gamma_1|=\min\lbrace |\gamma\\|\gamma\neq e,\gamma\in G\rbrace$, 如果$\langle\gamma_1\rangle\neq G$, 就继续选择$G\setminus\langle\gamma_1\rangle$中最短的, 如此下去选得一列$\langle\gamma_1,\cdots,\gamma_i,\cdots\rangle$, 对任意$i<j$, $|\gamma_i|\leqslant|\gamma_j|$, 下面断言$l_ {ij}:=d(\gamma_i\tilde p,\gamma_j\tilde p)\geqslant|\gamma_j|$, 否则$|\gamma_i^{-1}\gamma_j|=l_ {ij}<|\gamma_j|$, 这就矛盾. 下面由Toponogov三角形比较定理的角版本, $\alpha_ {ij}\geqslant\tilde\alpha_ {ij}\geqslant\dfrac{\pi}{3}$.而$U_pM$中至多有$c(n)$个向量两两夹角超过$\dfrac{\pi}{3}$, 这就完成了证明. $\quad\Box$
 
 **注5.6.1**: 满足$S^{n-1}$上两两距离不小于$\dfrac{\pi}{3}$的点的最大个数被称作“亲吻数”, 亲吻数的具体数值目前在$n=2,3,8,24$时求出了准确值, 但在Gromov定理中我们有上面的估计一般就够用了. 
 
