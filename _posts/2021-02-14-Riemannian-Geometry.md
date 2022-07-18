@@ -294,7 +294,7 @@ $\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\rig
 
 *Proof.* 
 
-$$\begin{aligned}&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)\\ =&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}\int_a^b\left\langle\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial t}\right\rangle^{\frac{1}{2}}\mbox{d}t\\ =&\int_a^b\dfrac{1}{2}\cdot\dfrac{\frac{\partial}{\partial s}\left\langle\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\|\frac{\partial\alpha}{\partial t}\|_ {(t,0)}}\mbox{d}t\\ =&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial s}}\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\|\frac{\partial\alpha}{\partial t}\|_ {(t,0)}}\mbox{d}t.\end{aligned}$$
+$$\begin{aligned}&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)\\ =&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}\int_a^b\left\langle\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial t}\right\rangle^{\frac{1}{2}}\mbox{d}t\\ =&\int_a^b\dfrac{1}{2}\cdot\dfrac{\frac{\partial}{\partial s}\left\langle\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\|\frac{\partial\alpha}{\partial t}\\vert_ {(t,0)}}\mbox{d}t\\ =&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial s}}\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\|\frac{\partial\alpha}{\partial t}\\vert_ {(t,0)}}\mbox{d}t.\end{aligned}$$
 
 回忆$\left[\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right]=0$, 又有上式为
 
@@ -322,11 +322,11 @@ $$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t
 
 测地线在局部随Jacobi场变化的快慢是值得注意的, 我们来对一测地线$\gamma_u(t)$计算其上满足$Y(0)=0,Y'(0)=\xi$的Jacobi场的长度平方$\|Y(t)\|^2$的Taylor展开式. 
 
-设$f(t)=\langle Y(t),Y(t)\rangle$, 显然$f(0)=0$.$f'(0)=2\langle Y(t),Y'(t)\rangle|_ {t=0}=0$.$f''(0)=2\langle Y'(t),Y'(t)\rangle|_ {t=0}+2\langle Y(t),Y''(t)\rangle|_ {t=0}=2$.而$Y''(0)=-R(Y(0),\gamma_u'(0))\gamma_u'(0)=0$, 故$f'''(0)=6\langle Y'(t),Y''(t)\rangle|_ {t=0}+2\langle Y(t),Y'''(t)\rangle|_ {t=0}=0$.又
+设$f(t)=\langle Y(t),Y(t)\rangle$, 显然$f(0)=0$.$f'(0)=2\langle Y(t),Y'(t)\rangle\vert_ {t=0}=0$.$f''(0)=2\langle Y'(t),Y'(t)\rangle\vert_ {t=0}+2\langle Y(t),Y''(t)\rangle\vert_ {t=0}=2$.而$Y''(0)=-R(Y(0),\gamma_u'(0))\gamma_u'(0)=0$, 故$f'''(0)=6\langle Y'(t),Y''(t)\rangle\vert_ {t=0}+2\langle Y(t),Y'''(t)\rangle\vert_ {t=0}=0$.又
 
-$\begin{aligned}Y'''(0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))|_ {t=0}=-\nabla_ {\frac{\partial}{\partial t}}(R(Y(t),\gamma_u'(t))\gamma_u'(t))|_ {t=0}\\=&\left((-\nabla_ {\frac{\partial}{\partial t}}R)(Y(t),\gamma_u'(t))\gamma_u'(t)-R(\nabla_ {\frac{\partial}{\partial t}}Y(t),\gamma_u'(t))\gamma_u'(t)\right)\bigg\vert_ {t=0}\\=&-R(Y'(t),\gamma_u'(t))\gamma_u'(t)|_ {t=0}=-R(\xi,u)u\end{aligned}$, 
+$$\begin{aligned}Y'''(0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t=0}=-\nabla_ {\frac{\partial}{\partial t}}(R(Y(t),\gamma_u'(t))\gamma_u'(t))\vert_ {t=0}\\=&\left((-\nabla_ {\frac{\partial}{\partial t}}R)(Y(t),\gamma_u'(t))\gamma_u'(t)-R(\nabla_ {\frac{\partial}{\partial t}}Y(t),\gamma_u'(t))\gamma_u'(t)\right)\bigg\vert_ {t=0}\\=&-R(Y'(t),\gamma_u'(t))\gamma_u'(t)\vert_ {t=0}=-R(\xi,u)u\end{aligned},$$ 
 
-于是$f^{(4)}(0)=8\langle Y'(t),Y'''(t)\rangle|_ {t=0}=-8\langle R(\xi,u)u,\xi\rangle=-8R(\xi,u,u,\xi)$. 
+于是$f^{(4)}(0)=8\langle Y'(t),Y'''(t)\rangle\vert_ {t=0}=-8\langle R(\xi,u)u,\xi\rangle=-8R(\xi,u,u,\xi)$. 
 
 故我们有: 
 
@@ -374,7 +374,7 @@ $\begin{aligned}Y'''(0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))|_ {t=0}=-\
 
 **定义4.2.3**: 定义为$\langle S_\xi(u),v\rangle:=\mbox{II}_\xi(u,v)$的自伴随线性算子$S_\xi$被称作**形状算子**. 
 
-事实上设$Y\in\Gamma(TM)$延拓了$u$, $\Xi\in\Gamma(\mathcal{VM})$延拓了$\xi$, 由于$\mbox{II}_\xi(u,v)=\langle(\bar\nabla_uY)^\perp,\xi\rangle=\langle\bar\nabla_uY,\Xi\rangle|_p=u\langle Y,\Xi\rangle-\langle Y,\bar\nabla_u\Xi\rangle|_p=-\langle Y,(\bar\nabla_u\Xi)^T\rangle|_p$, 可得$S_\xi(u)=-(\bar\nabla_u\Xi)^T$. 
+事实上设$Y\in\Gamma(TM)$延拓了$u$, $\Xi\in\Gamma(\mathcal{VM})$延拓了$\xi$, 由于$\mbox{II}_\xi(u,v)=\langle(\bar\nabla_uY)^\perp,\xi\rangle=\langle\bar\nabla_uY,\Xi\rangle\vert_p=u\langle Y,\Xi\rangle-\langle Y,\bar\nabla_u\Xi\rangle\vert_p=-\langle Y,(\bar\nabla_u\Xi)^T\rangle\vert_p$, 可得$S_\xi(u)=-(\bar\nabla_u\Xi)^T$. 
 
 **注4.2.1**: 形状算子有时也被称作“Weingarten映射”. 
 
@@ -406,7 +406,7 @@ $\begin{aligned}&(\bar R(u,v)w)^T\\=&(\bar\nabla_u\bar\nabla_vw-\bar\nabla_v\bar
 
 我们先考虑欧氏空间中的$n$维球面$S^n(r)(:=\lbrace (x_i)_ {i=1}^n|\sum\limits_ {i=1}^nx_i^2=r^2\rbrace)\subset\mathbb{R}^{n+1}$, 并把欧氏空间中的点和向量等同起来. 
 
-$p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V}_pS^n(r)$, 对任意$X\in\Gamma(TS^n(r))$, 取$\Xi$为$\xi_p$的自然延拓（$\Xi(p)=\dfrac{p}{r}$）, 则$S_\xi X|_p=-(\bar\nabla_X\Xi)^T|_p$. 取$X$的一条积分曲线$\gamma:(-\varepsilon,\varepsilon)\to S^n(r)$, $\gamma(0)=p,\gamma'(0)=X(p)$, $S_\xi X|_p=-\left(\dfrac{\mbox{d}}{\mbox{d}t}\bigg\vert_ {t=0}\Xi(\gamma(t))\right)^T=-\dfrac{1}{r}X(p)$. 于是$\mbox{II}_\xi(u,v)=-\dfrac{1}{r}\langle u,v\rangle\xi$, 由Gauss公式$R(u,v)w=\dfrac{1}{r^2}(\langle v,w\rangle u-\langle u,w\rangle v)$, 当取$u,v$是标准正交时, $\sec(u,v)=\dfrac{1}{r^2}$. 
+$p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V}_pS^n(r)$, 对任意$X\in\Gamma(TS^n(r))$, 取$\Xi$为$\xi_p$的自然延拓（$\Xi(p)=\dfrac{p}{r}$）, 则$S_\xi X\vert_p=-(\bar\nabla_X\Xi)^T\vert_p$. 取$X$的一条积分曲线$\gamma:(-\varepsilon,\varepsilon)\to S^n(r)$, $\gamma(0)=p,\gamma'(0)=X(p)$, $S_\xi X\vert_p=-\left(\dfrac{\mbox{d}}{\mbox{d}t}\bigg\vert_ {t=0}\Xi(\gamma(t))\right)^T=-\dfrac{1}{r}X(p)$. 于是$\mbox{II}_\xi(u,v)=-\dfrac{1}{r}\langle u,v\rangle\xi$, 由Gauss公式$R(u,v)w=\dfrac{1}{r^2}(\langle v,w\rangle u-\langle u,w\rangle v)$, 当取$u,v$是标准正交时, $\sec(u,v)=\dfrac{1}{r^2}$. 
 
 而测地线是说$\nabla_ {\gamma'}\gamma'=0$, 也就是$(\bar\nabla_ {\gamma'}\gamma')^T=0$, 其中$\gamma(0)=p,\gamma'(0)=u\in T_pS^n(r)$, 这也即是说$\gamma'':=\bar\nabla_ {\gamma'}\gamma'\in\mathcal{V}_pS^n(r)$, 于是$\gamma''(t)=f(t)\Xi(\gamma(t))$, 对$\langle\gamma,\gamma'\rangle=0$求导得$\langle\gamma,\gamma''\rangle=-\langle\gamma',\gamma'\rangle=-1$, 又$\langle\gamma''(t),\gamma(t)\rangle=\langle f(t)\Xi(\gamma(t)),r\cdot\Xi(\gamma(t))\rangle=rf(t)$, 故$f(t)=-\dfrac{1}{r}$, $\gamma''(t)=-\dfrac{1}{r^2}\gamma(t)$. 解此常微分方程即得$\gamma(t)=\cos\dfrac{t}{r}p+\sin\dfrac{t}{r}(ru)$, 这正是大圆. 
 
@@ -452,7 +452,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **定理4.5.1**: $U$是$M$中的开集, $r$是$U$上的一个距离函数, 则$\nabla_ {\partial_r}S+S^2+R(-,\partial_r)\partial_r=0$. 
 
-*Proof.* 对任意$X\in\Gamma(TM|_U)$,$(\nabla_ {\partial r}S)(X)=\nabla_ {\partial_r}(S(X))-S(\nabla_ {\partial_r}X)=\nabla_ {\partial_r}(\nabla_x\partial_r)-\nabla_ {\nabla_ {\partial_r}X}\partial_r$.$S^2(X)=S(S(X))=\nabla_ {\nabla_x\partial_r}\partial_r$. 二者相加得$\nabla_ {\partial_r}(\nabla_x\partial_r)-\nabla_ {[\partial_r,X]}\partial_r$. 但$\langle\nabla_ {\partial_r}\partial_r,X\rangle=\mbox{Hess}r(\partial_r,X)=\mbox{Hess}r(X,\partial_r)=\langle \nabla_X\partial_r,\partial_r\rangle=\dfrac{1}{2}X\|\partial_r\|^2=0$. 于是$\nabla_ {\partial_r}\partial_r\equiv0$ , 故结论成立. $\quad\Box$
+*Proof.* 对任意$X\in\Gamma(TM\vert_U)$,$(\nabla_ {\partial r}S)(X)=\nabla_ {\partial_r}(S(X))-S(\nabla_ {\partial_r}X)=\nabla_ {\partial_r}(\nabla_x\partial_r)-\nabla_ {\nabla_ {\partial_r}X}\partial_r$.$S^2(X)=S(S(X))=\nabla_ {\nabla_x\partial_r}\partial_r$. 二者相加得$\nabla_ {\partial_r}(\nabla_x\partial_r)-\nabla_ {[\partial_r,X]}\partial_r$. 但$\langle\nabla_ {\partial_r}\partial_r,X\rangle=\mbox{Hess}r(\partial_r,X)=\mbox{Hess}r(X,\partial_r)=\langle \nabla_X\partial_r,\partial_r\rangle=\dfrac{1}{2}X\|\partial_r\|^2=0$. 于是$\nabla_ {\partial_r}\partial_r\equiv0$ , 故结论成立. $\quad\Box$
 
 证明过程中我们还得到了一个副产品: 
 
@@ -468,9 +468,9 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 我们现在利用距离函数再计算一次球面$S^{n}(r)$的曲率. 
 
-**例4.5.1**: 取$\mathbb{R}^n$中距离函数$r(x)=\|x\|$, 则$S^{n-1}(r_0)=r^{-1}(r_0)$, 于是在极坐标下$g_0=\mbox{d}r^2+r^2(\mbox{d}S^{n-1})^2=\sum\limits_ {i=1}^n(\mbox{d}x^i)^2$, $\mbox{d}r=\sum\limits_ {i=1}^n\dfrac{1}{r}x^i\mbox{d}x^i$, $\partial_r=\dfrac{1}{r}x^i\partial_i$. 则$2\mbox{Hess}r|_ {r=r_0}=L_ {\partial_r}(g_0)=\partial_r(r^2)(\mbox{d}S^{n-1})^2|_ {r=r_0}=2r_0(\mbox{d}S^{n-1})^2=\dfrac{2}{r_0}g_ {r_0}$. 由Gauss公式即知截面曲率为$\dfrac{1}{r_0^2}$.
+**例4.5.1**: 取$\mathbb{R}^n$中距离函数$r(x)=\|x\|$, 则$S^{n-1}(r_0)=r^{-1}(r_0)$, 于是在极坐标下$g_0=\mbox{d}r^2+r^2(\mbox{d}S^{n-1})^2=\sum\limits_ {i=1}^n(\mbox{d}x^i)^2$, $\mbox{d}r=\sum\limits_ {i=1}^n\dfrac{1}{r}x^i\mbox{d}x^i$, $\partial_r=\dfrac{1}{r}x^i\partial_i$. 则$2\mbox{Hess}r\vert_ {r=r_0}=L_ {\partial_r}(g_0)=\partial_r(r^2)(\mbox{d}S^{n-1})^2\vert_ {r=r_0}=2r_0(\mbox{d}S^{n-1})^2=\dfrac{2}{r_0}g_ {r_0}$. 由Gauss公式即知截面曲率为$\dfrac{1}{r_0^2}$.
 
-**例4.5.2**: 对一般的$I\times_\varphi S^{n-1}$（也就是所谓的旋转对称流形）, $g=\mbox{d}r^2+\varphi^2(r)(\mbox{d}S^{n-1})^2$. 当$X,Y,Z,V,W$均在某一个球面的切空间中时$g_ {r_0}(R^{r_0}(X,Y)V,W)=\dfrac{1}{\varphi^2}g_ {r_0}(X\wedge Y,V\wedge W)$.$\mbox{II}=\mbox{Hess}r|_ {r=r_0}=\dfrac{\varphi'}{\varphi}g_ {r_0}$, 这推出$g(R(X,Y)Y,X)=\dfrac{1-\varphi'^2}{\varphi^2}g_ {r_0}(X\wedge Y,X\wedge Y)$.而对法方向, 由Codazzi公式, $g(R(X,Y)Z,\partial_r)=-(\nabla_X\mbox{II})(Y,Z)+(\nabla_Y\mbox{II})(X,Z)=0$, 这是因为$\mbox{II}=\mbox{Hess}r$只与$r$的值有关. 由Ricatti恒等式可得$R(X,\partial_r)\partial_r=-\dfrac{\varphi''}{\varphi}X$. 于是$\sec(X,\partial_r)=-\dfrac{\varphi''}{\varphi}$, $Ric(X)=(n-2)\dfrac{1-\varphi'^2}{\varphi^2}-\dfrac{\varphi''}{\varphi}$, $Ric(\partial_r)=-(n-1)\dfrac{\varphi''}{\varphi}\partial_r$, $\mbox{Scal}=-2(n-1)\dfrac{\varphi''}{\varphi}+(n-1)(n-2)\dfrac{1-\varphi'^2}{\varphi^2}$. 可见, 要求$I\times S^{n-1}$有平坦的Ricci曲率只能是$\varphi=r$.取$\varphi(t)=\mbox{sn}_k(t)$时, 其有常截面曲率$k$. 
+**例4.5.2**: 对一般的$I\times_\varphi S^{n-1}$（也就是所谓的旋转对称流形）, $g=\mbox{d}r^2+\varphi^2(r)(\mbox{d}S^{n-1})^2$. 当$X,Y,Z,V,W$均在某一个球面的切空间中时$g_ {r_0}(R^{r_0}(X,Y)V,W)=\dfrac{1}{\varphi^2}g_ {r_0}(X\wedge Y,V\wedge W)$.$\mbox{II}=\mbox{Hess}r\vert_ {r=r_0}=\dfrac{\varphi'}{\varphi}g_ {r_0}$, 这推出$g(R(X,Y)Y,X)=\dfrac{1-\varphi'^2}{\varphi^2}g_ {r_0}(X\wedge Y,X\wedge Y)$.而对法方向, 由Codazzi公式, $g(R(X,Y)Z,\partial_r)=-(\nabla_X\mbox{II})(Y,Z)+(\nabla_Y\mbox{II})(X,Z)=0$, 这是因为$\mbox{II}=\mbox{Hess}r$只与$r$的值有关. 由Ricatti恒等式可得$R(X,\partial_r)\partial_r=-\dfrac{\varphi''}{\varphi}X$. 于是$\sec(X,\partial_r)=-\dfrac{\varphi''}{\varphi}$, $Ric(X)=(n-2)\dfrac{1-\varphi'^2}{\varphi^2}-\dfrac{\varphi''}{\varphi}$, $Ric(\partial_r)=-(n-1)\dfrac{\varphi''}{\varphi}\partial_r$, $\mbox{Scal}=-2(n-1)\dfrac{\varphi''}{\varphi}+(n-1)(n-2)\dfrac{1-\varphi'^2}{\varphi^2}$. 可见, 要求$I\times S^{n-1}$有平坦的Ricci曲率只能是$\varphi=r$.取$\varphi(t)=\mbox{sn}_k(t)$时, 其有常截面曲率$k$. 
 
 ### 4.6 体积微元、Jacobi算子
 
@@ -486,7 +486,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 上式右端的积分在单位分解下写出, 在某点处会是可数个积分求和, 此时也可以定义$\mbox{vol}(A)=+\infty$的记号. 
 
-下面来研究$\partial B(p,r)$上的几何. 固定$p\in M$和使得$B(p,r)$中无$p$的共轭点的足够小的$r$, 固定$T_pM$的一组标准正交基$\lbrace e_i\rbrace_ {i=1}^n$, 可在$T_pM$上引入极坐标$(r,\Theta)\in\mathbb{R}^+\times S^{n-1}\cong T_pM$, 取定测地线$\gamma:\mathbb{R}^+\to M$, $\gamma(0)=p$, $\gamma'(0)=e_n$. $\lbrace te_i\rbrace_ {i=1}^n$是沿着$te_n$的Jacobi场, 于是指数映照得到$J_i(t)=(\exp_p)_*|_ {te_n}(te_i)$为$\gamma$上的Jacobi场, $J_i(0)=0,J_i'(0)=e_i$, Gauss引理说明$\langle J_i(t),\gamma'(t)\rangle=0$, $S^{n-1}(t)\subset T_pM$的面积微元为$\det((te_1)\wedge\cdots\wedge(te_ {n-1}))\mbox{d}\Theta$.现在要考虑$(\exp)|_ {te_n}$的Jacobi行列式$J(t,e_n)$, 这正是$\sqrt{\det(t^{-1}J_1,\cdots,t^{-1}J_ {n-1})(t^{-1}J_1,\cdots,t^{-1}J_ {n-1})^T}=\dfrac{1}{t^{n-1}}\sqrt{\det[\langle J_i,J_j\rangle]}$. 
+下面来研究$\partial B(p,r)$上的几何. 固定$p\in M$和使得$B(p,r)$中无$p$的共轭点的足够小的$r$, 固定$T_pM$的一组标准正交基$\lbrace e_i\rbrace_ {i=1}^n$, 可在$T_pM$上引入极坐标$(r,\Theta)\in\mathbb{R}^+\times S^{n-1}\cong T_pM$, 取定测地线$\gamma:\mathbb{R}^+\to M$, $\gamma(0)=p$, $\gamma'(0)=e_n$. $\lbrace te_i\rbrace_ {i=1}^n$是沿着$te_n$的Jacobi场, 于是指数映照得到$J_i(t)=(\exp_p)_*\vert_ {te_n}(te_i)$为$\gamma$上的Jacobi场, $J_i(0)=0,J_i'(0)=e_i$, Gauss引理说明$\langle J_i(t),\gamma'(t)\rangle=0$, $S^{n-1}(t)\subset T_pM$的面积微元为$\det((te_1)\wedge\cdots\wedge(te_ {n-1}))\mbox{d}\Theta$.现在要考虑$(\exp)\vert_ {te_n}$的Jacobi行列式$J(t,e_n)$, 这正是$\sqrt{\det(t^{-1}J_1,\cdots,t^{-1}J_ {n-1})(t^{-1}J_1,\cdots,t^{-1}J_ {n-1})^T}=\dfrac{1}{t^{n-1}}\sqrt{\det[\langle J_i,J_j\rangle]}$. 
 
 **定义4.6.3**: $\sqrt{\det[\langle J_i,J_j\rangle]}\mbox{d}\Theta$就称为$M^n$在$p$处沿$e_n$的**面积微元**, 记为$A(t,e_n)\mbox{d}\Theta$. 
 
@@ -504,7 +504,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **命题4.6.2**: $\mathbb{A}''(t)+R(t)\mathbb{A}(t)=0$, 其中$R(t):=[R(E_i(t),\gamma'(t),\gamma'(t),E_j(t))]$. 
 
-下面定义$\mbox{II}(t):=\mathbb{A}'(t)\mathbb{A}^{-1}(t)$, 则$\mbox{II}(t_0)v=\mathbb{A}'(t_0)(\mathbb{A}^{-1}(t_0)v(t_0))$. $\mathbb{A}^{-1}(t_0)v$事实上是满足$Y(0)=0,Y(t_0)=v$的$Y\in Jac$的$Y'(0)$, 而对沿$\gamma$的平行向量场$w(t)$, 有$\mathbb{A}'(t_0)w(t_0)=(\mathbb{A}(t)w(t))'|_ {t=t_0}=J_w'(t_0)$, 所以其实我们有: 
+下面定义$\mbox{II}(t):=\mathbb{A}'(t)\mathbb{A}^{-1}(t)$, 则$\mbox{II}(t_0)v=\mathbb{A}'(t_0)(\mathbb{A}^{-1}(t_0)v(t_0))$. $\mathbb{A}^{-1}(t_0)v$事实上是满足$Y(0)=0,Y(t_0)=v$的$Y\in Jac$的$Y'(0)$, 而对沿$\gamma$的平行向量场$w(t)$, 有$\mathbb{A}'(t_0)w(t_0)=(\mathbb{A}(t)w(t))'\vert_ {t=t_0}=J_w'(t_0)$, 所以其实我们有: 
 
 **命题4.6.3**: $\mbox{II}(t_0)(Y(t_0))=Y'(t_0)$. 
 
@@ -514,7 +514,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 这与Ricatti恒等式非常相像, 事实上通过$\mbox{II}(t_0)v=Y'(t_0)=\dfrac{\partial}{\partial t}\left(\dfrac{\partial\alpha}{\partial s}\bigg\vert_ {s=0}\right)\bigg\vert_ {t=t_0}=\nabla_ {\frac{\partial\alpha}{\partial s}}\dfrac{\partial}{\partial t}\bigg\vert_ {(t_0,0)}=\nabla_v\partial_t$可以看出$\mbox{II}(t_0)$是$\partial B(p,t_0)$的一个形状算子. 又$\dfrac{\partial}{\partial t}\ln A(t,e_n)=\dfrac{(\det\mathbb{A})'}{\det\mathbb{A}}=\mbox{tr}(\mbox{II})$, 这事实上正是平均曲率, 于是我们有: 
 
-**命题4.6.5**: $\dfrac{\partial}{\partial t}\ln A(t,e_n)|_ {t=t_0}$为$\partial B(p,t_0)$在$M$中的平均曲率, 记为$m(t_0)$. 
+**命题4.6.5**: $\dfrac{\partial}{\partial t}\ln A(t,e_n)\vert_ {t=t_0}$为$\partial B(p,t_0)$在$M$中的平均曲率, 记为$m(t_0)$. 
 
 对于具有常截面曲率$k$的流形, 其$R(t)=kI$, 其中$I$是单位矩阵, 则$\mbox{II}(t)=\dfrac{\mbox{cn}_k(t)}{\mbox{sn}_k(t)}I$. 
 
@@ -610,13 +610,13 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 为了更精细的估计, 我们还需要一些准备工作, 回忆第一变分公式说明了临界曲线都是测地线, 但这样的曲线是“局部最大”还是“局部最小”的呢？为此, 下面要介绍所谓“第二变分公式”. 
 
-考虑单位速度$\gamma:[a,b]\to M$, 光滑映射$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\times(-\varepsilon,\varepsilon)\to M$, 记$T:=\dfrac{\partial\alpha}{\partial t}$, $U:=\dfrac{\partial\alpha}{\partial u}$, $V:=\dfrac{\partial\alpha}{\partial v}$并假设$\langle T,U\rangle|_ {(0,0)}=\langle T,V\rangle|_ {(0,0)}$, $\|T\|_ {(0,0)}=1$, $\nabla_TT|_ {(0,0)}=0$. 定义泛函$L(u,v):=\displaystyle\int_a^b\|T(t)\|_ {(u,v)}\mbox{d}t$.则$\dfrac{\partial L}{\partial u}=\displaystyle\int_a^b\dfrac{\langle\nabla_UT,T\rangle}{\|T\|}\mbox{d}t=\int_a^b\dfrac{\langle\nabla_TU,T\rangle}{\|T\|}\mbox{d}t$, $\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}=\dfrac{\partial}{\partial v}\left(\int_a^b\dfrac{\langle\nabla_TU,T\rangle}{\|T\|}\mbox{d}t\right)\\=&\int_a^b\left(\dfrac{\langle\nabla_V\nabla_TU,T\rangle+\langle\nabla_TU,\nabla_VT\rangle}{\|T\|}-\langle\nabla_TU,T\rangle\cdot\dfrac{\langle\nabla_VT,T\rangle}{\|T\|^3}\right)\mbox{d}t\end{aligned}$.
+考虑单位速度$\gamma:[a,b]\to M$, 光滑映射$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\times(-\varepsilon,\varepsilon)\to M$, 记$T:=\dfrac{\partial\alpha}{\partial t}$, $U:=\dfrac{\partial\alpha}{\partial u}$, $V:=\dfrac{\partial\alpha}{\partial v}$并假设$\langle T,U\rangle\vert_ {(0,0)}=\langle T,V\rangle\vert_ {(0,0)}$, $\|T\\vert_ {(0,0)}=1$, $\nabla_TT\vert_ {(0,0)}=0$. 定义泛函$L(u,v):=\displaystyle\int_a^b\|T(t)\\vert_ {(u,v)}\mbox{d}t$.则$\dfrac{\partial L}{\partial u}=\displaystyle\int_a^b\dfrac{\langle\nabla_UT,T\rangle}{\|T\|}\mbox{d}t=\int_a^b\dfrac{\langle\nabla_TU,T\rangle}{\|T\|}\mbox{d}t$, $\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}=\dfrac{\partial}{\partial v}\left(\int_a^b\dfrac{\langle\nabla_TU,T\rangle}{\|T\|}\mbox{d}t\right)\\=&\int_a^b\left(\dfrac{\langle\nabla_V\nabla_TU,T\rangle+\langle\nabla_TU,\nabla_VT\rangle}{\|T\|}-\langle\nabla_TU,T\rangle\cdot\dfrac{\langle\nabla_VT,T\rangle}{\|T\|^3}\right)\mbox{d}t\end{aligned}$.
 
-于是$\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}\bigg\vert_ {(0,0)}\\=&\int_a^b\left(R(V,T,U,T)+\langle\nabla_T\nabla_VU,T\rangle+\langle\nabla_TU,\nabla_TV\rangle-T\langle U,T\rangle\cdot T\langle V,T\rangle\right)\mbox{d}t\\=&\int_a^b\left(\langle\nabla_T\nabla_VU,T\rangle+\langle\nabla_TU,\nabla_TV\rangle-R(V,T,T,U)\right)\mbox{d}t\\=&\int_a^bT\langle\nabla_VU,T\rangle\mbox{d}t+\int_a^b\langle\nabla_TU,\nabla_TV\rangle-R(U,T,T,V)\mbox{d}t\\=&I_a^b(U,V)+\langle\nabla_VU,T\rangle|_a^b\end{aligned}$. 
+于是$\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}\bigg\vert_ {(0,0)}\\=&\int_a^b\left(R(V,T,U,T)+\langle\nabla_T\nabla_VU,T\rangle+\langle\nabla_TU,\nabla_TV\rangle-T\langle U,T\rangle\cdot T\langle V,T\rangle\right)\mbox{d}t\\=&\int_a^b\left(\langle\nabla_T\nabla_VU,T\rangle+\langle\nabla_TU,\nabla_TV\rangle-R(V,T,T,U)\right)\mbox{d}t\\=&\int_a^bT\langle\nabla_VU,T\rangle\mbox{d}t+\int_a^b\langle\nabla_TU,\nabla_TV\rangle-R(U,T,T,V)\mbox{d}t\\=&I_a^b(U,V)+\langle\nabla_VU,T\rangle\vert_a^b\end{aligned}$. 
 
 其中$I_a^b(U,V):=\int_a^b\langle\nabla_TU,\nabla_TV\rangle-R(U,T,T,V)\mbox{d}t$称为沿$\gamma$的**指标形式**. 这便是第二变分公式: 
 
-**定理5.3.3**: $\displaystyle\dfrac{\partial^2L}{\partial v\partial u}\bigg\vert_ {(0,0)}=I_a^b(U,V)+\langle\nabla_VU,T\rangle|_a^b$. 
+**定理5.3.3**: $\displaystyle\dfrac{\partial^2L}{\partial v\partial u}\bigg\vert_ {(0,0)}=I_a^b(U,V)+\langle\nabla_VU,T\rangle\vert_a^b$. 
 
 事实上上面的讨论对分段光滑的变分也是成立的, 但这里与第一变分公式一样, 分部积分会在非光滑点出现一些左极限与右极限之差. 
 
@@ -624,7 +624,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **定理5.3.4**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[a,b]\to M$是单位速度测地线, 设$t_0\in(a,b)$满足$\gamma(t_0)$与$\gamma(a)$沿$\gamma$共轭, 则$d(\gamma(a),\gamma(b))<L(\gamma)$. 
 
-*Proof.* 设$J$是沿$\gamma|_ {[a,t_0]}$的非零正规Jacobi场, 满足$J(a)=J(t_0)=0$. 定义$Y(t)$是沿$\gamma$的对$J(t)$的零延拓, 光滑映射$\varphi:[a,b]\to M$满足$\varphi(a)=\varphi(b)=0$, $\varphi(t_0)=1$, $E(t)$是沿$\gamma$的平行向量场, 并且$E(t_0)=-\nabla_ {\gamma'}J|_ {t_0}$. 对$\lambda\in(0,\varepsilon)$, 置$W(t):=Y(t)+\lambda\varphi(t)E(t)$, 取变分为$\alpha(t,u,v)=\alpha(t,s,s)=\alpha(t,s):=\exp_ {\gamma(t)}sW(t)$. 则此时第二变分公式中最后一项为$0$, 此时$\dfrac{\partial^2L}{\partial S^2}\bigg\vert_ {(0,0)}=I_a^b(W,W)=I_a^b(Y,Y)+2\lambda I_a^b(Y,\varphi E)+O(\lambda^2)=0+2\lambda I_a^{t_0}(I,\varphi E)+O(\lambda^2)=2\lambda\langle\nabla_TJ,\varphi E\rangle|_a^{t_0}+O(\lambda^2)=-2\lambda\|\nabla_TJ\|_ {t_0}^2+O(\lambda^2)$, 这说明对足够小的$\lambda$, 上式严格小于$0$, 于是$\gamma$非极小测地线, 对足够小的$s$, $\alpha(\cdot,s)$比之更短. 
+*Proof.* 设$J$是沿$\gamma\vert_ {[a,t_0]}$的非零正规Jacobi场, 满足$J(a)=J(t_0)=0$. 定义$Y(t)$是沿$\gamma$的对$J(t)$的零延拓, 光滑映射$\varphi:[a,b]\to M$满足$\varphi(a)=\varphi(b)=0$, $\varphi(t_0)=1$, $E(t)$是沿$\gamma$的平行向量场, 并且$E(t_0)=-\nabla_ {\gamma'}J\vert_ {t_0}$. 对$\lambda\in(0,\varepsilon)$, 置$W(t):=Y(t)+\lambda\varphi(t)E(t)$, 取变分为$\alpha(t,u,v)=\alpha(t,s,s)=\alpha(t,s):=\exp_ {\gamma(t)}sW(t)$. 则此时第二变分公式中最后一项为$0$, 此时$\dfrac{\partial^2L}{\partial S^2}\bigg\vert_ {(0,0)}=I_a^b(W,W)=I_a^b(Y,Y)+2\lambda I_a^b(Y,\varphi E)+O(\lambda^2)=0+2\lambda I_a^{t_0}(I,\varphi E)+O(\lambda^2)=2\lambda\langle\nabla_TJ,\varphi E\rangle\vert_a^{t_0}+O(\lambda^2)=-2\lambda\|\nabla_TJ\\vert_ {t_0}^2+O(\lambda^2)$, 这说明对足够小的$\lambda$, 上式严格小于$0$, 于是$\gamma$非极小测地线, 对足够小的$s$, $\alpha(\cdot,s)$比之更短. 
 
 基于此我们可以对直径进行估计, 有“Myers定理”: 
 
@@ -746,7 +746,7 @@ Busemann函数定义中的极限的存在性利用三角不等式以及距离函
 
 **定理5.5.4**: 设$(M^n,g)$是Ricci曲率处处非负的开流形, 若其上存在直线, 则存在黎曼流形$(N^{n-1},g')$使得$M$等距于$\mathbb{R}\times N^{n-1}$. 
 
-*Proof.* 设$\sigma:\mathbb{R}\to M$是一条直线, 取$b^+:=b_ {\sigma|_ {\mathbb{R}^+}}$, $b^-:=b_ {\sigma|_ {\mathbb{R}^-}}$. 则由三角不等式$b^++b^-\geqslant0$, 由**引理5.5.1**知$\Delta(b^++b^-)\leqslant0$, 但$b^++b^-$限制在$\sigma$上又恒等于$0$由弱极大值原理知$b^++b^-\equiv0$. 对任意$p\in M$, 仿照**命题5.5.1**可以分别沿$\sigma$的正向和负向找到两个从$p$出发的射线$\gamma^+$和$\gamma^-$, 通过计算$b^+(\gamma^+(t))$和$b^-(\gamma^-(t))$可知$\gamma^+$和$\gamma^-$可以拼成一条直线$\gamma$, 并且容易验证$\gamma'(0)\perp(b^+)^{-1}(b^+(p))$.取$N:=(b^+)^{-1}(0)$, 并定义$\Phi:\mathbb{R}\times N\to M$为$[(t,p)\mapsto\exp_p(t\gamma'(0))]$, 这就是满足要求的等距映射. $\quad\Box$
+*Proof.* 设$\sigma:\mathbb{R}\to M$是一条直线, 取$b^+:=b_ {\sigma\vert_ {\mathbb{R}^+}}$, $b^-:=b_ {\sigma\vert_ {\mathbb{R}^-}}$. 则由三角不等式$b^++b^-\geqslant0$, 由**引理5.5.1**知$\Delta(b^++b^-)\leqslant0$, 但$b^++b^-$限制在$\sigma$上又恒等于$0$由弱极大值原理知$b^++b^-\equiv0$. 对任意$p\in M$, 仿照**命题5.5.1**可以分别沿$\sigma$的正向和负向找到两个从$p$出发的射线$\gamma^+$和$\gamma^-$, 通过计算$b^+(\gamma^+(t))$和$b^-(\gamma^-(t))$可知$\gamma^+$和$\gamma^-$可以拼成一条直线$\gamma$, 并且容易验证$\gamma'(0)\perp(b^+)^{-1}(b^+(p))$.取$N:=(b^+)^{-1}(0)$, 并定义$\Phi:\mathbb{R}\times N\to M$为$[(t,p)\mapsto\exp_p(t\gamma'(0))]$, 这就是满足要求的等距映射. $\quad\Box$
 
 ### 5.6 截面曲率相关的比较定理(二)
 
