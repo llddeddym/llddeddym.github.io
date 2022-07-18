@@ -44,7 +44,7 @@ tags:
 
 **注1.4**: $TM$上有光滑结构, 且$\dim TM=2\dim M$, 其坐标卡的前半部分由这一点的局部坐标给出, 后半部分由切向量在这点处切空间中自然基下的坐标给出. $T^*M$上的光滑结构是类似的. 
 
-**定义1.8**: $B$上向量丛$E$的一个**截面**是一连续映射$s:B\to E$, 使得$\pi\circ s=\mbox{id}_B$; 若$E,B$均是流形并且截面$s\in C^\infty(B,E)$, 就说$s$是一个**光滑截面**; $E$的所有光滑截面组成的集合记为$\Gamma(E)$. 
+**定义1.8**: $B$上向量丛$E$的一个**截面**是一连续映射$s:B\to E$, 使得$\pi\circ s=\mbox{id} _B$; 若$E,B$均是流形并且截面$s\in C^\infty(B,E)$, 就说$s$是一个**光滑截面**; $E$的所有光滑截面组成的集合记为$\Gamma(E)$. 
 
 **注1.5**: $\Gamma(E)$是一个$C(B)-$模. 
 
@@ -104,7 +104,7 @@ tags:
 
 显然$L$是$\mathcal{C}$上的泛函.下面定义任意两点间的距离. 
 
-**定义2.2.3**: 对道路连通流形$M$上任意两点$p,q\in M$, 记所有以$p$为起点, $q$为终点的分段光滑曲线$\mathcal{C}_ {p,q}=\lbrace c\in\mathcal{C}([0,1])\mid c(0)=p,c(1)=q\rbrace$, 定义$p,q$之间的**距离**为$ d(p,q):=\inf\lbrace L(\gamma)\mid\gamma\in\mathcal{C}_ {p,q}\rbrace $. 
+**定义2.2.3**: 对道路连通流形$M$上任意两点$p,q\in M$, 记所有以$p$为起点, $q$为终点的分段光滑曲线$\mathcal{C} _ {p,q}=\lbrace c\in\mathcal{C}([0,1])\mid c(0)=p,c(1)=q\rbrace$, 定义$p,q$之间的**距离**为$ d(p,q):=\inf\lbrace L(\gamma)\mid\gamma\in\mathcal{C} _ {p,q}\rbrace $. 
 
 **注2.2.2**: 由道路连通性可说明这样的定义是合理的, 即$d<+\infty$. 
 
@@ -156,7 +156,7 @@ tags:
 
 **例2.4.1**: 光滑切向量场$X$是一个$(1,0)-$张量; 微分$1-$形式$\omega$是一个$(0,1)-$张量. 
 
-**定义2.4.2**: **缩并**$c:\Gamma(T^{r+1}_ {s+1}M)\to\Gamma(T^r_sM)$定义如下: $$c(x_1\otimes\cdots\otimes x_ {r+1}\otimes y_1^* \otimes\cdots\otimes y_ {s+1}^* ):=\sum\limits_ {k,l}y_l^* (x_k)x_1\otimes\cdots\otimes\widehat{x_k}\otimes\cdots\otimes x_ {r+1}\otimes y_1^* \otimes\cdots\otimes\widehat{y_l^* }\otimes\cdots\otimes y_ {s+1}^*.$$ 
+**定义2.4.2**: **缩并**$c:\Gamma(T^{r+1} _ {s+1}M)\to\Gamma(T^r_sM)$定义如下: $$c(x_1\otimes\cdots\otimes x_ {r+1}\otimes y_1^* \otimes\cdots\otimes y_ {s+1}^* ):=\sum\limits_ {k,l}y_l^* (x_k)x_1\otimes\cdots\otimes\widehat{x_k}\otimes\cdots\otimes x_ {r+1}\otimes y_1^* \otimes\cdots\otimes\widehat{y_l^* }\otimes\cdots\otimes y_ {s+1}^*.$$ 
 
 **命题2.4.1**: 存在唯一的$\nabla:\Gamma(TM)\times\bigcup\limits_ {r,s}\Gamma(T^r_sM)\to\bigcup\limits_ {r,s}\Gamma(T^r_sM)$使得对任意$(r,s)$, $\nabla\mid_ {\Gamma(TM)\times\Gamma(T^r_sM)}$是$T^r_sM$上的联络且满足: (1)$\nabla_X(T\otimes T')=(\nabla_XT)\otimes T'+T\otimes (\nabla_XT')$; (2)$\nabla_X(cT)=c\nabla_XT$; (3)对任意$f\in C^\infty(M),\nabla_Xf=X(f)$; (4)$\nabla\mid_ {\Gamma(TM)\times\Gamma(TM)}$就是Levi-Civita联络. 
 
@@ -210,7 +210,7 @@ tags:
 
 **定义3.1.3**: 对任意$p\in M$, **指数映照**$\exp_p:B(O_p,\delta)(:=\lbrace v\in T_pM\mid\\|v\\|<\delta\rbrace)\to M$定义为$u\mapsto\gamma_u(1)$. 
 
-容易看到$\exp_p(t\xi)=\gamma_\xi(t),\lvert t\rvert\leqslant1,\xi\in B(O_p,\delta)$和$\exp_p(O_p)=p$. 切空间作为欧氏空间当然也有流形结构, 于是可以考虑$\exp_p$的切映射有如何性质, 最方便研究的自然是$(\exp)_ * \mid_ {O_p}:T_ {O_p}(T_pM)\to T_pM$. 但欧氏空间的切空间和本身自然别无二致, 于是我们可以将此映射视为$T_pM$的一个自映射. 依定义, $(\exp)_ * \mid_ {O_p}(u)=\dfrac{\mbox{d}}{\mbox{d}t}\exp_p(tu)=\gamma_u'(0)=u$, 这说明$(\exp)_ * \mid_ {O_p}$不是别的, 正是$\mbox{id}_ {T_pM}$.因此通过反函数定理, 我们知道存在$\varepsilon<\delta$, 使得$\exp_p\mid_ {B(O_p,\varepsilon)}$是微分同胚, 其像是$M$上的一个开集$B$, 于是乎可以有: 
+容易看到$\exp_p(t\xi)=\gamma_\xi(t),\lvert t\rvert\leqslant1,\xi\in B(O_p,\delta)$和$\exp_p(O_p)=p$. 切空间作为欧氏空间当然也有流形结构, 于是可以考虑$\exp_p$的切映射有如何性质, 最方便研究的自然是$(\exp)_ * \mid_ {O_p}:T_ {O_p}(T_pM)\to T_pM$. 但欧氏空间的切空间和本身自然别无二致, 于是我们可以将此映射视为$T_pM$的一个自映射. 依定义, $(\exp)_ * \mid_ {O_p}(u)=\dfrac{\mbox{d}}{\mbox{d}t}\exp_p(tu)=\gamma_u'(0)=u$, 这说明$(\exp)_ * \mid_ {O_p}$不是别的, 正是$\mbox{id} _ {T_pM}$.因此通过反函数定理, 我们知道存在$\varepsilon<\delta$, 使得$\exp_p\mid_ {B(O_p,\varepsilon)}$是微分同胚, 其像是$M$上的一个开集$B$, 于是乎可以有: 
 
 **定义3.1.4**: $\log_p:B\to B(O_p,\varepsilon)$为$\exp_p$在局部上的逆映射. 需要注意到$(B,\log_p)$是一个坐标卡, $T_pM$作为欧氏空间有标准正交基$\lbrace e_i\rbrace_ {i=1}^n$, 其上坐标函数$\lbrace x^i\rbrace_ {i=1}^n$为$\log_p(q)=x^i(q)e_i$, $(B,\log_p,x^i)$就称为一个**标准坐标**. 
 
@@ -290,15 +290,15 @@ $\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\rig
 
 接下来是“第一变分公式”: 
 
-**命题3.3.2**: 设$c,\alpha,W,c_s$如上定义, 则$$\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)=-\displaystyle\int_a^b\left\langle W(t),\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{\\|c'(t)\\|}\right\rangle\mbox{d}t+\sum_ {i=1}^{n-1}\left\langle W(t_i),\dfrac{c'(t_i-0)}{\\|c'(t_i-0)\\|}-\dfrac{c'(t_i+0)}{\\|c'(t_i+0)\\|}\right\rangle.$$
+**命题3.3.2**: 设$c,\alpha,W,c_s$如上定义, 则$$\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)=-\displaystyle\int_a^b\left\langle W(t),\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{\|c'(t)\|}\right\rangle\mbox{d}t+\sum_ {i=1}^{n-1}\left\langle W(t_i),\dfrac{c'(t_i-0)}{\|c'(t_i-0)\|}-\dfrac{c'(t_i+0)}{\|c'(t_i+0)\|}\right\rangle.$$
 
 *Proof.* 
 
-$$\begin{aligned}&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)\\ =&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}\int_a^b\left\langle\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial t}\right\rangle^{\frac{1}{2}}\mbox{d}t\\ =&\int_a^b\dfrac{1}{2}\cdot\dfrac{\frac{\partial}{\partial s}\left\langle\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\\|\frac{\partial\alpha}{\partial t}\\|_ {(t,0)}}\mbox{d}t\\ =&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial s}}\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\\|\frac{\partial\alpha}{\partial t}\\|_ {(t,0)}}\mbox{d}t.\end{aligned}$$
+$$\begin{aligned}&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)\\ =&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}\int_a^b\left\langle\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial t}\right\rangle^{\frac{1}{2}}\mbox{d}t\\ =&\int_a^b\dfrac{1}{2}\cdot\dfrac{\frac{\partial}{\partial s}\left\langle\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\|\frac{\partial\alpha}{\partial t}\|_ {(t,0)}}\mbox{d}t\\ =&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial s}}\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\right\rangle\bigg\vert_ {s=0}}{\|\frac{\partial\alpha}{\partial t}\|_ {(t,0)}}\mbox{d}t.\end{aligned}$$
 
 回忆$\left[\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right]=0$, 又有上式为
 
-$$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}\right\rangle}{\\|\frac{\partial\alpha}{\partial t}\\|}\Bigg\vert_ {(t,0)}\mbox{d}t\\=&\int_a^b\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}/\\|\frac{\partial\alpha}{\partial t}\\|\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t\\=&\int_a^b\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\\|c'(t)\\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t,\end{aligned}$$
+$$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}\right\rangle}{\|\frac{\partial\alpha}{\partial t}\|}\Bigg\vert_ {(t,0)}\mbox{d}t\\=&\int_a^b\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}/\|\frac{\partial\alpha}{\partial t}\|\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t\\=&\int_a^b\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\|c'(t)\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t,\end{aligned}$$
 
  由联络保度量的性质知上式为$\displaystyle\int_a^b\frac{\partial}{\partial t}\left\langle\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\\|c'(t)\\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t-\displaystyle\int_a^b\left\langle\frac{\partial\alpha}{\partial s},\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{\\|c'(t)\\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t$, 在被减项上对每段$[t_ {i-1},t_i]$运用微积分基本定理即明所欲证. $\quad\Box$
 
@@ -322,7 +322,7 @@ $$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t
 
 测地线在局部随Jacobi场变化的快慢是值得注意的, 我们来对一测地线$\gamma_u(t)$计算其上满足$Y(0)=0,Y'(0)=\xi$的Jacobi场的长度平方$\\|Y(t)\\|^2$的Taylor展开式. 
 
-设$f(t)=\langle Y(t),Y(t)\rangle$, 显然$f(0)=0$.$f' (0)=2\langle Y(t),Y'(t)\rangle\vert_ {t=0}=0$. $f'' (0)=2\langle Y'(t),Y'(t)\rangle\vert_ {t=0}+2\langle Y(t),Y''(t)\rangle\vert_ {t=0}=2$. 而$Y'' (0)=-R(Y(0),\gamma_u'(0))\gamma_u'(0)=0$, 故$f''' (0)=6\langle Y'(t),Y'' (t)\rangle\vert_ {t=0}+2\langle Y(t),Y''' (t)\rangle\vert_ {t=0}=0$.又
+设$f(t)=\langle Y(t),Y(t)\rangle$, 显然$f(0)=0$.$f' (0)=2\langle Y(t),Y'(t)\rangle\vert_ {t=0}=0$. $f'' (0)=2\langle Y'(t),Y'(t)\rangle\vert_ {t=0}+2\langle Y(t),Y'' (t)\rangle\vert_ {t=0}=2$. 而$Y'' (0)=-R(Y(0),\gamma_u'(0))\gamma_u'(0)=0$, 故$f''' (0)=6\langle Y'(t),Y'' (t)\rangle\vert_ {t=0}+2\langle Y(t),Y''' (t)\rangle\vert_ {t=0}=0$.又
 
 $$\begin{aligned}Y''' (0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t=0}=-\nabla_ {\frac{\partial}{\partial t}}(R(Y(t),\gamma_u'(t))\gamma_u'(t))\vert_ {t=0}\\=&\left((-\nabla_ {\frac{\partial}{\partial t}}R)(Y(t),\gamma_u'(t))\gamma_u'(t)-R(\nabla_ {\frac{\partial}{\partial t}}Y(t),\gamma_u'(t))\gamma_u'(t)\right)\bigg\vert_ {t=0}\\=&-R(Y'(t),\gamma_u'(t))\gamma_u'(t)\vert_ {t=0}=-R(\xi,u)u\end{aligned},$$ 
 
@@ -358,9 +358,9 @@ $$\begin{aligned}Y''' (0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t
 
 ### 4.2 第二基本型与Gauss公式、Codazzi公式
 
-**定义4.2.1**: 一个**黎曼子流形**是指一个等距嵌入$\varphi:(M^n,g)\hookrightarrow(\bar M^N,\bar g)$, $n<N$, 并总将$M$和$\varphi(M)$等同起来; 对$p\in M$, 定义**法空间**$\mathcal{V}_pM$为$T_pM$在$T_p\bar M$中的正交补, 其中元素称为**法向量**; $M$上的**法丛**$\mathcal{V}M:=\bigcup\limits_ {p\in M}\mathcal{V}_pM$. 
+**定义4.2.1**: 一个**黎曼子流形**是指一个等距嵌入$\varphi:(M^n,g)\hookrightarrow(\bar M^N,\bar g)$, $n<N$, 并总将$M$和$\varphi(M)$等同起来; 对$p\in M$, 定义**法空间**$\mathcal{V} _ pM$为$T_pM$在$T_p\bar M$中的正交补, 其中元素称为**法向量**; $M$上的**法丛**$\mathcal{V}M:=\bigcup\limits_ {p\in M}\mathcal{V} _ pM$. 
 
-对于$x\in T_p\bar M$, 记$x=x^T+x^\perp$为其关于$T_pM$和$\mathcal{V}_pM$的分解. 
+对于$x\in T_p\bar M$, 记$x=x^T+x^\perp$为其关于$T_pM$和$\mathcal{V} _pM$的分解. 
 
 **命题4.2.1**: 令$\bar\nabla$和$\nabla$分别为$(\bar M,\bar g)$和$(M,g)$上的Levi-Civita联络. 对任意$p\in M$, $v\in T_pM$, $Y\in\Gamma(TM)$, 有$\nabla_vY=(\bar\nabla_vY)^T$. 
 
@@ -368,19 +368,19 @@ $$\begin{aligned}Y''' (0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t
 
 下面均默认$M\hookrightarrow\bar M$是一个黎曼子流形且二者的Levi-Civita联络分别为$\nabla,\bar\nabla$, 并且其上定义了法丛. 
 
-**定义4.2.2**: 对称双线性映射$\mbox{II}:T_pM\times T_pM\to\mathcal{V}_pM$, $(u,v)\mapsto(\bar\nabla_uY)^\perp$, 其中$Y$是$v$在$\Gamma(TM)$中的任意延拓, 此定义实际上不依赖于$Y$的选取, 其被称为$M\hookrightarrow\bar M$的**第二基本型**.对任意$\xi\in\mathcal{V}_pM$, $\mbox{II}_\xi(u,v):=\langle\mbox{II}(u,v),\xi\rangle$有时也被称为第二基本型. 
+**定义4.2.2**: 对称双线性映射$\mbox{II}:T_pM\times T_pM\to\mathcal{V} _pM$, $(u,v)\mapsto(\bar\nabla_uY)^\perp$, 其中$Y$是$v$在$\Gamma(TM)$中的任意延拓, 此定义实际上不依赖于$Y$的选取, 其被称为$M\hookrightarrow\bar M$的**第二基本型**.对任意$\xi\in\mathcal{V} _pM$, $\mbox{II} _\xi(u,v):=\langle\mbox{II}(u,v),\xi\rangle$有时也被称为第二基本型. 
 
 这里可以验证其对称性: 将$u,v$分别延拓为$X,Y\in\Gamma(TM)$, 则$\mbox{II}(u,v)-\mbox{II}(v,u)=(\bar\nabla_XY-\bar\nabla_YX)^\perp=([X,Y])^\perp=0$.其双线性性和张量性的验证从略. 
 
-**定义4.2.3**: 定义为$\langle S_\xi(u),v\rangle:=\mbox{II}_\xi(u,v)$的自伴随线性算子$S_\xi$被称作**形状算子**. 
+**定义4.2.3**: 定义为$\langle S_\xi(u),v\rangle:=\mbox{II} _\xi(u,v)$的自伴随线性算子$S_\xi$被称作**形状算子**. 
 
-事实上设$Y\in\Gamma(TM)$延拓了$u$, $\Xi\in\Gamma(\mathcal{VM})$延拓了$\xi$, 由于$\mbox{II}_\xi(u,v)=\langle(\bar\nabla_uY)^\perp,\xi\rangle=\langle\bar\nabla_uY,\Xi\rangle\vert_p=u\langle Y,\Xi\rangle-\langle Y,\bar\nabla_u\Xi\rangle\vert_p=-\langle Y,(\bar\nabla_u\Xi)^T\rangle\vert_p$, 可得$S_\xi(u)=-(\bar\nabla_u\Xi)^T$. 
+事实上设$Y\in\Gamma(TM)$延拓了$u$, $\Xi\in\Gamma(\mathcal{VM})$延拓了$\xi$, 由于$\mbox{II} _\xi(u,v)=\langle(\bar\nabla_uY)^\perp,\xi\rangle=\langle\bar\nabla_uY,\Xi\rangle\vert_p=u\langle Y,\Xi\rangle-\langle Y,\bar\nabla_u\Xi\rangle\vert_p=-\langle Y,(\bar\nabla_u\Xi)^T\rangle\vert_p$, 可得$S_\xi(u)=-(\bar\nabla_u\Xi)^T$. 
 
 **注4.2.1**: 形状算子有时也被称作“Weingarten映射”. 
 
-**定义4.2.4**: $\mbox{II}_\xi$或$S_\xi$的特征值称为$M\hookrightarrow\bar M$沿$\xi$的**主曲率**, 所有特征值之和称为**平均曲率**, 记为$m(\xi)$. 
+**定义4.2.4**: $\mbox{II} _\xi$或$S_\xi$的特征值称为$M\hookrightarrow\bar M$沿$\xi$的**主曲率**, 所有特征值之和称为**平均曲率**, 记为$m(\xi)$. 
 
-当$\dim\bar M=\dim M+1$时, $\xi$的选择在相差一个符号的意义下唯一, 此时可以省略$\mbox{II}_\xi$或$S_\xi$的下标. 
+当$\dim\bar M=\dim M+1$时, $\xi$的选择在相差一个符号的意义下唯一, 此时可以省略$\mbox{II} _\xi$或$S_\xi$的下标. 
 
 下面我们介绍“Gauss公式”. 
 
@@ -406,9 +406,9 @@ $\begin{aligned}&(\bar R(u,v)w)^T\\=&(\bar\nabla_u\bar\nabla_vw-\bar\nabla_v\bar
 
 我们先考虑欧氏空间中的$n$维球面$S^n(r)(:=\lbrace (x_i)_ {i=1}^n|\sum\limits_ {i=1}^nx_i^2=r^2\rbrace)\subset\mathbb{R}^{n+1}$, 并把欧氏空间中的点和向量等同起来. 
 
-$p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V}_pS^n(r)$, 对任意$X\in\Gamma(TS^n(r))$, 取$\Xi$为$\xi_p$的自然延拓（$\Xi(p)=\dfrac{p}{r}$）, 则$S_\xi X\vert_p=-(\bar\nabla_X\Xi)^T\vert_p$. 取$X$的一条积分曲线$\gamma:(-\varepsilon,\varepsilon)\to S^n(r)$, $\gamma(0)=p,\gamma'(0)=X(p)$, $S_\xi X\vert_p=-\left(\dfrac{\mbox{d}}{\mbox{d}t}\bigg\vert_ {t=0}\Xi(\gamma(t))\right)^T=-\dfrac{1}{r}X(p)$. 于是$\mbox{II}_\xi(u,v)=-\dfrac{1}{r}\langle u,v\rangle\xi$, 由Gauss公式$R(u,v)w=\dfrac{1}{r^2}(\langle v,w\rangle u-\langle u,w\rangle v)$, 当取$u,v$是标准正交时, $\sec(u,v)=\dfrac{1}{r^2}$. 
+$p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V} _pS^n(r)$, 对任意$X\in\Gamma(TS^n(r))$, 取$\Xi$为$\xi_p$的自然延拓（$\Xi(p)=\dfrac{p}{r}$）, 则$S_\xi X\vert_p=-(\bar\nabla_X\Xi)^T\vert_p$. 取$X$的一条积分曲线$\gamma:(-\varepsilon,\varepsilon)\to S^n(r)$, $\gamma(0)=p,\gamma'(0)=X(p)$, $S_\xi X\vert_p=-\left(\dfrac{\mbox{d}}{\mbox{d}t}\bigg\vert_ {t=0}\Xi(\gamma(t))\right)^T=-\dfrac{1}{r}X(p)$. 于是$\mbox{II} _\xi(u,v)=-\dfrac{1}{r}\langle u,v\rangle\xi$, 由Gauss公式$R(u,v)w=\dfrac{1}{r^2}(\langle v,w\rangle u-\langle u,w\rangle v)$, 当取$u,v$是标准正交时, $\sec(u,v)=\dfrac{1}{r^2}$. 
 
-而测地线是说$\nabla_ {\gamma'}\gamma'=0$, 也就是$(\bar\nabla_ {\gamma'}\gamma')^T=0$, 其中$\gamma(0)=p,\gamma'(0)=u\in T_pS^n(r)$, 这也即是说$\gamma'':=\bar\nabla_ {\gamma'}\gamma'\in\mathcal{V}_pS^n(r)$, 于是$\gamma''(t)=f(t)\Xi(\gamma(t))$, 对$\langle\gamma,\gamma'\rangle=0$求导得$\langle\gamma,\gamma''\rangle=-\langle\gamma',\gamma'\rangle=-1$, 又$\langle\gamma''(t),\gamma(t)\rangle=\langle f(t)\Xi(\gamma(t)),r\cdot\Xi(\gamma(t))\rangle=rf(t)$, 故$f(t)=-\dfrac{1}{r}$, $\gamma''(t)=-\dfrac{1}{r^2}\gamma(t)$. 解此常微分方程即得$\gamma(t)=\cos\dfrac{t}{r}p+\sin\dfrac{t}{r}(ru)$, 这正是大圆. 
+而测地线是说$\nabla_ {\gamma'}\gamma'=0$, 也就是$(\bar\nabla_ {\gamma'}\gamma')^T=0$, 其中$\gamma(0)=p,\gamma'(0)=u\in T_pS^n(r)$, 这也即是说$\gamma'':=\bar\nabla_ {\gamma'}\gamma'\in\mathcal{V} _pS^n(r)$, 于是$\gamma''(t)=f(t)\Xi(\gamma(t))$, 对$\langle\gamma,\gamma'\rangle=0$求导得$\langle\gamma,\gamma''\rangle=-\langle\gamma',\gamma'\rangle=-1$, 又$\langle\gamma''(t),\gamma(t)\rangle=\langle f(t)\Xi(\gamma(t)),r\cdot\Xi(\gamma(t))\rangle=rf(t)$, 故$f(t)=-\dfrac{1}{r}$, $\gamma''(t)=-\dfrac{1}{r^2}\gamma(t)$. 解此常微分方程即得$\gamma(t)=\cos\dfrac{t}{r}p+\sin\dfrac{t}{r}(ru)$, 这正是大圆. 
 
 对于Jacobi方程$Y''(t)+\dfrac{1}{r^2}Y(t)=0$, $\gamma(t)=a\cos\dfrac{t}{r}E_1(t)+br\sin\dfrac{t}{r}E_2(t)$, 其中$E_1,E_2$为沿$\gamma$平行移动的向量场, $Y(0)=aE_1(0)$, $Y'(0)=bE_2(0)$. 
 
@@ -418,7 +418,7 @@ $p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V}_pS^n(r)$, 对�
 
 将上述内容应用到$\mathbb{H}^n$上, 可得$f=-\ln x^n$, $R^\varphi(x,y,z,w)=-\langle x,w\rangle\langle y,z\rangle+\langle x,z\rangle\langle y,w\rangle$, 这推出$\mathbb{H}^n$具有常截面曲率$-1$.下面考虑测地线, 记$\gamma(t)=(\sigma(t),y(t))$, 其中$\sigma(t)\in \mathbb{R}^{n-1},y(t)\in\mathbb{R}^+$, 则$\sigma''(t)-2\dfrac{y'}{y}\sigma'=0,y''-2\dfrac{y'}{y}+y=0$, 它的解是与$\mathbb{R}^{n-1}$正交的圆弧; 类似地, 其上Jacobi场为$Y(t)=a\cosh E_1(t)+b\sinh tE_ {2}(t)$. 
 
-至此我们已经学习了三类具有常截面曲率的空间, 分别是球面$S^n$、欧氏空间$\mathbb{R}^n$和双曲空间$\mathbb{H}^n$, 它们分别具有$1,0,-1$的常截面曲率. 可以观察到, 对它们的研究, 或其它具有常截面曲率$k$的空间的研究, 会归咎到常微分方程$f''(t)+kf(t)=0$, 其中$f(0)=0$, $f'(0)$待定. 为日后方便起见, 我们引入以下记号: $\mbox{sn}_k(t)$在$k<0$时表示$\dfrac{\sinh(\sqrt{|k|}t)}{\sqrt{|k|}}$, $k=0$时表示$t$, $k>0$时表示$\dfrac{\sin(\sqrt{k}t)}{\sqrt{k}}$, 其导数就记为$\mbox{cn}_k(t)$. 它们正是上面方程的一类解. 那一个问题是, 如果截面曲率非常数, 我们如何通过原本的流形来进行研究呢？这将牵出我们对好的“比较定理”的兴趣. 
+至此我们已经学习了三类具有常截面曲率的空间, 分别是球面$S^n$、欧氏空间$\mathbb{R}^n$和双曲空间$\mathbb{H}^n$, 它们分别具有$1,0,-1$的常截面曲率. 可以观察到, 对它们的研究, 或其它具有常截面曲率$k$的空间的研究, 会归咎到常微分方程$f''(t)+kf(t)=0$, 其中$f(0)=0$, $f'(0)$待定. 为日后方便起见, 我们引入以下记号: $\mbox{sn} _k(t)$在$k<0$时表示$\dfrac{\sinh(\sqrt{|k|}t)}{\sqrt{|k|}}$, $k=0$时表示$t$, $k>0$时表示$\dfrac{\sin(\sqrt{k}t)}{\sqrt{k}}$, 其导数就记为$\mbox{cn} _k(t)$. 它们正是上面方程的一类解. 那一个问题是, 如果截面曲率非常数, 我们如何通过原本的流形来进行研究呢？这将牵出我们对好的“比较定理”的兴趣. 
 
 ### 4.4 平分空间
 
@@ -470,7 +470,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **例4.5.1**: 取$\mathbb{R}^n$中距离函数$r(x)=\\|x\\|$, 则$S^{n-1}(r_0)=r^{-1}(r_0)$, 于是在极坐标下$g_0=\mbox{d}r^2+r^2(\mbox{d}S^{n-1})^2=\sum\limits_ {i=1}^n(\mbox{d}x^i)^2$, $\mbox{d}r=\sum\limits_ {i=1}^n\dfrac{1}{r}x^i\mbox{d}x^i$, $\partial_r=\dfrac{1}{r}x^i\partial_i$. 则$2\mbox{Hess}r\vert_ {r=r_0}=L_ {\partial_r}(g_0)=\partial_r(r^2)(\mbox{d}S^{n-1})^2\vert_ {r=r_0}=2r_0(\mbox{d}S^{n-1})^2=\dfrac{2}{r_0}g_ {r_0}$. 由Gauss公式即知截面曲率为$\dfrac{1}{r_0^2}$.
 
-**例4.5.2**: 对一般的$I\times_\varphi S^{n-1}$（也就是所谓的旋转对称流形）, $g=\mbox{d}r^2+\varphi^2(r)(\mbox{d}S^{n-1})^2$. 当$X,Y,Z,V,W$均在某一个球面的切空间中时$g_ {r_0}(R^{r_0}(X,Y)V,W)=\dfrac{1}{\varphi^2}g_ {r_0}(X\wedge Y,V\wedge W)$.$\mbox{II}=\mbox{Hess}r\vert_ {r=r_0}=\dfrac{\varphi'}{\varphi}g_ {r_0}$, 这推出$g(R(X,Y)Y,X)=\dfrac{1-\varphi'^2}{\varphi^2}g_ {r_0}(X\wedge Y,X\wedge Y)$.而对法方向, 由Codazzi公式, $g(R(X,Y)Z,\partial_r)=-(\nabla_X\mbox{II})(Y,Z)+(\nabla_Y\mbox{II})(X,Z)=0$, 这是因为$\mbox{II}=\mbox{Hess}r$只与$r$的值有关. 由Ricatti恒等式可得$R(X,\partial_r)\partial_r=-\dfrac{\varphi''}{\varphi}X$. 于是$\sec(X,\partial_r)=-\dfrac{\varphi''}{\varphi}$, $Ric(X)=(n-2)\dfrac{1-\varphi'^2}{\varphi^2}-\dfrac{\varphi''}{\varphi}$, $Ric(\partial_r)=-(n-1)\dfrac{\varphi''}{\varphi}\partial_r$, $\mbox{Scal}=-2(n-1)\dfrac{\varphi''}{\varphi}+(n-1)(n-2)\dfrac{1-\varphi'^2}{\varphi^2}$. 可见, 要求$I\times S^{n-1}$有平坦的Ricci曲率只能是$\varphi=r$.取$\varphi(t)=\mbox{sn}_k(t)$时, 其有常截面曲率$k$. 
+**例4.5.2**: 对一般的$I\times_\varphi S^{n-1}$（也就是所谓的旋转对称流形）, $g=\mbox{d}r^2+\varphi^2(r)(\mbox{d}S^{n-1})^2$. 当$X,Y,Z,V,W$均在某一个球面的切空间中时$g_ {r_0}(R^{r_0}(X,Y)V,W)=\dfrac{1}{\varphi^2}g_ {r_0}(X\wedge Y,V\wedge W)$.$\mbox{II}=\mbox{Hess}r\vert_ {r=r_0}=\dfrac{\varphi'}{\varphi}g_ {r_0}$, 这推出$g(R(X,Y)Y,X)=\dfrac{1-\varphi'^2}{\varphi^2}g_ {r_0}(X\wedge Y,X\wedge Y)$.而对法方向, 由Codazzi公式, $g(R(X,Y)Z,\partial_r)=-(\nabla_X\mbox{II})(Y,Z)+(\nabla_Y\mbox{II})(X,Z)=0$, 这是因为$\mbox{II}=\mbox{Hess}r$只与$r$的值有关. 由Ricatti恒等式可得$R(X,\partial_r)\partial_r=-\dfrac{\varphi''}{\varphi}X$. 于是$\sec(X,\partial_r)=-\dfrac{\varphi''}{\varphi}$, $Ric(X)=(n-2)\dfrac{1-\varphi'^2}{\varphi^2}-\dfrac{\varphi''}{\varphi}$, $Ric(\partial_r)=-(n-1)\dfrac{\varphi''}{\varphi}\partial_r$, $\mbox{Scal}=-2(n-1)\dfrac{\varphi''}{\varphi}+(n-1)(n-2)\dfrac{1-\varphi'^2}{\varphi^2}$. 可见, 要求$I\times S^{n-1}$有平坦的Ricci曲率只能是$\varphi=r$.取$\varphi(t)=\mbox{sn} _k(t)$时, 其有常截面曲率$k$. 
 
 ### 4.6 体积微元、Jacobi算子
 
@@ -516,7 +516,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **命题4.6.5**: $\dfrac{\partial}{\partial t}\ln A(t,e_n)\vert_ {t=t_0}$为$\partial B(p,t_0)$在$M$中的平均曲率, 记为$m(t_0)$. 
 
-对于具有常截面曲率$k$的流形, 其$R(t)=kI$, 其中$I$是单位矩阵, 则$\mbox{II}(t)=\dfrac{\mbox{cn}_k(t)}{\mbox{sn}_k(t)}I$. 
+对于具有常截面曲率$k$的流形, 其$R(t)=kI$, 其中$I$是单位矩阵, 则$\mbox{II}(t)=\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}I$. 
 
 ## 5 比较定理
 
@@ -552,25 +552,25 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 证明略过.据此有“Rauch比较定理”: 
 
-**定理5.2.1**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$J(0)=0$, $\\|J'(0)\\|=1$, 若$\sec(M)\leqslant k$, 则$\\|J(t)\\|\geqslant \mbox{sn}_k(t)$. 
+**定理5.2.1**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$J(0)=0$, $\\|J'(0)\\|=1$, 若$\sec(M)\leqslant k$, 则$\\|J(t)\\|\geqslant \mbox{sn} _k(t)$. 
 
-*Proof.* 令$f(t)=\\|J(t)\\|$, 经计算可得$f''(t)\geqslant -kf(t)$.由**引理5.2.1**, 取$\bar k(t)=k$, $\bar f(t)=\mbox{sn}_k(t)$, 则$\dfrac{\mbox{sn}_k(t)}{f(t)}$单调递减, 而$\displaystyle\lim_ {t\to0^+}\dfrac{f(t)}{\mbox{sn}_k(t)}=\lim_ {t\to0^+}\dfrac{f(t)}{t}=\lim_ {t\to0^+}\langle\dfrac{J(t)-J(0)}{t},\dfrac{J(t)-J(0)}{t}\rangle^{\frac{1}{2}}=\\|J'(0)\\|=1$.于是结论成立. $\quad\Box$
+*Proof.* 令$f(t)=\\|J(t)\\|$, 经计算可得$f''(t)\geqslant -kf(t)$.由**引理5.2.1**, 取$\bar k(t)=k$, $\bar f(t)=\mbox{sn} _k(t)$, 则$\dfrac{\mbox{sn} _k(t)}{f(t)}$单调递减, 而$\displaystyle\lim_ {t\to0^+}\dfrac{f(t)}{\mbox{sn} _k(t)}=\lim_ {t\to0^+}\dfrac{f(t)}{t}=\lim_ {t\to0^+}\langle\dfrac{J(t)-J(0)}{t},\dfrac{J(t)-J(0)}{t}\rangle^{\frac{1}{2}}=\\|J'(0)\\|=1$.于是结论成立. $\quad\Box$
 
 “Berger比较定理”与之类似, 不过稍微修改了初值条件. 
 
-**定理5.2.2**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$\\|J(0)\\|=1$, $J'(0)=0$, 若$\sec(M)\leqslant k$, 则$\\|J(t)\\|\geqslant \mbox{cn}_k(t)$. 
+**定理5.2.2**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$\\|J(0)\\|=1$, $J'(0)=0$, 若$\sec(M)\leqslant k$, 则$\\|J(t)\\|\geqslant \mbox{cn} _k(t)$. 
 
 证明也是利用**引理5.2.1**, 不再赘述. 
 
-**注5.2.1**: 事实上二者存在一个统一的推广形式, 也称作Rauch比较定理, 是说“设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 若$R(t)\leqslant kI$, 则$\\|J(t)\\|\geqslant \\|J'(0)\\|\mbox{sn}_k(t)+\\|J(0)\\|\mbox{cn}_k(t)$. ”并且其实这个完备性的全局条件也可以被减弱到仅在完备的区间内讨论, 证明过程是完全类似的, 只是对$\\|J(t)\\|''$的估计稍微细化一点, 具体细节可参见Isaac Chavel的《Eigenvalues in Riemannian Geometry》. 
+**注5.2.1**: 事实上二者存在一个统一的推广形式, 也称作Rauch比较定理, 是说“设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 若$R(t)\leqslant kI$, 则$\\|J(t)\\|\geqslant \\|J'(0)\\|\mbox{sn} _k(t)+\\|J(0)\\|\mbox{cn} _k(t)$. ”并且其实这个完备性的全局条件也可以被减弱到仅在完备的区间内讨论, 证明过程是完全类似的, 只是对$\\|J(t)\\|''$的估计稍微细化一点, 具体细节可参见Isaac Chavel的《Eigenvalues in Riemannian Geometry》. 
 
 上面的**定理5.2.1**中的不等号反向时同样有类似结论, 也被称为Rauch比较定理, 但在证明之前我们需要一个引理: 
 
-**引理5.2.2**: 设$\overline{\mbox{II}}(t)$是对称$(n-1)\times(n-1)$矩阵空间中的一条光滑道路, 并且满足$\overline{\mbox{II}}'(t)+\overline{\mbox{II}}^2(t)+kI\leqslant0$.则$\overline{\mbox{II}}(t)\leqslant\dfrac{\mbox{cn}_k(t)}{\mbox{sn}_k(t)}$.
+**引理5.2.2**: 设$\overline{\mbox{II}}(t)$是对称$(n-1)\times(n-1)$矩阵空间中的一条光滑道路, 并且满足$\overline{\mbox{II}}'(t)+\overline{\mbox{II}}^2(t)+kI\leqslant0$.则$\overline{\mbox{II}}(t)\leqslant\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}$.
 
 *Proof.* 取$\bar\lambda(t)$是$\overline{\mbox{II}}(t)$的最大特征值, 其为Lipschitz函数, 于是几乎处处可导, 设它在$t=t_0$处可导, 设$E$为它的一个模长为1的特征向量, 设$f(t)=\langle E,\overline{\mbox{II}}(t)E\rangle$, 则$f(t_0)=\bar\lambda(t_0)$, $f(t)\leqslant\bar\lambda(t)$, 于是$f'(t_0)=\bar\lambda'(t_0)$, 故$\bar\lambda'(t_0)+\bar\lambda^2(t_0)=\langle E,(\overline{\mbox{II}}'(t_0)+\overline{\mbox{II}}^2(t_0))E\rangle\leqslant-k$.此时利用**引理5.2.1**即可, 对于不可导的点利用连续性逼近即可. $\quad\Box$
 
-**定理5.2.3**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$J(0)=0$, $\\|J'(0)\\|=1$, 若$\sec(M)\geqslant k$, 则$\\|J(t)\\|\leqslant \mbox{sn}_k(t)$. 
+**定理5.2.3**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$J(0)=0$, $\\|J'(0)\\|=1$, 若$\sec(M)\geqslant k$, 则$\\|J(t)\\|\leqslant \mbox{sn} _k(t)$. 
 
 *Proof.* $(\ln\\|J\\|)'=\dfrac{\\|J\\|'}{\\|J\\|}=\dfrac{\langle J,J'\rangle}{\\|J\\|^2}=\langle\dfrac{J}{\\|J\\|},\dfrac{J'}{\\|J\\|}\rangle=\langle\dfrac{J}{\\|J\\|},\mbox{II}(t)(\dfrac{J}{\\|J\\|})\rangle$.由**推论5.2.1**即知结论成立. $\quad\Box$
 
@@ -596,17 +596,17 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 我们来看看对单位速度测地线$\gamma$, $Ric(\gamma'(0))\geqslant (n-1)k$时会发生什么, 先给出一些记号. 
 
-**定义5.3.1**: $\mbox{Conj}_p(\Theta):=\sup\lbrace T|\gamma(t)在[0,T)上无与p共轭的点\rbrace$称为$M$在$p$处沿$\Theta$方向的**共轭半径**; $\mbox{Conj}(M):=\inf\lbrace \mbox{Conj}(\Theta)|p\in M,\Theta\in U_pM\rbrace\in[0,+\infty]$称为$M$的**共轭半径**; $\mbox{cut}_p(\Theta):=\sup\lbrace t|d(p,\exp_p(t\Theta))=t\rbrace$.$\mathcal{Cut}_p(M):=\lbrace \mbox{cut}_p(\Theta)\cdot\Theta|\Theta\in U_pM\rbrace$称为$M$在$p$处的**切向割迹**; $\mbox{Cut}_p(M)=\exp_p(\mathcal{Cut}_p(M))$称为$M$在$p$处的**割迹**. 
+**定义5.3.1**: $\mbox{Conj} _p(\Theta):=\sup\lbrace T|\gamma(t)在[0,T)上无与p共轭的点\rbrace$称为$M$在$p$处沿$\Theta$方向的**共轭半径**; $\mbox{Conj}(M):=\inf\lbrace \mbox{Conj}(\Theta)|p\in M,\Theta\in U_pM\rbrace\in[0,+\infty]$称为$M$的**共轭半径**; $\mbox{cut} _p(\Theta):=\sup\lbrace t|d(p,\exp_p(t\Theta))=t\rbrace$.$\mathcal{Cut} _p(M):=\lbrace \mbox{cut} _p(\Theta)\cdot\Theta|\Theta\in U_pM\rbrace$称为$M$在$p$处的**切向割迹**; $\mbox{Cut} _p(M)=\exp_p(\mathcal{Cut} _p(M))$称为$M$在$p$处的**割迹**. 
 
 此时对Riccati方程$\mbox{II}'(t)+\mbox{II}^2(t)+R(t)=0$, 对两端取$\mbox{tr}$, 并利用Cauchy-Schwarz不等式就得到$\left(\dfrac{\mbox{tr}\mbox{II}(t)}{n-1}\right)'+\left(\dfrac{\mbox{tr}\mbox{II}(t)}{n-1}\right)^2+k\leqslant0$. 设$\psi(t):=(\det\mathbb{A}(t))^{\frac{1}{n-1}}$, 则$(\ln\psi(t))'=\dfrac{\mbox{tr}\mbox{II}(t)}{n-1}$. 这两者结合事实上就有所谓的“Bishop定理”: 
 
-**定理5.3.1**: 设$(M^n,g)$是完备黎曼流形, 且$Ric\geqslant(n-1)k$, 则$\det(\mathbb{A}(t,\Theta))\leqslant\mbox{sn}_k^{n-1}(t)$, 其中$\Theta\in U_pM$, $t\in\mbox{Conj}_p(\Theta)$. 
+**定理5.3.1**: 设$(M^n,g)$是完备黎曼流形, 且$Ric\geqslant(n-1)k$, 则$\det(\mathbb{A}(t,\Theta))\leqslant\mbox{sn} _k^{n-1}(t)$, 其中$\Theta\in U_pM$, $t\in\mbox{Conj} _p(\Theta)$. 
 
 这个定理可以被加强到“Gromov定理”: 
 
-**定理5.3.2**: 设$(M^n,g)$是完备黎曼流形, 且$Ric\geqslant(n-1)k$, 则$\dfrac{\det(\mathbb{A}(t,\Theta))}{\mbox{sn}_k^{n-1}(t)}$单调递减, 其中$\Theta\in U_pM$, $t\in\mbox{Conj}_p(\Theta)$. 
+**定理5.3.2**: 设$(M^n,g)$是完备黎曼流形, 且$Ric\geqslant(n-1)k$, 则$\dfrac{\det(\mathbb{A}(t,\Theta))}{\mbox{sn} _k^{n-1}(t)}$单调递减, 其中$\Theta\in U_pM$, $t\in\mbox{Conj} _p(\Theta)$. 
 
-*Proof.* 只需证明$\dfrac{\psi(t)}{\mbox{sn}_k(t)}$单调递减, 求导之后也即证明$\psi'\mbox{sn}_k-\psi\mbox{cn}_k\leqslant0$. 注意上式左端在$t=0$时为$0$, 故只需证明此式也单调递减, 求导之后即是证明$(\psi''+k\psi)\mbox{sn}_k\geqslant0$. 而$\psi''=((\ln\psi)'\cdot\psi)'=\dfrac{1}{n-1}(\mbox{trII}\cdot\psi)'=\dfrac{1}{n-1}\left(\mbox{trII}'\psi+\mbox{trII}\cdot\psi'\right)\leqslant\dfrac{\psi}{n-1}\left(\dfrac{1}{n-1}(\mbox{trII})^2-\mbox{trII}^2-(n-1)k\right)\leqslant-k\psi$. 这恰为所求. $\quad\Box$
+*Proof.* 只需证明$\dfrac{\psi(t)}{\mbox{sn} _k(t)}$单调递减, 求导之后也即证明$\psi'\mbox{sn} _k-\psi\mbox{cn} _k\leqslant0$. 注意上式左端在$t=0$时为$0$, 故只需证明此式也单调递减, 求导之后即是证明$(\psi''+k\psi)\mbox{sn} _k\geqslant0$. 而$\psi''=((\ln\psi)'\cdot\psi)'=\dfrac{1}{n-1}(\mbox{trII}\cdot\psi)'=\dfrac{1}{n-1}\left(\mbox{trII}'\psi+\mbox{trII}\cdot\psi'\right)\leqslant\dfrac{\psi}{n-1}\left(\dfrac{1}{n-1}(\mbox{trII})^2-\mbox{trII}^2-(n-1)k\right)\leqslant-k\psi$. 这恰为所求. $\quad\Box$
 
 为了更精细的估计, 我们还需要一些准备工作, 回忆第一变分公式说明了临界曲线都是测地线, 但这样的曲线是“局部最大”还是“局部最小”的呢？为此, 下面要介绍所谓“第二变分公式”. 
 
@@ -652,17 +652,17 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **定理5.3.6**: 设$(M^n,g)$是完备黎曼流形, $Ric\geqslant(n-1)k$, 若$0<r<R$, $0<s<S$, $r\geqslant s$, $R\geqslant S$, 则$\dfrac{\mbox{vol}(A_ {s,S}^M(p))}{\mbox{vol}(A_ {r,R}^M(p))}\geqslant\dfrac{\mbox{vol}(A_ {s,S}^{S_k^n})}{\mbox{vol}(A_ {r,R}^{S_k^n})}$. 
 
-*Proof.* 只需证明$\dfrac{\mbox{vol}(A_ {x,y}^M(p))}{\mbox{vol}(A_ {x,y}^{S_k^n})}$关于$x,y$都递减. 我们有$\mbox{vol}(A_ {x,y}^M(p))=\displaystyle\int_ {U_pM}\mbox{d}\Theta\int_ {\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t$, 所以积分时我们仅考虑$x\leqslant\mbox{cut}_p(\Theta)$的情况.由Gromov定理和**引理5.3.1**, 对任意$z\geqslant y$, $\dfrac{\int_ {\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t}{\int_ {\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}\geqslant\dfrac{\int_ {\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t}{\int_ {\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}$.
+*Proof.* 只需证明$\dfrac{\mbox{vol}(A_ {x,y}^M(p))}{\mbox{vol}(A_ {x,y}^{S_k^n})}$关于$x,y$都递减. 我们有$\mbox{vol}(A_ {x,y}^M(p))=\displaystyle\int_ {U_pM}\mbox{d}\Theta\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t$, 所以积分时我们仅考虑$x\leqslant\mbox{cut} _p(\Theta)$的情况.由Gromov定理和**引理5.3.1**, 对任意$z\geqslant y$, $\dfrac{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t}{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}\geqslant\dfrac{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t}{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}$.
 
 于是有
 
-$\begin{aligned}\int_ {\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t&\geqslant\dfrac{\int_ {\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}{\int_ {\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}\int_ {\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\\&=\dfrac{\int_ {x}^{\min\lbrace y,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}{\int_ {x}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}\int_ {\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\\&\geqslant\dfrac{\int_ {x}^{y}\mbox{sn}_k^{n-1}(t)\mbox{d}t}{\int_ {x}^{z}\mbox{sn}_k^{n-1}(t)\mbox{d}t}\int_ {\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\end{aligned}$, 
+$\begin{aligned}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t&\geqslant\dfrac{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\\&=\dfrac{\int_ {x}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}{\int_ {x}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\\&\geqslant\dfrac{\int_ {x}^{y}\mbox{sn} _k^{n-1}(t)\mbox{d}t}{\int_ {x}^{z}\mbox{sn} _k^{n-1}(t)\mbox{d}t}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\end{aligned}$, 
 
 其中第二个不等号是基本的“糖水不等式”, 将此式对$U_pM$积分, 就得到欲证结论. $\quad\Box$
 
 **推论5.3.2**: 对$0<r<R$和Ricci曲率均大于等于$(n-1)k$的完备黎曼流形$(M^n,g)$中的一点$p$, $\dfrac{\mbox{vol}(B(p,R))}{\mbox{vol}(B(p,r))}\leqslant\dfrac{\mbox{vol}(B^n_k(R))}{\mbox{vol}(B_k^n(r))}$, $\mbox{vol}(B(p,R))\leqslant\mbox{vol}(B^n_k(R))$, 等号成立当且仅当$B(p,R)$和$B^n_k(R)$等距. 
 
-*Proof.* 前面的叙述是显然的, 我们仅考虑等号成立的条件, 为了Gromov定理的取等, $\mbox{II}(t)=\dfrac{\mbox{cn}_k(t)}{\mbox{sn}_k(t)}I$, 于是$\mbox{Hess}r=\dfrac{\mbox{cn}_k(t)}{\mbox{sn}_k(t)}g_ {round}(\cdot,\cdot)$, 其中$g_ {round}$是$S^n_k$上的标准度量, 故二者等距. $\quad\Box$
+*Proof.* 前面的叙述是显然的, 我们仅考虑等号成立的条件, 为了Gromov定理的取等, $\mbox{II}(t)=\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}I$, 于是$\mbox{Hess}r=\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}g_ {round}(\cdot,\cdot)$, 其中$g_ {round}$是$S^n_k$上的标准度量, 故二者等距. $\quad\Box$
 
 这两个推论就是经典的Gromov和Bishop的的比较定理, 我们据此来看看Myers定理取等时会发生什么, 这就是下面的“Cheng最大直径定理”: 
 
@@ -674,7 +674,7 @@ $\begin{aligned}\int_ {\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace y
 
 还有一个Calabi的关于Laplace算子的比较定理, 我们之后会用到, 但此处不做证明. 
 
-**定理5.3.8**: 设$(M^n,g)$是完备黎曼流形且任意Ricci曲率不小于$(n-1)k$, 则对任意$p\in M$, 距离函数$r(x):=d(x, p)$满足$\Delta r(x)\leqslant (n − 1)\dfrac{\mbox{cn}_k(r(x))}{\mbox{sn}_k(r(x))}$. 
+**定理5.3.8**: 设$(M^n,g)$是完备黎曼流形且任意Ricci曲率不小于$(n-1)k$, 则对任意$p\in M$, 距离函数$r(x):=d(x, p)$满足$\Delta r(x)\leqslant (n − 1)\dfrac{\mbox{cn} _k(r(x))}{\mbox{sn} _k(r(x))}$. 
 
 ### 5.4 数量曲率相关的比较定理
 
@@ -824,17 +824,17 @@ Gromov的预紧性定理是说:
 
 比如下面的Cheeger的有限性定理. 
 
-**定义6.3.1**: 记所有直径小于等于$D$, 体积不小于$v$且截面曲率的绝对值不超过$k$的$n$维黎曼流形组成的集合为$\mathcal{M}_ {\cdot,v,-k}^{D,\cdot,k}(n)\subset\mathcal{MET}$. 
+**定义6.3.1**: 记所有直径小于等于$D$, 体积不小于$v$且截面曲率的绝对值不超过$k$的$n$维黎曼流形组成的集合为$\mathcal{M} _ {\cdot,v,-k}^{D,\cdot,k}(n)\subset\mathcal{MET}$. 
 
-**定理6.3.1**: $\mathcal{M}_ {\cdot,v,-k}^{D,\cdot,k}(n)$中只有有限多个微分同胚类. 
+**定理6.3.1**: $\mathcal{M} _ {\cdot,v,-k}^{D,\cdot,k}(n)$中只有有限多个微分同胚类. 
 
 这个证明的关键点是对“单值半径”, 也就是满足对任何$p\in M$都有$\exp_p$在$B(O_p,r)$上是微分同胚的$r$的下确界, 的估计. 这个估计有时候可以稍微修正一下. 我们考虑另一个$\mathcal{MET}$的子空间: 
 
-**定义6.3.2**: 记所有直径小于等于$D$, 体积不小于$v$且截面曲率不小于$-k$的$n$维黎曼流形组成的集合为$\mathcal{M}_ {\cdot,v,-k}^{D,\cdot,\cdot}(n)\subset\mathcal{MET}$. 
+**定义6.3.2**: 记所有直径小于等于$D$, 体积不小于$v$且截面曲率不小于$-k$的$n$维黎曼流形组成的集合为$\mathcal{M} _ {\cdot,v,-k}^{D,\cdot,\cdot}(n)\subset\mathcal{MET}$. 
 
 类似上面的有限性定理, 我们有: 
 
-**定理6.3.2**: $\mathcal{M}_ {\cdot,v,-k}^{D,\cdot,\cdot}(n)$中只有有限多个同胚类. 
+**定理6.3.2**: $\mathcal{M} _ {\cdot,v,-k}^{D,\cdot,\cdot}(n)$中只有有限多个同胚类. 
 
 回忆一个微分拓扑中的结果: 
 
@@ -842,11 +842,11 @@ Gromov的预紧性定理是说:
 
 就可以得到: 
 
-**推论6.3.1**: $n>4$时, $\mathcal{M}_ {\cdot,v,-k}^{D,\cdot,\cdot}(n)$中只有有限多个微分同胚类. 
+**推论6.3.1**: $n>4$时, $\mathcal{M} _ {\cdot,v,-k}^{D,\cdot,\cdot}(n)$中只有有限多个微分同胚类. 
 
 这个结果是Gromov, Peterson和Wu做的, 而Perelman的稳定性定理同样是研究这个空间: 
 
-**定理6.3.4**: 若一族$M_\alpha^n\in\mathcal{M}_ {\cdot,v,-k}^{D,\cdot,\cdot}(n)$收敛到$X^n$, 则$M_\alpha^n$同胚于$X^n$. 
+**定理6.3.4**: 若一族$M_\alpha^n\in\mathcal{M} _ {\cdot,v,-k}^{D,\cdot,\cdot}(n)$收敛到$X^n$, 则$M_\alpha^n$同胚于$X^n$. 
 
 **注6.3.1**: 体积的下界保证了维数不会坍缩. 
 
@@ -878,27 +878,27 @@ $$\begin{aligned}
 $$\Delta b^++\Delta b^-\leqslant(n-1)(\cot b^++\cot b^-)\leqslant(n-1)(\cot b^++\cot (\pi-b^+))=0$$
 和弱最大值原理知$b^++b^-$在$M$上恒为$\pi$.故对于$p$处任意长为$\pi$的切向量$v$,$\exp_p(v)=q$且$M$与单位球等距同构. $\quad\Box$
 
-**习题7.3**: 设$(M^n,g)$是完备黎曼流形, 且截面曲率不大于$k$, 对$p\in M$, $\Theta\in U_pM$, 证明$t<\mbox{Conj}_p(\Theta)$时
-$$\dfrac{d^2}{dt^2}\left(\dfrac{\det\mathbb{A}(t,\Theta)}{\mbox{sn}_k^{n-2}(t)}\right)+k\left(\dfrac{\det\mathbb{A}(t,\Theta)}{\mbox{sn}_k^{n-2}(t)}\right)\geqslant0.$$ 
+**习题7.3**: 设$(M^n,g)$是完备黎曼流形, 且截面曲率不大于$k$, 对$p\in M$, $\Theta\in U_pM$, 证明$t<\mbox{Conj} _p(\Theta)$时
+$$\dfrac{d^2}{dt^2}\left(\dfrac{\det\mathbb{A}(t,\Theta)}{\mbox{sn} _k^{n-2}(t)}\right)+k\left(\dfrac{\det\mathbb{A}(t,\Theta)}{\mbox{sn} _k^{n-2}(t)}\right)\geqslant0.$$ 
 
 *Proof.* 简记$\mathbb{A}(t,\Theta)$为$\mathbb{A}(t)$, 设$\mbox{II}(t):=\mathbb{A}'(t)\mathbb{A}^{-1}(t)$, 则有$\dfrac{\mbox{d}}{\mbox{d}t}\det\mathbb{A}(t)=\mbox{tr}\mbox{II}(t)\det\mathbb{A}(t)$和Ricatti恒等式$\mbox{II}'(t)+\mbox{II}^2(t)+R(t)=0$. 
-而后者结合截面曲率不大于$k$可以推出$\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)\geqslant-\mbox{tr}\mbox{II}^2(t)-(n-1)k$, 由Rauch比较定理有$\mbox{II}(t)$的所有特征值大于等于$\dfrac{\mbox{cn}_k(t)}{\mbox{sn}_k(t)}$. 下面有
+而后者结合截面曲率不大于$k$可以推出$\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)\geqslant-\mbox{tr}\mbox{II}^2(t)-(n-1)k$, 由Rauch比较定理有$\mbox{II}(t)$的所有特征值大于等于$\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}$. 下面有
 $\begin{aligned}
-&\dfrac{\mbox{d}^2}{\mbox{d}t^2}\left(\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-2}(t)}\right)\\
-=&\dfrac{\mbox{d}}{\mbox{d}t}\left(\dfrac{\mbox{tr}\mbox{II}(t)\det\mathbb{A}(t)\mbox{sn}_k^{n-2}(t)-(n-2)\det\mathbb{A}(t)\mbox{sn}_k^{n-3}(t)\mbox{cn}_k(t)}{\mbox{sn}_k^{2(n-2)}(t)}\right)\\
-=&\dfrac{\mbox{d}}{\mbox{d}t}\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-2}(t)}-(n-2)\mbox{cn}_k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-1}(t)}\right).
+&\dfrac{\mbox{d}^2}{\mbox{d}t^2}\left(\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}\right)\\
+=&\dfrac{\mbox{d}}{\mbox{d}t}\left(\dfrac{\mbox{tr}\mbox{II}(t)\det\mathbb{A}(t)\mbox{sn} _k^{n-2}(t)-(n-2)\det\mathbb{A}(t)\mbox{sn} _k^{n-3}(t)\mbox{cn} _k(t)}{\mbox{sn} _k^{2(n-2)}(t)}\right)\\
+=&\dfrac{\mbox{d}}{\mbox{d}t}\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}-(n-2)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\right).
 \end{aligned}$
 继续计算,有
 $\begin{aligned}
-&\dfrac{\mbox{d}}{\mbox{d}t}\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-2}(t)}-(n-2)\mbox{cn}_k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-1}(t)}\right)=\left(\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)\right)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-2}(t)}+\\
-&\mbox{tr}\mbox{II}(t)\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-2}(t)}-(n-2)\mbox{cn}_k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-1}(t)}\right)-(n-2)\mbox{cn}_k'(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-1}(t)}\\&-(n-2)\mbox{cn}_k(t)\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-1}(t)}-(n-1)\mbox{cn}_k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n}(t)}\right)\\
-&=\left(\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)+\left(\mbox{tr}\mbox{II}(t)\right)^2\right)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-2}(t)}-2(n-2)\mbox{tr}\mbox{II}(t)\mbox{cn}_k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-1}(t)}\\
-&-(n-2)\mbox{cn}_k'(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-1}(t)}+(n-1)(n-2)\left(\mbox{cn}_k(t)\right)^2\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n}(t)}.
+&\dfrac{\mbox{d}}{\mbox{d}t}\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}-(n-2)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\right)=\left(\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)\right)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}+\\
+&\mbox{tr}\mbox{II}(t)\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}-(n-2)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\right)-(n-2)\mbox{cn} _k'(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\\&-(n-2)\mbox{cn} _k(t)\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}-(n-1)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n}(t)}\right)\\
+&=\left(\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)+\left(\mbox{tr}\mbox{II}(t)\right)^2\right)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}-2(n-2)\mbox{tr}\mbox{II}(t)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\\
+&-(n-2)\mbox{cn} _k'(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}+(n-1)(n-2)\left(\mbox{cn} _k(t)\right)^2\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n}(t)}.
 \end{aligned}$
-下面将$\mbox{cn}_k'+k\mbox{sn}_k=0$和$\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)\geqslant-\mbox{tr}\mbox{II}^2(t)-(n-1)k$代入其中, 可得
+下面将$\mbox{cn} _k'+k\mbox{sn} _k=0$和$\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)\geqslant-\mbox{tr}\mbox{II}^2(t)-(n-1)k$代入其中, 可得
 $\begin{aligned}
-&\dfrac{\mbox{sn}_k^{n-2}(t)}{\det\mathbb{A}(t)}\cdot\dfrac{\mbox{d}^2}{\mbox{d}t^2}\left(\dfrac{\det\mathbb{A}(t)}{\mbox{sn}_k^{n-2}(t)}\right)+k\\
-\geqslant&\left(\mbox{tr}\mbox{II}(t)\right)^2-\mbox{tr}\mbox{II}^2(t)-2(n-2)\mbox{tr}\mbox{II}(t)\dfrac{\mbox{cn}_k(t)}{\mbox{sn}_k(t)}+(n-1)(n-2)\left(\dfrac{\mbox{cn}_k(t)}{\mbox{sn}_k(t)}\right)^2.
+&\dfrac{\mbox{sn} _k^{n-2}(t)}{\det\mathbb{A}(t)}\cdot\dfrac{\mbox{d}^2}{\mbox{d}t^2}\left(\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}\right)+k\\
+\geqslant&\left(\mbox{tr}\mbox{II}(t)\right)^2-\mbox{tr}\mbox{II}^2(t)-2(n-2)\mbox{tr}\mbox{II}(t)\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}+(n-1)(n-2)\left(\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}\right)^2.
 \end{aligned}$
-下设$\mbox{II}(t)$的所有特征值为$\lambda_i(t)(i=1,\cdots,n-1)$, 则由$\lambda_i\geqslant\dfrac{\mbox{cn}_k}{\mbox{sn}_k}$可得$(\lambda_i-\dfrac{\mbox{cn}_k}{\mbox{sn}_k})(\lambda_j-\dfrac{\mbox{cn}_k}{\mbox{sn}_k})\geqslant0$, 将此式对所有的$i\neq j$求和, 即得上述式子$\geqslant0$,这就推出原不等式成立.$\quad\Box$
+下设$\mbox{II}(t)$的所有特征值为$\lambda_i(t)(i=1,\cdots,n-1)$, 则由$\lambda_i\geqslant\dfrac{\mbox{cn} _k}{\mbox{sn} _k}$可得$(\lambda_i-\dfrac{\mbox{cn} _k}{\mbox{sn} _k})(\lambda_j-\dfrac{\mbox{cn} _k}{\mbox{sn} _k})\geqslant0$, 将此式对所有的$i\neq j$求和, 即得上述式子$\geqslant0$,这就推出原不等式成立.$\quad\Box$
 
