@@ -116,7 +116,7 @@ tags:
 
 有了度量之后也可以定义“直径”的概念: 
 
-**定义2.2.4**: $\mbox{Diam}(M,g):=\sup\lbrace d(p.q)|p,q\in M\rbrace$称为$(M,g)$的直径. 
+**定义2.2.4**: $\mbox{Diam}(M,g):=\sup\lbrace d(p.q)\mid p,q\in M\rbrace$称为$(M,g)$的直径. 
 
 ### 2.3 Levi-Civita联络与平行移动
 
@@ -158,7 +158,7 @@ tags:
 
 **例2.4.1**: 光滑切向量场$X$是一个$(1,0)-$张量; 微分$1-$形式$\omega$是一个$(0,1)-$张量. 
 
-**定义2.4.2**: **缩并**$c:\Gamma(T^{r+1}_{s+1}M)\to\Gamma(T^r_sM)$定义如下: $c(x_1\otimes\cdots\otimes x_{r+1}\otimes y_1^*\otimes\cdots\otimes y_{s+1}^*):=\sum\limits_{k,l}y_l^*(x_k)x_1\otimes\cdots\otimes\widehat{x_k}\otimes\cdots\otimes x_{r+1}\otimes y_1^*\otimes\cdots\otimes\widehat{y_l^*}\otimes\cdots\otimes y_{s+1}^*$. 
+**定义2.4.2**: **缩并**$c:\Gamma(T^{r+1}_{s+1}M)\to\Gamma(T^r_sM)$定义如下: $c(x_1\otimes\cdots\otimes x_{r+1}\otimes y_1^* \otimes\cdots\otimes y_{s+1}^* ):=\sum\limits_{k,l}y_l^* (x_k)x_1\otimes\cdots\otimes\widehat{x_k}\otimes\cdots\otimes x_{r+1}\otimes y_1^* \otimes\cdots\otimes\widehat{y_l^* }\otimes\cdots\otimes y_{s+1}^*$. 
 
 **命题2.4.1**: 存在唯一的$\nabla:\Gamma(TM)\times\bigcup\limits_{r,s}\Gamma(T^r_sM)\to\bigcup\limits_{r,s}\Gamma(T^r_sM)$使得对任意$(r,s)$, $\nabla\mid_{\Gamma(TM)\times\Gamma(T^r_sM)}$是$T^r_sM$上的联络且满足: (1)$\nabla_X(T\otimes T')=(\nabla_XT)\otimes T'+T\otimes (\nabla_XT')$; (2)$\nabla_X(cT)=c\nabla_XT$; (3)对任意$f\in C^\infty(M),\nabla_Xf=X(f)$; (4)$\nabla\mid_{\Gamma(TM)\times\Gamma(TM)}$就是Levi-Civita联络. 
 
@@ -198,27 +198,27 @@ tags:
 
  在坐标卡$(U,\varphi)$下, 令$x^k(t)=x^k(\gamma(t))$, 则$\gamma$是测地线等价于对任意$k$, $\dfrac{\mbox{d}^2x^k}{\mbox{d}t^2}+\Gamma_{ij}^k\dfrac{\mbox{d}x^i}{\mbox{d}t}\dfrac{\mbox{d}x^j}{\mbox{d}t}=0$. 这是一个二阶非线性常微分方程组, 它对任意$p\in M$和$v\in T_pM$都存在唯一解, 使得$\gamma'(0)=v$, 这样的解记为$\gamma_v$. 
 
-**定理3.1.1**: 对任一测地线$\gamma$, $||\gamma'(t)||$恒定. 
+**定理3.1.1**: 对任一测地线$\gamma$, $\|\gamma'(t)\|$恒定. 
 
 *Proof.* $\dfrac{\mbox{d}}{\mbox{d}t}\langle\gamma'(t),\gamma'(t)\rangle=2\langle\nabla_{\gamma'(t)}{\gamma'(t)},\gamma'(t)\rangle=0$. $\quad\Box$
 
 我们下面对初始切向量进行一些限制. 
 
-**定义3.1.2**: 对流形$M$, 其上点$p$处的**单位切向量**组成的集合$U_pM:=\lbrace v\in T_pM\mid ||v||=1\rbrace$.**单位切丛**$UM:=\bigcup\limits_{p\in M}U_pM$. 
+**定义3.1.2**: 对流形$M$, 其上点$p$处的**单位切向量**组成的集合$U_pM:=\lbrace v\in T_pM\mid \|v\|=1\rbrace$.**单位切丛**$UM:=\bigcup\limits_{p\in M}U_pM$. 
 
-易见$U_pM$与单位球面$S^{n-1}$是同胚的, 也具有紧性, 于是存在与$\xi$无关的$\delta=\delta(p)$, 使得$\gamma_\xi(t)$对任意$\xi\in U_pM,t\in(-\delta,\delta)$均存在. 换言之, 对任意$u\in T_pM,||u||<\delta, \gamma_u(1)$存在. 
+易见$U_pM$与单位球面$S^{n-1}$是同胚的, 也具有紧性, 于是存在与$\xi$无关的$\delta=\delta(p)$, 使得$\gamma_\xi(t)$对任意$\xi\in U_pM,t\in(-\delta,\delta)$均存在. 换言之, 对任意$u\in T_pM,\|u\|<\delta, \gamma_u(1)$存在. 
 
 基于此可以定义所谓“指数映照”的概念. 
 
-**定义3.1.3**: 对任意$p\in M$, **指数映照**$\exp_p:B(O_p,\delta)(:=\lbrace v\in T_pM\mid||v||<\delta\rbrace)\to M$定义为$u\mapsto\gamma_u(1)$. 
+**定义3.1.3**: 对任意$p\in M$, **指数映照**$\exp_p:B(O_p,\delta)(:=\lbrace v\in T_pM\mid\|v\|<\delta\rbrace)\to M$定义为$u\mapsto\gamma_u(1)$. 
 
-容易看到$\exp_p(t\xi)=\gamma_\xi(t),|t|\leqslant1,\xi\in B(O_p,\delta)$和$\exp_p(O_p)=p$. 切空间作为欧氏空间当然也有流形结构, 于是可以考虑$\exp_p$的切映射有如何性质, 最方便研究的自然是$(\exp)_*\mid_{O_p}:T_{O_p}(T_pM)\to T_pM$. 但欧氏空间的切空间和本身自然别无二致, 于是我们可以将此映射视为$T_pM$的一个自映射. 依定义, $(\exp)_*\mid_{O_p}(u)=\dfrac{\mbox{d}}{\mbox{d}t}\exp_p(tu)=\gamma_u'(0)=u$, 这说明$(\exp)_*\mid_{O_p}$不是别的, 正是$\mbox{id}_{T_pM}$.因此通过反函数定理, 我们知道存在$\varepsilon<\delta$, 使得$\exp_p\mid_{B(O_p,\varepsilon)}$是微分同胚, 其像是$M$上的一个开集$B$, 于是乎可以有: 
+容易看到$\exp_p(t\xi)=\gamma_\xi(t),\lvert t\rvert\leqslant1,\xi\in B(O_p,\delta)$和$\exp_p(O_p)=p$. 切空间作为欧氏空间当然也有流形结构, 于是可以考虑$\exp_p$的切映射有如何性质, 最方便研究的自然是$(\exp)_* \mid_{O_p}:T_{O_p}(T_pM)\to T_pM$. 但欧氏空间的切空间和本身自然别无二致, 于是我们可以将此映射视为$T_pM$的一个自映射. 依定义, $(\exp)_* \mid_{O_p}(u)=\dfrac{\mbox{d}}{\mbox{d}t}\exp_p(tu)=\gamma_u'(0)=u$, 这说明$(\exp)_* \mid_{O_p}$不是别的, 正是$\mbox{id}_{T_pM}$.因此通过反函数定理, 我们知道存在$\varepsilon<\delta$, 使得$\exp_p\mid_{B(O_p,\varepsilon)}$是微分同胚, 其像是$M$上的一个开集$B$, 于是乎可以有: 
 
 **定义3.1.4**: $\log_p:B\to B(O_p,\varepsilon)$为$\exp_p$在局部上的逆映射. 需要注意到$(B,\log_p)$是一个坐标卡, $T_pM$作为欧氏空间有标准正交基$\lbrace e_i\rbrace_{i=1}^n$, 其上坐标函数$\lbrace x^i\rbrace_{i=1}^n$为$\log_p(q)=x^i(q)e_i$, $(B,\log_p,x^i)$就称为一个**标准坐标**. 
 
 **注3.1.1**: 这里的$\exp$和$\log$仅仅是记号而无算数含义, 但在某些特殊情形（如Lie群和Lie代数之间的映射）下其确实可写成真正的指数映照. 
 
-沿着上面的思路, 我们不禁要问$(\exp)_*\mid_{u}$在$||u||\neq0$时又是什么样子呢？这将在后面给出答案. 
+沿着上面的思路, 我们不禁要问$(\exp)_* \mid_{u}$在$\|u\|\neq0$时又是什么样子呢？这将在后面给出答案. 
 
 ### 3.2 变分与Jacobi场
 
@@ -234,7 +234,7 @@ tags:
 
 **注3.2.1**: 通过度量, 可以定义$(0,4)-$张量$R$如下: $R(X,Y,Z,W)=\langle R(X,Y)Z,W\rangle$, 其也被称为曲率张量, 由于**定理3.2.1**中第三第四两个等式, 它有时也被记为$R(X\wedge Y,Z\wedge W)$, 在后面我们会让这个记号拥有具体意义. 在局部坐标下, $R(\partial_i,\partial_j)\partial_k=R_{ijk}^l\partial_l$, $R(\partial_i,\partial_j,\partial_k,\partial_l)=R_{ijkl}$, 显然两个系数之间有$R_{ijkl}=R_{ijk}^mg_{ml}$. 
 
-这下可以考虑$(\exp)_*\mid_{u}:T_u(T_pM)\to T_{\gamma_u(1)}M$为何物了, 当然其来源仍可以视为$T_pM$.固定$\xi\in T_u(T_pM)$, $[s\mapsto u+s\xi]$为$\xi$代表的等价类中的一个曲线. 定义$\alpha:[0,1]\times(-\varepsilon,\varepsilon)\to M$为$[(t,s)\mapsto \exp_p t(u+s\xi)]$, 记$c_s(\cdot):=\alpha(\cdot,s)$, 可见$c_s'(0)=u+s\xi$. 另一方面$Y(t):=\left[t\mapsto\dfrac{\partial\alpha}{\partial s}\bigg|_{(t,0)}\right]$是$\gamma_u$上的一个向量场, 其中$\dfrac{\partial\alpha}{\partial s}\bigg|_{(t,0)}:=\alpha_*\left(\dfrac{\partial}{\partial s}\right)\bigg|_{(t,0)}$. 根据定义有$Y(1)=(\exp)_*\mid_{u}(\xi)$, 事实上$Y(t)=(\exp)_*\mid_{tu}(t\xi)=t(\exp)_*\mid_{tu}(\xi)$. 更一般地, 我们可以考虑所谓“变分”: 
+这下可以考虑$(\exp)_* \mid_{u}:T_u(T_pM)\to T_{\gamma_u(1)}M$为何物了, 当然其来源仍可以视为$T_pM$.固定$\xi\in T_u(T_pM)$, $[s\mapsto u+s\xi]$为$\xi$代表的等价类中的一个曲线. 定义$\alpha:[0,1]\times(-\varepsilon,\varepsilon)\to M$为$[(t,s)\mapsto \exp_p t(u+s\xi)]$, 记$c_s(\cdot):=\alpha(\cdot,s)$, 可见$c_s'(0)=u+s\xi$. 另一方面$Y(t):=\left[t\mapsto\dfrac{\partial\alpha}{\partial s}\bigg\vert_{(t,0)}\right]$是$\gamma_u$上的一个向量场, 其中$\dfrac{\partial\alpha}{\partial s}\bigg|_{(t,0)}:=\alpha_* \left(\dfrac{\partial}{\partial s}\right)\bigg\vert_{(t,0)}$. 根据定义有$Y(1)=(\exp)_* \mid_{u}(\xi)$, 事实上$Y(t)=(\exp)_* \mid_{tu}(t\xi)=t(\exp)_* \mid_{tu}(\xi)$. 更一般地, 我们可以考虑所谓“变分”: 
 
 **定义3.2.2**: 对任意光滑映射$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\to M$, 对任意$s\in(-\varepsilon,\varepsilon)$, 称$c_s(\cdot):=\alpha(\cdot,s)$为$c_0$关于$\alpha$的**变分**. 
 
