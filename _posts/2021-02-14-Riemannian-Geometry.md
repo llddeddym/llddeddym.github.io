@@ -20,19 +20,19 @@ tags:
 
 首先我们默认大家掌握基本的点集拓扑知识, 并且知道基本群, 覆叠映射以及泛覆盖空间的定义. 另外整个笔记在涉及求和时都使用Einstein求和约定. 
 
-**定义1.1**: 一个**$n$维拓扑流形**谓指一个第二可数的Hausdorff拓扑空间$M$及其上一族坐标卡（局部坐标）$\lbrace(U_\alpha,\varphi_\alpha)\rbrace_{ \alpha\in\Lambda }$, 其中$\lbrace U_\alpha\rbrace_{\alpha\in\Lambda}$是$M$的一个开覆盖, $\lbrace\varphi_{\alpha} \colon U_\alpha\to\mathbb{R}^n\rbrace_{\alpha\in\Lambda}$为一族同胚映射, 一般也用$M$或$M^n$来表示这个拓扑流形而省略其坐标卡, 拓扑流形$M$的维数也可以被记为$\dim M$; 如果对所有满足$U_\alpha\cap U_\beta\neq\empty$的$\alpha,\beta\in\Lambda$, 有任何**转移函数**$\varphi_\beta\circ\varphi_\alpha^{-1}\colon\varphi_\alpha(U_\alpha\cap U_\beta)\to\varphi_\beta(U_\alpha\cap U_\beta)$是$C^k$的, 则称$M$为**$C^k$流形**, 特别地$k=\infty$时, 也称$M$为**光滑流形**; 当$C^k$（或光滑）流形$M$上的坐标卡$\lbrace(U_\alpha,\varphi_\alpha)\rbrace_{\alpha\in\Lambda}$极大时, 称这族坐标卡为$M$上的$C^k$（或光滑）结构; 称光滑流形是**可定向**的, 如果存在其上一族坐标卡, 两两之间的转移函数的Jacobi行列式都是正的.  
+**定义1.1**: 一个**$n$维拓扑流形**谓指一个第二可数的Hausdorff拓扑空间$M$及其上一族坐标卡（局部坐标）$\lbrace (U_\alpha,\varphi_\alpha)\rbrace_{ \alpha\in\Lambda }$, 其中$\lbrace U_\alpha\rbrace_{\alpha\in\Lambda}$是$M$的一个开覆盖, $\lbrace \varphi_{\alpha} \colon U_\alpha\to\mathbb{R}^n\rbrace_{\alpha\in\Lambda}$为一族同胚映射, 一般也用$M$或$M^n$来表示这个拓扑流形而省略其坐标卡, 拓扑流形$M$的维数也可以被记为$\dim M$; 如果对所有满足$U_\alpha\cap U_\beta\neq\empty$的$\alpha,\beta\in\Lambda$, 有任何**转移函数**$\varphi_\beta\circ\varphi_\alpha^{-1}\colon\varphi_\alpha(U_\alpha\cap U_\beta)\to\varphi_\beta(U_\alpha\cap U_\beta)$是$C^k$的, 则称$M$为**$C^k$流形**, 特别地$k=\infty$时, 也称$M$为**光滑流形**; 当$C^k$（或光滑）流形$M$上的坐标卡$\lbrace (U_\alpha,\varphi_\alpha)\rbrace_{\alpha\in\Lambda}$极大时, 称这族坐标卡为$M$上的$C^k$（或光滑）结构; 称光滑流形是**可定向**的, 如果存在其上一族坐标卡, 两两之间的转移函数的Jacobi行列式都是正的.  
 
 **注1.1**: 存在没有光滑结构的拓扑流形, 也存在有多种光滑结构的拓扑流形. 并且拓扑流形的泛覆盖空间总是存在的, 其也是一个流形. 
 
 以后若无特别说明, 流形均指光滑流形.  
 
-**定义1.2**: 对流形$M^n$, 函数$f:M\to\mathbb{R}$称为**光滑函数**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $f\circ\varphi_\alpha^{-1}:\mathbb{R^n}\to\mathbb{R}$光滑$M$上所有光滑函数组成的集合记为$C^\infty(M)$; 对流形$M^n,N^d$, 映射$f:M\to N$称为**光滑映射**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $N$上任何一个坐标卡$(V_\beta,\psi_\beta)$, $\psi_\beta\circ f\circ\varphi_\alpha^{-1}:\mathbb{R}^n\to\mathbb{R}^d$光滑, $M$到$N$的所有光滑映射组成的集合记为$C^\infty(M,N)$. $M$上一个光滑函数$f$的**支集**为$\mbox{supp}f=\overline{\lbrace p\in M\mid f(p)\neq0\rbrace}$. 
+**定义1.2**: 对流形$M^n$, 函数$f:M\to\mathbb{R}$称为**光滑函数**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $f\circ\varphi_\alpha^{-1}:\mathbb{R^n}\to\mathbb{R}$光滑$M$上所有光滑函数组成的集合记为$C^\infty(M)$; 对流形$M^n,N^d$, 映射$f:M\to N$称为**光滑映射**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $N$上任何一个坐标卡$(V_\beta,\psi_\beta)$, $\psi_\beta\circ f\circ\varphi_\alpha^{-1}:\mathbb{R}^n\to\mathbb{R}^d$光滑, $M$到$N$的所有光滑映射组成的集合记为$C^\infty(M,N)$. $M$上一个光滑函数$f$的**支集**为$\mbox{supp}f=\overline{\lbrace  p\in M\mid f(p)\neq0\rbrace}$. 
 
 **定义1.3**: 对流形$M$及其上一点$p$, 在所有定义在$p$的某个开邻域上的光滑函数所组成的集合中定义如下等价关系: $f:U\to\mathbb{R}$等价于$g:V\to\mathbb{R}$当且仅当存在$p$的开邻域$W\subset U\cap V$使得$f\mid_W=g\mid_W$, 称每一个等价类为$p$处的一个**函数芽**, $p$处所有函数芽组成的集合记为$\mathcal{E}(p)$. 
 
-**定义1.4**: 对流形$M$及其上一点$p$, 定义$\lbracew\in C^\infty(\mathbb{R},M):w(0)=p\rbrace$上的等价关系如下: $w$等价于$v$当且仅当存在$0$的开邻域$U$使得$w\mid_U=v\mid_U$, 记所有等价类组成的集合为$W_p$; 在$W_p$上再定义等价关系如下: $\overline{w}$与$\overline{v}$等价当且仅当对任意$[f]\in \mathcal{E}(p)$, $\dfrac{\mbox{d}}{\mbox{d}t}(f\circ \overline{w})\mid_{t=0}=\dfrac{\mbox{d}}{\mbox{d}t}(f\circ \overline{v})\mid_{t=0}$, $W_p$中此等价关系下所有等价类的集合被称作$p$处的**切空间**, 记为$T_pM$, 其中的元素称作**切向量**. 切空间的对偶空间$T_p^*M$为$p$处的**余切空间**, 其中的元素称作**余切向量**. 
+**定义1.4**: 对流形$M$及其上一点$p$, 定义$\lbrace w\in C^\infty(\mathbb{R},M):w(0)=p\rbrace$上的等价关系如下: $w$等价于$v$当且仅当存在$0$的开邻域$U$使得$w\mid_U=v\mid_U$, 记所有等价类组成的集合为$W_p$; 在$W_p$上再定义等价关系如下: $\overline{w}$与$\overline{v}$等价当且仅当对任意$[f]\in \mathcal{E}(p)$, $\dfrac{\mbox{d}}{\mbox{d}t}(f\circ \overline{w})\mid_{t=0}=\dfrac{\mbox{d}}{\mbox{d}t}(f\circ \overline{v})\mid_{t=0}$, $W_p$中此等价关系下所有等价类的集合被称作$p$处的**切空间**, 记为$T_pM$, 其中的元素称作**切向量**. 切空间的对偶空间$T_p^*M$为$p$处的**余切空间**, 其中的元素称作**余切向量**. 
 
-**注1.2**: $T_pM$也可定义为$\mathcal{E}(p)$的所有导子组成的集合, 相当于把$\dfrac{\mbox{d}}{\mbox{d}t}(-\circ \overline{w})\mid_{t=0}$视为一个导子. 容易看出$T_pM$是线性空间且$\dim T_pM=\dim M$. 对包含$p$的一个坐标卡$(U,\varphi)$, 可以定义一组**自然基**$\left\lbrace\dfrac{\partial}{\partial x^i}(p)\right\rbrace$, 其中$\dfrac{\partial}{\partial x^i}(p)$就是将$\varphi(U)$中第$i$个坐标轴的原点平移至$\varphi(p)$处再用$\varphi^{-1}$映射回$W_p$后所代表的等价类, 利用导子的写法就是$\dfrac{\partial}{\partial x^i}(p)(f)=\dfrac{\partial(f\circ\varphi^{-1})}{\partial u^i}(\varphi(p))$, 其中$\dfrac{\partial}{\partial u^i}$代表对第$i$个分量求偏导. 有时, 也将$\dfrac{\partial}{\partial x^i}$记为$\partial_i$. $\lbrace\partial_i\rbrace$的对偶基记为$\lbrace\mbox{d}x^i\rbrace$, 称作余切空间中的**自然基**. 
+**注1.2**: $T_pM$也可定义为$\mathcal{E}(p)$的所有导子组成的集合, 相当于把$\dfrac{\mbox{d}}{\mbox{d}t}(-\circ \overline{w})\mid_{t=0}$视为一个导子. 容易看出$T_pM$是线性空间且$\dim T_pM=\dim M$. 对包含$p$的一个坐标卡$(U,\varphi)$, 可以定义一组**自然基**$\left\lbrace \dfrac{\partial}{\partial x^i}(p)\right\rbrace$, 其中$\dfrac{\partial}{\partial x^i}(p)$就是将$\varphi(U)$中第$i$个坐标轴的原点平移至$\varphi(p)$处再用$\varphi^{-1}$映射回$W_p$后所代表的等价类, 利用导子的写法就是$\dfrac{\partial}{\partial x^i}(p)(f)=\dfrac{\partial(f\circ\varphi^{-1})}{\partial u^i}(\varphi(p))$, 其中$\dfrac{\partial}{\partial u^i}$代表对第$i$个分量求偏导. 有时, 也将$\dfrac{\partial}{\partial x^i}$记为$\partial_i$. $\lbrace \partial_i\rbrace$的对偶基记为$\lbrace \mbox{d}x^i\rbrace$, 称作余切空间中的**自然基**. 
 
 **定义1.5**: 对$f\in C^\infty(M,N)$, 可定义**切映射**为线性映射$f_* \colon T_pM\to T_{f(p)}N$满足对任意$[\sigma]\in\mathcal{E}(f(p))$, $f_* (v)(\sigma)=v(\sigma\circ f)$. 其对偶映射$f^* \colon T_{f(p)}^* N\to T_p^* M$称作**余切映射**. 切映射处处为单射的光滑映射称为**浸入**, 处处为满射的光滑映射称为**淹没**. 
 
@@ -58,7 +58,7 @@ tags:
 
 **注1.6**: 显然$\Gamma(\Lambda(T^* M))=\sum\limits_{r=0}^n\Gamma(\Lambda^r(T^* M))$. 
 
-**定义1.13**: 流形$M$上的**单位分解**是其上一族非负光滑函数$\lbrace\varphi_\alpha \rbrace_{\alpha\in\Lambda}$, 使得其支集族是局部有限的, 并且$\displaystyle\sum_{\alpha\in\Lambda}\varphi_\alpha\equiv1$. 若对开覆盖$\lbraceU_\beta\rbrace$, 一个单位分解$\lbrace\varphi_\alpha\rbrace_{\alpha\in\Lambda}$满足对任意$\alpha\in\Lambda$, 都存在$\beta$使得$\varphi_\alpha$的支集包含于$U_\beta$, 就称这个单位分解是**从属于**这个开覆盖的. 
+**定义1.13**: 流形$M$上的**单位分解**是其上一族非负光滑函数$\lbrace \varphi_\alpha \rbrace_{\alpha\in\Lambda}$, 使得其支集族是局部有限的, 并且$\displaystyle\sum_{\alpha\in\Lambda}\varphi_\alpha\equiv1$. 若对开覆盖$\lbrace U_\beta\rbrace$, 一个单位分解$\lbrace \varphi_\alpha\rbrace_{\alpha\in\Lambda}$满足对任意$\alpha\in\Lambda$, 都存在$\beta$使得$\varphi_\alpha$的支集包含于$U_\beta$, 就称这个单位分解是**从属于**这个开覆盖的. 
 
 **注1.7**: 一个著名结果是, 对一个微分流形$M$和其上任何一个开覆盖, 都存在一个从属于它的可数单位分解, 并且其中每个函数都有紧支集. 
 
@@ -66,13 +66,13 @@ tags:
 
 ### 2.1 黎曼度量
 
-**定义2.1.1**: 流形$M$上的**黎曼度量**$g$是一族$\lbraceg_p\rbrace_{p\in M}$, 其中$g_p:T_pM\times T_pM\to\mathbb{R}$是线性空间$T_pM$上的内积, 并且$g_p$关于$p$是光滑变化的, 也就是说, 在一个坐标卡$(U,\varphi)$中, 对任意$i,j$有$g_{ij}(p):=g_p(\partial_i(p),\partial_j(p))\in C^\infty(U)$. 定义了黎曼度量$g$的流形$M$称作**黎曼流形**, 通常记为$(M,g)$. 
+**定义2.1.1**: 流形$M$上的**黎曼度量**$g$是一族$\lbrace g_p\rbrace_{p\in M}$, 其中$g_p:T_pM\times T_pM\to\mathbb{R}$是线性空间$T_pM$上的内积, 并且$g_p$关于$p$是光滑变化的, 也就是说, 在一个坐标卡$(U,\varphi)$中, 对任意$i,j$有$g_{ij}(p):=g_p(\partial_i(p),\partial_j(p))\in C^\infty(U)$. 定义了黎曼度量$g$的流形$M$称作**黎曼流形**, 通常记为$(M,g)$. 
 
 **注2.1.1**: 后面我们会看到$g$是一个$(0,2)-$张量, 一般对$u,v\in T_pM$也记$\langle u,v\rangle=g(u,v)=g_p(u,v)$.对任意$p\in U$,$[g_{ij}](p)$为正定对称矩阵, 也可记为$\mbox{d}s^2=g_{ij}\mbox{d}x^i\mbox{d}x^j$. 
 
 **定义2.1.2**: 对$u\in T_pM$, 称$\lvert u\rvert=\|u\|=\sqrt{\langle u,u\rangle}$为它的**模长**. 
 
-**例2.1.1**: 欧氏空间$\mathbb{R}^n$, 其上的坐标卡为$\lbrace(\mathbb{R}^n,\mbox{id})\rbrace$, 黎曼度量为$\mbox{d}s^2=\delta_{ij}\mbox{d}x^i\mbox{d}x^j$. 
+**例2.1.1**: 欧氏空间$\mathbb{R}^n$, 其上的坐标卡为$\lbrace (\mathbb{R}^n,\mbox{id})\rbrace$, 黎曼度量为$\mbox{d}s^2=\delta_{ij}\mbox{d}x^i\mbox{d}x^j$. 
 
 **命题2.1.1**: 任意流形上都存在黎曼度量. 
 
@@ -100,11 +100,11 @@ tags:
 
 **注2.2.1**: 一般总假设$\gamma'(t)\neq0$, 此时$s$严格单调递增, 就可以找到其反函数$t=t(s)$, 于是可得到新的曲线$\overline\gamma:[0,s(b)]\to M,s\mapsto\gamma(t(s))$. 这个曲线总拥有单位切向量, 称作曲线的**弧长参数化**. 
 
-**定义2.2.2**: **分段光滑曲线**定义为$\mathcal{C}([0,1]):=\lbrace c:[0,1]\to M\mid c\mbox{分段光滑} \rbrace$. 
+**定义2.2.2**: **分段光滑曲线**定义为$\mathcal{C}([0,1]):=\lbrace  c:[0,1]\to M\mid c\mbox{分段光滑} \rbrace$. 
 
 显然$L$是$\mathcal{C}$上的泛函.下面定义任意两点间的距离. 
 
-**定义2.2.3**: 对道路连通流形$M$上任意两点$p,q\in M$, 记所有以$p$为起点, $q$为终点的分段光滑曲线$\mathcal{C}_{p.q}=\lbracec\in\mathcal{C}([0,1])\mid c(0)=p,c(1)=q\rbrace$, 定义$p,q$之间的**距离**为$d(p,q):=\inf\lbraceL(\gamma)\mid\gamma\in\mathcal{C}_{p,q}\rbrace$. 
+**定义2.2.3**: 对道路连通流形$M$上任意两点$p,q\in M$, 记所有以$p$为起点, $q$为终点的分段光滑曲线$\mathcal{C}_{p.q}=\lbrace c\in\mathcal{C}([0,1])\mid c(0)=p,c(1)=q\rbrace$, 定义$p,q$之间的**距离**为$d(p,q):=\inf\lbrace L(\gamma)\mid\gamma\in\mathcal{C}_{p,q}\rbrace$. 
 
 **注2.2.2**: 由道路连通性可说明这样的定义是合理的, 即$d<+\infty$. 
 
@@ -116,7 +116,7 @@ tags:
 
 有了度量之后也可以定义“直径”的概念: 
 
-**定义2.2.4**: $\mbox{Diam}(M,g):=\sup\lbraced(p.q)|p,q\in M\rbrace$称为$(M,g)$的直径. 
+**定义2.2.4**: $\mbox{Diam}(M,g):=\sup\lbrace d(p.q)|p,q\in M\rbrace$称为$(M,g)$的直径. 
 
 ### 2.3 Levi-Civita联络与平行移动
 
@@ -132,7 +132,7 @@ tags:
 
 以下所说“联络”均为Levi-Civita联络, 并用$\nabla$表示. 我们来看一看联络在局部坐标下的形式. 
 
-**定义2.3.2**: 设$(U,\varphi)$为一坐标卡, 有自然基$\lbrace\partial_i\rbrace$, 对$X\in\Gamma(TM)\mid_U$, $X=X^i\partial_i,X^i\in C^\infty(U)$, 记$\nabla_{\partial_i}\partial_j=\Gamma_{ij}^k\partial_k,\Gamma_{ij}^k\in C^\infty(U)$, 称$\Gamma_{ij}^k$为$X$在$U$下的Christoffel记号. 
+**定义2.3.2**: 设$(U,\varphi)$为一坐标卡, 有自然基$\lbrace \partial_i\rbrace$, 对$X\in\Gamma(TM)\mid_U$, $X=X^i\partial_i,X^i\in C^\infty(U)$, 记$\nabla_{\partial_i}\partial_j=\Gamma_{ij}^k\partial_k,\Gamma_{ij}^k\in C^\infty(U)$, 称$\Gamma_{ij}^k$为$X$在$U$下的Christoffel记号. 
 
 对$X=X^i\partial_i,Y=Y^j\partial_j$, 容易算出$ $. 
 
@@ -204,17 +204,17 @@ tags:
 
 我们下面对初始切向量进行一些限制. 
 
-**定义3.1.2**: 对流形$M$, 其上点$p$处的**单位切向量**组成的集合$U_pM:=\lbracev\in T_pM\mid ||v||=1\rbrace$.**单位切丛**$UM:=\bigcup\limits_{p\in M}U_pM$. 
+**定义3.1.2**: 对流形$M$, 其上点$p$处的**单位切向量**组成的集合$U_pM:=\lbrace v\in T_pM\mid ||v||=1\rbrace$.**单位切丛**$UM:=\bigcup\limits_{p\in M}U_pM$. 
 
 易见$U_pM$与单位球面$S^{n-1}$是同胚的, 也具有紧性, 于是存在与$\xi$无关的$\delta=\delta(p)$, 使得$\gamma_\xi(t)$对任意$\xi\in U_pM,t\in(-\delta,\delta)$均存在. 换言之, 对任意$u\in T_pM,||u||<\delta, \gamma_u(1)$存在. 
 
 基于此可以定义所谓“指数映照”的概念. 
 
-**定义3.1.3**: 对任意$p\in M$, **指数映照**$\exp_p:B(O_p,\delta)(:=\lbracev\in T_pM\mid||v||<\delta\rbrace)\to M$定义为$u\mapsto\gamma_u(1)$. 
+**定义3.1.3**: 对任意$p\in M$, **指数映照**$\exp_p:B(O_p,\delta)(:=\lbrace v\in T_pM\mid||v||<\delta\rbrace)\to M$定义为$u\mapsto\gamma_u(1)$. 
 
 容易看到$\exp_p(t\xi)=\gamma_\xi(t),|t|\leqslant1,\xi\in B(O_p,\delta)$和$\exp_p(O_p)=p$. 切空间作为欧氏空间当然也有流形结构, 于是可以考虑$\exp_p$的切映射有如何性质, 最方便研究的自然是$(\exp)_*\mid_{O_p}:T_{O_p}(T_pM)\to T_pM$. 但欧氏空间的切空间和本身自然别无二致, 于是我们可以将此映射视为$T_pM$的一个自映射. 依定义, $(\exp)_*\mid_{O_p}(u)=\dfrac{\mbox{d}}{\mbox{d}t}\exp_p(tu)=\gamma_u'(0)=u$, 这说明$(\exp)_*\mid_{O_p}$不是别的, 正是$\mbox{id}_{T_pM}$.因此通过反函数定理, 我们知道存在$\varepsilon<\delta$, 使得$\exp_p\mid_{B(O_p,\varepsilon)}$是微分同胚, 其像是$M$上的一个开集$B$, 于是乎可以有: 
 
-**定义3.1.4**: $\log_p:B\to B(O_p,\varepsilon)$为$\exp_p$在局部上的逆映射. 需要注意到$(B,\log_p)$是一个坐标卡, $T_pM$作为欧氏空间有标准正交基$\lbracee_i\rbrace_{i=1}^n$, 其上坐标函数$\lbracex^i\rbrace_{i=1}^n$为$\log_p(q)=x^i(q)e_i$, $(B,\log_p,x^i)$就称为一个**标准坐标**. 
+**定义3.1.4**: $\log_p:B\to B(O_p,\varepsilon)$为$\exp_p$在局部上的逆映射. 需要注意到$(B,\log_p)$是一个坐标卡, $T_pM$作为欧氏空间有标准正交基$\lbrace e_i\rbrace_{i=1}^n$, 其上坐标函数$\lbrace x^i\rbrace_{i=1}^n$为$\log_p(q)=x^i(q)e_i$, $(B,\log_p,x^i)$就称为一个**标准坐标**. 
 
 **注3.1.1**: 这里的$\exp$和$\log$仅仅是记号而无算数含义, 但在某些特殊情形（如Lie群和Lie代数之间的映射）下其确实可写成真正的指数映照. 
 
@@ -256,7 +256,7 @@ $\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\rig
 
 **定义3.2.4**: 设$\gamma_u$是$M$中一测地线, 若存在其上一非零Jacobi场满足$Y(0)=Y(1)=0$, 则称$\gamma_u(0)$与$\gamma_u(1)$沿$\gamma_u$**共轭**, $\dim\ker((\exp)_*|_u)$称为共轭的**重数**. 
 
-**注3.2.3**: $\dim\ker((\exp)_*|_u)$也等于$\lbraceJ\in Jac(\gamma_u)|J(0)=J(1)=0\rbrace$作为$Jac(\gamma_u)$的子空间的维数. 
+**注3.2.3**: $\dim\ker((\exp)_*|_u)$也等于$\lbrace J\in Jac(\gamma_u)|J(0)=J(1)=0\rbrace$作为$Jac(\gamma_u)$的子空间的维数. 
 
 **例3.2.1**: $\mathbb{R}^n$上的Jacobi场都是线性的. 
 
@@ -272,7 +272,7 @@ $\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\rig
 
 **例3.3.1**: $S^2$上北极点$N$的切平面中的圆$B(O_N,\pi)$的每一条半径并上一段圆弧在指数映照下都是$N$到南极点$S$的某条测地线的像. 
 
-**例3.3.2**: 圆柱$\mathbb{R}\times S^1$上在同一$\lbracex\rbrace\times S^1$且非$S^1$上对径的两点, 正向和反向弧均为测地线, 不同时最短, 但均局部最短. 
+**例3.3.2**: 圆柱$\mathbb{R}\times S^1$上在同一$\lbrace x\rbrace\times S^1$且非$S^1$上对径的两点, 正向和反向弧均为测地线, 不同时最短, 但均局部最短. 
 
 **注3.3.1**: 我们断言若一测地线上有共轭点$p,q$, 经过$q$有一点$r$, $p$到$r$的最短连线绝非此测地线, 证明会在后面出现. 
 
@@ -282,7 +282,7 @@ $\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\rig
 
 在这里我们只讨论$\Omega_{p,q}$的情形, 其余两种都是类似的, 但第一种最好算. 
 
-**定义3.3.2**: 给定曲线$c:[a,b]\to M$, $c\in\Omega_{p,q}$. 一个变分$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\to M$被称作$c$在$\Omega_{p,q}$中的**分段光滑变分**, 若它满足: (1)存在$a=t_0<t_1<t_2<\cdots<t_N=b$, 使得$\alpha|_{[t_{i-1},t_i]\times[-\varepsilon,\varepsilon]}$光滑; (2)$\lbracec_s\rbrace_{s\in(-\varepsilon,\varepsilon)}\subset\Omega_{p,q}$. 
+**定义3.3.2**: 给定曲线$c:[a,b]\to M$, $c\in\Omega_{p,q}$. 一个变分$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\to M$被称作$c$在$\Omega_{p,q}$中的**分段光滑变分**, 若它满足: (1)存在$a=t_0<t_1<t_2<\cdots<t_N=b$, 使得$\alpha|_{[t_{i-1},t_i]\times[-\varepsilon,\varepsilon]}$光滑; (2)$\lbrace c_s\rbrace_{s\in(-\varepsilon,\varepsilon)}\subset\Omega_{p,q}$. 
 
 **定义3.3.3**: $\Omega_{p,q}$上的**长度泛函**$L:\Omega_{p,q}\to\mathbb{R}$就是$[\gamma\mapsto L(\gamma)]$. 
 
@@ -340,11 +340,11 @@ $\begin{aligned}Y'''(0)=&\nabla_{\frac{\partial}{\partial t}}(Y'(t))|_{t=0}=-\na
 
 **定义4.1.2**: 对$p\in M$, 定义**Ricci曲率张量**为$Ric:T_pM\times T_pM\to\mathbb{R}$为$Ric(u,v)=\mbox{tr}[x\mapsto R(x,u)v]$. 对$\xi\in U_pM$, $Ric(\xi):=Ric(\xi,\xi)$称为$p$处沿$\xi$方向的**Ricci曲率**. 
 
-在$T_pM$的一组标准正交基$\lbracee_i\rbrace_{i=1}^n$下, $Ric(e_1)=\sum\limits_{i=2}^nk(e_1,e_i)$, $Ric(u,v)=\sum\limits_{i=1}^nR(e_i,u,v,e_i)$. 我们也约定Ricci曲率大于等于（或大于）某个数就是那一点处Ricci曲率张量的最小特征值大于等于（或大于）某个数; Ricci曲率小于等于（或小于）某个数就是那一点处Ricci曲率张量的最大特征值小于等于（或小于）某个数, 也记为$Ric\leqslant(\geqslant)A$这种形式. 
+在$T_pM$的一组标准正交基$\lbrace e_i\rbrace_{i=1}^n$下, $Ric(e_1)=\sum\limits_{i=2}^nk(e_1,e_i)$, $Ric(u,v)=\sum\limits_{i=1}^nR(e_i,u,v,e_i)$. 我们也约定Ricci曲率大于等于（或大于）某个数就是那一点处Ricci曲率张量的最小特征值大于等于（或大于）某个数; Ricci曲率小于等于（或小于）某个数就是那一点处Ricci曲率张量的最大特征值小于等于（或小于）某个数, 也记为$Ric\leqslant(\geqslant)A$这种形式. 
 
 **定义4.1.3**: $p$处的**数量曲率**为$\mbox{Scal}(p)(=S(p)):=\mbox{tr}[Ric(-,-)]$. 
 
-在$T_pM$的一组标准正交基$\lbracee_i\rbrace_{i=1}^n$下, 显然有$S(p)=\sum\limits_{i=1}^nRic(e_i,e_i)=\sum\limits_{i\neq j}\sec(e_i,e_j)$. 
+在$T_pM$的一组标准正交基$\lbrace e_i\rbrace_{i=1}^n$下, 显然有$S(p)=\sum\limits_{i=1}^nRic(e_i,e_i)=\sum\limits_{i\neq j}\sec(e_i,e_j)$. 
 
 显而易见, 依定义计算某个黎曼流形的曲率是非常困难的, 我们需要引入一些工具来简化计算. 
 
@@ -396,7 +396,7 @@ $\begin{aligned}&(\bar R(u,v)w)^T\\=&(\bar\nabla_u\bar\nabla_vw-\bar\nabla_v\bar
 
 ### 4.3 牛刀小试: $S^n(r)$和$\mathbb{H}^n$上的几何
 
-我们先考虑欧氏空间中的$n$维球面$S^n(r)(:=\lbrace(x_i)_{i=1}^n|\sum\limits_{i=1}^nx_i^2=r^2\rbrace)\subset\mathbb{R}^{n+1}$, 并把欧氏空间中的点和向量等同起来. 
+我们先考虑欧氏空间中的$n$维球面$S^n(r)(:=\lbrace (x_i)_{i=1}^n|\sum\limits_{i=1}^nx_i^2=r^2\rbrace)\subset\mathbb{R}^{n+1}$, 并把欧氏空间中的点和向量等同起来. 
 
 $p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V}_pS^n(r)$, 对任意$X\in\Gamma(TS^n(r))$, 取$\Xi$为$\xi_p$的自然延拓（$\Xi(p)=\dfrac{p}{r}$）, 则$S_\xi X|_p=-(\bar\nabla_X\Xi)^T|_p$. 取$X$的一条积分曲线$\gamma:(-\varepsilon,\varepsilon)\to S^n(r)$, $\gamma(0)=p,\gamma'(0)=X(p)$, $S_\xi X|_p=-\left(\dfrac{\mbox{d}}{\mbox{d}t}\bigg|_{t=0}\Xi(\gamma(t))\right)^T=-\dfrac{1}{r}X(p)$. 于是$\mbox{II}_\xi(u,v)=-\dfrac{1}{r}\langle u,v\rangle\xi$, 由Gauss公式$R(u,v)w=\dfrac{1}{r^2}(\langle v,w\rangle u-\langle u,w\rangle v)$, 当取$u,v$是标准正交时, $\sec(u,v)=\dfrac{1}{r^2}$. 
 
@@ -404,7 +404,7 @@ $p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V}_pS^n(r)$, 对�
 
 对于Jacobi方程$Y''(t)+\dfrac{1}{r^2}Y(t)=0$, $\gamma(t)=a\cos\dfrac{t}{r}E_1(t)+br\sin\dfrac{t}{r}E_2(t)$, 其中$E_1,E_2$为沿$\gamma$平行移动的向量场, $Y(0)=aE_1(0)$, $Y'(0)=bE_2(0)$. 
 
-另一个重要的例子是双曲空间$\mathbb{H}^n:=\lbrace(x^i)_{i=1}^n|x^n>0\rbrace(n\geqslant2)$, 其上度量为$\varphi^2g_0$, 其中$\varphi=\dfrac{1}{x^n}$, $g_0$是正常的欧氏度量. 
+另一个重要的例子是双曲空间$\mathbb{H}^n:=\lbrace (x^i)_{i=1}^n|x^n>0\rbrace(n\geqslant2)$, 其上度量为$\varphi^2g_0$, 其中$\varphi=\dfrac{1}{x^n}$, $g_0$是正常的欧氏度量. 
 
 事实上这是所谓“共形变换”的一个特例, 对原本的黎曼流形$(M,g)$, 将其度量变更为$(M,\varphi^2g)$时, 记$f:=\ln\varphi$, 则新的联络$\nabla_X^\varphi Y=\nabla_XY+X(f)Y+Y(f)X-\langle X,Y\rangle\cdot\mbox{grad}f$.若对两$(0,2)-$张量$h,k$, 定义$(h\odot k)(x,y,z,w):=h(x,z)k(y,w)+h(y,w)k(x,z)-h(x,w)k(y,z)-h(y,z)k(x,w)$, 则新的曲率张量$R^\varphi=\exp(2f)(R+(\mbox{Hess}f-\mbox{d}f\otimes\mbox{d}f+\dfrac{1}{2}||\mbox{grad}f||^2g)\odot g)$.这部分公式留待自证. 
 
@@ -416,7 +416,7 @@ $p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V}_pS^n(r)$, 对�
 
 现在到了兑现**注3.2.1**的诺言的时候了, 为方便起见, 我们定义一些新的记号. 
 
-**定义4.4.1**: 设$\lbracee_i\rbrace$是$T_pM$的标准正交基, 定义$\Lambda^2_pM$为拥有标准正交基$\lbracee_i\wedge e_j\rbrace_{i<j}$的内积空间, 称为**平分空间**, 其上的度量就是$g(x_{1}\wedge x_{2},y_{1}\wedge y_{2})=\det[g(x_i,y_j)]$, $\Lambda^2M:=\bigcup\limits_{p\in M}\Lambda_p^2M$为$M$上的**平分丛**. 
+**定义4.4.1**: 设$\lbrace e_i\rbrace$是$T_pM$的标准正交基, 定义$\Lambda^2_pM$为拥有标准正交基$\lbrace e_i\wedge e_j\rbrace_{i<j}$的内积空间, 称为**平分空间**, 其上的度量就是$g(x_{1}\wedge x_{2},y_{1}\wedge y_{2})=\det[g(x_i,y_j)]$, $\Lambda^2M:=\bigcup\limits_{p\in M}\Lambda_p^2M$为$M$上的**平分丛**. 
 
 **定义4.4.2**: 定义$\mathfrak{R}:\Lambda^2_pM\times\Lambda^2_pM\to\mathbb{R}$为$\mathfrak{R}(x\wedge y,v\wedge w)=R(x,y,v,w)$. 
 
@@ -424,9 +424,9 @@ $p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V}_pS^n(r)$, 对�
 
 这里有两个有趣的命题, 不过不做证明: 
 
-**命题4.4.1**: 若标准正交基$\lbracee_i\wedge e_j\rbrace$对角化$\mathfrak{R}$, 即是说$\mathfrak{R}(e_i\wedge e_j)=\lambda_{ij}(e_i\wedge e_j)$, 则$\sec(\sigma)\in[\min\lambda_{ij},\max{\lambda_{ij}}]$. 
+**命题4.4.1**: 若标准正交基$\lbrace e_i\wedge e_j\rbrace$对角化$\mathfrak{R}$, 即是说$\mathfrak{R}(e_i\wedge e_j)=\lambda_{ij}(e_i\wedge e_j)$, 则$\sec(\sigma)\in[\min\lambda_{ij},\max{\lambda_{ij}}]$. 
 
-**命题4.4.2**: 如果对任意互不相同的$i,j,k$都有$R(e_i,e_j)e_k=0$, 则$\lbracee_i\wedge e_j\rbrace$对角化$\mathfrak{R}$. 
+**命题4.4.2**: 如果对任意互不相同的$i,j,k$都有$R(e_i,e_j)e_k=0$, 则$\lbrace e_i\wedge e_j\rbrace$对角化$\mathfrak{R}$. 
 
 一个问题是, 什么样的流形会具有这样的曲率算子呢？我们后面会看到旋转对称流形（作为欧氏空间中旋转面的推广）会是一个好的载体。
 
@@ -468,7 +468,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 我们在微分流形中可以对微分形式进行积分, 却无法像数学分析中一样对函数进行积分, 现在我们有了黎曼度量, 可以完成这个愿望了. 
 
-**定义4.6.1**: 对任何黎曼流形$(M^n,g)$, 任取局部有限的坐标覆盖$\lbrace(U_\alpha,x_\alpha^1,\cdots,x_\alpha^n)\rbrace$和一个从属于其的单位分解$\lbrace\rho_\alpha\rbrace$, 定义$\mbox{d}M=\mbox{dvol}:=(\rho_\alpha\sqrt{\det[g_{ij}^\alpha]})\mbox{d}x_\alpha^1\wedge\cdots\wedge\mbox{d}x_\alpha^n$为其上的**体积微元**. 
+**定义4.6.1**: 对任何黎曼流形$(M^n,g)$, 任取局部有限的坐标覆盖$\lbrace (U_\alpha,x_\alpha^1,\cdots,x_\alpha^n)\rbrace$和一个从属于其的单位分解$\lbrace \rho_\alpha\rbrace$, 定义$\mbox{d}M=\mbox{dvol}:=(\rho_\alpha\sqrt{\det[g_{ij}^\alpha]})\mbox{d}x_\alpha^1\wedge\cdots\wedge\mbox{d}x_\alpha^n$为其上的**体积微元**. 
 
 **注4.6.1**: 容易验证上述定义无关于局部覆盖和单位分解的选取. 当黎曼流形可定向时, 在符合定向的坐标覆盖下其是一个正定$n-$形式, 此时称其为**体积形式**. 
 
@@ -478,13 +478,13 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 上式右端的积分在单位分解下写出, 在某点处会是可数个积分求和, 此时也可以定义$\mbox{vol}(A)=+\infty$的记号. 
 
-下面来研究$\partial B(p,r)$上的几何. 固定$p\in M$和使得$B(p,r)$中无$p$的共轭点的足够小的$r$, 固定$T_pM$的一组标准正交基$\lbracee_i\rbrace_{i=1}^n$, 可在$T_pM$上引入极坐标$(r,\Theta)\in\mathbb{R}^+\times S^{n-1}\cong T_pM$, 取定测地线$\gamma:\mathbb{R}^+\to M$, $\gamma(0)=p$, $\gamma'(0)=e_n$. $\lbracete_i\rbrace_{i=1}^n$是沿着$te_n$的Jacobi场, 于是指数映照得到$J_i(t)=(\exp_p)_*|_{te_n}(te_i)$为$\gamma$上的Jacobi场, $J_i(0)=0,J_i'(0)=e_i$, Gauss引理说明$\langle J_i(t),\gamma'(t)\rangle=0$, $S^{n-1}(t)\subset T_pM$的面积微元为$\det((te_1)\wedge\cdots\wedge(te_{n-1}))\mbox{d}\Theta$.现在要考虑$(\exp)|_{te_n}$的Jacobi行列式$J(t,e_n)$, 这正是$\sqrt{\det(t^{-1}J_1,\cdots,t^{-1}J_{n-1})(t^{-1}J_1,\cdots,t^{-1}J_{n-1})^T}=\dfrac{1}{t^{n-1}}\sqrt{\det[\langle J_i,J_j\rangle]}$. 
+下面来研究$\partial B(p,r)$上的几何. 固定$p\in M$和使得$B(p,r)$中无$p$的共轭点的足够小的$r$, 固定$T_pM$的一组标准正交基$\lbrace e_i\rbrace_{i=1}^n$, 可在$T_pM$上引入极坐标$(r,\Theta)\in\mathbb{R}^+\times S^{n-1}\cong T_pM$, 取定测地线$\gamma:\mathbb{R}^+\to M$, $\gamma(0)=p$, $\gamma'(0)=e_n$. $\lbrace te_i\rbrace_{i=1}^n$是沿着$te_n$的Jacobi场, 于是指数映照得到$J_i(t)=(\exp_p)_*|_{te_n}(te_i)$为$\gamma$上的Jacobi场, $J_i(0)=0,J_i'(0)=e_i$, Gauss引理说明$\langle J_i(t),\gamma'(t)\rangle=0$, $S^{n-1}(t)\subset T_pM$的面积微元为$\det((te_1)\wedge\cdots\wedge(te_{n-1}))\mbox{d}\Theta$.现在要考虑$(\exp)|_{te_n}$的Jacobi行列式$J(t,e_n)$, 这正是$\sqrt{\det(t^{-1}J_1,\cdots,t^{-1}J_{n-1})(t^{-1}J_1,\cdots,t^{-1}J_{n-1})^T}=\dfrac{1}{t^{n-1}}\sqrt{\det[\langle J_i,J_j\rangle]}$. 
 
 **定义4.6.3**: $\sqrt{\det[\langle J_i,J_j\rangle]}\mbox{d}\Theta$就称为$M^n$在$p$处沿$e_n$的**面积微元**, 记为$A(t,e_n)\mbox{d}\Theta$. 
 
 此时体积微元就是$\sqrt{\det[\langle J_i,J_j\rangle]}\mbox{d}r\mbox{d}\Theta$. 
 
-下令$\lbraceE_i(t)\rbrace$为沿$\gamma$的平行向量场, $E_i(0)=e_i(i=1,\cdots,n-1)$, $J_i(t)=\sum\limits_{j=1}^{n-1}a_{ij}(t)E_j(t)$, $J_i(t_0)\perp\gamma'(t_0)$. 
+下令$\lbrace E_i(t)\rbrace$为沿$\gamma$的平行向量场, $E_i(0)=e_i(i=1,\cdots,n-1)$, $J_i(t)=\sum\limits_{j=1}^{n-1}a_{ij}(t)E_j(t)$, $J_i(t_0)\perp\gamma'(t_0)$. 
 
 **定义4.6.4**: $\mathbb{A}(t,e_n):=[a_{ij}(t)]_{(n-1)\times(n-1)}$称为$M^n$在$p$处沿$e_n$的**Jacobi算子**. 
 
@@ -520,7 +520,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **定义5.1.2**: 若$(M,g)$作为度量空间, 所有Cauchy列均收敛, 就称它是**度量完备**的. 
 
-**例5.1.1**: $\mathbb{R}^2\setminus\lbrace0\rbrace$配备通常的黎曼度量, 其作为度量空间两点间的距离就是所连曲线长度的下确界, 它既不是测地完备也不是度量完备的. 
+**例5.1.1**: $\mathbb{R}^2\setminus\lbrace 0\rbrace$配备通常的黎曼度量, 其作为度量空间两点间的距离就是所连曲线长度的下确界, 它既不是测地完备也不是度量完备的. 
 
 但实际上看起来不甚相同的两种完备性其实是一样的, 我们有著名的“Hopf-Rinow定理”: 
 
@@ -588,7 +588,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 我们来看看对单位速度测地线$\gamma$, $Ric(\gamma'(0))\geqslant (n-1)k$时会发生什么, 先给出一些记号. 
 
-**定义5.3.1**: $\mbox{Conj}_p(\Theta):=\sup\lbraceT|\gamma(t)在[0,T)上无与p共轭的点\rbrace$称为$M$在$p$处沿$\Theta$方向的**共轭半径**; $\mbox{Conj}(M):=\inf\lbrace\mbox{Conj}(\Theta)|p\in M,\Theta\in U_pM\rbrace\in[0,+\infty]$称为$M$的**共轭半径**; $\mbox{cut}_p(\Theta):=\sup\lbracet|d(p,\exp_p(t\Theta))=t\rbrace$.$\mathcal{Cut}_p(M):=\lbrace\mbox{cut}_p(\Theta)\cdot\Theta|\Theta\in U_pM\rbrace$称为$M$在$p$处的**切向割迹**; $\mbox{Cut}_p(M)=\exp_p(\mathcal{Cut}_p(M))$称为$M$在$p$处的**割迹**. 
+**定义5.3.1**: $\mbox{Conj}_p(\Theta):=\sup\lbrace T|\gamma(t)在[0,T)上无与p共轭的点\rbrace$称为$M$在$p$处沿$\Theta$方向的**共轭半径**; $\mbox{Conj}(M):=\inf\lbrace \mbox{Conj}(\Theta)|p\in M,\Theta\in U_pM\rbrace\in[0,+\infty]$称为$M$的**共轭半径**; $\mbox{cut}_p(\Theta):=\sup\lbrace t|d(p,\exp_p(t\Theta))=t\rbrace$.$\mathcal{Cut}_p(M):=\lbrace \mbox{cut}_p(\Theta)\cdot\Theta|\Theta\in U_pM\rbrace$称为$M$在$p$处的**切向割迹**; $\mbox{Cut}_p(M)=\exp_p(\mathcal{Cut}_p(M))$称为$M$在$p$处的**割迹**. 
 
 此时对Riccati方程$\mbox{II}'(t)+\mbox{II}^2(t)+R(t)=0$, 对两端取$\mbox{tr}$, 并利用Cauchy-Schwarz不等式就得到$\left(\dfrac{\mbox{tr}\mbox{II}(t)}{n-1}\right)'+\left(\dfrac{\mbox{tr}\mbox{II}(t)}{n-1}\right)^2+k\leqslant0$. 设$\psi(t):=(\det\mathbb{A}(t))^{\frac{1}{n-1}}$, 则$(\ln\psi(t))'=\dfrac{\mbox{tr}\mbox{II}(t)}{n-1}$. 这两者结合事实上就有所谓的“Bishop定理”: 
 
@@ -638,17 +638,17 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 证明略过. 
 
-**定义5.3.2**: 对流形$M$及其中一点$p$, $A^M_{s,S}(p):=\lbracex\in M|s\leqslant d(x,p)\leqslant S\rbrace$是以$p$为中心的一个**环形区域**. 
+**定义5.3.2**: 对流形$M$及其中一点$p$, $A^M_{s,S}(p):=\lbrace x\in M|s\leqslant d(x,p)\leqslant S\rbrace$是以$p$为中心的一个**环形区域**. 
 
 一个简单的观察是在空间形式$S^n_k$上环形区域的体积不依赖于中心的选取, 下面来证明“Bishop-Gromov体积比较定理”. 
 
 **定理5.3.6**: 设$(M^n,g)$是完备黎曼流形, $Ric\geqslant(n-1)k$, 若$0<r<R$, $0<s<S$, $r\geqslant s$, $R\geqslant S$, 则$\dfrac{\mbox{vol}(A_{s,S}^M(p))}{\mbox{vol}(A_{r,R}^M(p))}\geqslant\dfrac{\mbox{vol}(A_{s,S}^{S_k^n})}{\mbox{vol}(A_{r,R}^{S_k^n})}$. 
 
-*Proof.* 只需证明$\dfrac{\mbox{vol}(A_{x,y}^M(p))}{\mbox{vol}(A_{x,y}^{S_k^n})}$关于$x,y$都递减. 我们有$\mbox{vol}(A_{x,y}^M(p))=\displaystyle\int_{U_pM}\mbox{d}\Theta\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracey,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t$, 所以积分时我们仅考虑$x\leqslant\mbox{cut}_p(\Theta)$的情况.由Gromov定理和**引理5.3.1**, 对任意$z\geqslant y$, $\dfrac{\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracey,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t}{\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracey,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}\geqslant\dfrac{\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracez,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t}{\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracez,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}$.
+*Proof.* 只需证明$\dfrac{\mbox{vol}(A_{x,y}^M(p))}{\mbox{vol}(A_{x,y}^{S_k^n})}$关于$x,y$都递减. 我们有$\mbox{vol}(A_{x,y}^M(p))=\displaystyle\int_{U_pM}\mbox{d}\Theta\int_{\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t$, 所以积分时我们仅考虑$x\leqslant\mbox{cut}_p(\Theta)$的情况.由Gromov定理和**引理5.3.1**, 对任意$z\geqslant y$, $\dfrac{\int_{\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t}{\int_{\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}\geqslant\dfrac{\int_{\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t}{\int_{\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}$.
 
 于是有
 
-$\begin{aligned}\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracey,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t&\geqslant\dfrac{\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracey,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}{\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracez,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracez,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\\&=\dfrac{\int_{x}^{\min\lbracey,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}{\int_{x}^{\min\lbracez,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracez,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\\&\geqslant\dfrac{\int_{x}^{y}\mbox{sn}_k^{n-1}(t)\mbox{d}t}{\int_{x}^{z}\mbox{sn}_k^{n-1}(t)\mbox{d}t}\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracez,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\end{aligned}$, 
+$\begin{aligned}\int_{\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t&\geqslant\dfrac{\int_{\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}{\int_{\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}\int_{\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\\&=\dfrac{\int_{x}^{\min\lbrace y,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}{\int_{x}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\mbox{sn}_k^{n-1}(t)\mbox{d}t}\int_{\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\\&\geqslant\dfrac{\int_{x}^{y}\mbox{sn}_k^{n-1}(t)\mbox{d}t}{\int_{x}^{z}\mbox{sn}_k^{n-1}(t)\mbox{d}t}\int_{\min\lbrace x,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut}_p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\end{aligned}$, 
 
 其中第二个不等号是基本的“糖水不等式”, 将此式对$U_pM$积分, 就得到欲证结论. $\quad\Box$
 
@@ -700,7 +700,7 @@ $\begin{aligned}\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracey,\m
 
 **命题5.5.1**: 设$(M^n,g)$是开流形, 对任意$p\in M$, 总存在$\gamma(0)=p$的一个射线$\gamma$. 
 
-*Proof.* 对任意$k\in\mathbb{N}$, 存在$q_k\in M$使得$d(p,q_k)=k$, 其所连单位速度测地线为$\gamma_k$, 记$\Theta_k:=\gamma_k'(0)\in U_pM$, 取$\Theta$为$\lbrace\Theta_k\rbrace$的一个聚点, $\gamma_\Theta$即为所求. $\quad\Box$
+*Proof.* 对任意$k\in\mathbb{N}$, 存在$q_k\in M$使得$d(p,q_k)=k$, 其所连单位速度测地线为$\gamma_k$, 记$\Theta_k:=\gamma_k'(0)\in U_pM$, 取$\Theta$为$\lbrace \Theta_k\rbrace$的一个聚点, $\gamma_\Theta$即为所求. $\quad\Box$
 
 **定理5.5.1**: 设$(M^n,g)$是开流形, 且任意单位切向量的Ricci曲率均非负, 则对任意$p\in M$, 存在$c=c(p)>0$, 使得$\mbox{vol}(B(p,r))\geqslant c\cdot r$. 
 
@@ -708,13 +708,13 @@ $\begin{aligned}\int_{\min\lbracex,\mbox{cut}_p(\Theta)\rbrace}^{\min\lbracey,\m
 
 下面我们看看在拓扑上Ricci曲率非负会造成什么样的影响, 先给一个定义. 
 
-**定义5.5.3**: 称有限生成群$G$以阶$s$**多项式增长**, 如果其存在一个生成元集合$\lbraceg_1,\cdots,g_k\rbrace$使得存在$s\in\mathbb{R}^+$, 对任意足够大的$r$有$\#U(r)\leqslant r^s$, 其中$U(r):=\lbraceg\in G|g可以被写为g_1,\cdots,g_k的长不超过r的字\rbrace$. 
+**定义5.5.3**: 称有限生成群$G$以阶$s$**多项式增长**, 如果其存在一个生成元集合$\lbrace g_1,\cdots,g_k\rbrace$使得存在$s\in\mathbb{R}^+$, 对任意足够大的$r$有$\#U(r)\leqslant r^s$, 其中$U(r):=\lbrace g\in G|g可以被写为g_1,\cdots,g_k的长不超过r的字\rbrace$. 
 
 下面这个定理属于Milnor. 
 
 **定理5.5.2**: 若$(M^n,g)$是一个完备的Ricci曲率处处非负的流形, $H$是$\pi_1(M)$的一个有限生成子群, 则$H$多项式增长. 
 
-*Proof.* 设$H=\langle g_1,\cdots,g_k\rangle$.取$p\in M$及其在$M$的泛覆盖$\pi:\tilde M\to M$中的一个提升$\tilde p\in\tilde M$.$\pi_1(M)$在$\tilde M$上的作用定义如下: 对任意$q\in\tilde M$, $g\in\pi_1(M)$, $g$所代表的以$\pi(q)$为基点的同伦类中的一个代表元以$q$为起点的提升的终点就记为$gq$.对任意$g_i$, 可以取定与其同伦的基点在$p$的一个测地回路$\gamma_i$, $L(\gamma_i)=l_i$, 如此将它们提升到$\tilde M$上就变为了从$\tilde p$到$g_i\tilde p$的测地线, 它们的长度仍为$l_i$, 下面取$\varepsilon:=\dfrac{1}{100}\min\lbracel_i\rbrace$, $l:=\max\lbracel_i\rbrace$, 于是对任意不同的$h_1,h_2\in H$, $h_1(B(\tilde p,\varepsilon))\cap h_2(B(\tilde p,\varepsilon))=\empty$, 并且$\displaystyle\bigcup_{h\in U(r)}h(B(\tilde p,\varepsilon))\subset B(\tilde p,rl+\varepsilon)$, 而由Bishop-Gromov体积比较定理, $\#U(r)\leqslant\dfrac{\mbox{vol}(B(\tilde p,rl+\varepsilon))}{\mbox{vol}(B(\tilde p,\varepsilon))}\leqslant cr^n$, 其中$c$是个常数. $\quad\Box$
+*Proof.* 设$H=\langle g_1,\cdots,g_k\rangle$.取$p\in M$及其在$M$的泛覆盖$\pi:\tilde M\to M$中的一个提升$\tilde p\in\tilde M$.$\pi_1(M)$在$\tilde M$上的作用定义如下: 对任意$q\in\tilde M$, $g\in\pi_1(M)$, $g$所代表的以$\pi(q)$为基点的同伦类中的一个代表元以$q$为起点的提升的终点就记为$gq$.对任意$g_i$, 可以取定与其同伦的基点在$p$的一个测地回路$\gamma_i$, $L(\gamma_i)=l_i$, 如此将它们提升到$\tilde M$上就变为了从$\tilde p$到$g_i\tilde p$的测地线, 它们的长度仍为$l_i$, 下面取$\varepsilon:=\dfrac{1}{100}\min\lbrace l_i\rbrace$, $l:=\max\lbrace l_i\rbrace$, 于是对任意不同的$h_1,h_2\in H$, $h_1(B(\tilde p,\varepsilon))\cap h_2(B(\tilde p,\varepsilon))=\empty$, 并且$\displaystyle\bigcup_{h\in U(r)}h(B(\tilde p,\varepsilon))\subset B(\tilde p,rl+\varepsilon)$, 而由Bishop-Gromov体积比较定理, $\#U(r)\leqslant\dfrac{\mbox{vol}(B(\tilde p,rl+\varepsilon))}{\mbox{vol}(B(\tilde p,\varepsilon))}\leqslant cr^n$, 其中$c$是个常数. $\quad\Box$
 
 **注5.5.1**: Milnor的文章中还提到截面曲率不大于$-1$的情况下, 可以证明对某些$c\in\mathbb{R}^+$, $\#U(r)\geqslant\exp(cr)$, 此时称基本群为指数增长的, 二者证明完全类似. 
 
@@ -760,7 +760,7 @@ Busemann函数定义中的极限的存在性利用三角不等式以及距离函
 
 **定理5.6.2**: 设$(M^n,g)$是一个完备黎曼流形, 且截面曲率处处非负, 则$\pi_1(M)$至多被$\sqrt{2n\pi}2^{n-2}=:c(n)$个元素生成. 
 
-*Proof.* 设$\pi:\tilde M\to M$是泛覆盖映射, 并设$\tilde p\in\tilde M$是$p\in M$的一个提升, 则如**定理5.5.2**中所说, $\pi_1(M)\cong\pi_1(M,p)$可以等距作用到$\tilde M$上, 此时对任意$\gamma\in G$, 记$|\gamma|:=d(\tilde p,\gamma\tilde p)$, 选定$\gamma_1\in G$使得$|\gamma_1|=\min\lbrace|\gamma||\gamma\neq e,\gamma\in G\rbrace$, 如果$\langle\gamma_1\rangle\neq G$, 就继续选择$G\setminus\langle\gamma_1\rangle$中最短的, 如此下去选得一列$\langle\gamma_1,\cdots,\gamma_i,\cdots\rangle$, 对任意$i<j$, $|\gamma_i|\leqslant|\gamma_j|$, 下面断言$l_{ij}:=d(\gamma_i\tilde p,\gamma_j\tilde p)\geqslant|\gamma_j|$, 否则$|\gamma_i^{-1}\gamma_j|=l_{ij}<|\gamma_j|$, 这就矛盾. 下面由Toponogov三角形比较定理的角版本, $\alpha_{ij}\geqslant\tilde\alpha_{ij}\geqslant\dfrac{\pi}{3}$.而$U_pM$中至多有$c(n)$个向量两两夹角超过$\dfrac{\pi}{3}$, 这就完成了证明. $\quad\Box$
+*Proof.* 设$\pi:\tilde M\to M$是泛覆盖映射, 并设$\tilde p\in\tilde M$是$p\in M$的一个提升, 则如**定理5.5.2**中所说, $\pi_1(M)\cong\pi_1(M,p)$可以等距作用到$\tilde M$上, 此时对任意$\gamma\in G$, 记$|\gamma|:=d(\tilde p,\gamma\tilde p)$, 选定$\gamma_1\in G$使得$|\gamma_1|=\min\lbrace |\gamma||\gamma\neq e,\gamma\in G\rbrace$, 如果$\langle\gamma_1\rangle\neq G$, 就继续选择$G\setminus\langle\gamma_1\rangle$中最短的, 如此下去选得一列$\langle\gamma_1,\cdots,\gamma_i,\cdots\rangle$, 对任意$i<j$, $|\gamma_i|\leqslant|\gamma_j|$, 下面断言$l_{ij}:=d(\gamma_i\tilde p,\gamma_j\tilde p)\geqslant|\gamma_j|$, 否则$|\gamma_i^{-1}\gamma_j|=l_{ij}<|\gamma_j|$, 这就矛盾. 下面由Toponogov三角形比较定理的角版本, $\alpha_{ij}\geqslant\tilde\alpha_{ij}\geqslant\dfrac{\pi}{3}$.而$U_pM$中至多有$c(n)$个向量两两夹角超过$\dfrac{\pi}{3}$, 这就完成了证明. $\quad\Box$
 
 **注5.6.1**: 满足$S^{n-1}$上两两距离不小于$\dfrac{\pi}{3}$的点的最大个数被称作“亲吻数”, 亲吻数的具体数值目前在$n=2,3,8,24$时求出了准确值, 但在Gromov定理中我们有上面的估计一般就够用了. 
 
@@ -770,7 +770,7 @@ Busemann函数定义中的极限的存在性利用三角不等式以及距离函
 
 我们先来介绍一些有关Gromov-Hausdorff度量的基本知识, 本节的所有定理都不予证明, 感兴趣的读者可以阅读GTM171, Peter Peterson的《Riemannian Geometry》. 
 
-**定义6.1.1**: 给定度量空间$(X,d)$, 对其任意两子集$Y_1,Y_2$, 两者间的**Hausdorff距离**为$d^H_X(Y_1,Y_2):=\inf\lbrace\varepsilon|Y_2\subset B(Y_1,\varepsilon),Y_1\subset B(Y_2,\varepsilon)\rbrace$. 
+**定义6.1.1**: 给定度量空间$(X,d)$, 对其任意两子集$Y_1,Y_2$, 两者间的**Hausdorff距离**为$d^H_X(Y_1,Y_2):=\inf\lbrace \varepsilon|Y_2\subset B(Y_1,\varepsilon),Y_1\subset B(Y_2,\varepsilon)\rbrace$. 
 
 **定义6.1.2**: 两度量空间$(X_1,d_1)$, $(X_2,d_2)$间的**Gromov-Hausdorff距离**为$d^{GH}((X,d_1),(X,d_2))$是$d_Z^H(i_1(X_1),i_2(X_2))$的下确界, 其中$i_1:X_1\to Z$和$i_2:X_2\to Z$取遍所有等距嵌入. 
 
@@ -800,7 +800,7 @@ Busemann函数定义中的极限的存在性利用三角不等式以及距离函
 
 **引理6.2.1**: $(\mathcal{MET}(D,N(\cdot)),d^{GH})$是紧度量空间. 
 
-*Proof.* 置$\mathcal{FIN}(D,N)=\lbraceX\in\mathcal{MET}|\#X<N,\mbox{Diam}X\leqslant D\rbrace$, 显然这是一个紧集. 对任意$X\in\mathcal{MET}(D,N(\cdot))$和任意$\varepsilon$, 存在$Z\subset X$使得$\#Z\leqslant N(\varepsilon)$, $d^{GH}(X,Z)<3\varepsilon$, 也即$Z\in\mathcal{FIN}(D,N(\varepsilon))$, 于是欲证空间全有界且闭, 故为紧集. 
+*Proof.* 置$\mathcal{FIN}(D,N)=\lbrace X\in\mathcal{MET}|\#X<N,\mbox{Diam}X\leqslant D\rbrace$, 显然这是一个紧集. 对任意$X\in\mathcal{MET}(D,N(\cdot))$和任意$\varepsilon$, 存在$Z\subset X$使得$\#Z\leqslant N(\varepsilon)$, $d^{GH}(X,Z)<3\varepsilon$, 也即$Z\in\mathcal{FIN}(D,N(\varepsilon))$, 于是欲证空间全有界且闭, 故为紧集. 
 
 **定义6.2.2**: 记所有直径小于等于$D$且Ricci曲率不小于$(n-1)k$的$n$维黎曼流形组成的集合为$\mathcal{Ric}^D_{\cdot,\cdot,(n-1)k}(n)$. 
 
@@ -808,7 +808,7 @@ Gromov的预紧性定理是说:
 
 **定理6.2.1**: $(\mathcal{Ric}^D_{\cdot,(n-1)k}(n),d^{GH})$是预紧的. 
 
-*Proof.* $\dfrac{\mbox{vol}(M)}{\min(\mbox{vol}\lbracep,\frac{\varepsilon}{2})\rbrace}\leqslant\dfrac{\mbox{vol}(B(p_0,D))}{\mbox{vol}(B(p_0,\frac{\varepsilon}{2}))}\leqslant\dfrac{\mbox{vol}(B^n_k(D))}{\mbox{vol}(B^n_k(\frac{\varepsilon}{2}))}=:N_D(\varepsilon)$, 此即为满足要求的填充函数, 用上面引理即得结论成立. $\quad\Box$
+*Proof.* $\dfrac{\mbox{vol}(M)}{\min(\mbox{vol}\lbrace p,\frac{\varepsilon}{2})\rbrace}\leqslant\dfrac{\mbox{vol}(B(p_0,D))}{\mbox{vol}(B(p_0,\frac{\varepsilon}{2}))}\leqslant\dfrac{\mbox{vol}(B^n_k(D))}{\mbox{vol}(B^n_k(\frac{\varepsilon}{2}))}=:N_D(\varepsilon)$, 此即为满足要求的填充函数, 用上面引理即得结论成立. $\quad\Box$
 
 ### 6.3 其他的子空间
 
