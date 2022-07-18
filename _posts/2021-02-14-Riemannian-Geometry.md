@@ -20,13 +20,13 @@ tags:
 
 首先我们默认大家掌握基本的点集拓扑知识, 并且知道基本群, 覆叠映射以及泛覆盖空间的定义. 另外整个笔记在涉及求和时都使用Einstein求和约定. 
 
-**定义1.1**: 一个**$n$维拓扑流形**谓指一个第二可数的Hausdorff拓扑空间$M$及其上一族坐标卡（局部坐标）$\{ (U_\alpha,\varphi_\alpha) \}_{ \alpha\in\Lambda }$, 其中$\{U_\alpha\}_{\alpha\in\Lambda}$是$M$的一个开覆盖, $\{\varphi_{\alpha} :U_\alpha\to\mathbb{R}^n\}_{\alpha\in\Lambda}$为一族同胚映射, 一般也用$M$或$M^n$来表示这个拓扑流形而省略其坐标卡, 拓扑流形$M$的维数也可以被记为$\dim M$; 如果对所有满足$U_\alpha\cap U_\beta\neq\empty$的$\alpha,\beta\in\Lambda$, 有任何**转移函数**$\varphi_\beta\circ\varphi_\alpha^{-1}:\varphi_\alpha(U_\alpha\cap U_\beta)\to\varphi_\beta(U_\alpha\cap U_\beta)$是$C^k$的, 则称$M$为**$C^k$流形**, 特别地$k=\infty$时, 也称$M$为**光滑流形**; 当$C^k$（或光滑）流形$M$上的坐标卡$\{(U_\alpha,\varphi_\alpha)\}_{\alpha\in\Lambda}$极大时, 称这族坐标卡为$M$上的$C^k$（或光滑）结构; 称光滑流形是**可定向**的, 如果存在其上一族坐标卡, 两两之间的转移函数的Jacobi行列式都是正的.  
+**定义1.1**: 一个**$n$维拓扑流形**谓指一个第二可数的Hausdorff拓扑空间$M$及其上一族坐标卡（局部坐标）$\lbrace(U_\alpha,\varphi_\alpha)\rbrace_{ \alpha\in\Lambda }$, 其中$\{U_\alpha\}_{\alpha\in\Lambda}$是$M$的一个开覆盖, $\lbrace\varphi_{\alpha} \colon U_\alpha\to\mathbb{R}^n\rbrace_{\alpha\in\Lambda}$为一族同胚映射, 一般也用$M$或$M^n$来表示这个拓扑流形而省略其坐标卡, 拓扑流形$M$的维数也可以被记为$\dim M$; 如果对所有满足$U_\alpha\cap U_\beta\neq\empty$的$\alpha,\beta\in\Lambda$, 有任何**转移函数**$\varphi_\beta\circ\varphi_\alpha^{-1}\colon\varphi_\alpha(U_\alpha\cap U_\beta)\to\varphi_\beta(U_\alpha\cap U_\beta)$是$C^k$的, 则称$M$为**$C^k$流形**, 特别地$k=\infty$时, 也称$M$为**光滑流形**; 当$C^k$（或光滑）流形$M$上的坐标卡$\lbrace(U_\alpha,\varphi_\alpha)\rbrace_{\alpha\in\Lambda}$极大时, 称这族坐标卡为$M$上的$C^k$（或光滑）结构; 称光滑流形是**可定向**的, 如果存在其上一族坐标卡, 两两之间的转移函数的Jacobi行列式都是正的.  
 
 **注1.1**: 存在没有光滑结构的拓扑流形, 也存在有多种光滑结构的拓扑流形. 并且拓扑流形的泛覆盖空间总是存在的, 其也是一个流形. 
 
 以后若无特别说明, 流形均指光滑流形.  
 
-**定义1.2**: 对流形$M^n$, 函数$f:M\to\mathbb{R}$称为**光滑函数**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $f\circ\varphi_\alpha^{-1}:\mathbb{R^n}\to\mathbb{R}$光滑$M$上所有光滑函数组成的集合记为$C^\infty(M)$; 对流形$M^n,N^d$, 映射$f:M\to N$称为**光滑映射**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $N$上任何一个坐标卡$(V_\beta,\psi_\beta)$, $\psi_\beta\circ f\circ\varphi_\alpha^{-1}:\mathbb{R}^n\to\mathbb{R}^d$光滑, $M$到$N$的所有光滑映射组成的集合记为$C^\infty(M,N)$. $M$上一个光滑函数$f$的**支集**为$\mbox{supp}f=\overline{\{p\in M\mid f(p)\neq0\}}$. 
+**定义1.2**: 对流形$M^n$, 函数$f:M\to\mathbb{R}$称为**光滑函数**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $f\circ\varphi_\alpha^{-1}:\mathbb{R^n}\to\mathbb{R}$光滑$M$上所有光滑函数组成的集合记为$C^\infty(M)$; 对流形$M^n,N^d$, 映射$f:M\to N$称为**光滑映射**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $N$上任何一个坐标卡$(V_\beta,\psi_\beta)$, $\psi_\beta\circ f\circ\varphi_\alpha^{-1}:\mathbb{R}^n\to\mathbb{R}^d$光滑, $M$到$N$的所有光滑映射组成的集合记为$C^\infty(M,N)$. $M$上一个光滑函数$f$的**支集**为$\mbox{supp}f=\overline{\lbrace p\in M\mid f(p)\neq0\rbrace}$. 
 
 **定义1.3**: 对流形$M$及其上一点$p$, 在所有定义在$p$的某个开邻域上的光滑函数所组成的集合中定义如下等价关系: $f:U\to\mathbb{R}$等价于$g:V\to\mathbb{R}$当且仅当存在$p$的开邻域$W\subset U\cap V$使得$f\mid_W=g\mid_W$, 称每一个等价类为$p$处的一个**函数芽**, $p$处所有函数芽组成的集合记为$\mathcal{E}(p)$. 
 
