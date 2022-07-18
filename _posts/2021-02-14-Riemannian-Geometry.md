@@ -322,15 +322,15 @@ $$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t
 
 测地线在局部随Jacobi场变化的快慢是值得注意的, 我们来对一测地线$\gamma_u(t)$计算其上满足$Y(0)=0,Y'(0)=\xi$的Jacobi场的长度平方$\|Y(t)\|^2$的Taylor展开式. 
 
-设$f(t)=\langle Y(t),Y(t)\rangle$, 显然$f(0)=0$.$f'(0)=2\langle Y(t),Y'(t)\rangle\vert_ {t=0}=0$.$f''(0)=2\langle Y'(t),Y'(t)\rangle\vert_ {t=0}+2\langle Y(t),Y''(t)\rangle\vert_ {t=0}=2$.而$Y''(0)=-R(Y(0),\gamma_u'(0))\gamma_u'(0)=0$, 故$f'''(0)=6\langle Y'(t),Y''(t)\rangle\vert_ {t=0}+2\langle Y(t),Y'''(t)\rangle\vert_ {t=0}=0$.又
+设$f(t)=\langle Y(t),Y(t)\rangle$, 显然$f(0)=0$.$f' (0)=2\langle Y(t),Y'(t)\rangle\vert_ {t=0}=0$.$f''(0)=2\langle Y'(t),Y'(t)\rangle\vert_ {t=0}+2\langle Y(t),Y''(t)\rangle\vert_ {t=0}=2$.而$Y'' (0)=-R(Y(0),\gamma_u'(0))\gamma_u'(0)=0$, 故$f'''(0)=6\langle Y'(t),Y''(t)\rangle\vert_ {t=0}+2\langle Y(t),Y'''(t)\rangle\vert_ {t=0}=0$.又
 
 $$\begin{aligned}Y'''(0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t=0}=-\nabla_ {\frac{\partial}{\partial t}}(R(Y(t),\gamma_u'(t))\gamma_u'(t))\vert_ {t=0}\\=&\left((-\nabla_ {\frac{\partial}{\partial t}}R)(Y(t),\gamma_u'(t))\gamma_u'(t)-R(\nabla_ {\frac{\partial}{\partial t}}Y(t),\gamma_u'(t))\gamma_u'(t)\right)\bigg\vert_ {t=0}\\=&-R(Y'(t),\gamma_u'(t))\gamma_u'(t)\vert_ {t=0}=-R(\xi,u)u\end{aligned},$$ 
 
-于是$f^{(4)}(0)=8\langle Y'(t),Y'''(t)\rangle\vert_ {t=0}=-8\langle R(\xi,u)u,\xi\rangle=-8R(\xi,u,u,\xi)$. 
+于是$f^{(4)}(0)=8\langle Y'(t),Y''' (t)\rangle\vert_ {t=0}=-8\langle R(\xi,u)u,\xi\rangle=-8R(\xi,u,u,\xi)$. 
 
 故我们有: 
 
-**命题3.4.1**: $\|Y(t)\|^2=t^2-\dfrac{1}{3}R(\xi,u,u.\xi)t^4+O(t^5)$. 
+**命题3.4.1**: $\left\| Y(t) \right\|^2=t^2-\dfrac{1}{3}R(\xi,u,u.\xi)t^4+O(t^5)$. 
 
 可以看到其曲率项$R(\xi,u,u,\xi)$影响了测地线局部散开的快慢, 这个量随看着奇怪, 但其出现却是十分自然, 在后面我们会看到这一项不是别的, 正是所谓“截面曲率”, 它是二维情况中Gauss曲率的推广. 
 
