@@ -124,9 +124,7 @@ tags:
 
 **定理2.3.1**: 令$(M^n,g)$为一黎曼流形, 存在唯一的$TM$上的联络使得对任意$X,Y,Z\in\Gamma(TM)$: (1)**与度量相容**: $X\langle Y,Z\rangle=\langle\nabla_XY,Z\rangle+\langle Y,\nabla_XZ\rangle$; (2)**无挠**: $\nabla_XY-\nabla_YX-[X,Y]=0$. 
 
-*Proof.* 事实上, 轮换(1)并做适当变换并利用(2)可得$\langle\nabla_XY,Z\rangle=\dfrac{1}{2}\left(X\langle Y,Z\rangle+Y\langle Z,X\rangle-Z\langle X,Y\rangle+\langle [X,Y],Z\rangle-\langle [Y,Z],X\rangle+\langle [Z,X],Y\rangle\right)$
-
-, 由此给出的$\nabla$就满足所有要求. 同时此式说明了$\nabla$的唯一性. $\quad\Box$
+*Proof.* 事实上, 轮换(1)并做适当变换并利用(2)可得$\langle\nabla_XY,Z\rangle=\dfrac{1}{2}\left(X\langle Y,Z\rangle+Y\langle Z,X\rangle-Z\langle X,Y\rangle+\langle [X,Y],Z\rangle-\langle [Y,Z],X\rangle+\langle [Z,X],Y\rangle\right),$ 由此给出的$\nabla$就满足所有要求. 同时此式说明了$\nabla$的唯一性. $\quad\Box$
 
 **定义2.3.1**: **定理2.1**中的联络称作**Levi-Civita联络**. 
 
@@ -250,15 +248,15 @@ $\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\rig
 
 下面是著名的Gauss引理: 
 
-**定理3.2.2**: $\langle(\exp)_*|_{tu}(\xi),\gamma_u'(t)\rangle=\langle u,\xi\rangle$. 
+**定理3.2.2**: $\langle(\exp)_ * \vert_ {tu}(\xi),\gamma_u'(t)\rangle=\langle u,\xi\rangle$. 
 
-*Proof.* 上面的讨论得到$Y(t)=(\exp)_*|_{tu}(t\xi)$是一个Jacobi场, $Y''(t)+R(Y(t),\gamma_u'(t))\gamma_u'(t)=0$. 先计算$\dfrac{\mbox{d}^2}{\mbox{d}t^2}\langle Y(t),\gamma_u'(t)\rangle=\dfrac{\mbox{d}}{\mbox{d}t}\langle Y'(t),\gamma_u'(t)\rangle=\langle Y''(t),\gamma_u'(t)\rangle=-\langle R(Y(t),\gamma_u'(t))\gamma_u'(t),\gamma_u'(t)\rangle=0$, 这说明$\langle Y(t),\gamma_u'(t)\rangle$是一个线性函数, 且$t=0$时也为$0$, 而$\dfrac{\mbox{d}}{\mbox{d}t}\langle Y(t),\gamma_u'(t)\rangle=\langle Y'(t),\gamma_u'(t)\rangle$, 其在$t=0$处取值为$\langle\xi,u\rangle$, 故$\langle Y(t),\gamma_u'(t)\rangle=t\langle\xi,u\rangle$, 于是$\langle(\exp)_*|_{tu}(\xi),\gamma_u'(t)\rangle=\langle\dfrac{1}{t}Y(t),\gamma_u'(t)\rangle=\langle u,\xi\rangle$. $\quad\Box$
+*Proof.* 上面的讨论得到$Y(t)=(\exp)_ * \vert _ {tu}(t\xi)$是一个Jacobi场, $Y''(t)+R(Y(t),\gamma_u'(t))\gamma_u'(t)=0$. 先计算$$\dfrac{\mbox{d}^2}{\mbox{d}t^2}\langle Y(t),\gamma_u'(t)\rangle=\dfrac{\mbox{d}}{\mbox{d}t}\langle Y'(t),\gamma_u'(t)\rangle=\langle Y''(t),\gamma_u'(t)\rangle=-\langle R(Y(t),\gamma_u'(t))\gamma_u'(t),\gamma_u'(t)\rangle=0,$$ 这说明$\langle Y(t),\gamma_u'(t)\rangle$是一个线性函数, 且$t=0$时也为$0$, 而$\dfrac{\mbox{d}}{\mbox{d}t}\langle Y(t),\gamma_u'(t)\rangle=\langle Y'(t),\gamma_u'(t)\rangle$, 其在$t=0$处取值为$\langle\xi,u\rangle$, 故$\langle Y(t),\gamma_u'(t)\rangle=t\langle\xi,u\rangle$, 于是$\langle(\exp)_ * \vert _ {tu}(\xi),\gamma_u'(t)\rangle=\left\langle\dfrac{1}{t}Y(t),\gamma_u'(t)\right\rangle=\langle u,\xi\rangle$. $\quad\Box$
 
 **注3.2.2**: $\xi\perp u$和$\xi=u$的情形是值得注意的, 前者说明测地球的边缘$\partial B(p,\delta)\perp\gamma_u'(1)$, 后者说明指数映照在测地线径向方向保持长度. 
 
-**定义3.2.4**: 设$\gamma_u$是$M$中一测地线, 若存在其上一非零Jacobi场满足$Y(0)=Y(1)=0$, 则称$\gamma_u(0)$与$\gamma_u(1)$沿$\gamma_u$**共轭**, $\dim\ker((\exp)_*|_u)$称为共轭的**重数**. 
+**定义3.2.4**: 设$\gamma_u$是$M$中一测地线, 若存在其上一非零Jacobi场满足$Y(0)=Y(1)=0$, 则称$\gamma_u(0)$与$\gamma_u(1)$沿$\gamma_u$**共轭**, $\dim\ker((\exp)_ * \vert_u)$称为共轭的**重数**. 
 
-**注3.2.3**: $\dim\ker((\exp)_*|_u)$也等于$\lbrace J\in Jac(\gamma_u)|J(0)=J(1)=0\rbrace$作为$Jac(\gamma_u)$的子空间的维数. 
+**注3.2.3**: $\dim\ker((\exp)_ * \vert_u)$也等于$\lbrace J\in Jac(\gamma_u)\mid J(0)=J(1)=0\rbrace$作为$Jac(\gamma_u)$的子空间的维数. 
 
 **例3.2.1**: $\mathbb{R}^n$上的Jacobi场都是线性的. 
 
