@@ -100,11 +100,11 @@ tags:
 
 **注2.2.1**: 一般总假设$\gamma'(t)\neq0$, 此时$s$严格单调递增, 就可以找到其反函数$t=t(s)$, 于是可得到新的曲线$\overline\gamma:[0,s(b)]\to M,s\mapsto\gamma(t(s))$. 这个曲线总拥有单位切向量, 称作曲线的**弧长参数化**. 
 
-**定义2.2.2**: **分段光滑曲线**定义为$\mathcal{C}([0,1]):=\lbrace  c:[0,1]\to M\mid c\mbox{分段光滑} \rbrace$. 
+**定义2.2.2**: **分段光滑曲线**定义为$\mathcal{C}([0,1]):=\lbrace  c\colon[0,1]\to M\mid c\mbox{分段光滑} \rbrace$. 
 
 显然$L$是$\mathcal{C}$上的泛函.下面定义任意两点间的距离. 
 
-**定义2.2.3**: 对道路连通流形$M$上任意两点$p,q\in M$, 记所有以$p$为起点, $q$为终点的分段光滑曲线$ \mathcal{C}_{p,q}=\lbrace c\in\mathcal{C}([0,1])\mid c(0)=p,c(1)=q\rbrace $, 定义$p,q$之间的**距离**为$ d(p,q):=\inf\lbrace L(\gamma)\mid\gamma\in\mathcal{C}_{p,q}\rbrace $. 
+**定义2.2.3**: 对道路连通流形$M$上任意两点$p,q\in M$, 记所有以$p$为起点, $q$为终点的分段光滑曲线`$\mathcal{C}_{p,q}=\lbrace c\in\mathcal{C}([0,1])\mid c(0)=p,c(1)=q\rbrace$`, 定义$p,q$之间的**距离**为$ d(p,q):=\inf\lbrace L(\gamma)\mid\gamma\in\mathcal{C}_{p,q}\rbrace $. 
 
 **注2.2.2**: 由道路连通性可说明这样的定义是合理的, 即$d<+\infty$. 
 
