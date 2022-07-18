@@ -738,7 +738,7 @@ $$\begin{aligned}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace
 
 *Proof.* 设$H=\langle g_1,\cdots,g_k\rangle$.取$p\in M$及其在$M$的泛覆盖$\pi:\tilde M\to M$中的一个提升$\tilde p\in\tilde M$.$\pi_1(M)$在$\tilde M$上的作用定义如下: 对任意$q\in\tilde M$, $g\in\pi_1(M)$, $g$所代表的以$\pi(q)$为基点的同伦类中的一个代表元以$q$为起点的提升的终点就记为$gq$.对任意$g_i$, 可以取定与其同伦的基点在$p$的一个测地回路$\gamma_i$, $L(\gamma_i)=l_i$, 如此将它们提升到$\tilde M$上就变为了从$\tilde p$到$g_i\tilde p$的测地线, 它们的长度仍为$l_i$, 下面取$\varepsilon:=\dfrac{1}{100}\min\lbrace l_i\rbrace$, $l:=\max\lbrace l_i\rbrace$, 于是对任意不同的$h_1,h_2\in H$, $h_1(B(\tilde p,\varepsilon))\cap h_2(B(\tilde p,\varepsilon))=\emptyset$, 并且$\displaystyle\bigcup_ {h\in U(r)}h(B(\tilde p,\varepsilon))\subset B(\tilde p,rl+\varepsilon)$, 而由Bishop-Gromov体积比较定理, $\\\#U(r)\leqslant\dfrac{\mbox{vol}(B(\tilde p,rl+\varepsilon))}{\mbox{vol}(B(\tilde p,\varepsilon))}\leqslant cr^n$, 其中$c$是个常数. $\quad\Box$
 
-**注5.5.1**: Milnor的文章中还提到截面曲率不大于$-1$的情况下, 可以证明对某些$c\in\mathbb{R}^+$, $\#U(r)\geqslant\exp(cr)$, 此时称基本群为指数增长的, 二者证明完全类似. 
+**注5.5.1**: Milnor的文章中还提到截面曲率不大于$-1$的情况下, 可以证明对某些$c\in\mathbb{R}^+$, $\\\#U(r)\geqslant\exp(cr)$, 此时称基本群为指数增长的, 二者证明完全类似. 
 
 **注5.5.2**: Gromov有一个定理是说: 一个有限生成群$G$是多项式增长的当且仅当$G$几乎幂零, 也即是说存在指数有限的幂零子群. 这与上面的定理有些差距, 这其中有至今开放的“Milnor猜想”: 若$(M^n,g)$是Ricci曲率非负的开流形, 则$\pi_1(M)$有限生成. 
 
