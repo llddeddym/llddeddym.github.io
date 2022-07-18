@@ -408,17 +408,17 @@ $$\begin{aligned}&(\bar R(u,v)w)^T\\=&(\bar\nabla_u\bar\nabla_vw-\bar\nabla_v\ba
 
 $p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V} _ pS^n(r)$, 对任意$X\in\Gamma(TS^n(r))$, 取$\Xi$为$\xi_p$的自然延拓（$\Xi(p)=\dfrac{p}{r}$）, 则$S _ \xi X\vert _ p=-(\bar\nabla_X\Xi)^T\vert _ p$. 取$X$的一条积分曲线$\gamma:(-\varepsilon,\varepsilon)\to S^n(r)$, $\gamma(0)=p,\gamma'(0)=X(p)$, $S_ \xi X\vert_p=-\left(\dfrac{\mbox{d}}{\mbox{d}t}\bigg\vert_ {t=0}\Xi(\gamma(t))\right)^T=-\dfrac{1}{r}X(p)$. 于是$\mbox{II} _ \xi(u,v)=-\dfrac{1}{r}\langle u,v\rangle\xi$, 由Gauss公式$R(u,v)w=\dfrac{1}{r^2}(\langle v,w\rangle u-\langle u,w\rangle v)$, 当取$u,v$是标准正交时, $\sec(u,v)=\dfrac{1}{r^2}$. 
 
-而测地线是说$\nabla_ {\gamma'}\gamma'=0$, 也就是$(\bar\nabla_ {\gamma'}\gamma')^T=0$, 其中$\gamma(0)=p,\gamma'(0)=u\in T_pS^n(r)$, 这也即是说$\gamma'':=\bar\nabla_ {\gamma'}\gamma'\in\mathcal{V} _pS^n(r)$, 于是$\gamma''(t)=f(t)\Xi(\gamma(t))$, 对$\langle\gamma,\gamma'\rangle=0$求导得$\langle\gamma,\gamma''\rangle=-\langle\gamma',\gamma'\rangle=-1$, 又$\langle\gamma''(t),\gamma(t)\rangle=\langle f(t)\Xi(\gamma(t)),r\cdot\Xi(\gamma(t))\rangle=rf(t)$, 故$f(t)=-\dfrac{1}{r}$, $\gamma''(t)=-\dfrac{1}{r^2}\gamma(t)$. 解此常微分方程即得$\gamma(t)=\cos\dfrac{t}{r}p+\sin\dfrac{t}{r}(ru)$, 这正是大圆. 
+而测地线是说$\nabla_ {\gamma'}\gamma'=0$, 也就是$(\bar\nabla_ {\gamma'}\gamma')^T=0$, 其中$\gamma(0)=p,\gamma'(0)=u\in T_pS^n(r)$, 这也即是说$\gamma'':=\bar\nabla_ {\gamma'}\gamma'\in\mathcal{V} _pS^n(r)$, 于是$\gamma'' (t)=f(t)\Xi(\gamma(t))$, 对$\langle\gamma,\gamma'\rangle=0$求导得$\langle\gamma,\gamma'' \rangle=-\langle\gamma',\gamma'\rangle=-1$, 又$\langle\gamma'' (t),\gamma(t)\rangle=\langle f(t)\Xi(\gamma(t)),r\cdot\Xi(\gamma(t))\rangle=rf(t)$, 故$f(t)=-\dfrac{1}{r}$, $\gamma'' (t)=-\dfrac{1}{r^2}\gamma(t)$. 解此常微分方程即得$\gamma(t)=\cos\dfrac{t}{r}p+\sin\dfrac{t}{r}(ru)$, 这正是大圆. 
 
-对于Jacobi方程$Y''(t)+\dfrac{1}{r^2}Y(t)=0$, $\gamma(t)=a\cos\dfrac{t}{r}E_1(t)+br\sin\dfrac{t}{r}E_2(t)$, 其中$E_1,E_2$为沿$\gamma$平行移动的向量场, $Y(0)=aE_1(0)$, $Y'(0)=bE_2(0)$. 
+对于Jacobi方程$Y'' (t)+\dfrac{1}{r^2}Y(t)=0$, $\gamma(t)=a\cos\dfrac{t}{r}E_1(t)+br\sin\dfrac{t}{r}E_2(t)$, 其中$E_1,E_2$为沿$\gamma$平行移动的向量场, $Y(0)=aE_1(0)$, $Y'(0)=bE_2(0)$. 
 
-另一个重要的例子是双曲空间$\mathbb{H}^n:=\lbrace (x^i)_ {i=1}^n|x^n>0\rbrace(n\geqslant2)$, 其上度量为$\varphi^2g_0$, 其中$\varphi=\dfrac{1}{x^n}$, $g_0$是正常的欧氏度量. 
+另一个重要的例子是双曲空间$\mathbb{H}^n:=\lbrace (x^i)_ {i=1}^n\mid x^n>0\rbrace(n\geqslant2)$, 其上度量为$\varphi^2g_0$, 其中$\varphi=\dfrac{1}{x^n}$, $g_0$是正常的欧氏度量. 
 
 事实上这是所谓“共形变换”的一个特例, 对原本的黎曼流形$(M,g)$, 将其度量变更为$(M,\varphi^2g)$时, 记$f:=\ln\varphi$, 则新的联络$\nabla_X^\varphi Y=\nabla_XY+X(f)Y+Y(f)X-\langle X,Y\rangle\cdot\mbox{grad}f$.若对两$(0,2)-$张量$h,k$, 定义$(h\odot k)(x,y,z,w):=h(x,z)k(y,w)+h(y,w)k(x,z)-h(x,w)k(y,z)-h(y,z)k(x,w)$, 则新的曲率张量$R^\varphi=\exp(2f)(R+(\mbox{Hess}f-\mbox{d}f\otimes\mbox{d}f+\dfrac{1}{2}\\|\mbox{grad}f\\|^2g)\odot g)$.这部分公式留待自证. 
 
-将上述内容应用到$\mathbb{H}^n$上, 可得$f=-\ln x^n$, $R^\varphi(x,y,z,w)=-\langle x,w\rangle\langle y,z\rangle+\langle x,z\rangle\langle y,w\rangle$, 这推出$\mathbb{H}^n$具有常截面曲率$-1$.下面考虑测地线, 记$\gamma(t)=(\sigma(t),y(t))$, 其中$\sigma(t)\in \mathbb{R}^{n-1},y(t)\in\mathbb{R}^+$, 则$\sigma''(t)-2\dfrac{y'}{y}\sigma'=0,y''-2\dfrac{y'}{y}+y=0$, 它的解是与$\mathbb{R}^{n-1}$正交的圆弧; 类似地, 其上Jacobi场为$Y(t)=a\cosh E_1(t)+b\sinh tE_ {2}(t)$. 
+将上述内容应用到$\mathbb{H}^n$上, 可得$f=-\ln x^n$, $R^\varphi(x,y,z,w)=-\langle x,w\rangle\langle y,z\rangle+\langle x,z\rangle\langle y,w\rangle$, 这推出$\mathbb{H}^n$具有常截面曲率$-1$.下面考虑测地线, 记$\gamma(t)=(\sigma(t),y(t))$, 其中$\sigma(t)\in \mathbb{R}^{n-1},y(t)\in\mathbb{R}^+$, 则$\sigma'' (t)-2\dfrac{y'}{y}\sigma'=0,y'' -2\dfrac{y'}{y}+y=0$, 它的解是与$\mathbb{R}^{n-1}$正交的圆弧; 类似地, 其上Jacobi场为$Y(t)=a\cosh E_1(t)+b\sinh tE_ {2}(t)$. 
 
-至此我们已经学习了三类具有常截面曲率的空间, 分别是球面$S^n$、欧氏空间$\mathbb{R}^n$和双曲空间$\mathbb{H}^n$, 它们分别具有$1,0,-1$的常截面曲率. 可以观察到, 对它们的研究, 或其它具有常截面曲率$k$的空间的研究, 会归咎到常微分方程$f''(t)+kf(t)=0$, 其中$f(0)=0$, $f'(0)$待定. 为日后方便起见, 我们引入以下记号: $\mbox{sn} _k(t)$在$k<0$时表示$\dfrac{\sinh(\sqrt{|k|}t)}{\sqrt{|k|}}$, $k=0$时表示$t$, $k>0$时表示$\dfrac{\sin(\sqrt{k}t)}{\sqrt{k}}$, 其导数就记为$\mbox{cn} _k(t)$. 它们正是上面方程的一类解. 那一个问题是, 如果截面曲率非常数, 我们如何通过原本的流形来进行研究呢？这将牵出我们对好的“比较定理”的兴趣. 
+至此我们已经学习了三类具有常截面曲率的空间, 分别是球面$S^n$、欧氏空间$\mathbb{R}^n$和双曲空间$\mathbb{H}^n$, 它们分别具有$1,0,-1$的常截面曲率. 可以观察到, 对它们的研究, 或其它具有常截面曲率$k$的空间的研究, 会归咎到常微分方程$f'' (t)+kf(t)=0$, 其中$f(0)=0$, $f'(0)$待定. 为日后方便起见, 我们引入以下记号: $\mbox{sn} _k(t)$在$k<0$时表示$\dfrac{\sinh(\sqrt{\lvert k\rvert}t)}{\sqrt{\lvert k\rvert}}$, $k=0$时表示$t$, $k>0$时表示$\dfrac{\sin(\sqrt{k}t)}{\sqrt{k}}$, 其导数就记为$\mbox{cn} _k(t)$. 它们正是上面方程的一类解. 那一个问题是, 如果截面曲率非常数, 我们如何通过原本的流形来进行研究呢？这将牵出我们对好的“比较定理”的兴趣. 
 
 ### 4.4 平分空间
 
