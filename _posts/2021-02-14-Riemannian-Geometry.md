@@ -562,7 +562,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 证明也是利用**引理5.2.1**, 不再赘述. 
 
-**注5.2.1**: 事实上二者存在一个统一的推广形式, 也称作Rauch比较定理, 是说“设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 若$R(t)\leqslant kI$, 则$\\|J(t)\\|\geqslant \\|J'(0)\\|\mbox{sn} _k(t)+\\|J(0)\\|\mbox{cn} _k(t)$. ”并且其实这个完备性的全局条件也可以被减弱到仅在完备的区间内讨论, 证明过程是完全类似的, 只是对$\\|J(t)\\|''$的估计稍微细化一点, 具体细节可参见Isaac Chavel的《Eigenvalues in Riemannian Geometry》. 
+**注5.2.1**: 事实上二者存在一个统一的推广形式, 也称作Rauch比较定理, 是说“设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 若$R(t)\leqslant kI$, 则$\\|J(t)\\|\geqslant \\|J'(0)\\|\mbox{sn} _k(t)+\\|J(0)\\|\mbox{cn} _k(t)$. ”并且其实这个完备性的全局条件也可以被减弱到仅在完备的区间内讨论, 证明过程是完全类似的, 只是对$\\|J(t)\\| '' $的估计稍微细化一点, 具体细节可参见Isaac Chavel的《Eigenvalues in Riemannian Geometry》. 
 
 上面的**定理5.2.1**中的不等号反向时同样有类似结论, 也被称为Rauch比较定理, 但在证明之前我们需要一个引理: 
 
@@ -572,7 +572,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **定理5.2.3**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$J(0)=0$, $\\|J'(0)\\|=1$, 若$\sec(M)\geqslant k$, 则$\\|J(t)\\|\leqslant \mbox{sn} _k(t)$. 
 
-*Proof.* $(\ln\\|J\\|)'=\dfrac{\\|J\\|'}{\\|J\\|}=\dfrac{\langle J,J'\rangle}{\\|J\\|^2}=\langle\dfrac{J}{\\|J\\|},\dfrac{J'}{\\|J\\|}\rangle=\langle\dfrac{J}{\\|J\\|},\mbox{II}(t)(\dfrac{J}{\\|J\\|})\rangle$.由**推论5.2.1**即知结论成立. $\quad\Box$
+*Proof.* $(\ln\\|J\\|)'=\dfrac{\\|J\\|'}{\\|J\\|}=\dfrac{\langle J,J'\rangle}{\\|J\\|^2}=\left\langle\dfrac{J}{\\|J\\|},\dfrac{J'}{\\|J\\|}\right\rangle=\left\langle\dfrac{J}{\\|J\\|},\mbox{II}(t)(\dfrac{J}{\\|J\\|})\right\rangle$.由**推论5.2.1**即知结论成立. $\quad\Box$
 
 我们下面试图将上面对局部的Jacobi场的研究升格到对全局拓扑性质的研究, 先介绍一个定理. 
 
@@ -596,7 +596,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 我们来看看对单位速度测地线$\gamma$, $Ric(\gamma'(0))\geqslant (n-1)k$时会发生什么, 先给出一些记号. 
 
-**定义5.3.1**: $\mbox{Conj} _p(\Theta):=\sup\lbrace T|\gamma(t)在[0,T)上无与p共轭的点\rbrace$称为$M$在$p$处沿$\Theta$方向的**共轭半径**; $\mbox{Conj}(M):=\inf\lbrace \mbox{Conj}(\Theta)|p\in M,\Theta\in U_pM\rbrace\in[0,+\infty]$称为$M$的**共轭半径**; $\mbox{cut} _p(\Theta):=\sup\lbrace t|d(p,\exp_p(t\Theta))=t\rbrace$.$\mathcal{Cut} _p(M):=\lbrace \mbox{cut} _p(\Theta)\cdot\Theta|\Theta\in U_pM\rbrace$称为$M$在$p$处的**切向割迹**; $\mbox{Cut} _p(M)=\exp_p(\mathcal{Cut} _p(M))$称为$M$在$p$处的**割迹**. 
+**定义5.3.1**: $\mbox{Conj} _p(\Theta):=\sup\lbrace T\mid\gamma(t)在[0,T)上无与p共轭的点\rbrace$称为$M$在$p$处沿$\Theta$方向的**共轭半径**; $\mbox{Conj}(M):=\inf\lbrace \mbox{Conj}(\Theta)\mid p\in M,\Theta\in U_pM\rbrace\in[0,+\infty]$称为$M$的**共轭半径**; $\mbox{cut} _p(\Theta):=\sup\lbrace t\mid d(p,\exp_p(t\Theta))=t\rbrace$.$\mathcal{Cut} _p(M):=\lbrace \mbox{cut} _p(\Theta)\cdot\Theta\mid\Theta\in U_pM\rbrace$称为$M$在$p$处的**切向割迹**; $\mbox{Cut} _p(M)=\exp_p(\mathcal{Cut} _p(M))$称为$M$在$p$处的**割迹**. 
 
 此时对Riccati方程$\mbox{II}'(t)+\mbox{II}^2(t)+R(t)=0$, 对两端取$\mbox{tr}$, 并利用Cauchy-Schwarz不等式就得到$\left(\dfrac{\mbox{tr}\mbox{II}(t)}{n-1}\right)'+\left(\dfrac{\mbox{tr}\mbox{II}(t)}{n-1}\right)^2+k\leqslant0$. 设$\psi(t):=(\det\mathbb{A}(t))^{\frac{1}{n-1}}$, 则$(\ln\psi(t))'=\dfrac{\mbox{tr}\mbox{II}(t)}{n-1}$. 这两者结合事实上就有所谓的“Bishop定理”: 
 
@@ -606,13 +606,21 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **定理5.3.2**: 设$(M^n,g)$是完备黎曼流形, 且$Ric\geqslant(n-1)k$, 则$\dfrac{\det(\mathbb{A}(t,\Theta))}{\mbox{sn} _k^{n-1}(t)}$单调递减, 其中$\Theta\in U_pM$, $t\in\mbox{Conj} _p(\Theta)$. 
 
-*Proof.* 只需证明$\dfrac{\psi(t)}{\mbox{sn} _k(t)}$单调递减, 求导之后也即证明$\psi'\mbox{sn} _k-\psi\mbox{cn} _k\leqslant0$. 注意上式左端在$t=0$时为$0$, 故只需证明此式也单调递减, 求导之后即是证明$(\psi''+k\psi)\mbox{sn} _k\geqslant0$. 而$\psi''=((\ln\psi)'\cdot\psi)'=\dfrac{1}{n-1}(\mbox{trII}\cdot\psi)'=\dfrac{1}{n-1}\left(\mbox{trII}'\psi+\mbox{trII}\cdot\psi'\right)\leqslant\dfrac{\psi}{n-1}\left(\dfrac{1}{n-1}(\mbox{trII})^2-\mbox{trII}^2-(n-1)k\right)\leqslant-k\psi$. 这恰为所求. $\quad\Box$
+*Proof.* 只需证明$\dfrac{\psi(t)}{\mbox{sn} _k(t)}$单调递减, 求导之后也即证明$\psi'\mbox{sn} _k-\psi\mbox{cn} _k\leqslant0$. 注意上式左端在$t=0$时为$0$, 故只需证明此式也单调递减, 求导之后即是证明$(\psi''+k\psi)\mbox{sn} _k\geqslant0$. 而
+
+$$\begin{aligned}&\psi''=((\ln\psi)'\cdot\psi)'\\=&\dfrac{1}{n-1}(\mbox{trII}\cdot\psi)'\\=&\dfrac{1}{n-1}\left(\mbox{trII}'\psi+\mbox{trII}\cdot\psi'\right)\\ \leqslant&\dfrac{\psi}{n-1}\left(\dfrac{1}{n-1}(\mbox{trII})^2-\mbox{trII}^2-(n-1)k\right)\\ \leqslant&-k\psi.\end{aligned}$$ 
+
+这恰为所求. $\quad\Box$
 
 为了更精细的估计, 我们还需要一些准备工作, 回忆第一变分公式说明了临界曲线都是测地线, 但这样的曲线是“局部最大”还是“局部最小”的呢？为此, 下面要介绍所谓“第二变分公式”. 
 
-考虑单位速度$\gamma:[a,b]\to M$, 光滑映射$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\times(-\varepsilon,\varepsilon)\to M$, 记$T:=\dfrac{\partial\alpha}{\partial t}$, $U:=\dfrac{\partial\alpha}{\partial u}$, $V:=\dfrac{\partial\alpha}{\partial v}$并假设$\langle T,U\rangle\vert_ {(0,0)}=\langle T,V\rangle\vert_ {(0,0)}$, $\\|T\\vert_ {(0,0)}=1$, $\nabla_TT\vert_ {(0,0)}=0$. 定义泛函$L(u,v):=\displaystyle\int_a^b\\|T(t)\\vert_ {(u,v)}\mbox{d}t$.则$\dfrac{\partial L}{\partial u}=\displaystyle\int_a^b\dfrac{\langle\nabla_UT,T\rangle}{\\|T\\|}\mbox{d}t=\int_a^b\dfrac{\langle\nabla_TU,T\rangle}{\\|T\\|}\mbox{d}t$, $\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}=\dfrac{\partial}{\partial v}\left(\int_a^b\dfrac{\langle\nabla_TU,T\rangle}{\\|T\\|}\mbox{d}t\right)\\=&\int_a^b\left(\dfrac{\langle\nabla_V\nabla_TU,T\rangle+\langle\nabla_TU,\nabla_VT\rangle}{\\|T\\|}-\langle\nabla_TU,T\rangle\cdot\dfrac{\langle\nabla_VT,T\rangle}{\\|T\\|^3}\right)\mbox{d}t\end{aligned}$.
+考虑单位速度$\gamma:[a,b]\to M$, 光滑映射$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\times(-\varepsilon,\varepsilon)\to M$, 记$T:=\dfrac{\partial\alpha}{\partial t}$, $U:=\dfrac{\partial\alpha}{\partial u}$, $V:=\dfrac{\partial\alpha}{\partial v}$并假设$\langle T,U\rangle\vert_ {(0,0)}=\langle T,V\rangle\vert_ {(0,0)}$, $\\|T\\vert_ {(0,0)}=1$, $\nabla_TT\vert_ {(0,0)}=0$. 定义泛函$L(u,v):=\displaystyle\int_a^b\\|T(t)\\|_ {(u,v)}\mbox{d}t$. 则$\dfrac{\partial L}{\partial u}=\displaystyle\int_a^b\dfrac{\langle\nabla_UT,T\rangle}{\\|T\\|}\mbox{d}t=\int_a^b\dfrac{\langle\nabla_TU,T\rangle}{\\|T\\|}\mbox{d}t$, 
 
-于是$\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}\bigg\vert_ {(0,0)}\\=&\int_a^b\left(R(V,T,U,T)+\langle\nabla_T\nabla_VU,T\rangle+\langle\nabla_TU,\nabla_TV\rangle-T\langle U,T\rangle\cdot T\langle V,T\rangle\right)\mbox{d}t\\=&\int_a^b\left(\langle\nabla_T\nabla_VU,T\rangle+\langle\nabla_TU,\nabla_TV\rangle-R(V,T,T,U)\right)\mbox{d}t\\=&\int_a^bT\langle\nabla_VU,T\rangle\mbox{d}t+\int_a^b\langle\nabla_TU,\nabla_TV\rangle-R(U,T,T,V)\mbox{d}t\\=&I_a^b(U,V)+\langle\nabla_VU,T\rangle\vert_a^b\end{aligned}$. 
+$$\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}=\dfrac{\partial}{\partial v}\left(\int_a^b\dfrac{\langle\nabla_TU,T\rangle}{\|T\|}\mbox{d}t\right)\\=&\int_a^b\left(\dfrac{\langle\nabla_V\nabla_TU,T\rangle+\langle\nabla_TU,\nabla_VT\rangle}{\|T\|}-\langle\nabla_TU,T\rangle\cdot\dfrac{\langle\nabla_VT,T\rangle}{\|T\|^3}\right)\mbox{d}t.\end{aligned}$$
+
+于是
+
+$$\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}\bigg\vert_ {(0,0)}\\=&\int_a^b\left(R(V,T,U,T)+\langle\nabla_T\nabla_VU,T\rangle+\langle\nabla_TU,\nabla_TV\rangle-T\langle U,T\rangle\cdot T\langle V,T\rangle\right)\mbox{d}t\\=&\int_a^b\left(\langle\nabla_T\nabla_VU,T\rangle+\langle\nabla_TU,\nabla_TV\rangle-R(V,T,T,U)\right)\mbox{d}t\\=&\int_a^bT\langle\nabla_VU,T\rangle\mbox{d}t+\int_a^b\langle\nabla_TU,\nabla_TV\rangle-R(U,T,T,V)\mbox{d}t\\=&I_a^b(U,V)+\langle\nabla_VU,T\rangle\vert_a^b.\end{aligned}$$ 
 
 其中$I_a^b(U,V):=\int_a^b\langle\nabla_TU,\nabla_TV\rangle-R(U,T,T,V)\mbox{d}t$称为沿$\gamma$的**指标形式**. 这便是第二变分公式: 
 
