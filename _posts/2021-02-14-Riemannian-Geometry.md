@@ -452,7 +452,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **定理4.5.1**: $U$是$M$中的开集, $r$是$U$上的一个距离函数, 则$\nabla_ {\partial_r}S+S^2+R(-,\partial_r)\partial_r=0$. 
 
-*Proof.* 对任意$X\in\Gamma(TM\vert_U)$,$(\nabla_ {\partial r}S)(X)=\nabla_ {\partial_r}(S(X))-S(\nabla_ {\partial_r}X)=\nabla_ {\partial_r}(\nabla_x\partial_r)-\nabla_ {\nabla_ {\partial_r}X}\partial_r$.$S^2(X)=S(S(X))=\nabla_ {\nabla_x\partial_r}\partial_r$. 二者相加得$\nabla_ {\partial_r}(\nabla_x\partial_r)-\nabla_ {[\partial_r,X]}\partial_r$. 但$\langle\nabla_ {\partial_r}\partial_r,X\rangle=\mbox{Hess}r(\partial_r,X)=\mbox{Hess}r(X,\partial_r)=\langle \nabla_X\partial_r,\partial_r\rangle=\dfrac{1}{2}X\\|\partial_r\\|^2=0$. 于是$\nabla_ {\partial_r}\partial_r\equiv0$ , 故结论成立. $\quad\Box$
+*Proof.* 对任意$X\in\Gamma(TM\vert_U)$,$(\nabla_ {\partial_r}S)(X)=\nabla_ {\partial_r}(S(X))-S(\nabla_ {\partial_r}X)=\nabla_ {\partial_r}(\nabla_x\partial_r)-\nabla_ {\nabla_ {\partial_r}X}\partial_r$.$S^2(X)=S(S(X))=\nabla_ {\nabla_x\partial_r}\partial_r$. 二者相加得$\nabla_ {\partial_r}(\nabla_x\partial_r)-\nabla_ {[\partial_r,X]}\partial_r$. 但$\langle\nabla_ {\partial_r}\partial_r,X\rangle=\mbox{Hess}r(\partial_r,X)=\mbox{Hess}r(X,\partial_r)=\langle \nabla_X\partial_r,\partial_r\rangle=\dfrac{1}{2}X\\|\partial_r\\|^2=0$. 于是$\nabla_ {\partial_r}\partial_r\equiv0$ , 故结论成立. $\quad\Box$
 
 证明过程中我们还得到了一个副产品: 
 
@@ -486,7 +486,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 上式右端的积分在单位分解下写出, 在某点处会是可数个积分求和, 此时也可以定义$\mbox{vol}(A)=+\infty$的记号. 
 
-下面来研究$\partial B(p,r)$上的几何. 固定$p\in M$和使得$B(p,r)$中无$p$的共轭点的足够小的$r$, 固定$T_pM$的一组标准正交基$\lbrace e_i\rbrace_ {i=1}^n$, 可在$T_pM$上引入极坐标$(r,\Theta)\in\mathbb{R}^+\times S^{n-1}\cong T_pM$, 取定测地线$\gamma:\mathbb{R}^+\to M$, $\gamma(0)=p$, $\gamma'(0)=e_n$. $\lbrace te_i\rbrace_ {i=1}^n$是沿着$te_n$的Jacobi场, 于是指数映照得到$J_i(t)=(\exp_p)_*\vert_ {te_n}(te_i)$为$\gamma$上的Jacobi场, $J_i(0)=0,J_i'(0)=e_i$, Gauss引理说明$\langle J_i(t),\gamma'(t)\rangle=0$, $S^{n-1}(t)\subset T_pM$的面积微元为$\det((te_1)\wedge\cdots\wedge(te_ {n-1}))\mbox{d}\Theta$.现在要考虑$(\exp)\vert_ {te_n}$的Jacobi行列式$J(t,e_n)$, 这正是$\sqrt{\det(t^{-1}J_1,\cdots,t^{-1}J_ {n-1})(t^{-1}J_1,\cdots,t^{-1}J_ {n-1})^T}=\dfrac{1}{t^{n-1}}\sqrt{\det[\langle J_i,J_j\rangle]}$. 
+下面来研究$\partial B(p,r)$上的几何. 固定$p\in M$和使得$B(p,r)$中无$p$的共轭点的足够小的$r$, 固定$T_pM$的一组标准正交基$\lbrace e_i\rbrace_ {i=1}^n$, 可在$T_pM$上引入极坐标$(r,\Theta)\in\mathbb{R}^+\times S^{n-1}\cong T_pM$, 取定测地线$\gamma:\mathbb{R}^+\to M$, $\gamma(0)=p$, $\gamma'(0)=e_n$. $\lbrace te_i\rbrace_ {i=1}^n$是沿着$te_n$的Jacobi场, 于是指数映照得到$J_i(t)=(\exp_p)_ * \vert _ {te_n}(te_i)$为$\gamma$上的Jacobi场, $J_i(0)=0,J_i'(0)=e_i$, Gauss引理说明$\langle J_i(t),\gamma'(t)\rangle=0$, $S^{n-1}(t)\subset T_pM$的面积微元为$\det((te_1)\wedge\cdots\wedge(te_ {n-1}))\mbox{d}\Theta$.现在要考虑$(\exp)\vert _ {te_n}$的Jacobi行列式$J(t,e_n)$, 这正是$\sqrt{\det(t^{-1}J_1,\cdots,t^{-1}J_ {n-1})(t^{-1}J_1,\cdots,t^{-1}J_ {n-1})^T}=\dfrac{1}{t^{n-1}}\sqrt{\det[\langle J_i,J_j\rangle]}$. 
 
 **定义4.6.3**: $\sqrt{\det[\langle J_i,J_j\rangle]}\mbox{d}\Theta$就称为$M^n$在$p$处沿$e_n$的**面积微元**, 记为$A(t,e_n)\mbox{d}\Theta$. 
 
@@ -532,7 +532,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 但实际上看起来不甚相同的两种完备性其实是一样的, 我们有著名的“Hopf-Rinow定理”: 
 
-**定理5.1.1**: 设$(M^n,g)$是一黎曼流形, 则以下命题等价: (1)$(M^n,g)$在$p\in M$测地完备; (2)$(M^n,g)$测地完备; (3)$\exist p\in M,\overline{B(p,r)}$对任意$r>0$是紧的; (4)$\forall p\in M,r>0$, $\overline{B(p,r)}$是紧的; (5)$M$配备由$g$诱导的度量后是度量完备的. 
+**定理5.1.1**: 设$(M^n,g)$是一黎曼流形, 则以下命题等价: (1)$(M^n,g)$在$p\in M$测地完备; (2)$(M^n,g)$测地完备; (3)$\exists p\in M,\overline{B(p,r)}$对任意$r>0$是紧的; (4)$\forall p\in M,r>0$, $\overline{B(p,r)}$是紧的; (5)$M$配备由$g$诱导的度量后是度量完备的. 
 
 证明略过. 据此我们就可以把两种完备性统称为**完备**的. 
 
@@ -554,7 +554,7 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **定理5.2.1**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[0,+\infty)\to M$是一个单位速度的测地线, $J(t)$是一个沿$\gamma$的正规Jacobi场, 且$J(0)=0$, $\\|J'(0)\\|=1$, 若$\sec(M)\leqslant k$, 则$\\|J(t)\\|\geqslant \mbox{sn} _k(t)$. 
 
-*Proof.* 令$f(t)=\\|J(t)\\|$, 经计算可得$f''(t)\geqslant -kf(t)$.由**引理5.2.1**, 取$\bar k(t)=k$, $\bar f(t)=\mbox{sn} _k(t)$, 则$\dfrac{\mbox{sn} _k(t)}{f(t)}$单调递减, 而$\displaystyle\lim_ {t\to0^+}\dfrac{f(t)}{\mbox{sn} _k(t)}=\lim_ {t\to0^+}\dfrac{f(t)}{t}=\lim_ {t\to0^+}\langle\dfrac{J(t)-J(0)}{t},\dfrac{J(t)-J(0)}{t}\rangle^{\frac{1}{2}}=\\|J'(0)\\|=1$.于是结论成立. $\quad\Box$
+*Proof.* 令$f(t)=\\|J(t)\\|$, 经计算可得$f''(t)\geqslant -kf(t)$.由**引理5.2.1**, 取$\bar k(t)=k$, $\bar f(t)=\mbox{sn} _ k(t)$, 则$\dfrac{\mbox{sn} _ k(t)}{f(t)}$单调递减, 而$\displaystyle\lim _ {t\to0^+}\dfrac{f(t)}{\mbox{sn} _k(t)}=\lim _ {t\to0^+}\dfrac{f(t)}{t}=\lim _ {t\to0^+}\left\langle\dfrac{J(t)-J(0)}{t},\dfrac{J(t)-J(0)}{t}\right\rangle^{\frac{1}{2}}=\\|J'(0)\\|=1$.于是结论成立. $\quad\Box$
 
 “Berger比较定理”与之类似, 不过稍微修改了初值条件. 
 
