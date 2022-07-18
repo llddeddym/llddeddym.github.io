@@ -388,7 +388,7 @@ $$\begin{aligned}Y''' (0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t
 
 *Proof.* 我们只证明(1), (2)(3)就都是简单的计算了. 因为这些符号的定义都不依赖于延拓的选取, 故以下计算中的联络的分量都默认已经选好延拓, 延拓后的向量场仍用原本的字母表示. 
 
-$\begin{aligned}&(\bar R(u,v)w)^T\\=&(\bar\nabla_u\bar\nabla_vw-\bar\nabla_v\bar\nabla_uw-\bar\nabla_ {[u,v]}w)^T\\=&(\bar\nabla_u(\nabla_vw+\mbox{II}(v,w))-\bar\nabla_v(\nabla_uw+\mbox{II}(u,w))\\&-\nabla_ {[u,v]}w-\mbox{II}([u,v]w))^T\\=&(\nabla_u\nabla_vw+\mbox{II}(u,\nabla_vw)+\bar\nabla_u(\mbox{II}(v,w))\\&-\nabla_v\nabla_uw-\mbox{II}(v,\nabla_uw)-\bar\nabla_v(\mbox{II}(u,w))\\&-\nabla_ {[u,v]}w-\mbox{II}([u,v]w))^T\\=&R(u,v)w+S_ {\mbox{II}(u,w)}v-S_ {\mbox{II}(v,w)}u\end{aligned}$. $\quad\Box$
+$$\begin{aligned}&(\bar R(u,v)w)^T\\=&(\bar\nabla_u\bar\nabla_vw-\bar\nabla_v\bar\nabla_uw-\bar\nabla_ {[u,v]}w)^T\\=&(\bar\nabla_u(\nabla_vw+\mbox{II}(v,w))-\bar\nabla_v(\nabla_uw+\mbox{II}(u,w))\\&-\nabla_ {[u,v]}w-\mbox{II}([u,v]w))^T\\=&(\nabla_u\nabla_vw+\mbox{II}(u,\nabla_vw)+\bar\nabla_u(\mbox{II}(v,w))\\&-\nabla_v\nabla_uw-\mbox{II}(v,\nabla_uw)-\bar\nabla_v(\mbox{II}(u,w))\\&-\nabla_ {[u,v]}w-\mbox{II}([u,v]w))^T\\=&R(u,v)w+S_ {\mbox{II}(u,w)}v-S_ {\mbox{II}(v,w)}u.\quad\Box\end{aligned} $$
 
 这给了我们从大流形的几何推出小流形上几何的强有力手段, 但我们想从小流形去推断大流形信息的话还需要关注法方向的$(\bar R(u,v)w)^\perp$. 对$\Xi\in\Gamma(\mathcal{V}M),u\in T_pM$, 我们可以把$\bar\nabla_u\Xi$分解为切方向和法方向, 切方向上文中已归结到对形状算子$S_ \xi$的研究, 而对于法方向, 我们也有类似的公式. 
 
@@ -404,9 +404,9 @@ $\begin{aligned}&(\bar R(u,v)w)^T\\=&(\bar\nabla_u\bar\nabla_vw-\bar\nabla_v\bar
 
 ### 4.3 牛刀小试: $S^n(r)$和$\mathbb{H}^n$上的几何
 
-我们先考虑欧氏空间中的$n$维球面$S^n(r)(:=\lbrace (x_i)_ {i=1}^n|\sum\limits_ {i=1}^nx_i^2=r^2\rbrace)\subset\mathbb{R}^{n+1}$, 并把欧氏空间中的点和向量等同起来. 
+我们先考虑欧氏空间中的$n$维球面$S^n(r)\left(:=\left\lbrace (x_i)_ {i=1}^n\mid\sum\limits_ {i=1}^nx_i^2=r^2\right\rbrace\right)\subset\mathbb{R}^{n+1}$, 并把欧氏空间中的点和向量等同起来. 
 
-$p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V} _pS^n(r)$, 对任意$X\in\Gamma(TS^n(r))$, 取$\Xi$为$\xi_p$的自然延拓（$\Xi(p)=\dfrac{p}{r}$）, 则$S_ \xi X\vert_p=-(\bar\nabla_X\Xi)^T\vert_p$. 取$X$的一条积分曲线$\gamma:(-\varepsilon,\varepsilon)\to S^n(r)$, $\gamma(0)=p,\gamma'(0)=X(p)$, $S_ \xi X\vert_p=-\left(\dfrac{\mbox{d}}{\mbox{d}t}\bigg\vert_ {t=0}\Xi(\gamma(t))\right)^T=-\dfrac{1}{r}X(p)$. 于是$\mbox{II} _ \xi(u,v)=-\dfrac{1}{r}\langle u,v\rangle\xi$, 由Gauss公式$R(u,v)w=\dfrac{1}{r^2}(\langle v,w\rangle u-\langle u,w\rangle v)$, 当取$u,v$是标准正交时, $\sec(u,v)=\dfrac{1}{r^2}$. 
+$p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V} _ pS^n(r)$, 对任意$X\in\Gamma(TS^n(r))$, 取$\Xi$为$\xi_p$的自然延拓（$\Xi(p)=\dfrac{p}{r}$）, 则$S _ \xi X\vert _ p=-(\bar\nabla_X\Xi)^T\vert _ p$. 取$X$的一条积分曲线$\gamma:(-\varepsilon,\varepsilon)\to S^n(r)$, $\gamma(0)=p,\gamma'(0)=X(p)$, $S_ \xi X\vert_p=-\left(\dfrac{\mbox{d}}{\mbox{d}t}\bigg\vert_ {t=0}\Xi(\gamma(t))\right)^T=-\dfrac{1}{r}X(p)$. 于是$\mbox{II} _ \xi(u,v)=-\dfrac{1}{r}\langle u,v\rangle\xi$, 由Gauss公式$R(u,v)w=\dfrac{1}{r^2}(\langle v,w\rangle u-\langle u,w\rangle v)$, 当取$u,v$是标准正交时, $\sec(u,v)=\dfrac{1}{r^2}$. 
 
 而测地线是说$\nabla_ {\gamma'}\gamma'=0$, 也就是$(\bar\nabla_ {\gamma'}\gamma')^T=0$, 其中$\gamma(0)=p,\gamma'(0)=u\in T_pS^n(r)$, 这也即是说$\gamma'':=\bar\nabla_ {\gamma'}\gamma'\in\mathcal{V} _pS^n(r)$, 于是$\gamma''(t)=f(t)\Xi(\gamma(t))$, 对$\langle\gamma,\gamma'\rangle=0$求导得$\langle\gamma,\gamma''\rangle=-\langle\gamma',\gamma'\rangle=-1$, 又$\langle\gamma''(t),\gamma(t)\rangle=\langle f(t)\Xi(\gamma(t)),r\cdot\Xi(\gamma(t))\rangle=rf(t)$, 故$f(t)=-\dfrac{1}{r}$, $\gamma''(t)=-\dfrac{1}{r^2}\gamma(t)$. 解此常微分方程即得$\gamma(t)=\cos\dfrac{t}{r}p+\sin\dfrac{t}{r}(ru)$, 这正是大圆. 
 
