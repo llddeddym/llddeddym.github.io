@@ -20,7 +20,7 @@ tags:
 
 首先我们默认大家掌握基本的点集拓扑知识, 并且知道基本群, 覆叠映射以及泛覆盖空间的定义. 另外整个笔记在涉及求和时都使用Einstein求和约定. 
 
-**定义1.1**: 一个**$n$维拓扑流形**谓指一个第二可数的Hausdorff拓扑空间$M$及其上一族坐标卡（局部坐标）$\lbrace(U_\alpha,\varphi_\alpha)\rbrace_{ \alpha\in\Lambda }$, 其中${{\lbrace U_\alpha\rbrace}_{\alpha\in\Lambda}}$是$M$的一个开覆盖, $\lbrace\varphi_{\alpha} \colon U_\alpha\to\mathbb{R}^n\rbrace_{\alpha\in\Lambda}$为一族同胚映射, 一般也用$M$或$M^n$来表示这个拓扑流形而省略其坐标卡, 拓扑流形$M$的维数也可以被记为$\dim M$; 如果对所有满足$U_\alpha\cap U_\beta\neq\empty$的$\alpha,\beta\in\Lambda$, 有任何**转移函数**$\varphi_\beta\circ\varphi_\alpha^{-1}\colon\varphi_\alpha(U_\alpha\cap U_\beta)\to\varphi_\beta(U_\alpha\cap U_\beta)$是$C^k$的, 则称$M$为**$C^k$流形**, 特别地$k=\infty$时, 也称$M$为**光滑流形**; 当$C^k$（或光滑）流形$M$上的坐标卡$\lbrace(U_\alpha,\varphi_\alpha)\rbrace_{\alpha\in\Lambda}$极大时, 称这族坐标卡为$M$上的$C^k$（或光滑）结构; 称光滑流形是**可定向**的, 如果存在其上一族坐标卡, 两两之间的转移函数的Jacobi行列式都是正的.  
+**定义1.1**: 一个**$n$维拓扑流形**谓指一个第二可数的Hausdorff拓扑空间$M$及其上一族坐标卡（局部坐标）$\lbrace(U_\alpha,\varphi_\alpha)\rbrace_{ \alpha\in\Lambda }$, 其中$\lbrace U_\alpha\rbrace_{\alpha\in\Lambda}$是$M$的一个开覆盖, $\lbrace\varphi_{\alpha} \colon U_\alpha\to\mathbb{R}^n\rbrace_{\alpha\in\Lambda}$为一族同胚映射, 一般也用$M$或$M^n$来表示这个拓扑流形而省略其坐标卡, 拓扑流形$M$的维数也可以被记为$\dim M$; 如果对所有满足$U_\alpha\cap U_\beta\neq\empty$的$\alpha,\beta\in\Lambda$, 有任何**转移函数**$\varphi_\beta\circ\varphi_\alpha^{-1}\colon\varphi_\alpha(U_\alpha\cap U_\beta)\to\varphi_\beta(U_\alpha\cap U_\beta)$是$C^k$的, 则称$M$为**$C^k$流形**, 特别地$k=\infty$时, 也称$M$为**光滑流形**; 当$C^k$（或光滑）流形$M$上的坐标卡$\lbrace(U_\alpha,\varphi_\alpha)\rbrace_{\alpha\in\Lambda}$极大时, 称这族坐标卡为$M$上的$C^k$（或光滑）结构; 称光滑流形是**可定向**的, 如果存在其上一族坐标卡, 两两之间的转移函数的Jacobi行列式都是正的.  
 
 **注1.1**: 存在没有光滑结构的拓扑流形, 也存在有多种光滑结构的拓扑流形. 并且拓扑流形的泛覆盖空间总是存在的, 其也是一个流形. 
 
