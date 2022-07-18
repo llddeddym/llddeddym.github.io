@@ -158,7 +158,7 @@ tags:
 
 **例2.4.1**: 光滑切向量场$X$是一个$(1,0)-$张量; 微分$1-$形式$\omega$是一个$(0,1)-$张量. 
 
-**定义2.4.2**: **缩并**$c:\Gamma(T^{r+1}_ {s+1}M)\to\Gamma(T^r_sM)$定义如下: $c(x_1\otimes\cdots\otimes x_{r+1}\otimes y_1^* \otimes\cdots\otimes y_{s+1}^* ):=\sum\limits_{k,l}y_l^* (x_k)x_1\otimes\cdots\otimes\widehat{x_k}\otimes\cdots\otimes x_{r+1}\otimes y_1^* \otimes\cdots\otimes\widehat{y_l^* }\otimes\cdots\otimes y_{s+1}^*$. 
+**定义2.4.2**: **缩并**$c:\Gamma(T^{r+1}_ {s+1}M)\to\Gamma(T^r_sM)$定义如下: $$c(x_1\otimes\cdots\otimes x_{r+1}\otimes y_1^* \otimes\cdots\otimes y_{s+1}^* ):=\sum\limits_{k,l}y_l^* (x_k)x_1\otimes\cdots\otimes\widehat{x_k}\otimes\cdots\otimes x_{r+1}\otimes y_1^* \otimes\cdots\otimes\widehat{y_l^* }\otimes\cdots\otimes y_{s+1}^*.$$ 
 
 **命题2.4.1**: 存在唯一的$\nabla:\Gamma(TM)\times\bigcup\limits_{r,s}\Gamma(T^r_sM)\to\bigcup\limits_{r,s}\Gamma(T^r_sM)$使得对任意$(r,s)$, $\nabla\mid_{\Gamma(TM)\times\Gamma(T^r_sM)}$是$T^r_sM$上的联络且满足: (1)$\nabla_X(T\otimes T')=(\nabla_XT)\otimes T'+T\otimes (\nabla_XT')$; (2)$\nabla_X(cT)=c\nabla_XT$; (3)对任意$f\in C^\infty(M),\nabla_Xf=X(f)$; (4)$\nabla\mid_{\Gamma(TM)\times\Gamma(TM)}$就是Levi-Civita联络. 
 
@@ -212,7 +212,7 @@ tags:
 
 **定义3.1.3**: 对任意$p\in M$, **指数映照**$\exp_p:B(O_p,\delta)(:=\lbrace v\in T_pM\mid\|v\|<\delta\rbrace)\to M$定义为$u\mapsto\gamma_u(1)$. 
 
-容易看到$\exp_p(t\xi)=\gamma_\xi(t),\lvert t\rvert\leqslant1,\xi\in B(O_p,\delta)$和$\exp_p(O_p)=p$. 切空间作为欧氏空间当然也有流形结构, 于是可以考虑$\exp_p$的切映射有如何性质, 最方便研究的自然是$(\exp)_* \mid_ {O_p}:T_ {O_p}(T_pM)\to T_pM$. 但欧氏空间的切空间和本身自然别无二致, 于是我们可以将此映射视为$T_pM$的一个自映射. 依定义, $(\exp)_* \mid_ {O_p}(u)=\dfrac{\mbox{d}}{\mbox{d}t}\exp_p(tu)=\gamma_u'(0)=u$, 这说明$(\exp)_* \mid_ {O_p}$不是别的, 正是$\mbox{id}_ {T_pM}$.因此通过反函数定理, 我们知道存在$\varepsilon<\delta$, 使得$\exp_p\mid_ {B(O_p,\varepsilon)}$是微分同胚, 其像是$M$上的一个开集$B$, 于是乎可以有: 
+容易看到$\exp_p(t\xi)=\gamma_\xi(t),\lvert t\rvert\leqslant1,\xi\in B(O_p,\delta)$和$\exp_p(O_p)=p$. 切空间作为欧氏空间当然也有流形结构, 于是可以考虑$\exp_p$的切映射有如何性质, 最方便研究的自然是$(\exp)_ * \mid_ {O_p}:T_ {O_p}(T_pM)\to T_pM$. 但欧氏空间的切空间和本身自然别无二致, 于是我们可以将此映射视为$T_pM$的一个自映射. 依定义, $(\exp)_* \mid_ {O_p}(u)=\dfrac{\mbox{d}}{\mbox{d}t}\exp_p(tu)=\gamma_u'(0)=u$, 这说明$(\exp)_* \mid_ {O_p}$不是别的, 正是$\mbox{id}_ {T_pM}$.因此通过反函数定理, 我们知道存在$\varepsilon<\delta$, 使得$\exp_p\mid_ {B(O_p,\varepsilon)}$是微分同胚, 其像是$M$上的一个开集$B$, 于是乎可以有: 
 
 **定义3.1.4**: $\log_p:B\to B(O_p,\varepsilon)$为$\exp_p$在局部上的逆映射. 需要注意到$(B,\log_p)$是一个坐标卡, $T_pM$作为欧氏空间有标准正交基$\lbrace e_i\rbrace_{i=1}^n$, 其上坐标函数$\lbrace x^i\rbrace_{i=1}^n$为$\log_p(q)=x^i(q)e_i$, $(B,\log_p,x^i)$就称为一个**标准坐标**. 
 
