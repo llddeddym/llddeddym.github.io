@@ -300,7 +300,11 @@ $$\begin{aligned}&\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)\\ =&\dfrac{
 
 $$\begin{aligned}&\int_a^b\dfrac{\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}\right\rangle}{\|\frac{\partial\alpha}{\partial t}\|}\Bigg\vert_ {(t,0)}\mbox{d}t\\=&\int_a^b\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}/\|\frac{\partial\alpha}{\partial t}\|\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t\\=&\int_a^b\left\langle\nabla_ {\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\|c'(t)\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t,\end{aligned}$$
 
- 由联络保度量的性质知上式为$\displaystyle\int_a^b\frac{\partial}{\partial t}\left\langle\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\\|c'(t)\\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t-\displaystyle\int_a^b\left\langle\frac{\partial\alpha}{\partial s},\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{\\|c'(t)\\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t$, 在被减项上对每段$[t_ {i-1},t_i]$运用微积分基本定理即明所欲证. $\quad\Box$
+ 由联络保度量的性质知上式为
+
+$$\displaystyle\int_a^b\frac{\partial}{\partial t}\left\langle\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{\\|c'(t)\\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t-\displaystyle\int_a^b\left\langle\frac{\partial\alpha}{\partial s},\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{\\|c'(t)\\|}\right\rangle\bigg\vert_ {(t,0)}\mbox{d}t,$$
+
+ 在被减项上对每段$[t_ {i-1},t_i]$运用微积分基本定理即明所欲证. $\quad\Box$
 
 上述公式的左端可被理解为$\dfrac{\partial L}{\partial w}\bigg\vert_c$, 据此可以定义如下概念: 
 
@@ -877,6 +881,7 @@ $$\begin{aligned}
 \end{aligned}$$
 
 第二Bianchi恒等式: 
+
 $$\begin{aligned}
 &(\nabla_XR)(Y,Z)U+(\nabla_YR)(Z,X)U+(\nabla_ZR)(X,Y)U\\
 =&\sum_ {cyc}\left(\nabla_X(R(Y,Z))-R(\nabla_XY,Z)-R(Y,\nabla_XZ)\right)U-R(Y,Z)\nabla_XU\\
@@ -903,6 +908,7 @@ $$\begin{aligned}
 =&\dfrac{\mbox{d}}{\mbox{d}t}\left(\dfrac{\mbox{tr}\mbox{II}(t)\det\mathbb{A}(t)\mbox{sn} _k^{n-2}(t)-(n-2)\det\mathbb{A}(t)\mbox{sn} _k^{n-3}(t)\mbox{cn} _k(t)}{\mbox{sn} _k^{2(n-2)}(t)}\right)\\
 =&\dfrac{\mbox{d}}{\mbox{d}t}\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}-(n-2)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\right).
 \end{aligned}$$
+
 继续计算,有
 $$\begin{aligned}
 &\dfrac{\mbox{d}}{\mbox{d}t}\left(\mbox{tr}\mbox{II}(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}-(n-2)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\right)=\left(\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)\right)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}+\\
@@ -910,10 +916,12 @@ $$\begin{aligned}
 &=\left(\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)+\left(\mbox{tr}\mbox{II}(t)\right)^2\right)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}-2(n-2)\mbox{tr}\mbox{II}(t)\mbox{cn} _k(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}\\
 &-(n-2)\mbox{cn} _k'(t)\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-1}(t)}+(n-1)(n-2)\left(\mbox{cn} _k(t)\right)^2\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n}(t)}.
 \end{aligned}$$
+
 下面将$\mbox{cn} _k'+k\mbox{sn} _k=0$和$\dfrac{\mbox{d}}{\mbox{d}t}\mbox{tr}\mbox{II}(t)\geqslant-\mbox{tr}\mbox{II}^2(t)-(n-1)k$代入其中, 可得
 $$\begin{aligned}
 &\dfrac{\mbox{sn} _k^{n-2}(t)}{\det\mathbb{A}(t)}\cdot\dfrac{\mbox{d}^2}{\mbox{d}t^2}\left(\dfrac{\det\mathbb{A}(t)}{\mbox{sn} _k^{n-2}(t)}\right)+k\\
 \geqslant&\left(\mbox{tr}\mbox{II}(t)\right)^2-\mbox{tr}\mbox{II}^2(t)-2(n-2)\mbox{tr}\mbox{II}(t)\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}+(n-1)(n-2)\left(\dfrac{\mbox{cn} _k(t)}{\mbox{sn} _k(t)}\right)^2.
 \end{aligned}$$
+
 下设$\mbox{II}(t)$的所有特征值为$\lambda_i(t)(i=1,\cdots,n-1)$, 则由$\lambda_i\geqslant\dfrac{\mbox{cn} _k}{\mbox{sn} _k}$可得$(\lambda_i-\dfrac{\mbox{cn} _k}{\mbox{sn} _k})(\lambda_j-\dfrac{\mbox{cn} _k}{\mbox{sn} _k})\geqslant0$, 将此式对所有的$i\neq j$求和, 即得上述式子$\geqslant0$,这就推出原不等式成立.$\quad\Box$
 
