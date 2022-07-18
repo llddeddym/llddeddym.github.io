@@ -268,7 +268,7 @@ $\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\rig
 
 **命题3.3.1**: 设$\exp_p$定义在$O_p$的某个开邻域$U$中, 设$u\in U$, $c:[0,1]\to T_pM$为$[t\mapsto tu]$, 对任意$\varphi:[0,1]\to U$, 若$\varphi(0)=O_p,\varphi(1)=u$, 则对测地线$\gamma_u(t)=\exp_p(c(t))$和$\tilde\gamma(t)=\exp_p(\varphi(t))$, 有$L(\tilde\gamma)\geqslant L(\gamma_u)$. 若$\exp_p$的切映射满秩（也即无共轭点存在时）, 则上式的等号无法成立. 
 
-*Proof.* 置$r(t):=||\varphi(t)||(r>0)$, 设$\varphi(t)=r(t)e(t)$.因为$e(t)\in U_pM$, 故对$\langle e(t),e(t)\rangle=1$求导知$e(t)\perp e'(t)$. 于是$\varphi'(t)=r'(t)e(t)+r(t)e'(t)$, 由Gauss引理, $||(\exp_p)_*|_{\varphi(t)}e(t)||=1$, 且$\langle(\exp_p)_*|_{\varphi(t)}e(t),(\exp_p)_*|_{\varphi(t)}e'(t)\rangle=0$, 于是$||\tilde\gamma'(t)||=||(\exp_p)_*|_{\varphi(t)}\varphi'(t)||\geqslant||(\exp_p)_*|_{\varphi(t)}r'(t)e(t)||=|r'(t)|=\dfrac{\mbox{d}}{\mbox{d}t}||\varphi(t)||$, $L(\tilde\gamma)\geqslant\displaystyle\int_0^1\dfrac{\mbox{d}}{\mbox{d}t}||\varphi(t)||\mbox{dt}=||\varphi(1)||-||\varphi(0)||=||u||=L(\gamma_u)$. 当无共轭点存在时, $r>0$和$e'(t)\notin\ker(\exp_p)_*$保证了不等号是严格的. $\quad\Box$
+*Proof.* 置$r(t):=\|\varphi(t)\|(r>0)$, 设$\varphi(t)=r(t)e(t)$. 因为$e(t)\in U_pM$, 故对$\langle e(t),e(t)\rangle=1$求导知$e(t)\perp e'(t)$. 于是$\varphi'(t)=r'(t)e(t)+r(t)e'(t)$, 由Gauss引理, $\|(\exp_p)_ * \vert _{\varphi(t)}e(t)\|=1$, 且$\langle(\exp_p)_ * \vert_ {\varphi(t)}e(t),(\exp_p)_ * \vert_ {\varphi(t)}e'(t)\rangle=0$, 于是$\|\tilde\gamma'(t)\|=\|(\exp_p)_ * \vert_ {\varphi(t)}\varphi'(t)\|\geqslant\|(\exp_p)_ * \vert_ {\varphi(t)}r'(t)e(t)\|=\lvert r'(t)\rvert=\dfrac{\mbox{d}}{\mbox{d}t}\|\varphi(t)\|$, $L(\tilde\gamma)\geqslant\displaystyle\int_0^1\dfrac{\mbox{d}}{\mbox{d}t}\|\varphi(t)\|\mbox{dt}=\|\varphi(1)\|-\|\varphi(0)\|=\|u\|=L(\gamma_u)$. 当无共轭点存在时, $r>0$和$e'(t)\notin\ker(\exp_p)_ *$保证了不等号是严格的. $\quad\Box$
 
 **例3.3.1**: $S^2$上北极点$N$的切平面中的圆$B(O_N,\pi)$的每一条半径并上一段圆弧在指数映照下都是$N$到南极点$S$的某条测地线的像. 
 
@@ -278,19 +278,19 @@ $\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\rig
 
 下面我们对更一般的情形讨论所谓“变分法”. 
 
-**定义3.3.1**: 记$\Omega_{p,q}$是所有从$p$到$q$的分段光滑曲线组成的集合, $\Omega_{N,p}$是所有从$N\subset M$到$p$的分段光滑曲线组成的集合, $\Omega$为所有分段光滑回路组成的集合. 
+**定义3.3.1**: 记$\Omega_ {p,q}$是所有从$p$到$q$的分段光滑曲线组成的集合, $\Omega_ {N,p}$是所有从$N\subset M$到$p$的分段光滑曲线组成的集合, $\Omega$为所有分段光滑回路组成的集合. 
 
 在这里我们只讨论$\Omega_{p,q}$的情形, 其余两种都是类似的, 但第一种最好算. 
 
-**定义3.3.2**: 给定曲线$c:[a,b]\to M$, $c\in\Omega_{p,q}$. 一个变分$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\to M$被称作$c$在$\Omega_{p,q}$中的**分段光滑变分**, 若它满足: (1)存在$a=t_0<t_1<t_2<\cdots<t_N=b$, 使得$\alpha|_{[t_{i-1},t_i]\times[-\varepsilon,\varepsilon]}$光滑; (2)$\lbrace c_s\rbrace_{s\in(-\varepsilon,\varepsilon)}\subset\Omega_{p,q}$. 
+**定义3.3.2**: 给定曲线$c:[a,b]\to M$, $c\in\Omega_{p,q}$. 一个变分$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\to M$被称作$c$在$\Omega_{p,q}$中的**分段光滑变分**, 若它满足: (1)存在$a=t_0<t_1<t_2<\cdots<t_N=b$, 使得$\alpha\vert_{[t_{i-1},t_i]\times[-\varepsilon,\varepsilon]}$光滑; (2)$\lbrace c_s\rbrace_ {s\in(-\varepsilon,\varepsilon)}\subset\Omega_ {p,q}$. 
 
-**定义3.3.3**: $\Omega_{p,q}$上的**长度泛函**$L:\Omega_{p,q}\to\mathbb{R}$就是$[\gamma\mapsto L(\gamma)]$. 
+**定义3.3.3**: $\Omega_ {p,q}$上的**长度泛函**$L:\Omega_ {p,q}\to\mathbb{R}$就是$[\gamma\mapsto L(\gamma)]$. 
 
-**注3.3.2**: $\Omega_{p,q}$实际上是一个无穷维流形, 虽然其上结构未曾给出, 但我们可以通过“沿$c$的切向量场$W(t):=\dfrac{\partial\alpha}{\partial s}\bigg|_{t=0}$”来直观理解$c_s$在$\Omega_{p,q}$中在$c_0$处的一个切向量的概念. 由于所有$c_s$都在$\Omega_{p,q}$中, 所以有边界条件$W(a)=W(b)=0$, 反过来, 给定任何满足此边界条件的沿$c$的切向量场$W(t)$, 分段光滑变分$\alpha(t,s)=\exp_{c(t)}sW(t)$的给出的切向量场正是$W(t)$. 
+**注3.3.2**: $\Omega_ {p,q}$实际上是一个无穷维流形, 虽然其上结构未曾给出, 但我们可以通过“沿$c$的切向量场$W(t):=\dfrac{\partial\alpha}{\partial s}\bigg\vert_{t=0}$”来直观理解$c_s$在$\Omega_ {p,q}$中在$c_0$处的一个切向量的概念. 由于所有$c_s$都在$\Omega_ {p,q}$中, 所以有边界条件$W(a)=W(b)=0$, 反过来, 给定任何满足此边界条件的沿$c$的切向量场$W(t)$, 分段光滑变分$\alpha(t,s)=\exp_ {c(t)}sW(t)$的给出的切向量场正是$W(t)$. 
 
 接下来是“第一变分公式”: 
 
-**命题3.3.2**: 设$c,\alpha,W,c_s$如上定义, 则$\dfrac{\mbox{d}}{\mbox{d}s}\bigg|_{s=0}L(c_s)=-\displaystyle\int_a^b\langle W(t),\nabla_{\frac{\partial}{\partial t}}\dfrac{c'(t)}{||c'(t)||}\rangle\mbox{d}t+\sum_{i=1}^{n-1}\langle W(t_i),\dfrac{c'(t_i-0)}{||c'(t_i-0)||}-\dfrac{c'(t_i+0)}{||c'(t_i+0)||}\rangle$.
+**命题3.3.2**: 设$c,\alpha,W,c_s$如上定义, 则$$\dfrac{\mbox{d}}{\mbox{d}s}\bigg\vert_ {s=0}L(c_s)=-\displaystyle\int_a^b\left\langle W(t),\nabla_ {\frac{\partial}{\partial t}}\dfrac{c'(t)}{\|c'(t)\|}\right\rangle\mbox{d}t+\sum_{i=1}^{n-1}\left\langle W(t_i),\dfrac{c'(t_i-0)}{\|c'(t_i-0)\|}-\dfrac{c'(t_i+0)}{\|c'(t_i+0)\|}\right\rangle.$$
 
 *Proof.* $\dfrac{\mbox{d}}{\mbox{d}s}\bigg|_{s=0}L(c_s)=\dfrac{\mbox{d}}{\mbox{d}s}\bigg|_{s=0}\displaystyle\int_a^b\langle\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial t}\rangle^{\frac{1}{2}}\mbox{d}t=\displaystyle\int_a^b\dfrac{1}{2}\cdot\dfrac{\frac{\partial}{\partial s}\langle\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\rangle|_{s=0}}{||\frac{\partial\alpha}{\partial t}||_{(t,0)}}\mbox{d}t=\displaystyle\int_a^b\dfrac{\langle\nabla_{\frac{\partial}{\partial s}}\frac{\partial\alpha}{\partial t},\frac{\partial\alpha}{\partial t}\rangle|_{s=0}}{||\frac{\partial\alpha}{\partial t}||_{(t,0)}}\mbox{d}t$.回忆$\left[\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right]=0$, 又有上式为$\displaystyle\int_a^b\dfrac{\langle\nabla_{\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}\rangle}{||\frac{\partial\alpha}{\partial t}||}\bigg|_{(t,0)}\mbox{d}t=\displaystyle\int_a^b\langle\nabla_{\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\frac{\partial\alpha}{\partial t}/||\frac{\partial\alpha}{\partial t}||\rangle\bigg|_{(t,0)}\mbox{d}t=\displaystyle\int_a^b\langle\nabla_{\frac{\partial}{\partial t}}\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{||c'(t)||}\rangle\bigg|_{(t,0)}\mbox{d}t$, 由联络保度量的性质知上式为$\displaystyle\int_a^b\frac{\partial}{\partial t}\langle\frac{\partial\alpha}{\partial s},\dfrac{c'(t)}{||c'(t)||}\rangle\bigg|_{(t,0)}\mbox{d}t-\displaystyle\int_a^b\langle\frac{\partial\alpha}{\partial s},\nabla_{\frac{\partial}{\partial t}}\dfrac{c'(t)}{||c'(t)||}\rangle\bigg|_{(t,0)}\mbox{d}t$, 在被减项上对每段$[t_{i-1},t_i]$运用微积分基本定理即明所欲证. $\quad\Box$
 
