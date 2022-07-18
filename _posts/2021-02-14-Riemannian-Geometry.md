@@ -20,13 +20,13 @@ tags:
 
 首先我们默认大家掌握基本的点集拓扑知识, 并且知道基本群, 覆叠映射以及泛覆盖空间的定义. 另外整个笔记在涉及求和时都使用Einstein求和约定. 
 
-**定义1.1**: 一个**$n$维拓扑流形**谓指一个第二可数的Hausdorff拓扑空间$M$及其上一族坐标卡（局部坐标）$\lbrace (U_\alpha,\varphi_\alpha)\rbrace_ { \alpha\in\Lambda }$, 其中$\lbrace U_\alpha\rbrace_ {\alpha\in\Lambda}$是$M$的一个开覆盖, $\lbrace \varphi_ {\alpha} \colon U_\alpha\to\mathbb{R}^n\rbrace_ {\alpha\in\Lambda}$为一族同胚映射, 一般也用$M$或$M^n$来表示这个拓扑流形而省略其坐标卡, 拓扑流形$M$的维数也可以被记为$\dim M$; 如果对所有满足$U_\alpha\cap U_\beta\neq\emptyset$的$\alpha,\beta\in\Lambda$, 有任何**转移函数**$\varphi_\beta\circ\varphi_\alpha^{-1}\colon\varphi_\alpha(U_\alpha\cap U_\beta)\to\varphi_\beta(U_\alpha\cap U_\beta)$是$C^k$的, 则称$M$为**$C^k$流形**, 特别地$k=\infty$时, 也称$M$为**光滑流形**; 当$C^k$（或光滑）流形$M$上的坐标卡$\lbrace (U_\alpha,\varphi_\alpha)\rbrace_ {\alpha\in\Lambda}$极大时, 称这族坐标卡为$M$上的$C^k$（或光滑）结构; 称光滑流形是**可定向**的, 如果存在其上一族坐标卡, 两两之间的转移函数的Jacobi行列式都是正的.  
+**定义1.1**: 一个**$n$维拓扑流形**谓指一个第二可数的Hausdorff拓扑空间$M$及其上一族坐标卡（局部坐标）$\lbrace (U_ \alpha,\varphi_ \alpha)\rbrace_ { \alpha\in\Lambda }$, 其中$\lbrace U_ \alpha\rbrace_ {\alpha\in\Lambda}$是$M$的一个开覆盖, $\lbrace \varphi_ {\alpha} \colon U_ \alpha\to\mathbb{R}^n\rbrace_ {\alpha\in\Lambda}$为一族同胚映射, 一般也用$M$或$M^n$来表示这个拓扑流形而省略其坐标卡, 拓扑流形$M$的维数也可以被记为$\dim M$; 如果对所有满足$U_ \alpha\cap U_ \beta\neq\emptyset$的$\alpha,\beta\in\Lambda$, 有任何**转移函数**$\varphi_ \beta\circ\varphi_ \alpha^{-1}\colon\varphi_ \alpha(U_ \alpha\cap U_ \beta)\to\varphi_ \beta(U_ \alpha\cap U_ \beta)$是$C^k$的, 则称$M$为**$C^k$流形**, 特别地$k=\infty$时, 也称$M$为**光滑流形**; 当$C^k$（或光滑）流形$M$上的坐标卡$\lbrace (U_ \alpha,\varphi_ \alpha)\rbrace_ {\alpha\in\Lambda}$极大时, 称这族坐标卡为$M$上的$C^k$（或光滑）结构; 称光滑流形是**可定向**的, 如果存在其上一族坐标卡, 两两之间的转移函数的Jacobi行列式都是正的.  
 
 **注1.1**: 存在没有光滑结构的拓扑流形, 也存在有多种光滑结构的拓扑流形. 并且拓扑流形的泛覆盖空间总是存在的, 其也是一个流形. 
 
 以后若无特别说明, 流形均指光滑流形.  
 
-**定义1.2**: 对流形$M^n$, 函数$f:M\to\mathbb{R}$称为**光滑函数**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $f\circ\varphi_\alpha^{-1}:\mathbb{R^n}\to\mathbb{R}$光滑$M$上所有光滑函数组成的集合记为$C^\infty(M)$; 对流形$M^n,N^d$, 映射$f:M\to N$称为**光滑映射**当且仅当对$M$上任何一个坐标卡$(U_\alpha,\varphi_\alpha)$, $N$上任何一个坐标卡$(V_\beta,\psi_\beta)$, $\psi_\beta\circ f\circ\varphi_\alpha^{-1}:\mathbb{R}^n\to\mathbb{R}^d$光滑, $M$到$N$的所有光滑映射组成的集合记为$C^\infty(M,N)$. $M$上一个光滑函数$f$的**支集**为$\mbox{supp}f=\overline{\lbrace  p\in M\mid f(p)\neq0\rbrace}$. 
+**定义1.2**: 对流形$M^n$, 函数$f:M\to\mathbb{R}$称为**光滑函数**当且仅当对$M$上任何一个坐标卡$(U_ \alpha,\varphi_ \alpha)$, $f\circ\varphi_ \alpha^{-1}:\mathbb{R^n}\to\mathbb{R}$光滑$M$上所有光滑函数组成的集合记为$C^\infty(M)$; 对流形$M^n,N^d$, 映射$f:M\to N$称为**光滑映射**当且仅当对$M$上任何一个坐标卡$(U_ \alpha,\varphi_ \alpha)$, $N$上任何一个坐标卡$(V_ \beta,\psi_ \beta)$, $\psi_ \beta\circ f\circ\varphi_ \alpha^{-1}:\mathbb{R}^n\to\mathbb{R}^d$光滑, $M$到$N$的所有光滑映射组成的集合记为$C^\infty(M,N)$. $M$上一个光滑函数$f$的**支集**为$\mbox{supp}f=\overline{\lbrace  p\in M\mid f(p)\neq0\rbrace}$. 
 
 **定义1.3**: 对流形$M$及其上一点$p$, 在所有定义在$p$的某个开邻域上的光滑函数所组成的集合中定义如下等价关系: $f:U\to\mathbb{R}$等价于$g:V\to\mathbb{R}$当且仅当存在$p$的开邻域$W\subset U\cap V$使得$f\mid_W=g\mid_W$, 称每一个等价类为$p$处的一个**函数芽**, $p$处所有函数芽组成的集合记为$\mathcal{E}(p)$. 
 
@@ -58,7 +58,7 @@ tags:
 
 **注1.6**: 显然$\Gamma(\Lambda(T^* M))=\sum\limits_ {r=0}^n\Gamma(\Lambda^r(T^* M))$. 
 
-**定义1.13**: 流形$M$上的**单位分解**是其上一族非负光滑函数$\lbrace \varphi_\alpha \rbrace_ {\alpha\in\Lambda}$, 使得其支集族是局部有限的, 并且$\displaystyle\sum_ {\alpha\in\Lambda}\varphi_\alpha\equiv1$. 若对开覆盖$\lbrace U_\beta\rbrace$, 一个单位分解$\lbrace \varphi_\alpha\rbrace_ {\alpha\in\Lambda}$满足对任意$\alpha\in\Lambda$, 都存在$\beta$使得$\varphi_\alpha$的支集包含于$U_\beta$, 就称这个单位分解是**从属于**这个开覆盖的. 
+**定义1.13**: 流形$M$上的**单位分解**是其上一族非负光滑函数$\lbrace \varphi_ \alpha \rbrace_ {\alpha\in\Lambda}$, 使得其支集族是局部有限的, 并且$\displaystyle\sum_ {\alpha\in\Lambda}\varphi_ \alpha\equiv1$. 若对开覆盖$\lbrace U_ \beta\rbrace$, 一个单位分解$\lbrace \varphi_ \alpha\rbrace_ {\alpha\in\Lambda}$满足对任意$\alpha\in\Lambda$, 都存在$\beta$使得$\varphi_ \alpha$的支集包含于$U_ \beta$, 就称这个单位分解是**从属于**这个开覆盖的. 
 
 **注1.7**: 一个著名结果是, 对一个微分流形$M$和其上任何一个开覆盖, 都存在一个从属于它的可数单位分解, 并且其中每个函数都有紧支集. 
 
@@ -204,13 +204,13 @@ tags:
 
 **定义3.1.2**: 对流形$M$, 其上点$p$处的**单位切向量**组成的集合$U_pM:=\lbrace v\in T_pM\mid \\|v\\|=1\rbrace$.**单位切丛**$UM:=\bigcup\limits_ {p\in M}U_pM$. 
 
-易见$U_pM$与单位球面$S^{n-1}$是同胚的, 也具有紧性, 于是存在与$\xi$无关的$\delta=\delta(p)$, 使得$\gamma_\xi(t)$对任意$\xi\in U_pM,t\in(-\delta,\delta)$均存在. 换言之, 对任意$u\in T_pM,\\|u\\|<\delta, \gamma_u(1)$存在. 
+易见$U_pM$与单位球面$S^{n-1}$是同胚的, 也具有紧性, 于是存在与$\xi$无关的$\delta=\delta(p)$, 使得$\gamma_ \xi(t)$对任意$\xi\in U_pM,t\in(-\delta,\delta)$均存在. 换言之, 对任意$u\in T_pM,\\|u\\|<\delta, \gamma_u(1)$存在. 
 
 基于此可以定义所谓“指数映照”的概念. 
 
 **定义3.1.3**: 对任意$p\in M$, **指数映照**$\exp_p:B(O_p,\delta)(:=\lbrace v\in T_pM\mid\\|v\\|<\delta\rbrace)\to M$定义为$u\mapsto\gamma_u(1)$. 
 
-容易看到$\exp_p(t\xi)=\gamma_\xi(t),\lvert t\rvert\leqslant1,\xi\in B(O_p,\delta)$和$\exp_p(O_p)=p$. 切空间作为欧氏空间当然也有流形结构, 于是可以考虑$\exp_p$的切映射有如何性质, 最方便研究的自然是$(\exp)_ * \mid_ {O_p}:T_ {O_p}(T_pM)\to T_pM$. 但欧氏空间的切空间和本身自然别无二致, 于是我们可以将此映射视为$T_pM$的一个自映射. 依定义, $(\exp)_ * \mid_ {O_p}(u)=\dfrac{\mbox{d}}{\mbox{d}t}\exp_p(tu)=\gamma_u'(0)=u$, 这说明$(\exp)_ * \mid_ {O_p}$不是别的, 正是$\mbox{id} _ {T_pM}$.因此通过反函数定理, 我们知道存在$\varepsilon<\delta$, 使得$\exp_p\mid_ {B(O_p,\varepsilon)}$是微分同胚, 其像是$M$上的一个开集$B$, 于是乎可以有: 
+容易看到$\exp_p(t\xi)=\gamma_ \xi(t),\lvert t\rvert\leqslant1,\xi\in B(O_p,\delta)$和$\exp_p(O_p)=p$. 切空间作为欧氏空间当然也有流形结构, 于是可以考虑$\exp_p$的切映射有如何性质, 最方便研究的自然是$(\exp)_ * \mid_ {O_p}:T_ {O_p}(T_pM)\to T_pM$. 但欧氏空间的切空间和本身自然别无二致, 于是我们可以将此映射视为$T_pM$的一个自映射. 依定义, $(\exp)_ * \mid_ {O_p}(u)=\dfrac{\mbox{d}}{\mbox{d}t}\exp_p(tu)=\gamma_u'(0)=u$, 这说明$(\exp)_ * \mid_ {O_p}$不是别的, 正是$\mbox{id} _ {T_pM}$.因此通过反函数定理, 我们知道存在$\varepsilon<\delta$, 使得$\exp_p\mid_ {B(O_p,\varepsilon)}$是微分同胚, 其像是$M$上的一个开集$B$, 于是乎可以有: 
 
 **定义3.1.4**: $\log_p:B\to B(O_p,\varepsilon)$为$\exp_p$在局部上的逆映射. 需要注意到$(B,\log_p)$是一个坐标卡, $T_pM$作为欧氏空间有标准正交基$\lbrace e_i\rbrace_ {i=1}^n$, 其上坐标函数$\lbrace x^i\rbrace_ {i=1}^n$为$\log_p(q)=x^i(q)e_i$, $(B,\log_p,x^i)$就称为一个**标准坐标**. 
 
@@ -236,15 +236,15 @@ tags:
 
 **定义3.2.2**: 对任意光滑映射$\alpha:[a,b]\times(-\varepsilon,\varepsilon)\to M$, 对任意$s\in(-\varepsilon,\varepsilon)$, 称$c_s(\cdot):=\alpha(\cdot,s)$为$c_0$关于$\alpha$的**变分**. 
 
-$\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right):=\left(\alpha_* \left(\dfrac{\partial}{\partial t}\right),\alpha_* \left(\dfrac{\partial}{\partial s}\right)\right)$为$\mbox{im}\alpha$上的两个切向量场, 由于两者被$\alpha_* $作用前Lie括号为$0$, 故作用后也有$\left[\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right]=0$, 因此$R\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right)=\nabla_ {\frac{\partial\alpha}{\partial t}}\nabla_\frac{\partial\alpha}{\partial s}-\nabla_ {\frac{\partial\alpha}{\partial s}}\nabla_\frac{\partial\alpha}{\partial t}$. 
+$\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right):=\left(\alpha_* \left(\dfrac{\partial}{\partial t}\right),\alpha_* \left(\dfrac{\partial}{\partial s}\right)\right)$为$\mbox{im}\alpha$上的两个切向量场, 由于两者被$\alpha_* $作用前Lie括号为$0$, 故作用后也有$\left[\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right]=0$, 因此$R\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right)=\nabla_ {\frac{\partial\alpha}{\partial t}}\nabla_ \frac{\partial\alpha}{\partial s}-\nabla_ {\frac{\partial\alpha}{\partial s}}\nabla_ \frac{\partial\alpha}{\partial t}$. 
 
-对于刚才的情形而言, $c_s(t)=\exp_p(t(u+s\xi))$为测地线, $\nabla_ {\frac{\partial\alpha}{\partial t}}\dfrac{\partial\alpha}{\partial t}=\nabla_ {c_s'(t)}c_s'(t)=0$, $Y'(t)=\nabla_ {\frac{\partial\alpha}{\partial t}}(Y(t))=\nabla_\frac{\partial\alpha}{\partial t}\dfrac{\partial\alpha}{\partial s}\bigg\vert_ {(t,0)}=\nabla_\frac{\partial\alpha}{\partial s}\dfrac{\partial\alpha}{\partial t}\bigg\vert_ {(t,0)}$, $$\begin{aligned}Y''(t)=&\nabla_ {\frac{\partial\alpha}{\partial t}}(Y'(t))\\=&\nabla_ {\frac{\partial\alpha}{\partial t}}\left(\nabla_\frac{\partial\alpha}{\partial s}\dfrac{\partial\alpha}{\partial t}\bigg\vert_ {(t,0)}\right)\\=&\nabla_ {\frac{\partial\alpha}{\partial s}}\nabla_\frac{\partial\alpha}{\partial t}\dfrac{\partial\alpha}{\partial t}\bigg\vert_ {(t,0)}+R\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right)\dfrac{\partial\alpha}{\partial t}\bigg\vert_ {(t,0)}\\=&-R\left(\dfrac{\partial\alpha}{\partial s},\dfrac{\partial\alpha}{\partial t}\right)\dfrac{\partial\alpha}{\partial t}\bigg\vert_ {(t,0)}\\=&-R(Y(t),\gamma_u'(t))\gamma_u'(t).\end{aligned}$$ 
+对于刚才的情形而言, $c_s(t)=\exp_p(t(u+s\xi))$为测地线, $\nabla_ {\frac{\partial\alpha}{\partial t}}\dfrac{\partial\alpha}{\partial t}=\nabla_ {c_s'(t)}c_s'(t)=0$, $Y'(t)=\nabla_ {\frac{\partial\alpha}{\partial t}}(Y(t))=\nabla_ \frac{\partial\alpha}{\partial t}\dfrac{\partial\alpha}{\partial s}\bigg\vert_ {(t,0)}=\nabla_ \frac{\partial\alpha}{\partial s}\dfrac{\partial\alpha}{\partial t}\bigg\vert_ {(t,0)}$, $$\begin{aligned}Y''(t)=&\nabla_ {\frac{\partial\alpha}{\partial t}}(Y'(t))\\=&\nabla_ {\frac{\partial\alpha}{\partial t}}\left(\nabla_ \frac{\partial\alpha}{\partial s}\dfrac{\partial\alpha}{\partial t}\bigg\vert_ {(t,0)}\right)\\=&\nabla_ {\frac{\partial\alpha}{\partial s}}\nabla_ \frac{\partial\alpha}{\partial t}\dfrac{\partial\alpha}{\partial t}\bigg\vert_ {(t,0)}+R\left(\dfrac{\partial\alpha}{\partial t},\dfrac{\partial\alpha}{\partial s}\right)\dfrac{\partial\alpha}{\partial t}\bigg\vert_ {(t,0)}\\=&-R\left(\dfrac{\partial\alpha}{\partial s},\dfrac{\partial\alpha}{\partial t}\right)\dfrac{\partial\alpha}{\partial t}\bigg\vert_ {(t,0)}\\=&-R(Y(t),\gamma_u'(t))\gamma_u'(t).\end{aligned}$$ 
 
-故$Y(t)$满足$Y''(t)+R(Y(t),\gamma_u'(t))\gamma_u'(t)=0,Y(0)=0,Y'(0)=\xi$. 
+故$Y(t)$满足$Y'' (t)+R(Y(t),\gamma_u'(t))\gamma_u'(t)=0,Y(0)=0,Y'(0)=\xi$. 
 
 **定义3.2.3**: 若沿测地线$\gamma_u$的切向量场$Y(t)$满足$Y''(t)+R(Y(t),\gamma_u'(t))\gamma_u'(t)=0$, 则称它为一个**Jacobi场**. 所有沿$\gamma_u$的Jacobi场记为$Jac(\gamma_u)$. 
 
-**注3.2.1**: $Jac(\gamma_u)$实际上是一向量空间, $\dim Jac(\gamma_u)=2\dim M$. 其上还有由$\omega(J_1,J_2)=\langle J_1',J_2\rangle-\langle J_1,J_2'\rangle$导出的辛结构. 在此我们更关注所谓“**正规Jacobi场**”$Jac^\perp(\gamma_u)$, 要求$Y(t)\perp \gamma_u'(t)$, 因为对$Y(t)//\gamma_u'(t)$, $Y''(t)=0$, $Y(t)=(a+bt)\gamma_u'(t)$. 
+**注3.2.1**: $Jac(\gamma_u)$实际上是一向量空间, $\dim Jac(\gamma_u)=2\dim M$. 其上还有由$\omega(J_1,J_2)=\langle J_1',J_2\rangle-\langle J_1,J_2'\rangle$导出的辛结构. 在此我们更关注所谓“**正规Jacobi场**”$Jac^\perp(\gamma_u)$, 要求$Y(t)\perp \gamma_u'(t)$, 因为对$Y(t)//\gamma_u'(t)$, $Y'' (t)=0$, $Y(t)=(a+bt)\gamma_u'(t)$. 
 
 下面是著名的Gauss引理: 
 
@@ -368,19 +368,19 @@ $$\begin{aligned}Y''' (0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t
 
 下面均默认$M\hookrightarrow\bar M$是一个黎曼子流形且二者的Levi-Civita联络分别为$\nabla,\bar\nabla$, 并且其上定义了法丛. 
 
-**定义4.2.2**: 对称双线性映射$\mbox{II}:T_pM\times T_pM\to\mathcal{V} _pM$, $(u,v)\mapsto(\bar\nabla_uY)^\perp$, 其中$Y$是$v$在$\Gamma(TM)$中的任意延拓, 此定义实际上不依赖于$Y$的选取, 其被称为$M\hookrightarrow\bar M$的**第二基本型**.对任意$\xi\in\mathcal{V} _pM$, $\mbox{II} _\xi(u,v):=\langle\mbox{II}(u,v),\xi\rangle$有时也被称为第二基本型. 
+**定义4.2.2**: 对称双线性映射$\mbox{II}:T_pM\times T_pM\to\mathcal{V} _pM$, $(u,v)\mapsto(\bar\nabla_uY)^\perp$, 其中$Y$是$v$在$\Gamma(TM)$中的任意延拓, 此定义实际上不依赖于$Y$的选取, 其被称为$M\hookrightarrow\bar M$的**第二基本型**.对任意$\xi\in\mathcal{V} _pM$, $\mbox{II} _ \xi(u,v):=\langle\mbox{II}(u,v),\xi\rangle$有时也被称为第二基本型. 
 
 这里可以验证其对称性: 将$u,v$分别延拓为$X,Y\in\Gamma(TM)$, 则$\mbox{II}(u,v)-\mbox{II}(v,u)=(\bar\nabla_XY-\bar\nabla_YX)^\perp=([X,Y])^\perp=0$.其双线性性和张量性的验证从略. 
 
-**定义4.2.3**: 定义为$\langle S_\xi(u),v\rangle:=\mbox{II} _\xi(u,v)$的自伴随线性算子$S_\xi$被称作**形状算子**. 
+**定义4.2.3**: 定义为$\langle S_ \xi(u),v\rangle:=\mbox{II} _ \xi(u,v)$的自伴随线性算子$S_ \xi$被称作**形状算子**. 
 
-事实上设$Y\in\Gamma(TM)$延拓了$u$, $\Xi\in\Gamma(\mathcal{VM})$延拓了$\xi$, 由于$\mbox{II} _\xi(u,v)=\langle(\bar\nabla_uY)^\perp,\xi\rangle=\langle\bar\nabla_uY,\Xi\rangle\vert_p=u\langle Y,\Xi\rangle-\langle Y,\bar\nabla_u\Xi\rangle\vert_p=-\langle Y,(\bar\nabla_u\Xi)^T\rangle\vert_p$, 可得$S_\xi(u)=-(\bar\nabla_u\Xi)^T$. 
+事实上设$Y\in\Gamma(TM)$延拓了$u$, $\Xi\in\Gamma(\mathcal{VM})$延拓了$\xi$, 由于$\mbox{II} _ \xi(u,v)=\langle(\bar\nabla_uY)^\perp,\xi\rangle=\langle\bar\nabla_uY,\Xi\rangle\vert_p=u\langle Y,\Xi\rangle-\langle Y,\bar\nabla_u\Xi\rangle\vert_p=-\langle Y,(\bar\nabla_u\Xi)^T\rangle\vert_p$, 可得$S_ \xi(u)=-(\bar\nabla_u\Xi)^T$. 
 
 **注4.2.1**: 形状算子有时也被称作“Weingarten映射”. 
 
-**定义4.2.4**: $\mbox{II} _\xi$或$S_\xi$的特征值称为$M\hookrightarrow\bar M$沿$\xi$的**主曲率**, 所有特征值之和称为**平均曲率**, 记为$m(\xi)$. 
+**定义4.2.4**: $\mbox{II} _ \xi$或$S_ \xi$的特征值称为$M\hookrightarrow\bar M$沿$\xi$的**主曲率**, 所有特征值之和称为**平均曲率**, 记为$m(\xi)$. 
 
-当$\dim\bar M=\dim M+1$时, $\xi$的选择在相差一个符号的意义下唯一, 此时可以省略$\mbox{II} _\xi$或$S_\xi$的下标. 
+当$\dim\bar M=\dim M+1$时, $\xi$的选择在相差一个符号的意义下唯一, 此时可以省略$\mbox{II} _ \xi$或$S_ \xi$的下标. 
 
 下面我们介绍“Gauss公式”. 
 
@@ -390,7 +390,7 @@ $$\begin{aligned}Y''' (0)=&\nabla_ {\frac{\partial}{\partial t}}(Y'(t))\vert_ {t
 
 $\begin{aligned}&(\bar R(u,v)w)^T\\=&(\bar\nabla_u\bar\nabla_vw-\bar\nabla_v\bar\nabla_uw-\bar\nabla_ {[u,v]}w)^T\\=&(\bar\nabla_u(\nabla_vw+\mbox{II}(v,w))-\bar\nabla_v(\nabla_uw+\mbox{II}(u,w))\\&-\nabla_ {[u,v]}w-\mbox{II}([u,v]w))^T\\=&(\nabla_u\nabla_vw+\mbox{II}(u,\nabla_vw)+\bar\nabla_u(\mbox{II}(v,w))\\&-\nabla_v\nabla_uw-\mbox{II}(v,\nabla_uw)-\bar\nabla_v(\mbox{II}(u,w))\\&-\nabla_ {[u,v]}w-\mbox{II}([u,v]w))^T\\=&R(u,v)w+S_ {\mbox{II}(u,w)}v-S_ {\mbox{II}(v,w)}u\end{aligned}$. $\quad\Box$
 
-这给了我们从大流形的几何推出小流形上几何的强有力手段, 但我们想从小流形去推断大流形信息的话还需要关注法方向的$(\bar R(u,v)w)^\perp$. 对$\Xi\in\Gamma(\mathcal{V}M),u\in T_pM$, 我们可以把$\bar\nabla_u\Xi$分解为切方向和法方向, 切方向上文中已归结到对形状算子$S_\xi$的研究, 而对于法方向, 我们也有类似的公式. 
+这给了我们从大流形的几何推出小流形上几何的强有力手段, 但我们想从小流形去推断大流形信息的话还需要关注法方向的$(\bar R(u,v)w)^\perp$. 对$\Xi\in\Gamma(\mathcal{V}M),u\in T_pM$, 我们可以把$\bar\nabla_u\Xi$分解为切方向和法方向, 切方向上文中已归结到对形状算子$S_ \xi$的研究, 而对于法方向, 我们也有类似的公式. 
 
 **定义4.2.5**: 在法丛$\mathcal{V}M$上定义的联络$\nabla^\perp$如下: $\nabla^\perp_x\Xi:=(\bar\nabla_x\Xi)^\perp$. 
 
@@ -406,7 +406,7 @@ $\begin{aligned}&(\bar R(u,v)w)^T\\=&(\bar\nabla_u\bar\nabla_vw-\bar\nabla_v\bar
 
 我们先考虑欧氏空间中的$n$维球面$S^n(r)(:=\lbrace (x_i)_ {i=1}^n|\sum\limits_ {i=1}^nx_i^2=r^2\rbrace)\subset\mathbb{R}^{n+1}$, 并把欧氏空间中的点和向量等同起来. 
 
-$p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V} _pS^n(r)$, 对任意$X\in\Gamma(TS^n(r))$, 取$\Xi$为$\xi_p$的自然延拓（$\Xi(p)=\dfrac{p}{r}$）, 则$S_\xi X\vert_p=-(\bar\nabla_X\Xi)^T\vert_p$. 取$X$的一条积分曲线$\gamma:(-\varepsilon,\varepsilon)\to S^n(r)$, $\gamma(0)=p,\gamma'(0)=X(p)$, $S_\xi X\vert_p=-\left(\dfrac{\mbox{d}}{\mbox{d}t}\bigg\vert_ {t=0}\Xi(\gamma(t))\right)^T=-\dfrac{1}{r}X(p)$. 于是$\mbox{II} _\xi(u,v)=-\dfrac{1}{r}\langle u,v\rangle\xi$, 由Gauss公式$R(u,v)w=\dfrac{1}{r^2}(\langle v,w\rangle u-\langle u,w\rangle v)$, 当取$u,v$是标准正交时, $\sec(u,v)=\dfrac{1}{r^2}$. 
+$p\in S^n(r)$诱导一法向量$\xi_p:=\dfrac{p}{r}\in\mathcal{V} _pS^n(r)$, 对任意$X\in\Gamma(TS^n(r))$, 取$\Xi$为$\xi_p$的自然延拓（$\Xi(p)=\dfrac{p}{r}$）, 则$S_ \xi X\vert_p=-(\bar\nabla_X\Xi)^T\vert_p$. 取$X$的一条积分曲线$\gamma:(-\varepsilon,\varepsilon)\to S^n(r)$, $\gamma(0)=p,\gamma'(0)=X(p)$, $S_ \xi X\vert_p=-\left(\dfrac{\mbox{d}}{\mbox{d}t}\bigg\vert_ {t=0}\Xi(\gamma(t))\right)^T=-\dfrac{1}{r}X(p)$. 于是$\mbox{II} _ \xi(u,v)=-\dfrac{1}{r}\langle u,v\rangle\xi$, 由Gauss公式$R(u,v)w=\dfrac{1}{r^2}(\langle v,w\rangle u-\langle u,w\rangle v)$, 当取$u,v$是标准正交时, $\sec(u,v)=\dfrac{1}{r^2}$. 
 
 而测地线是说$\nabla_ {\gamma'}\gamma'=0$, 也就是$(\bar\nabla_ {\gamma'}\gamma')^T=0$, 其中$\gamma(0)=p,\gamma'(0)=u\in T_pS^n(r)$, 这也即是说$\gamma'':=\bar\nabla_ {\gamma'}\gamma'\in\mathcal{V} _pS^n(r)$, 于是$\gamma''(t)=f(t)\Xi(\gamma(t))$, 对$\langle\gamma,\gamma'\rangle=0$求导得$\langle\gamma,\gamma''\rangle=-\langle\gamma',\gamma'\rangle=-1$, 又$\langle\gamma''(t),\gamma(t)\rangle=\langle f(t)\Xi(\gamma(t)),r\cdot\Xi(\gamma(t))\rangle=rf(t)$, 故$f(t)=-\dfrac{1}{r}$, $\gamma''(t)=-\dfrac{1}{r^2}\gamma(t)$. 解此常微分方程即得$\gamma(t)=\cos\dfrac{t}{r}p+\sin\dfrac{t}{r}(ru)$, 这正是大圆. 
 
@@ -470,13 +470,13 @@ $\mbox{Hess}r(X,Y)=:\langle S(X),Y\rangle$定义了一个算子$S$（将$-\parti
 
 **例4.5.1**: 取$\mathbb{R}^n$中距离函数$r(x)=\\|x\\|$, 则$S^{n-1}(r_0)=r^{-1}(r_0)$, 于是在极坐标下$g_0=\mbox{d}r^2+r^2(\mbox{d}S^{n-1})^2=\sum\limits_ {i=1}^n(\mbox{d}x^i)^2$, $\mbox{d}r=\sum\limits_ {i=1}^n\dfrac{1}{r}x^i\mbox{d}x^i$, $\partial_r=\dfrac{1}{r}x^i\partial_i$. 则$2\mbox{Hess}r\vert_ {r=r_0}=L_ {\partial_r}(g_0)=\partial_r(r^2)(\mbox{d}S^{n-1})^2\vert_ {r=r_0}=2r_0(\mbox{d}S^{n-1})^2=\dfrac{2}{r_0}g_ {r_0}$. 由Gauss公式即知截面曲率为$\dfrac{1}{r_0^2}$.
 
-**例4.5.2**: 对一般的$I\times_\varphi S^{n-1}$（也就是所谓的旋转对称流形）, $g=\mbox{d}r^2+\varphi^2(r)(\mbox{d}S^{n-1})^2$. 当$X,Y,Z,V,W$均在某一个球面的切空间中时$g_ {r_0}(R^{r_0}(X,Y)V,W)=\dfrac{1}{\varphi^2}g_ {r_0}(X\wedge Y,V\wedge W)$.$\mbox{II}=\mbox{Hess}r\vert_ {r=r_0}=\dfrac{\varphi'}{\varphi}g_ {r_0}$, 这推出$g(R(X,Y)Y,X)=\dfrac{1-\varphi'^2}{\varphi^2}g_ {r_0}(X\wedge Y,X\wedge Y)$.而对法方向, 由Codazzi公式, $g(R(X,Y)Z,\partial_r)=-(\nabla_X\mbox{II})(Y,Z)+(\nabla_Y\mbox{II})(X,Z)=0$, 这是因为$\mbox{II}=\mbox{Hess}r$只与$r$的值有关. 由Ricatti恒等式可得$R(X,\partial_r)\partial_r=-\dfrac{\varphi''}{\varphi}X$. 于是$\sec(X,\partial_r)=-\dfrac{\varphi''}{\varphi}$, $Ric(X)=(n-2)\dfrac{1-\varphi'^2}{\varphi^2}-\dfrac{\varphi''}{\varphi}$, $Ric(\partial_r)=-(n-1)\dfrac{\varphi''}{\varphi}\partial_r$, $\mbox{Scal}=-2(n-1)\dfrac{\varphi''}{\varphi}+(n-1)(n-2)\dfrac{1-\varphi'^2}{\varphi^2}$. 可见, 要求$I\times S^{n-1}$有平坦的Ricci曲率只能是$\varphi=r$.取$\varphi(t)=\mbox{sn} _k(t)$时, 其有常截面曲率$k$. 
+**例4.5.2**: 对一般的$I\times_ \varphi S^{n-1}$（也就是所谓的旋转对称流形）, $g=\mbox{d}r^2+\varphi^2(r)(\mbox{d}S^{n-1})^2$. 当$X,Y,Z,V,W$均在某一个球面的切空间中时$g_ {r_0}(R^{r_0}(X,Y)V,W)=\dfrac{1}{\varphi^2}g_ {r_0}(X\wedge Y,V\wedge W)$.$\mbox{II}=\mbox{Hess}r\vert_ {r=r_0}=\dfrac{\varphi'}{\varphi}g_ {r_0}$, 这推出$g(R(X,Y)Y,X)=\dfrac{1-\varphi'^2}{\varphi^2}g_ {r_0}(X\wedge Y,X\wedge Y)$.而对法方向, 由Codazzi公式, $g(R(X,Y)Z,\partial_r)=-(\nabla_X\mbox{II})(Y,Z)+(\nabla_Y\mbox{II})(X,Z)=0$, 这是因为$\mbox{II}=\mbox{Hess}r$只与$r$的值有关. 由Ricatti恒等式可得$R(X,\partial_r)\partial_r=-\dfrac{\varphi''}{\varphi}X$. 于是$\sec(X,\partial_r)=-\dfrac{\varphi''}{\varphi}$, $Ric(X)=(n-2)\dfrac{1-\varphi'^2}{\varphi^2}-\dfrac{\varphi''}{\varphi}$, $Ric(\partial_r)=-(n-1)\dfrac{\varphi''}{\varphi}\partial_r$, $\mbox{Scal}=-2(n-1)\dfrac{\varphi''}{\varphi}+(n-1)(n-2)\dfrac{1-\varphi'^2}{\varphi^2}$. 可见, 要求$I\times S^{n-1}$有平坦的Ricci曲率只能是$\varphi=r$.取$\varphi(t)=\mbox{sn} _k(t)$时, 其有常截面曲率$k$. 
 
 ### 4.6 体积微元、Jacobi算子
 
 我们在微分流形中可以对微分形式进行积分, 却无法像数学分析中一样对函数进行积分, 现在我们有了黎曼度量, 可以完成这个愿望了. 
 
-**定义4.6.1**: 对任何黎曼流形$(M^n,g)$, 任取局部有限的坐标覆盖$\lbrace (U_\alpha,x_\alpha^1,\cdots,x_\alpha^n)\rbrace$和一个从属于其的单位分解$\lbrace \rho_\alpha\rbrace$, 定义$\mbox{d}M=\mbox{dvol}:=(\rho_\alpha\sqrt{\det[g_ {ij}^\alpha]})\mbox{d}x_\alpha^1\wedge\cdots\wedge\mbox{d}x_\alpha^n$为其上的**体积微元**. 
+**定义4.6.1**: 对任何黎曼流形$(M^n,g)$, 任取局部有限的坐标覆盖$\lbrace (U_ \alpha,x_ \alpha^1,\cdots,x_ \alpha^n)\rbrace$和一个从属于其的单位分解$\lbrace \rho_ \alpha\rbrace$, 定义$\mbox{d}M=\mbox{dvol}:=(\rho_ \alpha\sqrt{\det[g_ {ij}^\alpha]})\mbox{d}x_ \alpha^1\wedge\cdots\wedge\mbox{d}x_ \alpha^n$为其上的**体积微元**. 
 
 **注4.6.1**: 容易验证上述定义无关于局部覆盖和单位分解的选取. 当黎曼流形可定向时, 在符合定向的坐标覆盖下其是一个正定$n-$形式, 此时称其为**体积形式**. 
 
@@ -708,7 +708,7 @@ $\begin{aligned}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace 
 
 **命题5.5.1**: 设$(M^n,g)$是开流形, 对任意$p\in M$, 总存在$\gamma(0)=p$的一个射线$\gamma$. 
 
-*Proof.* 对任意$k\in\mathbb{N}$, 存在$q_k\in M$使得$d(p,q_k)=k$, 其所连单位速度测地线为$\gamma_k$, 记$\Theta_k:=\gamma_k'(0)\in U_pM$, 取$\Theta$为$\lbrace \Theta_k\rbrace$的一个聚点, $\gamma_\Theta$即为所求. $\quad\Box$
+*Proof.* 对任意$k\in\mathbb{N}$, 存在$q_k\in M$使得$d(p,q_k)=k$, 其所连单位速度测地线为$\gamma_k$, 记$\Theta_k:=\gamma_k'(0)\in U_pM$, 取$\Theta$为$\lbrace \Theta_k\rbrace$的一个聚点, $\gamma_ \Theta$即为所求. $\quad\Box$
 
 **定理5.5.1**: 设$(M^n,g)$是开流形, 且任意单位切向量的Ricci曲率均非负, 则对任意$p\in M$, 存在$c=c(p)>0$, 使得$\mbox{vol}(B(p,r))\geqslant c\cdot r$. 
 
@@ -734,13 +734,13 @@ $\begin{aligned}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace 
 
 **定义5.5.4**: $\gamma:\mathbb{R}\to M$称为一条**直线**, 如果对任意$r,s\in\mathbb{R}$, $d(\gamma(t),\gamma(s))=|t-s|$. 
 
-**定义5.5.5**: 设$\gamma:[0,+\infty)\to M$是一条射线, 则关于$\gamma$的**Busemann函数**$b_\gamma:M\to\mathbb{R}$定义为$b_\gamma(x):=\lim\limits_ {t\to+\infty}(d(x,\gamma(t))-t)$. 
+**定义5.5.5**: 设$\gamma:[0,+\infty)\to M$是一条射线, 则关于$\gamma$的**Busemann函数**$b_ \gamma:M\to\mathbb{R}$定义为$b_ \gamma(x):=\lim\limits_ {t\to+\infty}(d(x,\gamma(t))-t)$. 
 
 Busemann函数定义中的极限的存在性利用三角不等式以及距离函数的Lipschitz性质即证. 
 
-**引理5.5.1**: 若$(M^n,g)$的Ricci曲率非负, 则对其上一Busemann函数$b_\gamma$, 有$\Delta b_\gamma\leqslant0$. 
+**引理5.5.1**: 若$(M^n,g)$的Ricci曲率非负, 则对其上一Busemann函数$b_ \gamma$, 有$\Delta b_ \gamma\leqslant0$. 
 
-*Proof.* 对$b_\gamma^T(x):=d(x,\gamma(t))-t$, 有$\Delta b_\gamma^T(x)\leqslant\dfrac{n-1}{d(x,\gamma(T))}$, 令$T\to+\infty$即得结论. $\quad\Box$
+*Proof.* 对$b_ \gamma^T(x):=d(x,\gamma(t))-t$, 有$\Delta b_ \gamma^T(x)\leqslant\dfrac{n-1}{d(x,\gamma(T))}$, 令$T\to+\infty$即得结论. $\quad\Box$
 
 下面我们来介绍Cheeger和Gromoll的“分离定理”: 
 
@@ -846,7 +846,7 @@ Gromov的预紧性定理是说:
 
 这个结果是Gromov, Peterson和Wu做的, 而Perelman的稳定性定理同样是研究这个空间: 
 
-**定理6.3.4**: 若一族$M_\alpha^n\in\mathcal{M} _ {\cdot,v,-k}^{D,\cdot,\cdot}(n)$收敛到$X^n$, 则$M_\alpha^n$同胚于$X^n$. 
+**定理6.3.4**: 若一族$M_ \alpha^n\in\mathcal{M} _ {\cdot,v,-k}^{D,\cdot,\cdot}(n)$收敛到$X^n$, 则$M_ \alpha^n$同胚于$X^n$. 
 
 **注6.3.1**: 体积的下界保证了维数不会坍缩. 
 
