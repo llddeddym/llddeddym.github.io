@@ -632,7 +632,11 @@ $$\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}\bigg\ve
 
 **定理5.3.4**: 设$(M^n,g)$是完备黎曼流形, $\gamma:[a,b]\to M$是单位速度测地线, 设$t_0\in(a,b)$满足$\gamma(t_0)$与$\gamma(a)$沿$\gamma$共轭, 则$d(\gamma(a),\gamma(b))<L(\gamma)$. 
 
-*Proof.* 设$J$是沿$\gamma\vert_ {[a,t_0]}$的非零正规Jacobi场, 满足$J(a)=J(t_0)=0$. 定义$Y(t)$是沿$\gamma$的对$J(t)$的零延拓, 光滑映射$\varphi:[a,b]\to M$满足$\varphi(a)=\varphi(b)=0$, $\varphi(t_0)=1$, $E(t)$是沿$\gamma$的平行向量场, 并且$E(t_0)=-\nabla_ {\gamma'}J\vert_ {t_0}$. 对$\lambda\in(0,\varepsilon)$, 置$W(t):=Y(t)+\lambda\varphi(t)E(t)$, 取变分为$\alpha(t,u,v)=\alpha(t,s,s)=\alpha(t,s):=\exp_ {\gamma(t)}sW(t)$. 则此时第二变分公式中最后一项为$0$, 此时$\dfrac{\partial^2L}{\partial S^2}\bigg\vert_ {(0,0)}=I_a^b(W,W)=I_a^b(Y,Y)+2\lambda I_a^b(Y,\varphi E)+O(\lambda^2)=0+2\lambda I_a^{t_0}(I,\varphi E)+O(\lambda^2)=2\lambda\langle\nabla_TJ,\varphi E\rangle\vert_a^{t_0}+O(\lambda^2)=-2\lambda\\|\nabla_TJ\\vert_ {t_0}^2+O(\lambda^2)$, 这说明对足够小的$\lambda$, 上式严格小于$0$, 于是$\gamma$非极小测地线, 对足够小的$s$, $\alpha(\cdot,s)$比之更短. 
+*Proof.* 设$J$是沿$\gamma\vert_ {[a,t_0]}$的非零正规Jacobi场, 满足$J(a)=J(t_0)=0$. 定义$Y(t)$是沿$\gamma$的对$J(t)$的零延拓, 光滑映射$\varphi:[a,b]\to M$满足$\varphi(a)=\varphi(b)=0$, $\varphi(t_0)=1$, $E(t)$是沿$\gamma$的平行向量场, 并且$E(t_0)=-\nabla_ {\gamma'}J\vert_ {t_0}$. 对$\lambda\in(0,\varepsilon)$, 置$W(t):=Y(t)+\lambda\varphi(t)E(t)$, 取变分为$\alpha(t,u,v)=\alpha(t,s,s)=\alpha(t,s):=\exp_ {\gamma(t)}sW(t)$. 则此时第二变分公式中最后一项为$0$, 此时
+
+$$\begin{aligned}&\dfrac{\partial^2L}{\partial S^2}\bigg\vert_ {(0,0)}\\=&I_a^b(W,W)\\=&I_a^b(Y,Y)+2\lambda I_a^b(Y,\varphi E)+O(\lambda^2)\\=&0+2\lambda I_a^{t_0}(I,\varphi E)+O(\lambda^2)\\=&2\lambda\langle\nabla_TJ,\varphi E\rangle\vert_a^{t_0}+O(\lambda^2)\\=&-2\lambda\|\nabla_TJ\| _ {t_0}^2+O(\lambda^2),\end{aligned}$$
+
+这说明对足够小的$\lambda$, 上式严格小于$0$, 于是$\gamma$非极小测地线, 对足够小的$s$, $\alpha(\cdot,s)$比之更短. 
 
 基于此我们可以对直径进行估计, 有“Myers定理”: 
 
@@ -654,17 +658,19 @@ $$\begin{aligned}\displaystyle&\dfrac{\partial^2L}{\partial v\partial u}\bigg\ve
 
 证明略过. 
 
-**定义5.3.2**: 对流形$M$及其中一点$p$, $A^M_ {s,S}(p):=\lbrace x\in M|s\leqslant d(x,p)\leqslant S\rbrace$是以$p$为中心的一个**环形区域**. 
+**定义5.3.2**: 对流形$M$及其中一点$p$, $A^M_ {s,S}(p):=\lbrace x\in M\mid s\leqslant d(x,p)\leqslant S\rbrace$是以$p$为中心的一个**环形区域**. 
 
 一个简单的观察是在空间形式$S^n_k$上环形区域的体积不依赖于中心的选取, 下面来证明“Bishop-Gromov体积比较定理”. 
 
 **定理5.3.6**: 设$(M^n,g)$是完备黎曼流形, $Ric\geqslant(n-1)k$, 若$0<r<R$, $0<s<S$, $r\geqslant s$, $R\geqslant S$, 则$\dfrac{\mbox{vol}(A_ {s,S}^M(p))}{\mbox{vol}(A_ {r,R}^M(p))}\geqslant\dfrac{\mbox{vol}(A_ {s,S}^{S_k^n})}{\mbox{vol}(A_ {r,R}^{S_k^n})}$. 
 
-*Proof.* 只需证明$\dfrac{\mbox{vol}(A_ {x,y}^M(p))}{\mbox{vol}(A_ {x,y}^{S_k^n})}$关于$x,y$都递减. 我们有$\mbox{vol}(A_ {x,y}^M(p))=\displaystyle\int_ {U_pM}\mbox{d}\Theta\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t$, 所以积分时我们仅考虑$x\leqslant\mbox{cut} _p(\Theta)$的情况.由Gromov定理和**引理5.3.1**, 对任意$z\geqslant y$, $\dfrac{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t}{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}\geqslant\dfrac{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t}{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}$.
+*Proof.* 只需证明$\dfrac{\mbox{vol}(A_ {x,y}^M(p))}{\mbox{vol}(A_ {x,y}^{S_k^n})}$关于$x,y$都递减. 我们有$\mbox{vol}(A_ {x,y}^M(p))=\displaystyle\int_ {U_pM}\mbox{d}\Theta\int_ {\min\lbrace x,\mbox{cut} _ p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _ p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t$, 所以积分时我们仅考虑$x\leqslant\mbox{cut}  _p(\Theta)$的情况.由Gromov定理和**引理5.3.1**, 对任意$z\geqslant y$, 
+
+$$\dfrac{\int_ {\min\lbrace x,\mbox{cut} _ p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _ p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t}{\int_ {\min\lbrace x,\mbox{cut} _ p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _ p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}\geqslant\dfrac{\int_ {\min\lbrace x,\mbox{cut} _ p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _ p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t}{\int_ {\min\lbrace x,\mbox{cut} _ p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _ p(\Theta)\rbrace}\mbox{sn} _ k^{n-1}(t)\mbox{d}t}.$$
 
 于是有
 
-$\begin{aligned}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t&\geqslant\dfrac{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\\&=\dfrac{\int_ {x}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}{\int_ {x}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\\&\geqslant\dfrac{\int_ {x}^{y}\mbox{sn} _k^{n-1}(t)\mbox{d}t}{\int_ {x}^{z}\mbox{sn} _k^{n-1}(t)\mbox{d}t}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\end{aligned}$, 
+$$\begin{aligned}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t&\geqslant\dfrac{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}{\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\\&=\dfrac{\int_ {x}^{\min\lbrace y,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}{\int_ {x}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\mbox{sn} _k^{n-1}(t)\mbox{d}t}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\\&\geqslant\dfrac{\int_ {x}^{y}\mbox{sn} _k^{n-1}(t)\mbox{d}t}{\int_ {x}^{z}\mbox{sn} _k^{n-1}(t)\mbox{d}t}\int_ {\min\lbrace x,\mbox{cut} _p(\Theta)\rbrace}^{\min\lbrace z,\mbox{cut} _p(\Theta)\rbrace}\det\mathbb{A}(t,\Theta)\mbox{d}t\end{aligned},$$ 
 
 其中第二个不等号是基本的“糖水不等式”, 将此式对$U_pM$积分, 就得到欲证结论. $\quad\Box$
 
