@@ -10,7 +10,7 @@ tags:
 
 **问题**：在$\triangle ABC$中，$O$是外心，$M$是$BC$中点，$OM$与$\odot(BOC)$第二交点为$N$，$AO$与$\odot(BOC)$第二交点为$G$，$K$是$AN$中点，求证：$K$在$\odot(AO)$与$\odot(OMG)$的根轴上.
 
-<img src="https://llddeddym.github.io/images/2020-09-20(1).png" alt="Flag Icon" role="img" aria-label="(1)" />
+<img src="https://llddeddym.github.io/images/2020-09-20(1).png"/>
 
 其本质当然是要刻画出两圆的第二交点，然后证明三点共线，所以这里就说其为“三点共线”问题了。
 
@@ -24,7 +24,7 @@ tags:
 
 这个引理的证明只是完全四边形调和性质的简单应用，留给读者补全。据此我们得到$\triangle AA'N$的垂心就是$NG\cap BC=T$，于是$NA'\perp AT$，$OK\perp AT$，即$K$在根轴上.
 
-<img src="https://llddeddym.github.io/images/2020-09-20(2).png" alt="Flag Icon" role="img" aria-label="(2)" />
+<img src="https://llddeddym.github.io/images/2020-09-20(2).png"/>
 
 
 
