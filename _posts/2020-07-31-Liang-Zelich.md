@@ -39,7 +39,8 @@ $t_P=1$时就是Neuberg曲线上熟知的四Euler线共点.
 
 <img src="https://llddeddym.github.io/images/2020-07-31(1).png"/>
 
-**定理2的证明**：首先由位似知这两三角形正交，且正交中心分别是$P$和$X_3P$上一点，所以由Sondat定理（两正交且透视三角形的两正交中心与透视中心共线），透视中心在$X_3P$上；另一方面，由[上篇文章链接]中的引理1，透视中心在过$ABCX_4P$五点的圆锥曲线上(等角共轭点在$X_3gP$上)，于是这点恰为$\Phi(P)$.
+**定理2的证明**：首先由位似知这两三角形正交，且正交中心分别是$P$和$X_3P$上一点，所以由Sondat定理（两正交且透视三角形的两正交中心与透视中心共线），透视中心在$X_3P$上；另一方面，由[一个重要引理及其应用](https://llddeddym.github.io/posts/2020/07/2020-07-13-lemma/)中的**引理1**，透视中心在过$ABCX_4P$五点的圆锥曲线上(等角共轭点在$X_3gP$上)，于是这点恰为$\Phi(P)$.
+
 ****
 **例1**：内心$I$的Ceva三角形$\triangle DEF$的九点圆心$N$在内心$I$和外心$O$的连线上.
 
@@ -85,4 +86,4 @@ $t_P=-1$时就得到了**例4**.
 
 <img src="https://llddeddym.github.io/images/2020-07-31(5).png"/>
 
-下面证明$T$是$P\Phi(P)$中点.记$Q:=gP$，**定理1**告诉我们$ \triangle O_AO_BO_C$和$ \triangle H_dH_eH_f $正交且透视，设$P$关于$T$的对称点为$R$，结合$ \triangle O_AO_BO_C$和$\triangle ABC$位似，$AR//H_dS$等等，由[上篇文章链接]中的引理1有$ Q, $ $ R $在$ \triangle ABC $的同一外接等轴双曲线上，故由完全四边形等角线知$R\equiv\Psi(P)$.
+下面证明$T$是$P\Phi(P)$中点.记$Q:=gP$，**定理1**告诉我们$ \triangle O_AO_BO_C$和$ \triangle H_dH_eH_f $正交且透视，设$P$关于$T$的对称点为$R$，结合$ \triangle O_AO_BO_C$和$\triangle ABC$位似，$AR//H_dS$等等，由[一个重要引理及其应用](https://llddeddym.github.io/posts/2020/07/2020-07-13-lemma/)中的**引理1**有$ Q, $ $ R $在$ \triangle ABC $的同一外接等轴双曲线上，故由完全四边形等角线知$R\equiv\Psi(P)$.
