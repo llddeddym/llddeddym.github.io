@@ -45,7 +45,7 @@ tags:
 
 **引理3.2**：对$\triangle ABC$的外接等轴双曲线$\mathcal{H}$,设其等角共轭像为$l$,则$l$与$BC$交点与$A$的连线关于$\angle BAC$的等角线即为$\mathcal{H}$在$A$处的切线.
 
-*Proof.* 考虑$\mathcal{H}$上一点$A_1$及其等角共轭点$A_1^*$,则$AA_1$和$AA_1^*$是$\angle BAC$的等角线,于是$A_1\to A$时,前者就是$\mathcal{H}$在$A$处的切线,后者则由$A_1^*\to l\cap BC$得到结论成立.$\quad\Box$
+*Proof.* 考虑$\mathcal{H}$上一点$A_1$及其等角共轭点$A_1 ^ * $,则$AA_1$和$AA_1^ * $是$\angle BAC$的等角线, 于是$A_1\to A$时,前者就是$\mathcal{H}$在$A$处的切线,后者则由$A_1^ * \to l\cap BC$得到结论成立.$\quad\Box$
 
 **引理3.3**：$\triangle ABC$垂心为$H$,$BE,CF$为两高,$D$在$BC$上,$P$在$EF$上,且$AD,AP$是$\angle BAC$的等角线,$(PQ,EF)=-1$,则$DP\bot AQ$.
 
