@@ -10,29 +10,28 @@ tags:
 
 本文主要目的是为了介绍**Xuming Liang**和**Ivan Zelich**在https://ijgeometry.com/wp-content/uploads/2015/10/1.pdf这篇文章中得到的一些结果（并不会介绍证明，感兴趣的读者可以自己点进链接去看），并简要介绍一些这些结果的应用。
 
-****
 **Liang-Zelich定理**将一些对Neuberg曲线(一点与其等角共轭点的连线平行于Euler线上的点的轨迹)的结果完全地推广到了以Euler线上点为枢点的主等角共轭三次曲线(一点与其等角共轭点的连线恒过Euler线上一定点的点的轨迹)上，主要是以下三个结果：
 
 **Liang-Zelich第一定理**：给定$\triangle ABC$和点$P$，若$P$在$\triangle ABC$的一个以Euler线上为枢点的主等角共轭三次曲线上，则它也在其垂足三角形的相同曲线上.换言之，设$\triangle ABC$和$P$的垂足三角形$\triangle P_aP_bP_c$的外心、垂心分别为$O,H$和$O_P,H_P$,$P$关于$\triangle ABC$和$\triangle P_aP_bP_c$的等角共轭点分别为$gP,Q$,则$PgP$分$OH$的比例和$PQ$分$O_PH_P$的比例相等.
 
 这里的“相等”就好比方说，一个点在原三角形的Neuberg曲线上，则也在其垂足三角形的Neuberg曲线上，这个结果毫无疑问是极度优美的.
-****
+
 下面定义$P$和其等角共轭点$gP$，设$PgP\cap OH=T_P,t_P:=\dfrac{\overline{T_PO}}{\overline{T_PH}}$.($P$在Neuberg曲线上时$t_P$=1)
 
 **Liang-Zelich第二定理**：将$\triangle BCP$,$\triangle CAP$,$\triangle ABP$的外心组成的三角形($P$的Carnot三角形)和$P$关于$BC,CA,AB$的对称点组成的三角形($P$的反射三角形)分别关于$P$做比为$\dfrac{1}{t}$和$t$的位似，则得到的两个新三角形与$\triangle ABC$透视均当且仅当$t=t_P$.
 
 举两个特例，第一个是$t_P=\dfrac{1}{2}$的情形，这时$PgP$连线过垂心的反补点$X_{20}$($P$在Darboux曲线上),这直接推出$P$的垂足三角形与原三角形透视；另一个特例是$t_P=1$，这时$P$在Neuberg曲线上，也即$P$的反射三角形和Carnot三角形均与原三角形透视.
-****
+
 下面定义一个神妙记号，定义$\triangle ABC$的$(t,P)$-Euler线是经过$\triangle ABC$的外心在关于$P$做比为$t$的位似下的像以及$\triangle ABC$的垂心的直线.
 
 **Liang-Zelich第三定理**：$\triangle BCP$,$\triangle CAP$,$\triangle ABP$的$(t,P)$-Euler线交于$\triangle ABC$的$(t,P)$-Euler线上一点当且仅当$t=t_P$.
 
 $t_P=1$时就是Neuberg曲线上熟知的四Euler线共点.
-****
+
 下面这个定理也来自于这篇论文，据闻可以推出**Liang-Zelich第三定理**，所以我们姑且向前撤退，直接承认它而不做证明.
 
 **定理1**：给定两正交且透视三角形$\triangle ABC$和$\triangle DEF$，两三角形垂心为$H,H'$，两正交中心为$P,P'(AP\bot EF,DP'\bot BC)$，$\triangle BCP$,$\triangle CAP$,$\triangle ABP$的垂心分别为$H_A,H_B,H_C$，则$\triangle H_AH_BH_C$和$\triangle DEF$也正交且透视，且正交中心为$HP'\cap H'P$，在过$DEFH'P'$五点的锥线上.
-****
+
 下为方便叙述，引入Cundy-Parry变换.记外心$X_3$,垂心$X_4$,则定义$\Phi(P)=X_3P\cap X_4gP$,$\Psi(P)=X_4P\cap X_3gP$,回忆所谓“完全四边形等角线”,显然有$\Phi(P)=g\Psi(P),\Phi(\Phi(P))=\Psi(\Psi(P))=P$.下面这个定理刻画了**Liang-Zelich第二定理**中的一个透视中心.
 
 **定理2**：与$P$的Carnot三角形关于$P$位似且与$\triangle ABC$透视的三角形与$\triangle ABC$的透视中心为$\Phi(P)$.
@@ -47,11 +46,11 @@ $t_P=1$时就是Neuberg曲线上熟知的四Euler线共点.
 <img src="https://llddeddym.github.io/images/2020-07-31(2).png"/>
 
 **例1的证明**：设$\triangle I_AI_BI_C$是旁心三角形，熟知$I_AO\bot EF$，令$\triangle D'E'F'$为$O$关于$I_AI_BI_C$的反垂足三角形，$N'$是其九点圆心.令$O'$是$O$关于$\triangle D'E'F'$的等角共轭点，由$\triangle I_AI_BI_C$的外心$Be\in OI$知$O'\in OI$. 又$D'O'\bot I_BI_C$,故$D'O'//AI_A$，于是$\triangle D'E'F'$和$\triangle DEF$的位似中心在$OI$上. 对$\triangle I_AI_BI_C$和$\triangle D'E'F'$用**Liang-Zelich第一定理**由$O$是$\triangle I_AI_BI_C$的九点圆心知$N'\in OO'$，故由位似知$N\in OI$.
-****
+
 **例2**：对McCay曲线上一点$P(t_P=0)$，$P$的Ceva三角形和圆Ceva三角形位似，$\measuredangle PAB+\measuredangle PBC+\measuredangle PCA=\dfrac{\pi}{2}$.
 
 **例2的证明**：设$\triangle BPC$的外心为$O_1$，则由**Liang-Zelich第二定理**和**定理2**知$AgP//PO_1$，剩下的工作就是简单的导角了.
-****
+
 **例3**：对Thomson曲线上一点$P(t_P=-\dfrac{1}{2})$，$P$的三线性极线与外心$O$和$P$的连线垂直.
 
 先证明一个引理.
