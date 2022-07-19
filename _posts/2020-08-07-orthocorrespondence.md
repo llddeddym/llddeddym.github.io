@@ -35,7 +35,7 @@ tags:
 
 这为我们判定一点$X$是否在$O(P)$上给了一个很好的判定方法，注意到一点的垂足三角形的外心恰好是其与等角共轭点连线的中点，所以只需要证明$X$的等角共轭点的反射三角形（关于三边对称点组成的三角形）的Euler线过$P$即可.
 
-下面是我所提出的一个命题，后来被豪神一个引理证明确实跟344是等价的（引理会在本文最后提一嘴）.首先回忆[上篇文章]中提过的Napoleon-Feuerbach cubic和Cundy-Parry变换的定义.
+下面是我所提出的一个命题，后来被豪神一个引理证明确实跟344是等价的（引理会在本文最后提一嘴）.首先回忆[Liang-Zelich定理及其应用简介](https://llddeddym.github.io/posts/2020/07/2020-07-31-Liang-Zelich/)中提过的Napoleon-Feuerbach cubic和Cundy-Parry变换的定义.
 
 **定理2**：对于Napoleon-Feuerbach cubic上一点$P$，$\Phi(P)\in O(P)$,且$O(P)$在$A,B,C$三点处的切线交于$\Phi(P)$.
 
@@ -63,7 +63,7 @@ tags:
 
 <img src="https://llddeddym.github.io/images/2020-08-07(5).png"/>
 
-下面对于$O(P)$上逼近$A$的一点，要证$A\Phi(P)$与$O(P)$相切，只要证明其等角共轭点趋于$R:=A\Psi(P)\cap BC$. 所以只需要证$R$的反射三角形的Euler线过$P$，注意到$A$恰好是这个三角形的外心，所以只需要证$AP$为其Euler线，下面考虑 [Liang-Zelich定理及其应用简介](https://llddeddym.github.io/posts/2020/07/2020-07-31-Liang-Zelich/) 中的**定理2**，问题转化为证明$\triangle B\Phi(P)C$的外心$O_1$在$R$的反射三角形的Euler线上. 设$A\Phi(P)\cap OH=M$. 令$AMO_1D$是一个平行四边形,由**引理3**得$AR//MO_1$（$\Phi(P)\Psi(P)//OH$），于是$D\in AR$. 设$E$和$F$是$D$关于$AC$, $AB$的对称点，于是$EF\bot O_1D$. 而由$\measuredangle DAO=\measuredangle HAM=\measuredangle OO_1D$再次用平行四边形等角线得$\measuredangle AOD=\measuredangle MOO_1=\measuredangle MHA$. 故$\triangle AOD \sim\triangle AHM$. 于是$\dfrac{DO_1}{AD}=\dfrac{AM}{AD}=\dfrac{AH}{AO}=2\cos\angle EDF$. 故$DO_1EF$是一个垂心组.由位似即可得$R$的反射三角形的垂心在$AO_1上$，这就完成了证明. $\quad\Box$
+下面对于$O(P)$上逼近$A$的一点，要证$A\Phi(P)$与$O(P)$相切，只要证明其等角共轭点趋于$R:=A\Psi(P)\cap BC$. 所以只需要证$R$的反射三角形的Euler线过$P$，注意到$A$恰好是这个三角形的外心，所以只需要证$AP$为其Euler线，下面考虑[Liang-Zelich定理及其应用简介](https://llddeddym.github.io/posts/2020/07/2020-07-31-Liang-Zelich/)中的**定理2**，问题转化为证明$\triangle B\Phi(P)C$的外心$O_1$在$R$的反射三角形的Euler线上. 设$A\Phi(P)\cap OH=M$. 令$AMO_1D$是一个平行四边形,由**引理3**得$AR//MO_1$（$\Phi(P)\Psi(P)//OH$），于是$D\in AR$. 设$E$和$F$是$D$关于$AC$, $AB$的对称点，于是$EF\bot O_1D$. 而由$\measuredangle DAO=\measuredangle HAM=\measuredangle OO_1D$再次用平行四边形等角线得$\measuredangle AOD=\measuredangle MOO_1=\measuredangle MHA$. 故$\triangle AOD \sim\triangle AHM$. 于是$\dfrac{DO_1}{AD}=\dfrac{AM}{AD}=\dfrac{AH}{AO}=2\cos\angle EDF$. 故$DO_1EF$是一个垂心组.由位似即可得$R$的反射三角形的垂心在$AO_1上$，这就完成了证明. $\quad\Box$
 
 下面来看[纯几何吧609](https://tieba.baidu.com/p/4889145061)，又是T神的一个作品.
 
