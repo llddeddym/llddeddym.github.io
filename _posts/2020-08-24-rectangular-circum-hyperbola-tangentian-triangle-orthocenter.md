@@ -49,7 +49,7 @@ tags:
 
 **引理3.3**：$\triangle ABC$垂心为$H$,$BE,CF$为两高,$D$在$BC$上,$P$在$EF$上,且$AD,AP$是$\angle BAC$的等角线,$(PQ,EF)=-1$,则$DP\bot AQ$.
 
-<img src="llddeddym.github.io/images/2020-08-24(1).png"/>
+<img src="https://llddeddym.github.io/images/2020-08-24(1).png"/>
 
 *Proof.* 设$D$在$AB,AC$上的投影分别为$V,W$,$VW$交$AQ$于$U$,则$\dfrac{FV}{VB}=\dfrac{CD}{DB}=\dfrac{FP}{PE}$,故$PV\bot AC$,同理$PW\bot AB$,也即$P$ 是$\triangle AVW$的垂心,且$DP$中点$M$也为$VW$中点.下设$AP\cap VW=N$,则$NP\cdot NA=NV\cdot NW=NU\cdot NM$(这是$(UN,VW)=-1$保证的).故$P$也为$\triangle AUM$垂心,故$MP\bot AU$,也即结论成立.$\quad\Box$
 
@@ -57,5 +57,5 @@ tags:
 
 *Proof.* 设$\triangle ABC$的垂心为$H\in\mathcal{H}$,垂三角形为$\triangle DEF$,三切线围成的三角形为$\triangle A_1A_2A_3$,则由$EF$ 和$BC$ 调和分割$AH$知$BC$的极点$A_1\in EF$.记$\mathcal{H}$ 的等角共轭像与$BC$ 中点为$U$, 于是$A_1$和$OU$极点的连线恰为$U$的极线,于是由引理3.2,只需证明$U$ 的极线垂直于$AU$ 关于$\angle BAC$的等角线.由推论3.1,$U$的极线与$BC$的交点恰为$U$ 关于$\triangle DEF$的等角共轭点$V$,结合$B,C$是$\triangle DEF$的两个旁心立得$(UV,BC)=-1$, 下面考虑到$D(AC,A_2A_3)=-1$,故$A_2A_3$被$A$和$A_2A_3\cap BC$ 调和分割,配极即得$A(BC,A_1A_3)=-1$,故由引理3.3得$A_1V\bot A_2A_3$,轮换即得结论成立.$\quad\Box$
 
-<img src="llddeddym.github.io/images/2020-08-24(2).png"/>
+<img src="https://llddeddym.github.io/images/2020-08-24(2).png"/>
 
