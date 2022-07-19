@@ -1,4 +1,11 @@
-# 一个角度小题的来龙去脉
+---
+title: '一个角度小题的来龙去脉'
+date: 2020-12-23
+permalink: /posts/2020/12/2020-12-23-a-problem-about-angle/
+tags:
+  - QL-Cu1
+  - cross-ratio
+---
 
 前阵子河北衡水的刘通老师在微信上问了我一个题：
 
