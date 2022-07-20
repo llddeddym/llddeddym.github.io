@@ -31,7 +31,7 @@ $$\begin{aligned}&\measuredangle KVI\\=&\measuredangle YUI\\=&\measuredangle YUS
 
 **推广**：给定$\odot O$，$\odot O$内一定点$P\neq O$，设$OP$中点为$P'$，再给定$\odot(OP)$内一定点$Q\neq P'$，$B$是$O$在$AP$上的投影，$C$是$P'$在$BQ$上的投影，则若$A$在$\odot O$上跑一圈，$C$便在$\odot(P'Q)$上跑四圈.
 
-<img src="https://llddeddym.github.io/images/2022-05-03.mp4"/>
+<video src="https://llddeddym.github.io/images/2022-05-03.mp4"/>
 
 ****
 
