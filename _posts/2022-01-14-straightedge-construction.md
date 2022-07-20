@@ -1,7 +1,7 @@
 ---
 title: '对俄罗斯总理单尺作图题的推广'
-date: 2022-01-04
-permalink: /posts/2022/01/2022-01-04-straightedge-construction/
+date: 2022-01-14
+permalink: /posts/2022/01/2022-01-14-straightedge-construction/
 tags:
   - straightedge construction
 ---
@@ -18,5 +18,5 @@ tags:
 
 *Solution.* 若$C$​​​不是$AB$​​​中某点，作$CD$​​​交$AE$​​​于$X$​​​，$AC$​​​交$BD$​​​于$Y$​​​，$BE$​​​交$XY$​​​于$Z$​​​，则对$AEBDCC$​​​由Pascal定理知$CZ$​​​为$C$​​​处切线，任取$AC$​​​上一点$W$​​，​​​作$BW$​交$CZ$​于$U$​，$AU$​交$BC$​于$V$，则$WV$与$AB$​的交点$P$就是所求直线的垂足，也即$CP$就是所求直线。$\quad\Box$
 
-<img src="https://llddeddym.github.io/images/2022-01-04.png"/>
+<img src="https://llddeddym.github.io/images/2022-01-14.png"/>
 
