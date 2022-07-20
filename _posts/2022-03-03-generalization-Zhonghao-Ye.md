@@ -1,7 +1,7 @@
 ---
 title: '对叶中豪老师一个命题的证明与推广'
 date: 2022-03-03
-permalink: /posts/2022/02/2022-03-03-generalization-Zhonghao-Ye/
+permalink: /posts/2022/03/2022-03-03-generalization-Zhonghao-Ye/
 tags:
   - Ceva point
   - cross point
