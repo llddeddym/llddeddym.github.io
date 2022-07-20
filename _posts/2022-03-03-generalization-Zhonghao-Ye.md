@@ -32,19 +32,19 @@ tags:
 
 **引理6**：给定$\triangle ABC$​​，设$l$​​是直线，$\mathcal{C}$​​是$\triangle ABC$​​的外接锥线，则$l$​​关于$\mathcal{C}$​​的极点为$\operatorname{cevadiv}(\mathbf{T}(l),\mathbf{P}(\mathcal{C}))$​。
 
-![QQ图片20220303193047](C:\Users\张峻铭\Desktop\图\QQ图片20220303193047.png)
+<img src="https://llddeddym.github.io/images/2022-03-03(2).png"/>
 
 *Proof.* 设$A\mathbf{T}(l)$交$BC$于$U$，$l$交$BC$于$V$，$l$关于$\mathcal{C}$的极点为$X$，$BC$关于$\mathcal{C}$的极点为$D$，则$U$、$V$调和分割$BC$，故$U$、$D$、$X$均在$V$关于$\mathcal{C}$的极线上，轮换即得$X$是$\mathbf{T}(l)$的Ceva三角形与$\mathbf{P}(\mathcal{C})$的反Ceva三角形的透视中心，也即$X=\operatorname{cevadiv}(\mathbf{T}(l),\mathbf{P}(\mathcal{C}))$。$\quad\Box$
 
 **引理7**：给定$\triangle ABC$​及一点$X$​，则$\mathbf{P}(\mathbf{g}^X(l))=\mathbf{g}^X(\mathbf{T}(l))$​​。
 
-![QQ图片20220303194651](C:\Users\张峻铭\Desktop\图\QQ图片20220303194651.png)
+<img src="https://llddeddym.github.io/images/2022-03-03(3).png"/>
 
 *Proof.* 设$l$分别交$AC$、$AB$于$U$、$V$，则$BU$、$CV$、$A\mathbf{T}(l)$共点，注意到$\mathbf{g}^X(l)$在$B$处的切线恰好是$\mathbf{g}^X(BU)$，对称即知$BC$关于$\mathbf{g}^X(l)$的极点$D$在$\mathbf{g}^X$下的像恰为先前$BU$、$CV$、$A\mathbf{T}(l)$所共点。于是轮换对称即知$\mathbf{P}(\mathbf{g}^X(l))=\mathbf{g}^U(\mathbf{T}(l))$。$\quad\Box$
 
 **引理8**：给定$\triangle ABC$​及两点$X$​、$Y$​，$Y$​关于$\triangle ABC$​的Ceva三角形为$\triangle DEF$​，则$\operatorname{cevadiv} _ {\triangle ABC}(Y,X)=\mathbf{g} _ {\triangle DEF}^Y(X)$​。
 
-![QQ图片20220303200247](C:\Users\张峻铭\Desktop\图\QQ图片20220303200247.png)
+<img src="https://llddeddym.github.io/images/2022-03-03(4).png"/>
 
 *Proof.* 设$Z=\operatorname{cevadiv} _ {\triangle ABC}(Y,X)$，$DZ$交$AX$于$U$，则由定义知$D[X,U;A,B]=-1$，结合$D[E,F;A,B]=-1$即知$D[X,Y;E,F]=D[Z,Y;F,E]$，轮换即知$Z=\mathbf{g} _ {\triangle DEF}^Y(X)$。$\quad\Box$
 
@@ -64,6 +64,6 @@ tags:
 
 **推广**：给定$\triangle ABC$及一点$U$，$k,l$​是两条直线，$k$关于$\mathbf{g}^U(l)$的极点为$P$，$l$关于$\mathbf{g}^U(k)$的极点为$X$，$Y=\mathbf{T}(l)$，$Q=\mathbf{g}^U(P)$，则$X$、$Y$、$Q$​三点共线。
 
-![QQ图片20220303205952](C:\Users\张峻铭\Desktop\图\QQ图片20220303205952.png)
+<img src="https://llddeddym.github.io/images/2022-03-03(5).png"/>
 
 当$k$为无穷远线，$U$为$\triangle ABC$内心时，就化为原来的命题。
