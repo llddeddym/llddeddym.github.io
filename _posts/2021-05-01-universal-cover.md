@@ -76,4 +76,4 @@ $\quad\Box$
 
 ****
 
-主要查阅的资料是https://www.home.uni-osnabrueck.de/mfrankland/Math527/Math527 _ 0308.pdf, 里面还讲了fibration变为Serre fibration的情形, 感兴趣的读者可以去看看. 
+主要查阅的资料是[Math 527 - Homotopy Theory-Homotopy pullbacks-Martin Frankland](https://www.home.uni-osnabrueck.de/mfrankland/Math527/Math527_0308.pdf), 里面还讲了fibration变为Serre fibration的情形, 感兴趣的读者可以去看看. 
