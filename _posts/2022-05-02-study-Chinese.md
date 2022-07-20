@@ -4,6 +4,8 @@ date: 2022-05-02
 permalink: /posts/2022/05/2022-05-02-study-Chinese/
 ---
 
+前情提要：[第一篇](https://llddeddym.github.io/posts/2022/05/2022-05-01-Poncelet/).
+
 昨天我发完证法后，甲哥帮我转回到了“几何大家玩”群里，果不其然，“史勇\|天下无毒·史”这个山药豆子愣要在里面挑错，让我们看看他挑出了什么错误：
 
 <img src="https://llddeddym.github.io/images/2022-05-02(1).png"/>
