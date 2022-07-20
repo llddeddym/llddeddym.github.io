@@ -33,7 +33,9 @@ $$\begin{aligned}&\measuredangle KVI\\=&\measuredangle YUI\\=&\measuredangle YUS
 
 <video src="https://llddeddym.github.io/images/2022-05-03.mp4"/>
 
-****
+
+
+
 
 以下是一个附录。我今天发现这个问题其实已经很早就被人发现并证明了，具体可以参见https://arxiv.org/abs/1607.04766，这里我搬运一下证明，其实还是很巧妙的，基本是更细致地讨论Poncelet闭合定理那个运用Riemann面的证明就可以得到的。
 
