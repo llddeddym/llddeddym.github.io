@@ -7,7 +7,6 @@
 
 # Site Settings
 locale                   : "zh-CN"
-logo                     : "/images/profile.jpg"
 title                    : "张峻铭的个人主页"
 title_separator          : "-"
 name                     : &name "张峻铭"
