@@ -24,4 +24,4 @@ $$\begin{aligned}&\dfrac{\sin\angle BAT}{\sin\angle CAT}\cdot\dfrac{\sin\angle A
 
 故由Ceva定理逆定理知$AT,BL,CN$三线共点。$\quad\Box$
 
-<img src="https://llddeddym.github.io/images/2022-02-20(2).png"/>
+<img src="https://llddeddym.github.io/images/2022-02-24(2).png"/>
