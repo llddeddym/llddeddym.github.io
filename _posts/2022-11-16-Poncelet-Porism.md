@@ -1,5 +1,5 @@
 ---
-title: 'Notes on Poncelet&rsquo; Porism'
+title: 'Notes on Poncelet&rsquo;s Porism'
 date: 2022-11-16
 permalink: /posts/2022/11/2022-11-16-Poncelet-Porism/
 tags:
