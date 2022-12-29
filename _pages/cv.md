@@ -17,17 +17,18 @@ redirect_from:
 
 ## 个人主页
 
-www.llddeddym.site
+- www.llddeddym.site
+
 
 ## 邮箱
 
-junmingzhang@mail.nankai.edu.cn
-
-llddeddym@outlook.com
+- junmingzhang@mail.nankai.edu.cn
+- llddeddym@outlook.com
 
 # 研究兴趣
 
-Higher Teichmüller Theory and Parabolic Higgs Bundles.
+- Higher Teichmüller Theory
+- Parabolic Higgs Bundles
 
 教育背景
 ======
@@ -35,6 +36,10 @@ Higher Teichmüller Theory and Parabolic Higgs Bundles.
 - 2018.08-2022.06 学士 南开大学 数学科学学院
 
 * 2022至今   博士(在读) 南开大学 陈省身数学研究所
+
+# 获得奖项
+
+- 2020年丘成桐大学生数学竞赛几何与拓扑赛道优胜奖
 
 论文
 ======
