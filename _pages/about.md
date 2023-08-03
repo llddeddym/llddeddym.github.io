@@ -1,12 +1,14 @@
 ---
 permalink: /
-title: "关于我/About Me"
+title: "首页"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+## 关于我/About Me
 
 我是[南开大学陈省身数学研究所](http://www.cim.nankai.edu.cn/)的一名博士研究生. 我正在学习Higgs bundle, higher Teichmüller theory与几何群论的相关知识. 
 
