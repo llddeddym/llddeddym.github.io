@@ -10,7 +10,7 @@ redirect_from:
 
 ## 关于我/About Me
 
-我是[南开大学陈省身数学研究所](http://www.cim.nankai.edu.cn/)的一名博士研究生. 我正在学习Higgs bundle, higher Teichmüller theory与几何群论的相关知识. 
+我是[南开大学陈省身数学研究所](http://www.cim.nankai.edu.cn/)的一名博士研究生. 我正在学习Higgs丛, 高阶Teichmüller理论与几何群论的相关知识. 
 
 I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu.cn/), Nankai University. I am studying Higgs bundle, higher Teichmüller theory and geometric group theory.
 
