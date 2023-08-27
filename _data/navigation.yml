@@ -1,10 +1,10 @@
 # main links links
 main:
-  - title: "Publications"
+  - title: "Publications and Preprints"
     url: /publications/
 
   - title: "Blog Posts"
-    url: /year-archive/
+    url: /posts/
     
   - title: "CV"
     url: /cv/
