@@ -34,9 +34,8 @@ I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu
 
 
 
-<!-- AtoZSEOTools Counter Code START -->
-<a href="https://ciroapp.com/free-tools/website-visitor-counter" target="_blank" title="Web Counter">
-<img src="https://ciroapp.com/free-tools/website-visitor-counter/count/&style=style5&show=u&num=5&uid=NX"  title="Web Counter" alt="AtoZSEOTools Web Counter" />
-</a>
-<!-- AtoZSEOTools Counter Code END -->
+###### 访客数量/Visitor Count
 
+<!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+<img src="https://hitwebcounter.com/counter/counter.php?page=8896822&style=0001&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>
