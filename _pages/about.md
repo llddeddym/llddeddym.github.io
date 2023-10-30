@@ -10,9 +10,9 @@ redirect_from:
 
 ## 关于我/About Me
 
-我是[南开大学陈省身数学研究所](http://www.cim.nankai.edu.cn/)的一名博士研究生. 我正在学习Higgs丛, 高阶Teichmüller理论与几何群论的相关知识. 
+我是[南开大学陈省身数学研究所](http://www.cim.nankai.edu.cn/)的一名博士研究生. 我正在学习Higgs丛, 高阶Teichmüller理论与Anosov表示的相关知识. 
 
-I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu.cn/), Nankai University. I am studying Higgs bundle, higher Teichmüller theory and geometric group theory.
+I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu.cn/), Nankai University. I am studying Higgs bundle, higher Teichmüller theory and Anosov representations.
 
 ## 关于网站/About This Website
 
@@ -31,6 +31,10 @@ I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu
 [CV](https://llddeddym.github.io/cv/) contains my resume.
 
 [Portfolio](https://llddeddym.github.io/portfolio/) contains some of my photos.
+
+### 本网站的其他部分/Other pages
+
+- [李琼玲](http://www.cim.nankai.edu.cn/2019/0110/c11453a118234/page.htm)老师正在组织将于2023.11.03--08在[陈省身数学研究所](http://www.cim.nankai.edu.cn/main.htm)举办的"**Higgs bundles, non-Abelian Hodge correspondence and related topics**"会议, [这](https://www.llddeddym.site/Higgs-bundles-conference/)是我帮她制作的会议主页. 
 
 
 
