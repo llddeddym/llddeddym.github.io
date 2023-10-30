@@ -34,7 +34,7 @@ I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu
 
 ### 本网站的其他部分/Other pages
 
-- [李琼玲](http://www.cim.nankai.edu.cn/2019/0110/c11453a118234/page.htm)老师正在组织将于2023.11.03--08在[陈省身数学研究所](http://www.cim.nankai.edu.cn/main.htm)举办的"**Higgs bundles, non-Abelian Hodge correspondence and related topics**"会议, [这](https://www.llddeddym.site/Higgs-bundles-conference/)是我帮她制作的会议主页. 
+- [李琼玲](http://www.cim.nankai.edu.cn/2019/0110/c11453a118234/page.htm)老师正在组织将于2023.11.03--08在[陈省身数学研究所](http://www.cim.nankai.edu.cn/main.htm)举办的"**Higgs bundles, non-Abelian Hodge correspondence and related topics**"会议, [这](https://www.llddeddym.site/Higgs-bundles-conference/)是我帮她制作的会议主页. (使用[Mike Pierce的模板](https://github.com/mikepierce/conference-website-template)) 
 
 
 
