@@ -188,6 +188,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -233,6 +236,15 @@ defaults:
       path: ""
       type: preprints
     values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _talks
+  - scope:
+      path: ""
+      type: talks
+      values:
       layout: single
       author_profile: true
       share: true
