@@ -244,8 +244,8 @@ defaults:
   - scope:
       path: ""
       type: talks
-      values:
-      layout: single
+    values:
+      layout: talk
       author_profile: true
       share: true
       comments: true
