@@ -1,5 +1,5 @@
 ---
-title: "2024 Shanghai Geometric Group Theory workshop(July 8--12 2024)"
+title: "2024 Shanghai Geometric Group Theory workshop(July 08--12 2024)"
 date: 2024-07-09
 collection: portfolio
 ---

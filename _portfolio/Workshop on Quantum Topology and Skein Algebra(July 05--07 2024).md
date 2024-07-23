@@ -1,5 +1,5 @@
 ---
-title: "Workshop on Quantum Topology and Skein Algebra(July 5--7 2024)"
+title: "Workshop on Quantum Topology and Skein Algebra(July 05--07 2024)"
 date: 2024-07-06
 collection: portfolio
 ---
