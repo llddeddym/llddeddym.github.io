@@ -18,7 +18,7 @@ I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu
 
 [Publications and Preprints](https://llddeddym.github.io/publications/)中是我的已发表论文与预印本.
 
-[Blog Posts](https://llddeddym.github.io/year-archive/)中是我的一些随笔和学习笔记, 其中随笔多数为平面几何.
+[Blog Posts](https://llddeddym.github.io/posts/)中是我的一些随笔和学习笔记, 其中随笔多数为平面几何.
 
 [CV](https://llddeddym.github.io/cv/)中是我的个人简历.
 
@@ -26,7 +26,7 @@ I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu
 
 [Publications and Preprints](https://llddeddym.github.io/publications/) contains my published paper and preprints.
 
-[Blog Posts](https://llddeddym.github.io/year-archive/) contains my essays, most of which are about Euclidean geometry, and study notes.
+[Blog Posts](https://llddeddym.github.io/posts/) contains my essays, most of which are about Euclidean geometry, and study notes.
 
 [CV](https://llddeddym.github.io/cv/) contains my resume.
 
