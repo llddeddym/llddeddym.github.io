@@ -34,14 +34,14 @@ I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu
 
 ## 其他/Others
 
-除数学之外, 我还热爱相声, 京剧及古典音乐. 我曾参与过南开大学国乐相声协会与南开大学京剧团的多场相声, 京剧演出, 部分视频可见[国乐相声协会的个人空间](https://space.bilibili.com/106205696)及[《借东风》南开大学京剧团2019年演出](https://www.bilibili.com/video/BV1e44y1J7Xn/). 我最喜欢的交响曲是**马勒第二交响曲**, 最喜欢的版本是[Tennstedt & LPO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1467605922?l=en-US).
+除数学之外, 我还热爱相声, 京剧及古典音乐. 我曾参与过南开大学国乐相声协会与南开大学京剧团的多场相声, 京剧演出, 部分视频可见[国乐相声协会的个人空间](https://space.bilibili.com/106205696)及[《借东风》南开大学京剧团2019年演出](https://www.bilibili.com/video/BV1e44y1J7Xn/). 我最喜欢的交响曲是**马勒第二交响曲**, 最喜欢的版本是[Klaus Tennstedt & LPO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1467605922?l=en-US)及[Iván Fischer &BFO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1669520542?l=en-US).
 
-Apart from mathematics, I also have a passion for crosstalk, Peking opera, and classical music. I have participated in several crosstalk and Peking opera performances with the Nankai University Guole Crosstalk Club and the Nankai University Peking Opera Club. Some videos can be found in [国乐相声协会的个人空间](https://space.bilibili.com/106205696) and [《借东风》南开大学京剧团2019年演出](https://www.bilibili.com/video/BV1e44y1J7Xn/). My favorite symphony is **Mahler's Symphony No. 2**, and my favorite version is [Tennstedt & LPO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1467605922?l=en-US).
+Apart from mathematics, I also have a passion for crosstalk, Peking opera, and classical music. I have participated in several crosstalk and Peking opera performances with the Nankai University Guole Crosstalk Club and the Nankai University Peking Opera Club. Some videos can be found in [国乐相声协会的个人空间](https://space.bilibili.com/106205696) and [《借东风》南开大学京剧团2019年演出](https://www.bilibili.com/video/BV1e44y1J7Xn/). My favorite symphony is **Mahler's Symphony No. 2**, and my favorite versions are [Klaus Tennstedt & LPO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1467605922?l=en-US) and [Iván Fischer &BFO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1669520542?l=en-US).
 
 ### 本网站的其他部分/Other pages
 
 - [李琼玲](http://www.cim.nankai.edu.cn/2019/0110/c11453a118234/page.htm)老师于2023.11.03--08在[陈省身数学研究所](http://www.cim.nankai.edu.cn/main.htm)举办了"**Higgs bundles, non-Abelian Hodge correspondence and related topics**"会议, [这](https://www.llddeddym.site/Higgs-bundles-conference/)是我帮她制作的会议主页. (使用[Mike Pierce的模板](https://github.com/mikepierce/conference-website-template)) 
-- [李琼玲](http://www.cim.nankai.edu.cn/2019/0110/c11453a118234/page.htm)老师计划于2024.07.28--08.03在[陈省身数学研究所](http://www.cim.nankai.edu.cn/main.htm)举办**2024年南开大学暑期短期课程**, [这](https://www.llddeddym.site/2024-summer-short-courses/)是我帮她制作的课程主页. (使用[Mike Pierce的模板](https://github.com/mikepierce/conference-website-template)) 
+- [李琼玲](http://www.cim.nankai.edu.cn/2019/0110/c11453a118234/page.htm)老师于2024.07.28--08.03在[陈省身数学研究所](http://www.cim.nankai.edu.cn/main.htm)举办了**2024年南开大学暑期短期课程**, [这](https://www.llddeddym.site/2024-summer-short-courses/)是我帮她制作的课程主页. (使用[Mike Pierce的模板](https://github.com/mikepierce/conference-website-template)) 
 
 
 
