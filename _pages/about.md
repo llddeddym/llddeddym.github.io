@@ -51,7 +51,7 @@ Apart from mathematics, I also have a passion for crosstalk, Peking opera, and c
 <a href="https://www.hitwebcounter.com" target="_blank">
 <img src="https://hitwebcounter.com/counter/counter.php?page=8896822&style=0001&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>
 
-<a href='https://clustrmaps.com/site/1c49h' disabled  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=100&t=n&d=Pyh_Eo0k2-5cDqFUnaJuaPED40JfJmxjDeN729J84qg'/></a>
+<a href='https://clustrmaps.com/site/1c49h' title='Visit tracker'><style>.disabledlink {cursor: notallowed;pointerevents: none;}</style><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=100&t=n&d=Pyh_Eo0k2-5cDqFUnaJuaPED40JfJmxjDeN729J84qg'/></a>
 
 
 
