@@ -8,7 +8,7 @@ collection: portfolio
 
 **This is an IHP program Introductory School. ** 
 
-No official group photo.
+No official group photo .
 
 <img src="https://llddeddym.github.io/images/2025-04-14.jpg"/>
 
