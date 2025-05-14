@@ -14,7 +14,7 @@ redirect_from:
 
 I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu.cn/), Nankai University. I am studying Higgs bundle, higher Teichmüller theory and Anosov representations. My advisor is [Qiongling Li](https://sites.google.com/site/qionglingli/home).
 
-<font color='red'>I will participate in the [IHP program](https://indico.math.cnrs.fr/event/11551/) in Paris from 2025.04.14 to 2025.06.27.</font>
+<font color='red'>I will participate in the</font> [IHP program](https://indico.math.cnrs.fr/event/11551/) <font color='red'>in Paris from 2025.04.14 to 2025.06.27.</font>
 
 ## 关于网站/About This Website
 
