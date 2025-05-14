@@ -14,6 +14,8 @@ redirect_from:
 
 I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu.cn/), Nankai University. I am studying Higgs bundle, higher Teichmüller theory and Anosov representations. My advisor is [Qiongling Li](https://sites.google.com/site/qionglingli/home).
 
+<font color='red'>I will participate in the [IHP program](https://indico.math.cnrs.fr/event/11551/) in Paris from 2025.04.14 to 2025.06.27.</font>
+
 ## 关于网站/About This Website
 
 [Publications and Preprints](https://llddeddym.github.io/publications/)中是我的已发表论文与预印本.
@@ -34,9 +36,9 @@ I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu
 
 ## 其他/Others
 
-除数学之外, 我还热爱相声, 京剧及古典音乐. 我曾参与过南开大学国乐相声协会与南开大学京剧团的多场相声, 京剧演出, 部分视频可见[国乐相声协会的个人空间](https://space.bilibili.com/106205696)及[《借东风》南开大学京剧团2019年演出](https://www.bilibili.com/video/BV1e44y1J7Xn/). 我最喜欢的交响曲是**马勒第二交响曲**, 最喜欢的版本是[Klaus Tennstedt & LPO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1467605922?l=en-US)及[Iván Fischer &BFO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1669520542?l=en-US).
+除数学之外, 我还热爱相声, 京剧及古典音乐. 我曾参与过南开大学国乐相声协会与南开大学京剧团的多场相声, 京剧演出, 部分视频可见[国乐相声协会的个人空间](https://space.bilibili.com/106205696)及[《借东风》南开大学京剧团2019年演出](https://www.bilibili.com/video/BV1e44y1J7Xn/). 我最喜欢的交响曲是**马勒第二交响曲**, 最喜欢的版本是[Klaus Tennstedt & LPO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1467605922?l=en-US)及[Iván Fischer & BFO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1669520542?l=en-US).
 
-Apart from mathematics, I also have a passion for crosstalk, Peking opera, and classical music. I have participated in several crosstalk and Peking opera performances with the Nankai University Guole Crosstalk Club and the Nankai University Peking Opera Club. Some videos can be found in [国乐相声协会的个人空间](https://space.bilibili.com/106205696) and [《借东风》南开大学京剧团2019年演出](https://www.bilibili.com/video/BV1e44y1J7Xn/). My favorite symphony is **Mahler's Symphony No. 2**, and my favorite versions are [Klaus Tennstedt & LPO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1467605922?l=en-US) and [Iván Fischer &BFO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1669520542?l=en-US).
+Apart from mathematics, I also have a passion for crosstalk, Peking opera, and classical music. I have participated in several crosstalk and Peking opera performances with the Nankai University Guole Crosstalk Club and the Nankai University Peking Opera Club. Some videos can be found in [国乐相声协会的个人空间](https://space.bilibili.com/106205696) and [《借东风》南开大学京剧团2019年演出](https://www.bilibili.com/video/BV1e44y1J7Xn/). My favorite symphony is **Mahler's Symphony No. 2**, and my favorite versions are [Klaus Tennstedt & LPO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1467605922?l=en-US) and [Iván Fischer & BFO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1669520542?l=en-US).
 
 ### 本网站的其他部分/Other pages
 
@@ -55,4 +57,4 @@ Apart from mathematics, I also have a passion for crosstalk, Peking opera, and c
 
 
 
-###### 最后更新时间/Last Update: 2025.03.03
+###### 最后更新时间/Last Update: 2025.05.14
