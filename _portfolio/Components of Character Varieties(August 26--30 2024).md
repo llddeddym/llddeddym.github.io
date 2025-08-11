@@ -8,8 +8,6 @@ collection: portfolio
 
 **This is an workshop on connected components of character varieties for young researchers. **
 
-
-
 <img src="https://llddeddym.github.io/images/2024-08-28.JPG"/>
 
 See its [website](https://sites.google.com/view/componentsinaussois/home).
