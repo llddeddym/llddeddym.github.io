@@ -8,6 +8,6 @@ venue: 'arxiv:2406.08118'
 paperurl: 'https://arxiv.org/abs/2406.08118'
 ---
 
-We prove the representation given by a stable $\alpha_1$-cyclic parabolic $\mathrm{SO}_0(2,3)$-Higgs bundle through the non-Abelian Hodge correspondence is $\{\alpha_2\}$-almost dominated. This is a generalization of Filip's result on weight $3$ variation of Hodge structures and answers a question asked by Collier, Tholozan and Toulisse.
+We prove the representation given by a stable $\alpha_1$-cyclic parabolic $\mathrm{SO}_0(2,3)$-Higgs bundle through the non-Abelian Hodge correspondence is $\{\alpha_2\}$-almost dominated. This is a generalization of Filip's result on weight $3$ variation of Hodge structures and answers a question asked by Collier, Tholozan and Toulisse. *Accepted in Mathematische Annalen.*
 
-Download paper [here](https://arxiv.org/abs/2406.08118).
+Download the preprint [here](https://arxiv.org/abs/2406.08118). 
