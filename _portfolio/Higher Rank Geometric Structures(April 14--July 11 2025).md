@@ -4,7 +4,11 @@ date: 2025-04-14
 collection: portfolio
 ---
 
-**This is an IHP program. ** No official group photo. See its [website](https://indico.math.cnrs.fr/event/11551/).
+2025.04.19 IHP, Paris, France
+
+<img src="https://llddeddym.github.io/images/2025-04-19.jpg"/>
+
+This is an IHP program. No official group photo. See its [website](https://indico.math.cnrs.fr/event/11551/).
 
 <img src="https://llddeddym.github.io/images/2025-04-14.jpg"/>
 
