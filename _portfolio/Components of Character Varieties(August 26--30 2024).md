@@ -6,7 +6,7 @@ collection: portfolio
 
 2024.08.28 [Centre Paul-Langevin](https://www.caes.cnrs.fr/sejours/centre-paul-langevin-3-2/), Aussois, France
 
-**This is **
+**This is ** 
 
 <img src="https://llddeddym.github.io/images/2024-08-28.JPG"/>
 
