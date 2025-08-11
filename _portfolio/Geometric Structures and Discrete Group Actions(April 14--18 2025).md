@@ -1,5 +1,5 @@
 ---
-title: "Geometric Structures and Discrete Group Actions(April 14--18 2024)"
+title: "Geometric Structures and Discrete Group Actions(April 14--18 2025)"
 date: 2025-04-14
 collection: portfolio
 ---
