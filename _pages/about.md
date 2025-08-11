@@ -14,7 +14,7 @@ redirect_from:
 
 I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu.cn/), Nankai University. I am studying Higgs bundle, higher Teichmüller theory and Anosov representations. My advisor is [Qiongling Li](https://sites.google.com/site/qionglingli/home).
 
-**I will visit Professor [Jérémy Toulisse](https://math.univ-cotedazur.fr/~jtoulisse/main.htmlat) in Nice from 2025.11.01 to 2026.10.30.**
+**I will visit Professor [Jérémy Toulisse](https://math.univ-cotedazur.fr/~jtoulisse/main.html) in Nice from 2025.11.01 to 2026.10.30.**
 
 ## 关于网站/About This Website
 
