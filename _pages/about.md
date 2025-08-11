@@ -12,7 +12,7 @@ redirect_from:
 
 我是[南开大学陈省身数学研究所](http://www.cim.nankai.edu.cn/)的一名博士研究生. 我正在学习Higgs丛, 高阶Teichmüller理论与Anosov表示的相关知识. 我的导师是[李琼玲](https://sites.google.com/site/qionglingli/home)老师.
 
-I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu.cn/), Nankai University. I am studying Higgs bundle, higher Teichmüller theory and Anosov representations. My advisor is [Qiongling Li](https://sites.google.com/site/qionglingli/home).
+I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu.cn/), Nankai University. I am studying Higgs bundle, higher Teichmüller theory and Anosov representations. My advisor is Professor [Qiongling Li](https://sites.google.com/site/qionglingli/home).
 
 **I will visit Professor [Jérémy Toulisse](https://math.univ-cotedazur.fr/~jtoulisse/main.html) in Nice from 2025.11.01 to 2026.10.31.**
 
