@@ -6,11 +6,7 @@ collection: portfolio
 
 2024.08.28 [Centre Paul-Langevin](https://www.caes.cnrs.fr/sejours/centre-paul-langevin-3-2/), Aussois, France
 
-*1*
-
-
-
-**This is an workshop on connected components of character varieties for young researchers. **
+**This is **
 
 <img src="https://llddeddym.github.io/images/2024-08-28.JPG"/>
 
