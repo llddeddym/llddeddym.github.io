@@ -14,8 +14,6 @@ redirect_from:
 
 I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu.cn/), Nankai University. I am studying Higgs bundle, higher Teichmüller theory and Anosov representations. My advisor is Professor [Qiongling Li](https://sites.google.com/site/qionglingli/home).
 
-**I will visit the Max Planck Institute for Mathematics in the Sciences in Leipzig from 2025.12.07 to 2025.12.19 and give a [seminar talk](https://www.mis.mpg.de/events/event/infinitesimal-rigidity-of-cyclic-surfaces-for-sln-c) on 2025.12.16.**
-
 ## 关于网站/About This Website
 
 [Publications and Preprints](https://llddeddym.github.io/publications/)中是我的已发表论文与预印本.
