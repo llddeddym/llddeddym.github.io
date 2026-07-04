@@ -13,7 +13,7 @@ author_profile: true
 
 ## Preprints
 
-<ol reversed>
+<ol class="publication-list" reversed>
 {% for post in site.preprints reversed %}
   <li>
     {% include archive-single.html %}
@@ -26,7 +26,7 @@ author_profile: true
 
 ## Publications
 
-<ol reversed>
+<ol class="publication-list" reversed>
 {% for post in site.publications reversed %}
   <li>
     {% include archive-single.html %}
