@@ -13,9 +13,12 @@ author_profile: true
 
 ## Preprints
 
-<ol class="publication-list" reversed>
+<ol class="publication-list publication-list--bracketed">
+{% assign preprint_count = site.preprints | size %}
 {% for post in site.preprints reversed %}
+  {% assign pub_number = preprint_count | minus: forloop.index0 %}
   <li>
+    <span class="publication-number">[{{ pub_number }}]</span>
     {% include archive-single.html %}
   </li>
 {% endfor %}
@@ -23,12 +26,14 @@ author_profile: true
 
 
 
-
 ## Publications
 
-<ol class="publication-list" reversed>
+<ol class="publication-list publication-list--bracketed">
+{% assign publication_count = site.publications | size %}
 {% for post in site.publications reversed %}
+  {% assign pub_number = publication_count | minus: forloop.index0 %}
   <li>
+    <span class="publication-number">[{{ pub_number }}]</span>
     {% include archive-single.html %}
   </li>
 {% endfor %}
