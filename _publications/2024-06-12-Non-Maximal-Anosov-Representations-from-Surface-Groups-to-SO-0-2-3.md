@@ -2,6 +2,7 @@
 title: 'Non-maximal Anosov representations from surface groups to $\mathrm{SO}_0(2,3)$'
 collection: publications
 permalink: /publication/2024-06-12-Non-maximal-Anosov-Representations-from-Surface-Groups-to-SO-0-2-3
+excerpt: ''
 date: 2025-08-23
 venue: 'Mathematische Annalen'
 ---
