@@ -1,0 +1,25 @@
+.publication-list--bracketed {
+  list-style: none;
+  padding-left: 0;
+}
+
+.publication-list--bracketed > li {
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.publication-number {
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  font-weight: 600;
+  color: #666;
+}
+
+.publication-list--bracketed .list__item,
+.publication-list--bracketed .archive__item {
+  margin-bottom: 0;
+}
