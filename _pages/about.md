@@ -14,6 +14,10 @@ redirect_from:
 
 I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu.cn/), Nankai University. I am studying Higgs bundle, higher Teichmüller theory and Anosov representations. My advisor is Professor [Qiongling Li](https://sites.google.com/site/qionglingli/home).
 
+**I visit [Oscar García-Prada](https://www.icmat.es/miembros/garcia-prada/index.html) and [Miguel González](https://miguelgg.com/) at [ICMAT](https://www.icmat.es/), Madrid, Spain from Sept 7 to Sept 26, 2026.**
+
+**I will visit [Jérémy Toulisse](https://math.univ-cotedazur.fr/u/jtoulisse/) at  [Université Côte d'Azur](https://univ-cotedazur.fr/), Nice, France from Sept 27 to Oct 14, 2026.**
+
 ## 关于网站/About This Website
 
 [Publications and Preprints](https://llddeddym.github.io/publications/)中是我的已发表论文与预印本.
@@ -46,8 +50,6 @@ Apart from mathematics, I also have a passion for crosstalk, Peking opera, and c
 <a href="https://www.hitwebcounter.com" target="_blank">
 <img src="https://hitwebcounter.com/counter/counter.php?page=8896822&style=0001&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>
 
-<a href='javascript:void(0)' title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=100&t=n&d=Pyh_Eo0k2-5cDqFUnaJuaPED40JfJmxjDeN729J84qg'/></a>
 
 
-
-###### 最后更新时间/Last Update: 2026.06.10
+###### 最后更新时间/Last Update: Sep 14, 2026
