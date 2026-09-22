@@ -2,7 +2,7 @@
 title: 'Non-maximal quasi-isometric $\mathrm{PU}_{2,n+1}$-representations via alternating surfaces in complex pseudo-hyperbolic spaces'
 collection: preprints
 permalink: /preprints/2026-09-21-non-maximal-quasi-isometric-representations
-excerpt: 'with [Qiongling Li](https://sites.google.com/site/qionglingli/)'
+excerpt: 'with [Qiongling Li](https://sites.google.com/site/qionglingli/), AI-assisted'
 date: 2026-09-21
 venue: 'arxiv:2609.24672'
 ---
