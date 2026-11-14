@@ -8,23 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-## 关于我/About Me
+<div id="about-en" lang="en" markdown="1">
 
-我是[南开大学陈省身数学研究所](http://www.cim.nankai.edu.cn/)的一名博士研究生. 我正在学习Higgs丛, 高阶Teichmüller理论与Anosov表示的相关知识. 我的导师是[李琼玲](https://sites.google.com/site/qionglingli/home)老师.
+## About Me
 
 I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu.cn/), Nankai University. I am studying Higgs bundle, higher Teichmüller theory and Anosov representations. My advisor is Professor [Qiongling Li](https://sites.google.com/site/qionglingli/home).
 
-
-
-## 关于网站/About This Website
-
-[Publications and Preprints](https://llddeddym.github.io/publications/)中是我的已发表论文与预印本.
-
-[Blog Posts](https://llddeddym.github.io/posts/)中是我的一些随笔和学习笔记, 其中随笔多数为平面几何.
-
-[CV](https://llddeddym.github.io/cv/)中是我的个人简历.
-
-[Portfolio](https://llddeddym.github.io/portfolio/)中是我参与过的活动的照片, 包括参加的演出与学术会议.
+## About This Website
 
 [Publications and Preprints](https://llddeddym.github.io/publications/) contains my published paper and preprints.
 
@@ -34,18 +24,7 @@ I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu
 
 [Portfolio](https://llddeddym.github.io/portfolio/) contains some of the photos of the activities I have participated in, including performances and academic conferences.
 
-### 我对在数学研究中使用AI的看法/My points of view on using AI in mathematical research
-
-我不介意在我自己的研究中使用ai，我会与它讨论数学，并用它来改进文章的语法。我会在论文中标注有哪些想法来自与ai的讨论，哪些部分由ai帮助写作，并对ai生成的文本蕴含的想法的原始来源尝试追溯及在文中标注。我对我的文章内容完全负责。
-
-另一方面，我坚决反对商业ai公司与某些不负责任的数学工作者对ai的滥用，最典型的行径包括但不限于：
-
-- 声称利用ai解决某个著名（或非著名）公开问题，以此为自己的闭源模型进行炒作；
-- 盗取数据用于模型训练；
-- 发布自己不理解或ai直接生成的文本来污染生态；
-- 偷取他人想法后，使用ai直接生成并发布以抢占credit；
-
-这些行径都会对本应开放包容的数学生态造成不可逆的影响。此外，我对Lean形式化检验持怀疑态度。
+### My points of view on using AI in mathematical research
 
 I don't mind using AI in my own research. I discuss math with it and use it to improve the grammar of my papers. I will try to mark in my papers which ideas come from discussions with AI and which parts were written with AI's assistance, and I will try to trace the original sources of ideas contained in AI-generated text and cite them in the paper. I take full responsibility for the content of my papers.
 
@@ -58,13 +37,46 @@ On the other hand, I strongly oppose the misuse of AI by commercial AI companies
 
 These behaviors will cause irreversible damage to the math ecosystem, which should be open and inclusive. In addition, I am skeptical of Lean formal verification.
 
-## 其他/Others
-
-除数学之外, 我还热爱相声, 京剧及古典音乐. 我曾参与过南开大学国乐相声协会与南开大学京剧团的多场相声, 京剧演出, 部分视频可见[国乐相声协会的个人空间](https://space.bilibili.com/106205696)及[《借东风》南开大学京剧团2019年演出](https://www.bilibili.com/video/BV1e44y1J7Xn/). 我最喜欢的交响曲是**马勒第二交响曲**, 最喜欢的版本是[Klaus Tennstedt & LPO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1467605922?l=en-US)及[Iván Fischer & BFO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1669520542?l=en-US).
+## Others
 
 Apart from mathematics, I also have a passion for crosstalk, Peking opera, and classical music. I have participated in several crosstalk and Peking opera performances with the Nankai University Guole Crosstalk Club and the Nankai University Peking Opera Club. Some videos can be found in [国乐相声协会的个人空间](https://space.bilibili.com/106205696) and [《借东风》南开大学京剧团2019年演出](https://www.bilibili.com/video/BV1e44y1J7Xn/). My favorite symphony is **Mahler's Symphony No. 2**, and my favorite versions are [Klaus Tennstedt & LPO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1467605922?l=en-US) and [Iván Fischer & BFO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1669520542?l=en-US).
 
+</div>
 
+<div id="about-zh" lang="zh-Hans" markdown="1" hidden="hidden">
+
+## 关于我
+
+我是[南开大学陈省身数学研究所](http://www.cim.nankai.edu.cn/)的一名博士研究生. 我正在学习Higgs丛, 高阶Teichmüller理论与Anosov表示的相关知识. 我的导师是[李琼玲](https://sites.google.com/site/qionglingli/home)老师.
+
+## 关于网站
+
+[Publications and Preprints](https://llddeddym.github.io/publications/)中是我的已发表论文与预印本.
+
+[Blog Posts](https://llddeddym.github.io/posts/)中是我的一些随笔和学习笔记, 其中随笔多数为平面几何.
+
+[CV](https://llddeddym.github.io/cv/)中是我的个人简历.
+
+[Portfolio](https://llddeddym.github.io/portfolio/)中是我参与过的活动的照片, 包括参加的演出与学术会议.
+
+### 我对在数学研究中使用AI的看法
+
+我不介意在我自己的研究中使用ai，我会与它讨论数学，并用它来改进文章的语法。我会在论文中标注有哪些想法来自与ai的讨论，哪些部分由ai帮助写作，并对ai生成的文本蕴含的想法的原始来源尝试追溯及在文中标注。我对我的文章内容完全负责。
+
+另一方面，我坚决反对商业ai公司与某些不负责任的数学工作者对ai的滥用，最典型的行径包括但不限于：
+
+- 声称利用ai解决某个著名（或非著名）公开问题，以此为自己的闭源模型进行炒作；
+- 盗取数据用于模型训练；
+- 发布自己不理解或ai直接生成的文本来污染生态；
+- 偷取他人想法后，使用ai直接生成并发布以抢占credit；
+
+这些行径都会对本应开放包容的数学生态造成不可逆的影响。此外，我对Lean形式化检验持怀疑态度。
+
+## 其他
+
+除数学之外, 我还热爱相声, 京剧及古典音乐. 我曾参与过南开大学国乐相声协会与南开大学京剧团的多场相声, 京剧演出, 部分视频可见[国乐相声协会的个人空间](https://space.bilibili.com/106205696)及[《借东风》南开大学京剧团2019年演出](https://www.bilibili.com/video/BV1e44y1J7Xn/). 我最喜欢的交响曲是**马勒第二交响曲**, 最喜欢的版本是[Klaus Tennstedt & LPO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1467605922?l=en-US)及[Iván Fischer & BFO](https://classical.music.apple.com/cn/recording/gustav-mahler-1860-pp2-1669520542?l=en-US).
+
+</div>
 
 ###### 访客数量/Visitor Count
 
@@ -75,3 +87,5 @@ Apart from mathematics, I also have a passion for crosstalk, Peking opera, and c
 
 
 ###### 最后更新时间/Last Update: Nov 14, 2026
+
+<script src="{{ '/assets/js/about-language.js' | relative_url }}"></script>

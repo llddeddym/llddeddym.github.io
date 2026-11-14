@@ -23,3 +23,16 @@
 .publication-list--bracketed .archive__item {
   margin-bottom: 0;
 }
+
+#about-language {
+  min-width: 6.5em;
+}
+
+#about-language[hidden] {
+  display: none;
+}
+
+#about-language:focus-visible {
+  outline: 2px solid #333;
+  outline-offset: 2px;
+}
