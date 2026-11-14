@@ -7,13 +7,6 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
-          {% if page.url == '/' %}
-            <li class="masthead__menu-item">
-              <input id="about-language" type="button" class="btn"
-                     value="简体中文" lang="zh-Hans"
-                     aria-controls="about-en about-zh" hidden>
-            </li>
-          {% endif %}
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
