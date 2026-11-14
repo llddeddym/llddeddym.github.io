@@ -25,7 +25,13 @@
 }
 
 #about-language {
+  appearance: none;
+  box-sizing: border-box;
   width: 8em;
+  height: 2.5em;
+  padding: 0.5em 1em;
+  line-height: 1.5;
+  vertical-align: middle;
 }
 
 #about-language[hidden] {
