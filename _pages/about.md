@@ -34,7 +34,18 @@ I am a Ph.D student of [Chern Institute of Mathematics](http://en.cim.nankai.edu
 
 [Portfolio](https://llddeddym.github.io/portfolio/) contains some of the photos of the activities I have participated in, including performances and academic conferences.
 
-#### My points of view on using AI in mathematical research
+### 我对在数学研究中使用AI的看法/My points of view on using AI in mathematical research
+
+我不介意在我自己的研究中使用ai，我会与它讨论数学，并用它来改进文章的语法。我会在论文中标注有哪些想法来自与ai的讨论，哪些部分由ai帮助写作，并对ai生成的文本蕴含的想法的原始来源尝试追溯及在文中标注。我对我的文章内容完全负责。
+
+另一方面，我坚决反对商业ai公司与某些不负责任的数学工作者对ai的滥用，最典型的行径包括但不限于：
+
+- 声称利用ai解决某个著名（或非著名）公开问题，以此为自己的闭源模型进行炒作；
+- 盗取数据用于模型训练；
+- 发布自己不理解或ai直接生成的文本来污染生态；
+- 偷取他人想法后，使用ai直接生成并发布以抢占credit；
+
+这些行径都会对本应开放包容的数学生态造成不可逆的影响。此外，我对Lean形式化检验持怀疑态度。
 
 I don't mind using AI in my own research. I discuss math with it and use it to improve the grammar of my papers. I will try to mark in my papers which ideas come from discussions with AI and which parts were written with AI's assistance, and I will try to trace the original sources of ideas contained in AI-generated text and cite them in the paper. I take full responsibility for the content of my papers.
 
