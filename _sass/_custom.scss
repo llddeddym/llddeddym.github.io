@@ -23,3 +23,13 @@
 .publication-list--bracketed .archive__item {
   margin-bottom: 0;
 }
+
+/* ===== 中英文切换 ===== */
+/* 默认（html 无 lang-zh 类）隐藏中文，显示英文 */
+html:not(.lang-zh) .lang-zh {
+  display: none !important;
+}
+/* 中文模式隐藏英文 */
+html.lang-zh .lang-en {
+  display: none !important;
+}
