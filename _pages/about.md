@@ -78,14 +78,22 @@ Apart from mathematics, I also have a passion for crosstalk, Peking opera, and c
 
 </div>
 
-###### 访客数量/Visitor Count
+{% assign homepage_last_update = '2026-11-14' %}
+
+<div class="about-details">
+  <h6>
+    <span lang="en">Visitor Count</span>
+    <span lang="zh-Hans">访客数量</span>
+  </h6>
 
 <!-- hitwebcounter Code START -->
 <a href="https://www.hitwebcounter.com" target="_blank">
 <img src="https://hitwebcounter.com/counter/counter.php?page=8896822&style=0001&nbdigits=5&type=ip&initCount=0" title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>
 
-
-
-###### 最后更新时间/Last Update: Nov 14, 2026
+  <h6>
+    <span lang="en">Last Update: <time datetime="{{ homepage_last_update }}">{{ homepage_last_update | date: "%b %-d, %Y" }}</time></span>
+    <span lang="zh-Hans">最后更新时间：<time datetime="{{ homepage_last_update }}">{{ homepage_last_update | date: "%Y年%-m月%-d日" }}</time></span>
+  </h6>
+</div>
 
 <script src="{{ '/assets/js/about-language.js' | relative_url }}"></script>

@@ -25,7 +25,7 @@
 }
 
 #about-language {
-  min-width: 6.5em;
+  width: 8em;
 }
 
 #about-language[hidden] {
@@ -35,4 +35,9 @@
 #about-language:focus-visible {
   outline: 2px solid #333;
   outline-offset: 2px;
+}
+
+html:not([lang="zh-Hans"]) .about-details [lang="zh-Hans"],
+html[lang="zh-Hans"] .about-details [lang="en"] {
+  display: none;
 }
