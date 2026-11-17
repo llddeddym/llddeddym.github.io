@@ -1,0 +1,11 @@
+---
+title: "Conference of Complex Analysis in China 2026(Oct 16--22 2026)"
+date: 2026-10-16
+collection: portfolio
+---
+
+2026.10.16 Nanjiao Hotel, Shanghai, China
+
+<img src="https://llddeddym.github.io/images/2026-10-16.jpg"/>
+
+See its [website](https://math.ecnu.edu.cn/academia/ffx2026/).
