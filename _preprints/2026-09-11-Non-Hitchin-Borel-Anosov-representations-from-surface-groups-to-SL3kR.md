@@ -2,7 +2,7 @@
 title: 'Non-Hitchin Borel Anosov representations from surface groups to $\mathrm{SL}_{3k}\mathbb{R}$'
 collection: preprints
 permalink: /preprints/2026-09-11-Non-Hitchin-Borel-Anosov-representations-from-surface-groups-to-SL3kR
-excerpt: 'with [Zhufeng Yao](https://sites.google.com/view/yaozhufeng/%E9%A6%96%E9%A1%B5), AI-assisted'
+excerpt: 'with [Zhufeng Yao](https://sites.google.com/view/yaozhufeng/%E9%A6%96%E9%A1%B5), AI-insight'
 date: 2026-09-11
 venue: 'arxiv:2609.12809'
 ---

@@ -2,7 +2,7 @@
 title: 'Lyapunov spectrum, Harder--Narasimhan filtration and thin monodromy'
 collection: preprints
 permalink: /preprints/2026-11-04-Lyapunov-Harder-Narasimhan
-excerpt: 'with [Fei Yu](https://person.zju.edu.cn/yufei), AI-assisted'
+excerpt: 'with [Fei Yu](https://person.zju.edu.cn/yufei), AI-insight'
 date: 2026-11-04
 venue: 'arxiv:2611.06388'
 ---
