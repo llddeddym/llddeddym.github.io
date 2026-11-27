@@ -78,7 +78,7 @@ Apart from mathematics, I also have a passion for crosstalk, Peking opera, and c
 
 </div>
 
-{% assign homepage_last_update = '2026-11-14' %}
+{% assign homepage_last_update = '2026-11-27' %}
 
 <div class="about-details">
   <h6>
